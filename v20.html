@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第20卷 武文世王公传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第20卷《武文世王公传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：武皇帝男：卞皇后生文皇帝、任城威王彰、陈思王植、萧怀王熊；刘夫人生丰愍王昂、相殇王铄；环夫人生邓哀王冲、彭城王据、燕王宇；杜夫人生沛穆王林、中山恭王衮；秦夫人生">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v20.html">
+<meta property="og:title" content="《三国志》第20卷 武文世王公传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第20卷《武文世王公传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：武皇帝男：卞皇后生文皇帝、任城威王彰、陈思王植、萧怀王熊；刘夫人生丰愍王昂、相殇王铄；环夫人生邓哀王冲、彭城王据、燕王宇；杜夫人生沛穆王林、中山恭王衮；秦夫人生">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">20卷 · 1/11</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html" selected>第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v20-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">1 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">武皇帝二十五男：卞皇后生文皇帝、任城威王彰、陈思王植、萧怀王熊；刘夫人生丰愍王昂、相殇王铄；环夫人生邓哀王冲、彭城王据、燕王宇；杜夫人生沛穆王林、中山恭王衮；秦夫人生济阳怀王玹、陈留恭王峻；尹夫人生范阳闵王矩；王昭仪生赵王幹；孙姬生临邑殇公子上、楚王彪、刚殇公子勤；李姬生谷城殇公子乘、郿戴公子整、灵殇公子京；周姬生樊安公均；刘姬生广宗殇公子棘；宋姬生东平灵王徽；赵姬生乐陵王茂。</p>
+<p class="fy-inline">武皇帝有二十五个儿子：卞皇后生文皇帝曹丕、任城威王曹彰、陈思王曹植、萧怀王曹熊；刘夫人生愍王曹昂、相殇王曹铄；环夫人生邓哀王曹冲、彭城王曹据、燕王曹宇；杜夫人生沛穆王曹林、中山恭王曹衮；秦夫人生济阳怀王曹玹、陈留恭王曹峻；尹夫人生范阳闵王曹矩；王昭仪生赵王曹幹；孙姬生临邑殇公子曹上、楚王曹彪、刚殇公子曹勤；李姬生谷城殇公子曹乘、郡戴公子曹整、灵殇公子曹京；周姬生樊安公曹均；刘姬生广宗殇公子曹棘；宋姬生东平灵王曹徽；赵姬生乐陵王曹茂。</p>
+<p class="yw">丰愍王昂，字子修。弱冠举孝廉。随太祖南征，为张绣所害。无子。黄初二年追封谥曰丰悼公<span class="zs-no">〔1〕</span>。</p>
+<p class="fy-inline">丰愍王曹昂，字子修。二十岁左右被举荐为孝廉。随从太祖南征，被张绣杀害。没有儿子。黄初二年（公元 221），被追加封爵和谥号，为丰悼公。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">追封谥：追加封爵和谥号。本卷之中宗室王公的记载顺序，是依照其生母的地位，从高到低排列；生母相同者，则按年龄从高到低排列。</span></p>
+<p class="yw">三年<span class="zs-no">〔2〕</span>，以樊安公均子琬，奉昂后，封中都公。其年，徙封长子公。五年<span class="zs-no">〔3〕</span>，追加昂号曰丰悼王。太和三年，改昂谥曰愍王。嘉平六年，以琬袭昂爵为丰王。正元、景元中，累增邑，并前二千七百户。琬薨，谥曰恭王。子廉嗣。</p>
+<p class="fy-inline">黄初三年（公元 222），让樊安公曹均的儿子曹琬，做曹昂的后代，封为中都公。当年迁移封地，为长子公。黄初五年（公元224），追加曹昂封号为丰悼王。太和三年（公元 229），修改曹昂的谥号为愍王。嘉平六年（公元254），让曹琬继承曹昂的爵位为丰王。正元、景元年间，屡次给他增加封邑；连同以前的共有二千七百户。曹琬去世，谥为恭王。曹琬的儿子曹廉继承了他的爵位。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">五年：黄初五年（公元224）。</span></p>
+<p class="yw">相殇王铄，早薨。太和三年，追封谥。青龙元年，子愍王潜嗣，其年薨。二年<span class="zs-no">〔4〕</span>，子怀王偃嗣，邑二千五百户。四年薨<span class="zs-no">〔5〕</span>。无子，国除。</p>
+<p class="fy-inline">相殇王曹铄，早死。太和三年（公元 229），追加封爵、谥号。青龙元年（公元233），曹铄的儿子愍王曹潜继承爵位，当年去世。青龙二年（公元 234），曹潜的儿子怀王曹偃继承爵位，封邑二千五百户。青龙四年（公元236），去世。曹偃没有儿子，封国废除。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">二年：青龙二年（公元 234）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">四年：青龙四年（公元236）。</span></p>
+<p class="yw">正元二年，以乐陵王茂子阳都乡公竦，继铄后。</p>
+<p class="fy-inline">正元二年（公元 255），让乐陵王曹茂的儿子阳都乡公曹竦继承曹铄，做他的后代。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">2 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">邓哀王冲，字仓舒。少聪察岐嶷<span class="zs-no">〔1〕</span>。生五六岁，智意所及，有若成人之智。时孙权曾致巨象，太祖欲知其斤重；访之群下，咸莫能出其理<span class="zs-no">〔2〕</span>。冲曰：“置象大船之上，而刻其水痕所至；称物以载之<span class="zs-no">〔3〕</span>，则校可知矣<span class="zs-no">〔4〕</span>。”太祖大悦，即施行焉。</p>
+<p class="fy-inline">邓哀王曹冲，字仓舒。少年时就聪明懂事。五六岁时，智慧思维所达到的水平，就像成年人那样了。当时孙权曾送来一只很大的象，太祖想要知道象的重量；询问各位下属，都想不出办法来。曹冲说：“把象放在大船上面，在船体上刻下水痕到达的记号；再称量重物装上船到达同样的刻度，那么计算以后就可以知道了。”太祖大为高兴，马上施行了这个办法。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">岐嶷：人在小时候聪明懂事。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">出其理：想出办法。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">称物：称量重物。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">校：计算。指算出能使船沉到刻痕记号时的重物总量。</span></p>
+<p class="yw">时军国多事，用刑严重。太祖马鞍在库，而为鼠所啮；库吏惧必死，议欲面缚首罪，犹惧不免<span class="zs-no">〔5〕</span>。冲谓曰：“待三日中，然后自归<span class="zs-no">〔6〕</span>。”冲于是以刀穿单衣<span class="zs-no">〔7〕</span>，如鼠啮者；谬为失意<span class="zs-no">〔8〕</span>，貌有愁色。太祖问之，冲对曰：“世俗以为鼠啮衣者，其主不吉。今单衣见啮，是以忧戚。”太祖曰：“此妄言耳！无所苦也。”俄而库吏以啮鞍闻，太祖笑曰：“儿衣在侧<span class="zs-no">〔9〕</span>，尚啮；况鞍悬柱乎？”一无所问。冲仁爱识达，皆此类也。凡应罪戮，而为冲微所辨理<span class="zs-no">〔10〕</span>，赖以济宥者，前后数十。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">当时军队国家事务繁多，施用的刑罚又严又重。太祖的马鞍在仓库里被老鼠咬坏了；管理仓库的吏役害怕要被处死，想要自己反绑双手去坦白罪过，仍然惧怕不能免罪。曹冲对他说：“等待三天，然后你再去自首认罪。”曹冲于是拿刀戳破自己的单衣，就像老鼠咬坏的一样；然后装出不高兴，脸上一副发愁的样子。太祖问他为什么，曹冲回答说：“民间风俗认为老鼠咬破衣服，主人就会不吉利。现在我的单衣被老鼠咬破了，所以发愁。”太祖说：“这是瞎说嘛！用不着难过了。”不久管库的吏役把老鼠咬马鞍的事情汇报了，太祖笑着说：“我儿子的衣服就在身旁，尚且被咬；何况是挂在柱子上的马鞍呢？”一点也没有追查。曹冲心地仁慈，识见通达，都像这样。本来犯罪应被处死，却被曹冲委婉含蓄加以分辩申诉而得到救助宽宥的，前后有几十人。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">不免：不能免遭处死。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">自归：主动报告认罪。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">穿：戳破。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">谬为失意：假装不高兴的样子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">侧：人的身旁。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">微：委婉含蓄。</span></p>
+<p class="yw">太祖数对群臣称述，有欲传后意。年十三，建安十三年疾病。太祖亲为请命<span class="zs-no">〔11〕</span>；及亡，哀甚。文帝宽喻太祖，太祖曰：“此我之不幸，而汝曹之幸也<span class="zs-no">〔12〕</span>！”<span class="pz-no">〔二〕</span>言则流涕，为聘甄氏亡女与合葬；赠骑都尉印绶，命宛侯据子琮，奉冲后。</p>
+<p class="fy-inline">太祖多次对大臣称赞曹冲，有想要把权位传给他的意思。建安十三年（公元 208），曹冲十三岁时得了重病。太祖亲自为他向神灵请求延长生命；曹冲死时，太祖极为哀痛。文帝曹丕宽解劝慰太祖，太祖说：“这是我的不幸，却是你们的幸运啊！”一说到曹冲就流下眼泪，还为曹冲聘了甄家已死的女儿与他合葬；追赠他骑都尉的印绶，又命宛侯曹据的儿子曹琮，做曹冲的后代。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">请命：向神灵请求延长生命。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">汝曹：你们。曹冲死了，对曹丕等人而言就少了一个权位继承的竞争者，所以曹操说是“汝曹之幸”。</span></p>
+<p class="yw">二十二年<span class="zs-no">〔13〕</span>，封琮为邓侯。</p>
+<p class="fy-inline">建安二十二年（公元217），封曹琮为邓侯。</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="yw">黄初二年，追赠谥冲曰邓哀侯；又追加号为公。<span class="pz-no">〔三〕</span>三年<span class="zs-no">〔14〕</span>，进琮爵，徙封冠军公。四年<span class="zs-no">〔15〕</span>，徙封己氏公。太和五年，加冲号曰邓哀王。景初元年，琮坐于中尚方作禁物，削户三百，贬爵为都乡侯。三年<span class="zs-no">〔16〕</span>，复为己氏公。正始七年，转封平阳公。景初、正元、景元中，累增邑；并前千九百户。</p>
+<p class="fy-inline">黄初二年（公元 221），追赠谥号给曹冲为邓哀侯；又追加爵号为邓公。黄初三年（公元 222），晋升曹琮的爵位，改封为冠军公。黄初四年（公元223），改封为己氏公。太和五年（公元 231），追加曹冲爵号为邓哀王。景初元年（公元 237），曹琮因为在皇宫的中尚方署为自己制作御用器物而犯罪，被削减封邑三百户，贬爵为都乡侯。景初三年（公元 239），恢复爵位为己氏公。正始七年（公元246），转封为平阳公。景初、正元、景元年间，屡次为曹琮增加封邑；连同以前的共有一千九百户。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">三年：景初三年（公元 239）。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏书》曰：“冲每见当刑者，辄探睹其冤枉之情，而微理之。及勤劳之吏，以过误触罪；常为太祖陈说，宜宽宥之。辨察仁爱，与性俱生；容貌姿美，有殊于众：故特见宠异。”臣松之以“容貌姿美”，一类之言而分以为三，亦叙属之一病也。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">孙盛曰：“《春秋》之义：立嫡以长不以贤。冲虽存也，犹不宜立；况其既没，而发斯言乎？《诗》云：‘无易由言。’魏武其易之也。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《魏书》载策曰：“惟黄初二年八月丙午，皇帝曰：‘咨！尔邓哀侯冲：昔皇天钟美于尔躬，俾聪哲之才，成于弱年；当永享显祚，克成厥终。如何不禄，早世夭昏！朕承天序，享有四海，并建亲亲，以藩王室；惟尔不逮斯荣，且葬礼未备：追悼之怀，怆然攸伤！今迁葬于高陵，使使持节兼谒者仆射、郎中陈承，追赐号曰邓公，祠以太牢。魂而有灵，休兹宠荣。呜呼哀哉！’”《魏略》曰：“文帝常言：‘家兄孝廉，自其分也；若使仓舒在，我亦无天下。’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">3 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">彭城王据，建安十六年，封范阳侯。二十二年<span class="zs-no">〔1〕</span>，徙封宛侯。</p>
+<p class="fy-inline">彭城王曹据，建安十六年（公元 211），封为范阳侯。建安二十二年（公元217），改封为宛侯。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="yw">黄初二年，进爵为公。三年<span class="zs-no">〔2〕</span>，为章陵王；其年徙封义阳。文帝以南方下湿，又以环太妃彭城人，徙封彭城。又徙封济阴。五年<span class="zs-no">〔3〕</span>，诏曰：“先王建国，随时而制。汉祖增秦所置郡；至光武以天下损耗，并省郡县。以今比之，益不及焉；其改封诸王，皆为县王<span class="zs-no">〔4〕</span>。”据，改封定陶县。</p>
+<p class="fy-inline">黄初二年（公元221），晋升爵位为公。黄初三年（公元 222），晋升爵位为章陵王；当年迁移封地到义阳。文帝考虑到南方地势低下气候潮湿，又因为曹据的母亲环太妃是彭城人，所以迁移曹据的封地到彭城。后又迁移到济阴。黄初五年（公元 224），文帝下诏说：“前代帝王建立国家，随着时势的变化而修改制度。汉高祖比秦朝增加了郡的数量；到了汉光武帝，因为全国人口减少，合并减少了郡县。拿目前来比较，郡的数量就更不如那时多了。现在把亲王的封地从郡缩小为县。”曹据改封在定陶县。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">五年：黄初五年（公元 224）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">县王：此前诸王封地为一郡，现缩小为一县。</span></p>
+<p class="yw">太和六年，改封诸王，皆以郡为国<span class="zs-no">〔5〕</span>；据，复封彭城。景初元年，据坐私遣人诣中尚方作禁物，削县二，千户。<span class="pz-no">〔一〕</span>三年<span class="zs-no">〔6〕</span>，复所削户邑。正元、景元中，累增邑；并前四千六百户。</p>
+<p class="fy-inline">太和六年（公元 232），又改封亲王，仍然都以一郡为封地；曹据又封为彭城王。景初元年（公元 237），曹据因为私自派人到皇宫的中尚方署为自己制作御用器物而犯罪，削减封邑两个县，共一千户。景初三年（公元 239），恢复了所削减的封邑。正元、景元年间，屡次为曹据增加封邑；连同以前的共四千六百户。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">以郡为国：意思是恢复黄初五年之前的旧制。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">三年：景初三年（公元 239）。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏书》载玺书曰：“制诏彭城王：有司奏，王遣司马董和，赍珠玉，来到京师中尚方，多作禁物，交通工官，出入近署，逾侈非度；慢令违制，绳王以法。朕用怃然，不宁于心。王以懿亲之重，处藩辅之位；典籍日陈于前，勤诵不辍于侧；加雅素奉修，恭肃敬慎；务在蹈道，孜孜不衰：岂忘率意正身，考终厥行哉？若然小疵，或谬于细人；忽不觉悟，以斯为失耳。《书》云：‘惟圣罔念作狂，惟狂克念作圣。’古人垂诰，乃至于此；故君子思心，无斯须远道焉。常虑所以累德者而去之，则德明矣；开心所以为塞者而通之，则心夷矣；慎行所以为尤者而修之，则行全矣：三者，王之所能备也。今诏有司宥王，削县二，千户；以彰八柄与夺之法。昔羲、文作《易》，著休复之诰；仲尼论行，既过能改。王其改行，茂昭斯义，率意无怠。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">4 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">燕王宇，字彭祖。建安十六年，封都乡侯。二十二年<span class="zs-no">〔1〕</span>，改封鲁阳侯。</p>
+<p class="fy-inline">燕王曹宇，字彭祖。建安十六年（公元 211），封为都乡侯。建安二十二年（公元217），改封为鲁阳侯。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="yw">黄初二年，进爵为公。三年<span class="zs-no">〔2〕</span>，为下邳王。五年<span class="zs-no">〔3〕</span>，改封单父县<span class="zs-no">〔4〕</span>。太和六年，改封燕王。明帝少与宇同止<span class="zs-no">〔5〕</span>，常爱异之；及即位，宠赐与诸王殊。青龙三年，征入朝。景初元年，还邺。</p>
+<p class="fy-inline">黄初二年（公元221），晋升爵位为公。黄初三年（公元 222），晋升爵位为下邳王。黄初五年（公元 224），迁移封地到单父县。太和六年（公元 232），改封为燕王。明帝少年时和曹宇在一起居住，特别喜爱他；明帝即位以后，对曹宇的恩宠赏赐都比其他各王优厚。青龙三年（公元 235），征召曹宇入朝。景初元年（公元237），返回邺县。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">五年：黄初五年（公元 224）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">单父：县名。县治在今山东单县。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">同止：同住。</span></p>
+<p class="yw">二年夏<span class="zs-no">〔6〕</span>，复征诣京都。冬十二月，明帝疾笃，拜宇为大将军，属以后事。受署四日，宇深固让；帝意亦变，遂免宇官。三年夏<span class="zs-no">〔7〕</span>，还邺。景初、正元、景元中，累增邑；并前五千五百户。</p>
+<p class="fy-inline">景初二年（公元238）夏天，又征召曹宇到京都。这年的冬十二月，明帝病重，任命曹宇为大将军，把后事托付给他。受到任命四天之后，曹宇坚决辞让；明帝的主意也改变了，于是免去了曹宇的官职。景初三年（公元 239）夏天，曹宇回到邺县。景初、正元、景元年间，屡次为曹宇增加封邑；连同以前的共有五千五百户。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">二年：景初二年（公元 238）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">三年：景初三年（公元 239）。</span></p>
+<p class="yw">常道乡公奂，宇之子，入继大宗。</p>
+<p class="fy-inline">常道乡公曹奂，就是曹宇的儿子，进宫做了皇位继承人。</p>
+<p class="yw">沛穆王林，建安十六年，封饶阳侯。二十二年<span class="zs-no">〔8〕</span>，徙封谯。黄初二年，进爵为公。三年<span class="zs-no">〔9〕</span>，为谯王。五年<span class="zs-no">〔10〕</span>，改封谯县<span class="zs-no">〔11〕</span>。七年<span class="zs-no">〔12〕</span>，徙封鄄城。太和六年，改封沛。景初、正元、景元中，累增邑；并前四千七百户。</p>
+<p class="fy-inline">沛穆王曹林，建安十六年（公元 211），封为饶阳侯。建安二十二年（公元217），迁移封地到谯县。黄初二年（公元 221），晋升爵位为公。黄初三年（公元 222），晋升爵位为谯王。黄初五年（公元224），封地从谯郡缩小为谯县。黄初七年（公元 226），迁移封地到鄄城。太和六年（公元 232），改封为沛王。景初、正元、景元年间，屡次为曹林增加封邑；连同以前的共有四千七百户。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">五年：黄初五年（公元 224 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">改封：指封地由谯郡缩小为谯县。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">七年：黄初七年（公元 226）。</span></p>
+<p class="yw">林薨，子纬嗣。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">曹林去世，他的儿子曹纬继承爵位。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">按《嵇氏谱》：“嵇康妻，林子之女也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">5 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">中山恭王衮，建安二十一年，封平乡侯。少好学，年十余岁，能属文。每读书，文学左右常恐以精力为病<span class="zs-no">〔1〕</span>，数谏止之；然性所乐，不能废也。二十二年<span class="zs-no">〔2〕</span>，徙封东乡侯；其年，又改封赞侯。</p>
+<p class="fy-inline">中山恭王曹衮，建安二十一年（公元 216），封为平乡侯。少年时喜好学习，十几岁就能写文章。每次读书，文学辅导官员和左右近侍常常担心他精力损耗过度而得病，屡次劝阻他；但他性情喜欢读书，不能中止。建安二十二年（公元 217），迁移封地，为东乡侯；当年又改封为赞侯。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">文学：官名。曹操为儿子曹丕、曹植置文学，是擅长文学的侍从官员。曹魏代汉后，宗室诸王的下属官员也有文学，但是职责主要是监视举报诸王的违法言行；以精力为病：由于精力损耗过度而得病</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="yw">黄初二年，进爵为公，官属皆贺，衮曰：“夫生深宫之中，不知稼穑之艰难，多骄逸之失。诸贤既庆其休<span class="zs-no">〔3〕</span>，宜辅其阙。”</p>
+<p class="fy-inline">黄初二年（公元221），晋升爵位为公，官员下属都向他祝贺，曹衮说：“我生长在深宫之中，不知收种庄稼的艰难，有很多骄奢享乐的过失。各位贤者已经庆贺了我的喜庆事，也应该帮助我弥补缺陷。”</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">休：美。</span></p>
+<p class="yw">每兄弟游娱，衮独覃思经典<span class="zs-no">〔4〕</span>。文学、防辅相与言曰<span class="zs-no">〔5〕</span>：“受诏察公举措，有过当奏；及有善，亦宜以闻，不可匿其美也。”遂共表，称陈衮美。衮闻之，大惊惧；责让文学曰<span class="zs-no">〔6〕</span>：“修身自守，常人之行耳；而诸君乃以上闻，是适所以增其负累也。且如有善，何患不闻；而遽共如是，是非益我者<span class="zs-no">〔7〕</span>！”其戒慎如此。</p>
+<p class="fy-inline">每次兄弟们游玩娱乐时，曹衮总是独自深思经典。文学侍从和监督官员们互相商议说：“我们接受诏命监察公爵的举止，有了过失应当上奏；有了好事也应当上报，不能隐瞒他的优点啊！”于是一同上表，称赞陈述曹衮的美德。曹衮知道了，极为惊恐，召见责备这些官员说：“提高自身修养和谨守本分，不过是普通人的行为罢了；诸位却报告给上面知道，这恰恰会为我增加负担和拖累。再说如果有优点，何必担心别人不知道；却急急忙忙一起这样做，这可不是对我有益的事啊！”他的警惕慎重就像这样。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">覃思：深思。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">防辅：官名。王国官员之一，专门监视举报诸王的违法言行。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">让：责备。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">是非益我者：这不是对我有益的事。</span></p>
+<p class="yw">三年<span class="zs-no">〔8〕</span>，为北海王。其年，黄龙现邺西漳水，衮上书赞颂。诏赐黄金千斤，诏曰：“昔唐叔馈禾<span class="zs-no">〔9〕</span>，东平献颂<span class="zs-no">〔10〕</span>；斯皆骨肉赞美，以彰懿亲。王研精坟典，耽味道真<span class="zs-no">〔11〕</span>，文雅焕炳；朕甚嘉之！王其克慎明德，以终令闻。”四年<span class="zs-no">〔12〕</span>，改封赞王。七年<span class="zs-no">〔13〕</span>，徙封濮阳。</p>
+<p class="fy-inline">黄初三年（公元222），曹衮封为北海王。当年，有黄龙出现在邺县西边的漳水中，曹衮上书赞颂这件事。文帝下诏赏赐给他黄金十斤，诏书说：“过去唐叔把祥瑞的谷穗献给周成王，东平王刘苍向光武帝献上颂文；都是对骨肉亲属奉上的赞美，以表彰美好的亲人。北海王对文献典籍有精深的研究，钻研和品味其中的真理，文雅的气质光彩焕发；我很是赞赏他！北海王应该更加谨慎地培养自己的品德，使你美好的名声完美无缺。”黄初四年（公元223），改封曹衮为赞王。黄初七年（公元226），迁移封地到濮阳。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">唐叔：名虞，字子于，周成王的弟弟。始封于唐，后改称晋。事见《史记》卷三十九《晋世家》；馈禾：唐叔辖地内发现两株禾的穗连成一体，认为是祥瑞，献给周成王，成王叫人转送给周公</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">东平：即东汉东平王刘苍；献颂：刘苍的哥哥东汉明帝刘庄，曾为父亲刘秀撰《光武本纪》，送给刘苍看</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">耽味：酷爱和品味；道真：真理</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">四年：黄初四年（公元223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">七年：黄初七年（公元 226）。</span></p>
+<p class="yw">太和二年，就国。尚约俭，教敕妃妾纺绩织[，习为家人之事。五年冬<span class="zs-no">〔14〕</span>，入朝。六年<span class="zs-no">〔15〕</span>，改封中山。初，衮来朝，犯京都禁<span class="zs-no">〔16〕</span>。青龙元年，有司奏衮。诏曰：“王素敬慎，邂逅至此<span class="zs-no">〔17〕</span>。其以议亲之典议之<span class="zs-no">〔18〕</span>。”有司固执。诏削县二，户七百五十。<span class="pz-no">〔一〕</span>衮忧惧，戒敕官属愈谨；帝嘉其意。二年<span class="zs-no">〔19〕</span>，复所削县。三年秋，衮得疾病，诏遣太医视疾；殿中虎贲赍手诏、赐珍膳相属<span class="zs-no">〔20〕</span>；又遣太妃、沛王林并就省疾<span class="zs-no">〔21〕</span>。</p>
+<p class="fy-inline">太和二年（公元 228），他到达封地，崇尚节约俭朴，要求妻妾纺线织补，学习做普通家庭妇女所做的事。太和五年（公元231）冬天，曹衮到京都朝见。太和六年（公元 232），改变封地到中山。当初，曹衮前来朝见时，违犯了京都的禁令。青龙元年（公元233），有关官员上奏弹劾曹衮。明帝下诏说：“中山王素来恭敬谨慎，偶然出现这样的问题。还是从宽处理这事吧。”主管官员坚持要追究。明帝下诏削减曹衮的封邑两县，共七百五十户。曹衮忧虑害怕，告诫约束属下官员更加谨慎；明帝赞赏他的心意，在青龙二年（公元 234），恢复了所削减的封地。青龙三年（公元235）秋天，曹衮得了病，明帝下诏派遣御医为他看病；不断派出皇宫殿堂的警卫武士带着手令和赏赐的珍贵膳食去探望，又派遣曹衮的母亲杜太妃、胞兄沛王曹林一起去他的封地探视病情。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">五年：太和五年（公元 231）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">六年：太和六年（公元 232）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">京都禁：指不准来朝诸王公在京城随便与人交往的禁令。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">邂逅：偶然。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">议亲：评议犯罪的宗室亲属。这句话意思是要从宽处理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">二年：青龙二年（公元 234）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">殿中虎贲：在皇宫殿堂内担任警卫的武士。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">太妃：指曹衮的生母杜氏；林：即曹林</span></p>
+<p class="yw">衮疾困，敕令官属曰：“吾寡德忝宠，大命将尽。吾既好俭，而圣朝著终诰之制<span class="zs-no">〔22〕</span>，为天下法。吾气绝之日，自殡及葬，务奉诏书。昔卫大夫蘧瑗葬濮阳<span class="zs-no">〔23〕</span>，吾望其墓，常想其遗风，愿托贤灵以弊发齿<span class="zs-no">〔24〕</span>；营吾兆城，必往从之。《礼》：‘男子不卒妇人之手<span class="zs-no">〔25〕</span>。’亟以时成东堂<span class="zs-no">〔26〕</span>。”堂成，名之曰“遂志之堂”，舆疾往居之<span class="zs-no">〔27〕</span>。</p>
+<p class="fy-inline">曹衮病危时，向属下官员下达指令说：“我缺少德行，愧受恩宠，现在我的生命将要走到尽头了。我生性喜好俭朴，而先皇帝也有关于丧葬问题的制度，作为全国遵行的法典。我断气的时候，从遗体入殓到下葬，务必遵奉先皇帝诏书的规定。过去卫国大夫蘧瑗埋葬在濮阳县，我看到他的坟墓，常常想到他遗留的风范，我希望依托于贤人的灵魂长眠地下；修造我的坟墓时，地址一定要选在他的墓近旁。《礼记》上说：‘男子不死在妇人手里。’赶快抓紧建成东堂。”东堂建成后，曹衮把它命名为“遂志之堂”，带病让人抬到那里去居住。</p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">终诰之制：指曹丕在生前为自己今后丧葬问题所作的规定，又称终制。内容详见本书卷二《文帝纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">蘧瑗：春秋时卫国的大夫。勇于改正自己的过错。孔子在卫国时曾住在他家，后来一直很尊敬他。事见《左传》襄公十四、二十六年和《论语·卫灵公》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">托：依附；弊发齿：使头发、牙齿腐朽</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">男子不卒妇人之手：男子临死时不能由妇女来送终。这是《礼记·丧大记》的话。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">东堂：曹衮为自己修的临终住所。前往东堂是要避开女性家属。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">舆疾：带病让人抬着。</span></p>
+<p class="yw">又令世子曰：“汝幼少，未闻义方<span class="zs-no">〔28〕</span>，早为人君；但知乐，不知苦；不知苦，必将以骄奢为失也。接大臣，务以礼；虽非大臣，老者犹宜答拜。事兄以敬<span class="zs-no">〔29〕</span>，恤弟以慈；兄弟有不良之行，当造膝谏之<span class="zs-no">〔30〕</span>；谏之不从，流涕喻之；喻之不改，乃白其母；若犹不改，当以奏闻，并辞国土：与其守宠罹祸，不若贫贱全身也。此亦谓大罪恶耳。其微过细故，当掩覆之<span class="zs-no">〔31〕</span>。嗟尔小子，慎修乃身；奉圣朝以忠贞，事太妃以孝敬。闺闱之内<span class="zs-no">〔32〕</span>，奉令于太妃；阃阈之外<span class="zs-no">〔33〕</span>，受教于沛王。无怠乃心，以慰予灵。”其年薨。诏沛王林留，讫葬；使大鸿胪持节典护丧事，宗正吊祭，赠赗甚厚。</p>
+<p class="fy-inline">又命令继承自己王位的儿子说：“你还太小，不懂得为人应遵守的原则和规矩，这么早就成了王爷；只知道乐，不知道苦；不知道苦，必将会有骄傲奢侈的过失。接待大臣，务必遵照礼仪；即使不是大臣，对老人也应该行跪拜礼来答谢。对待哥哥要恭敬，照顾弟弟要慈爱；兄弟当中有不好的行为，应当亲切谈心劝谏他们；劝谏不听从，就流着泪给他们讲道理；讲道理还不改，那就秉告他们的生母；要是仍然不改，就应当上奏给天子知道，一起辞掉封地：与其凭借恩宠而遭到灾祸，不如过贫贱生活以保全生命。当然这指的是大罪恶了。至于微细的过错，就应当为他们掩盖。你这个小孩子啊，要谨慎地修养自身；对朝廷要忠诚坚贞，对太妃要孝顺恭敬。家里的事应听奉太妃的指示；外面的事应接受伯父沛王的教导。你的心不要懈怠，以此来安慰我的灵魂。”当年曹衮去世。明帝下诏让他的胞兄沛王曹林留在那里等丧事办完；又派大鸿胪持有节杖，前去主持办理丧事，宗正前去吊唁祭奠，赠送的丧葬礼品十分丰厚。</p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">义方：为人应遵守的原则规矩。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">兄：这里指世子的庶兄。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">造膝：膝盖挨着膝盖。与人亲切谈心时的动作。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">掩覆：掩盖。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">闺闱：妇女的卧室。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">阃阈：妇女卧室的门槛。</span></p>
+<p class="yw">凡所著文章二万余言。才不及陈思王，而好与之侔<span class="zs-no">〔34〕</span>。</p>
+<p class="fy-inline">曹衮著有文章共两万多字。文学才华不如陈思王曹植但爱好相同。</p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">好：对文学的喜好。</span></p>
+<p class="yw">子孚嗣。景初、正元，景元中，累增邑；并前三千四百户。</p>
+<p class="fy-inline">曹衮的儿子曹孚继承王位。景初、正元、景元年间，屡次为曹孚增加封邑；连同以前的共有二千四百户。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏书》载玺书曰：“制诏中山王：有司奏，王乃者来朝，犯交通京师之禁；朕惟亲亲之恩，用寝吏议。然法者，所与天下共也，不可得废。今削王县二，户七百五十。夫克己复礼，圣人称仁；朝过夕改，君子与之。王其戒诸，无贰咎悔也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">6 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">济阳怀王玹，建安十六年，封西乡侯。早薨，无子。二十年<span class="zs-no">〔1〕</span>，以沛王林子赞，袭玹爵邑；早薨，无子。文帝复以赞弟壹，绍玹后。黄初二年，改封济阳侯。四年<span class="zs-no">〔2〕</span>，进爵为公。太和四年，追进玹爵，谥曰怀公。六年<span class="zs-no">〔3〕</span>，又进号曰怀王；追谥赞曰西乡哀侯。壹薨，谥曰悼公。子恒嗣。景初、正元、景元中，累增邑；并前千九百户。</p>
+<p class="fy-inline">济阳怀王曹玹，建安十六年（公元 211），封为西乡侯。去世得早，没有儿子。建安二十年（公元 215），以沛王曹林的儿子曹赞继承曹玹的爵位和封邑，做他的后人；曹赞也去世得早，没有儿子。文帝又让曹赞的弟弟曹壹继承曹玹，做他的后代。黄初二年（公元221），改封曹壹为济阳侯。黄初四年（公元 223），晋升曹壹为公爵。太和四年（公元 230）追加曹玹爵号，谥为怀公。太和六年（公元 232），又升曹玹的爵号为怀王；追谥曹赞为西乡哀侯。曹壹去世，谥为悼公。他的儿子曹恒继承爵位。景初、正元、景元年间，屡次为曹恒增加封邑；连同以前的共一千九百户。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十年：建安二十年（公元 215）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">四年：黄初四年（公元223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">六年：太和六年（公元 232）。</span></p>
+<p class="yw">陈留恭王峻，字子安。建安二十一年，封郿侯。二十二年<span class="zs-no">〔4〕</span>，徙封襄邑。黄初二年，进爵为公。三年<span class="zs-no">〔5〕</span>，为陈留王。五年<span class="zs-no">〔6〕</span>，改封襄邑县。太和六年，又封陈留。甘露四年，薨。子澳嗣。景初、正元、景元中，累增邑；并前四千七百户。</p>
+<p class="fy-inline">陈留恭王曹峻，字子安。建安二十一年（公元 216），封为郿侯。建安二十二年（公元217），封地改到襄邑县。黄初二年（公元221），晋升爵位为公。黄初三年（公元 222），封为陈留王。黄初五年（公元224），改封在襄邑县。太和六年（公元 232），又封为陈留王。甘露四年（公元259），曹峻去世。</p>
+<p class="fy-inline">他的儿子曹澳继承爵位。景初、正元、景元年间，屡次为曹澳增加封邑；连同以前的共有四千七百户。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">五年：黄初五年（公元 224）。</span></p>
+<p class="yw">范阳闵王矩，早薨，无子。建安二十二年，以樊安公均子敏，奉矩后，封临晋侯。黄初三年，追封谥矩为范阳闵公。五年<span class="zs-no">〔7〕</span>，改封敏范阳王。七年<span class="zs-no">〔8〕</span>，徙封句阳。太和六年，追进矩号曰范阳闵王；改封敏琅邪王。景初、正元、景元中，累增邑；并前三千四百户。敏薨，谥曰原王。子焜嗣。</p>
+<p class="fy-inline">范阳闵王曹矩，早死，没有儿子。建安二十二年（公元 217），让樊安公曹均的儿子曹敏继承曹矩，做他的后代，封为临晋侯。黄初三年（公元222），给曹矩追加封爵、谥号，为范阳闵公。黄初五年（公元 224），改封曹敏为范阳王。黄初七年（公元 226），封地改到句阳。太和六年（公元 232），追加曹矩的封爵为范阳闵王；改封曹敏为琅邪王。景初、正元、景元年间，屡次为曹敏增加封邑；连同以前的共有三千四百户。曹敏去世，谥为原王。他的儿子曹焜继承爵位。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">五年：黄初五年（公元 224）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">七年：黄初七年（公元 226）。</span></p>
+<p class="yw">赵王幹，建安二十年，封高平亭侯。二十二年<span class="zs-no">〔9〕</span>，徙封赖亭侯。其年，改封弘农侯。黄初二年，进爵，徙封燕公。<span class="pz-no">〔一〕</span>三年<span class="zs-no">〔10〕</span>，为河间王。五年<span class="zs-no">〔11〕</span>，改封乐（城）〔成〕县<span class="zs-no">〔12〕</span>。七年，徙封钜鹿<span class="zs-no">〔13〕</span>。太和六年，改封赵王。</p>
+<p class="fy-inline">赵王曹幹，建安二十年（公元 215），封为高平亭侯。建安二十二年（公元217），改封赖亭侯。当年改封弘农侯。黄初二年（公元221），晋升爵位，迁移封地为燕公。黄初三年（公元 222），封为河间王。黄初五年（公元 224），改封乐成县。黄初七年（公元226），封地改在钜鹿。太和六年（公元232），改封为赵王。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">三年：黄初三年（公元 222 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">五年：黄初五年（公元 224 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">乐成：县名。县治在今河北献县东南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">钜鹿：县名。县治在今河北鸡泽县东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">开国承家，小人勿用：这两句是《周易·师卦》的象辞。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">大车惟尘：《诗经·无将大车》中有“无将大车，维尘冥冥”的句子，意思是不要去推车，那扬起的尘土一片昏暗。但郑玄的解释认为是在告诫人们不应使用小人，以免被他们蒙蔽眼睛。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">马援：字文渊，扶风茂陵（今陕西兴平市东北）人。先曾在新莽手下做官，不久依附隗嚣。最后归顺刘秀，任伏波将军，多有战功。他曾写信告诫在京城的侄儿，要他们不要乱交朋友。又劝告部属不要在皇室亲王的门下频繁出入，以免招致杀身之祸。传见《后汉书》卷二十四。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">交通：交往。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">同：同罪。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">薄骨肉：使亲属感情变得淡薄。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">徒：只是。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">不朝之令：指要求诸王公离开朝廷各回封国的命令。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">《棠棣》：《诗经》篇名。主题强调兄弟间应相互友爱。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">《采菽》：《诗经》篇名。是周天子欢迎来朝诸侯时演唱的乐歌。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">缘：依据。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">楚：指楚王曹彪</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">赵宗、戴捷：与曹彪、曹衮交往的宾客姓名</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">东平王：指曹徽</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">才削县：只是处以削减所封县数的惩罚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">九族时节：本家族一年四季各种节日的聚会。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">王：指赵王曹幹。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">不睹：看不见的东西。指无处不有无时不在但又看不见听不到的普遍真理。下面的“弗闻”、“隐”、“微”，都指这种普遍真理。这四句出自《礼记·中庸》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">莫现乎隐：再没有比看不见的真理更清晰可见的了。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">慎其独：在独自一人时做事也要慎重。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">兹率：更加遵守。</span></p>
+<p class="yw">幹母，有宠于太祖。及文帝为嗣，幹母有力。文帝临崩，有遗诏，是以明帝常加恩意。</p>
+<p class="fy-inline">曹幹的母亲，受太祖曹操宠爱。文帝曹丕之所以能成为帝位继承人，曹幹的母亲是出了力的。文帝临去世时，有遗诏关照曹幹，因此明帝对曹幹常常给以恩宠。</p>
+<p class="yw">青龙二年，私通宾客，为有司所奏；赐幹玺书诫诲之，曰：“《易》称‘开国承家，小人勿用’；《诗》著‘大车惟尘’之诫。自太祖受命创业，深睹治乱之源，鉴存亡之机；初封诸侯，训以恭慎之至言，辅以天下之端士。常称马援之遗诫，重诸侯宾客交通之禁，乃使与犯妖恶同。夫岂以此薄骨肉哉？徒欲使子弟无过失之愆，士民无伤害之悔耳。高祖践阼，祗慎万机，申著诸侯不朝之令。朕感诗人《棠棣》之作，嘉《采菽》之义；亦缘诏文曰‘若若有诏得诣京都，故命诸王以朝聘之礼。而楚、中山并犯交通之禁，赵宗、戴捷咸伏其辜。近东平王复使属官殴寿张吏，有司举奏，朕才削县。（令）〔今〕有司以‘曹纂、王乔等，因九族时节，集会王家；或非其时，皆违禁防’。朕惟王幼少有恭顺之素；加受先帝顾命，欲崇恩礼，延乎后嗣；况近在王之身乎？且自非圣人，孰能无过？已诏有司，宥王之失。古人有言：‘戒慎乎其所不睹，恐惧乎其所弗闻；莫现乎隐，莫显乎微：故君子慎其独焉。’叔父兹率先圣之典，以纂乃先帝之遗命；战战兢兢，靖恭厥位：称朕意焉。”</p>
+<p class="fy-inline">青龙二年（公元234），曹幹私自交结宾客，被有关官员弹劾；明帝下诏书告诫教诲他，说：“《周易》说是‘创立国家和继承家业时，不要使用小人’，《诗经》也有‘小人就像大车扬起的灰尘，遮人眼目’的诗句。太祖承受天命创建基业，深刻地看到了造成天下治乱的根源和影响国家存亡的关键；刚开始分封诸侯，就用恭敬慎重的至理名言教训他们，用天下正直的人士辅佐他们。常常引用马援对侄儿和部下的告诫，加重禁止诸侯与宾客互相交往的条令，以至于把这与犯有妖恶罪同样看待。他难道是要用这些措施来使亲属关系变得淡薄吗？只不过想使曹氏子弟不犯过失罪责，士人和民众没有受到伤害的悔恨罢了。高祖文皇帝即位后，恭敬慎重地处理天下大事，颁布了诸侯不再留在朝廷而各回自己封国的命令。我有感于《棠棣》一诗赞美了兄弟之间的友爱感情，而赞赏《采菽》一诗讽刺了周幽王对前来朝见的诸侯侮慢无礼；也根据先帝的诏书中有‘如果诏书允许，诸侯也可以来到京都’这一条，所以制定了诸王定期进京朝见天子的礼仪。但是楚王、中山王一同触犯了私自交往宾客的禁令，与他们有关的赵宗、戴捷都因他们的罪过被处死。最近东平王又指使他的下属官员殴打寿张县的官吏，有关官员举报后，我只是给他削减封县的处罚。现今有关官员又举报曹纂、王乔等人乘曹氏家族节日聚会的时机，在赵王家里集会，不合时宜，都违背了禁令。我考虑赵王您年轻时候一直恭敬顺从，加上受到先帝临终关照，总想给您优待，并且延续到后代，何况是您本人呢？只要不是圣人，谁能没有过错呢？所以我已下诏要有关官员，要宽恕赵王您的过失。古人说过：‘真理虽然看不见，你仍然应当警惕谨慎；真理虽然不发声，你仍然应当畏慎小心；再没有比看不见的真理更清晰可见的了，再没有比幽微的真理更明显的了：所以君子在个人独处的时候也要极为谨慎。’请叔父您更加遵守先世圣人的教导，以继承先帝的遗命；战战兢兢，恭恭敬敬保守您的王位：以满足我的心愿。”</p>
+<p class="zs-inline no-no">中山：指中山王曹衮</p>
+<p class="zs-inline no-no">伏其辜：伏法处死</p>
+<p class="zs-inline no-no">寿张：县名</p>
+<p class="yw">景初、正元、景元中，累增邑；并前五千户。</p>
+<p class="fy-inline">景初、正元、景元年间，屡次给曹幹增加封邑；连同以前的共有五千户。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏略》曰：“幹，一名良。良本陈妾子，良生而陈氏死，太祖令王夫人养之。良年五岁，而太祖疾困，遗令语太子曰：‘此儿三岁亡母，五岁失父，以累汝也！’太子由是亲待，隆于诸弟。良年小，常呼文帝为‘阿翁’；帝谓良曰：‘我，汝兄耳。’文帝又愍其如是，每为流涕。”臣松之按：如传以母贵贱为次，不计兄弟之年；故楚王彪，年虽大，传在幹后。寻《朱建平传》，知彪大幹二十一岁。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">7 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">临邑殇公子上，早薨。太和五年，追封谥。无后。</p>
+<p class="fy-inline">临邑殇公子曹上，早死。太和五年（公元 231），追加封爵和谥号。没有后代。</p>
+<p class="yw">楚王彪，字朱虎。建安二十一年，封寿春侯。黄初二年，进爵，徙封汝阳公。三年<span class="zs-no">〔1〕</span>，封弋阳王。其年徙封吴王。五年<span class="zs-no">〔2〕</span>，改封寿春县。七年<span class="zs-no">〔3〕</span>，徙封白马。太和五年冬，朝京都。六年<span class="zs-no">〔4〕</span>，改封楚。</p>
+<p class="fy-inline">楚王曹彪，字朱虎。建安二十一年（公元 216），封寿春侯。黄初二年（公元 221）晋升爵位并迁移封地，为汝阳公。黄初三年（公元 222），封为弋阳王。当年改封为吴王。黄初五年（公元224），改封在寿春县。黄初七年（公元 226），改封在白马县。太和五年（公元231）冬天，到京都朝见天子。太和六年（公元 232），改封为楚王。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">五年：黄初五年（公元 224）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">七年：黄初七年（公元 226）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">六年：太和六年（公元 232）。</span></p>
+<p class="yw">初，彪来朝，犯禁；〔青龙〕元年，为有司所奏，诏削县三，户千五百。二年<span class="zs-no">〔5〕</span>，大赦，复所削县。景初三年，增户五百，并前三千户。</p>
+<p class="fy-inline">当初，曹彪进京朝见时，违犯了禁令；青龙元年（公元 233），被有关官员弹劾，明帝下诏削减了他的封邑三县，共一千五百户。青龙二年（公元 234），遇到大赦，恢复了削减的封地。景初三年（公元239），增加曹彪封邑五百户；连同以前的共有三千户。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">二年：青龙二年（公元 234）。</span></p>
+<p class="yw">嘉平元年，兖州刺史令狐愚与太尉王凌，谋迎彪，都许昌。语在《凌传》。乃遣傅及侍御史<span class="zs-no">〔6〕</span>，就国案验，收治诸相连及者。廷尉请征彪治罪。于是依汉燕王旦故事<span class="zs-no">〔7〕</span>，使兼廷尉、大鸿胪持节，赐彪玺书切责之<span class="zs-no">〔8〕</span>，使自图焉<span class="zs-no">〔9〕</span>。<span class="pz-no">〔一〕</span>彪乃自杀；妃及诸子皆免为庶人，徙平原；彪之官属以下及监国谒者，坐知情无辅导之义，皆伏诛；国除，为淮南郡。</p>
+<p class="fy-inline">嘉平元年（公元249），兖州刺史令狐愚和太尉王凌，准备迎立曹彪为帝，在许昌建都。事情经过记载在本书《王凌传》中。朝廷派遣王傅和侍御史，去到他的封地核实验证，把有牵连的人都逮捕治罪。廷尉请求征召曹彪入京受审。于是依照汉朝惩治燕王刘旦的旧例，派人兼任廷尉、大鸿胪，持有节杖，赐给曹彪诏书严厉谴责他，让他自己打主意。曹彪被迫自杀；他的妻子和几个儿子都被贬为平民，流放到平原郡；曹彪手下的官员以及监国谒者，因为犯了知情而没有辅正教导的过错，都被处死；而曹彪的封地则被撤销。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">傅：官名。曹魏的宗室王公有傅，是其辅导老师。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">旦：指刘旦（？—前 80）。汉武帝的儿子。武帝死，立小儿子刘弗陵，即昭帝。刘旦认为自己年长，应当继承，即积极准备夺取帝位。不久失败，昭帝下达诏书，令其自杀。传见《汉书》卷六十三《武五子传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">切责：严厉斥责。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">自图：自己打主意。指自杀。</span></p>
+<p class="yw">正元元年，诏曰：“故楚王彪，背国附奸，身死嗣替<span class="zs-no">〔10〕</span>；虽自取之，犹哀矜焉。夫含垢藏疾<span class="zs-no">〔11〕</span>，亲亲之道也；其封彪世子嘉，为常山真定王<span class="zs-no">〔12〕</span>。”景元元年，增邑；并前二千五百户。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">正元元年（公元254），皇帝下诏书说：“已故楚王曹彪，背叛国家依附奸人，自己被处死，后代被废弃；虽然是咎由自取，我还是哀怜他。容忍他人的过失，是加深亲属感情的方法；特封曹彪的继承人曹嘉，为常山郡真定县王。”景元元年（公元 260），为曹嘉增加封邑；连同以前的共有二千五百户。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">嗣替：后嗣被废弃。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">含垢藏疾：比喻能容忍他人的过失。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">真定：县名。县治在今河北石家庄市西北。当时属常山郡。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">孔衍《汉魏春秋》载玺书曰：“夫先王行赏，不遗仇雠；用戮，不违亲戚：至公之义也。故周公流涕，而决二叔之罪；孝武伤怀，而断昭平之狱：古今常典也。惟王：国之至亲，作藩于外；不能祗奉王度，表率宗室；而谋于奸邪，乃与太尉王凌，兖州刺史令狐愚，构通逆谋，图危社稷；有悖忒之心，无忠孝之意。宗庙有灵，王其何面目以见先帝？朕深痛王，自陷罪辜；既得王情，深用怃然。有司奏王当就大理，朕惟公族甸师之义，不忍肆王市朝，故遣使者赐书。王自作孽，匪由于他；燕刺之事，宜足以观。王其自图之！”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">臣松之按：嘉，入晋，封高邑公。元康中，与石崇俱为国子博士。嘉后为东莞太守；崇为征虏将军，监青、徐军事，屯于下邳。嘉以诗遗崇曰：“文武应时用，兼才在明哲。嗟嗟我石生，为国之俊杰。入侍于皇闼，出则登九列。威检肃青、徐，风发宣吴裔。畴昔谬同位，情至过鲁、卫。分离逾十载，思远心增结。愿子鉴斯诚，寒暑不逾契。”崇答曰：“昔常接羽仪，俱游青云中。敦道训胄子，儒化涣以融。同声无异响，故使恩爱隆。岂惟敦初好，款分在令终。孔不陋九夷，老氏适西戎。逍遥沧海隅，可以保王躬。世事非所务，周公不足梦。玄寂令神王，是以守至冲。”王隐《晋书》载吏部郎李重启云：“魏氏宗室屈滞，每圣恩所存。东莞太守曹嘉，才干学义，不及志、翕；而良素修洁，性业逾之；又已历二郡。臣以为优先代之后，可以嘉为员外散骑侍郎。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">8 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">刚殇公子勤，早薨。太和五年，追封谥。无后。</p>
+<p class="fy-inline">刚殇公子曹勤，早死。太和五年（公元 231），追加封爵、谥号。没有后代。</p>
+<p class="yw">谷城殇公子乘，早薨。太和五年，追封谥。无后。</p>
+<p class="fy-inline">谷城殇公子曹乘，早死。太和五年（公元 231），追加封爵、谥号。没有后代。</p>
+<p class="yw">郿戴公子整，奉从叔父郎中绍后。建安二十二年，封郿侯。二十三年薨<span class="zs-no">〔1〕</span>。无子。黄初二年，追进爵，谥曰戴公。以彭城王据子范，奉整后。三年<span class="zs-no">〔2〕</span>，封平氏侯。四年<span class="zs-no">〔3〕</span>，徙封成武<span class="zs-no">〔4〕</span>。太和三年，进爵为公。青龙三年薨。谥曰悼公。无后。</p>
+<p class="fy-inline">郿戴公子曹整，做了他堂叔父郎中曹绍的后代。建安二十二年（公元 217），封为郿侯。建安二十三年（公元 218），去世。没有儿子。黄初三年（公元 222），追加爵位，谥为戴公。让彭城王曹据的儿子曹范，做了曹整的后代。黄初三年（公元 222），封曹范为平氏侯。黄初四年（公元223），改封在成武县。太和三年（公元229），晋升爵位为公。青龙三年（公元 235），曹范去世。谥为悼公，没有后代。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十三年：建安二十三年（公元 218）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">成武：县名。县治在今山东成武县。</span></p>
+<p class="yw">四年<span class="zs-no">〔5〕</span>，诏以范弟东安乡公阐，为郿公，奉整后。正元、景元中，累增邑；并前千八百户。</p>
+<p class="fy-inline">青龙四年（公元236），明帝下诏以曹范的弟弟东安乡公曹阐，为郿公，做曹整的后代。正元、景元年间，屡次为曹阐增加封邑；连同以前的共有一千八百户。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">四年：青龙四年（公元 236）。</span></p>
+<p class="yw">灵殇公子京，早薨。太和五年，追封谥。无后。</p>
+<p class="fy-inline">灵殇公子曹京，早死。太和五年（公元 231），追加封爵、谥号。没有后代。</p>
+<p class="yw">樊安公均，奉叔父蓟恭公彬后。建安二十二年，封樊侯。二十四年薨<span class="zs-no">〔6〕</span>。子抗嗣。黄初二年，追进公爵，谥曰安公。三年<span class="zs-no">〔7〕</span>，徙封抗蓟公。四年<span class="zs-no">〔8〕</span>，徙封屯留公。景初元年，薨，谥曰定公。</p>
+<p class="fy-inline">樊安公曹均，做了叔父蓟恭公曹彬的后代。建安二十二年（公元217），封为樊侯。建安二十四年（公元 219），去世。儿子曹抗继承爵位。黄初二年（公元 221），追封曹均为公爵，谥为安公。黄初三年（公元 222），改封曹抗为蓟公。黄初四年（公元 224），改封为屯留公。景初元年（公元237），曹抗去世，谥为定公。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">二十四年：二十四年；建安二十四年（公元 219）。</span></p>
+<p class="yw">子谌嗣。景初、正元、景元中，累增邑；并前千九百户。</p>
+<p class="fy-inline">儿子曹谌继承爵位。景初、正元、景元年间，屡次给曹谌增加封邑；连同以前的共有一千九百户。</p>
+<p class="yw">广宗殇公子棘，早薨。太和五年，追封谥。无后。</p>
+<p class="fy-inline">广宗殇公子曹棘，早死。太和五年（公元 231），追加封爵、谥号。没有后代。</p>
+<p class="yw">东平灵王徽，奉叔父朗陵哀侯玉后。建安二十二年，封历城侯。黄初二年，进爵为公。三年<span class="zs-no">〔9〕</span>，为庐江王。四年<span class="zs-no">〔10〕</span>，徙封寿张王。五年<span class="zs-no">〔11〕</span>，改封寿张县。太和六年，改封东平。</p>
+<p class="fy-inline">东平灵王曹徽，做了叔父朗陵哀侯曹玉的后代。建安二十二年（公元217），封为历城侯。黄初二年（公元 221），晋升爵位为公。黄初三年（公元 222），封为庐江王。黄初四年（公元 223），迁移封地，为寿张王。黄初五年（公元 224），改封为寿张县王。太和六年（公元232），改封为东平王。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">五年：黄初五年（公元 224）。</span></p>
+<p class="yw">青龙二年，徽使官属挝寿张县吏<span class="zs-no">〔12〕</span>，为有司所奏。诏削县一，户五百。其年，复所削县。正始三年，薨。</p>
+<p class="fy-inline">青龙二年（公元 234），曹徽指使属下官员殴打寿张县官吏，被有关官员弹劾。明帝下诏削减他的封邑一县，共五百户。当年又恢复封邑。正始三年（公元242），曹徽去世。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">挝：殴打。</span></p>
+<p class="yw">子翕嗣。景初、正元、景元中，累增邑；并前三千四百户。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">他的儿子曹翕继承爵位。景初、正元、景元年间，屡次增加曹翕的封邑；连同以前的共有三千四百户。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之按：翕入晋，封廪丘公；魏宗室之中，名次鄄城公。至泰始二年，翕遣世子琨，奉表来朝。诏曰：“翕秉德履道，魏宗之良。今琨远至，其假世子印绶，加骑都尉；赐服一具，钱十万：随才叙用。”翕撰《解寒食散方》，与皇甫谧所撰，并行于世。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">9 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">乐陵王茂，建安二十二年，封万岁亭侯。二十三年<span class="zs-no">〔1〕</span>，改封平舆侯。黄初三年，进爵，徙封乘氏公。七年<span class="zs-no">〔2〕</span>，徙封中丘<span class="zs-no">〔3〕</span>。</p>
+<p class="fy-inline">乐陵王曹茂，建安二十二年（公元 217），封为万岁亭侯。建安二十三年（公元 218），改封为平舆侯。黄初三年（公元 222），晋升爵位并迁移封地，为乘氏公。黄初七年（公元 226），改封在中丘县。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十三年：建安二十三年（公元 218）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">七年：黄初七年（公元 226）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">中丘：县名。县治在今河北内丘县西。</span></p>
+<p class="yw">茂性傲佷<span class="zs-no">〔4〕</span>，少无宠于太祖。及文帝世，又独不王。</p>
+<p class="fy-inline">曹茂性情傲慢凶横，小时候太祖一点不喜欢他。到了文帝的时候，又只有他没有封王。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">傲佷：傲慢凶横。</span></p>
+<p class="yw">太和元年，徙封聊城公，其年为王。诏曰：“昔象之为虐至甚<span class="zs-no">〔5〕</span>，而大舜犹侯之有庳<span class="zs-no">〔6〕</span>；近汉氏淮南、阜陵<span class="zs-no">〔7〕</span>，皆为乱臣逆子，而犹或及身而复国<span class="zs-no">〔8〕</span>，或至子而锡土。有虞，建之于上古；汉文、明、章，行之乎前代<span class="zs-no">〔9〕</span>：斯皆敦叙亲亲之厚义也。聊城公茂，少不闲礼教，长不务善道。先帝以为古之立诸侯也，皆命贤者，故姬姓有未必侯者；是以独不王茂。太皇太后，数以为言。如闻茂<span class="zs-no">〔10〕</span>，顷来少知悔昔之非，欲修善将来。君子与其进<span class="zs-no">〔11〕</span>，不保其往也。今封茂为聊城王，以慰太皇太后下流之念。”</p>
+<p class="fy-inline">太和元年（公元227），改封为聊城公，当年封王。明帝的诏书说：“过去象这个人为非作歹很厉害，而大舜仍然封他在有庳为侯；近代汉朝的淮南王刘长、阜陵王刘延，都是谋反作乱的人，尚且有的在生前就恢复了封爵，有的到了儿子时又重新赐给封地。这种做法，虞舜创建在上古时代；文帝、明帝、章帝实行在汉朝：这都是加深亲属感情的仁厚办法。聊城公曹茂，年轻时不习礼教，成年后不务正业。先帝认为古代封立诸侯，任命的都是贤良的人，周朝姬姓家族中就不一定都封侯；因此独独没有封曹茂为王。太皇太后屡次提及此事。听说曹茂近来稍微知道悔改过去的错误，想要在以后学习向善。君子看重别人的进步，不死死追究以往的过失。现在封曹茂为聊城王，以慰藉太皇太后对子孙的关爱和顾念。”</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">象：传说中虞舜的异母弟。性格凶暴。曾动手谋害舜。舜继承尧的君位后，仍然封他为诸侯。事见《史记》卷一《五帝本纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">有庳：地名。在今湖南道县北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">淮南：指西汉淮南王刘长（？—前 174）。刘长在汉文帝时骄横不遵法度，被流放，死在途中。见《汉书》卷四十四《淮南王传》；阜陵：指东汉阜陵王刘延（？—公元89）</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">及身：生前。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">文：指西汉文帝；明：指东汉明帝；章：指东汉章帝刘炟（公元 57—89）</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">如闻：听说。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">与其进：看重别人的进步。</span></p>
+<p class="yw">六年<span class="zs-no">〔12〕</span>，改封曲阳王。正始三年，东平灵王薨，茂称嗌痛<span class="zs-no">〔13〕</span>，不肯发哀，居处出入自若。有司奏除国土，诏削县一，户五百。五年<span class="zs-no">〔14〕</span>，徙封乐陵<span class="zs-no">〔15〕</span>；诏以茂租奉少，诸子多，复所削户，又增户七百。嘉平、正元、景元中，累增邑；并前五千户。</p>
+<p class="fy-inline">太和六年（公元 232），改封曹茂为曲阳王。正始三年（公元242），东平灵王曹徽去世，曹茂自称咽喉疼痛，不肯哭泣哀悼，起居出入像没事一样。有关官员上奏请求削除他的封地，皇帝下诏削减他一县，共五百户。正始五年（公元 244），封地改在乐陵；因为曹茂封地收租少，孩子多，朝廷又下诏恢复他的封邑，并且增加了七百户。嘉平、正元、景元年间，屡次为曹茂增加封邑；连同以前的共有五千户。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">六年：太和六年（公元 232）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">嗌：咽喉。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">五年：正始五年（公元 244）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">乐陵：王国名。治所在今山东阳信县东南。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c10">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">10 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">文皇帝九男：甄氏皇后生明帝；李贵人生赞哀王协；潘淑媛生北海悼王蕤；朱淑媛生东武阳怀王鉴；仇昭仪生东海定王霖；徐姬生元城哀王礼；苏姬生邯郸怀王邕；张姬生清河悼王贡；宋姬生广平哀王俨。</p>
+<p class="fy-inline">文皇帝共有九个儿子：甄氏皇后生明帝；李贵人生赞哀王曹协；潘淑媛生北海悼王曹蕤；朱淑媛生东武阳怀王曹鉴；仇昭仪生东海定王曹霖；徐姬生元城哀王曹礼；苏姬生邯郸怀王曹邕；张姬生清河悼王曹贡；宋姬生广平哀王曹俨。</p>
+<p class="yw">赞哀王协，早薨。太和五年，追封谥曰经殇公。青龙二年，更追改号谥。三年<span class="zs-no">〔1〕</span>，子殇王寻，嗣。景初三年，增户五百；并前三千户。正始九年薨，无子，国除。</p>
+<p class="fy-inline">赞哀王曹协，早死。太和五年（公元 231），追加封爵、谥号为经殇公。青龙二年（公元 234），又追改谥号。青龙三年（公元235），曹协的儿子殇王曹寻，继承爵位。景初三年（公元 239），给曹寻增加封邑五百户；连同以前的共三千户。正始九年（公元248），曹寻去世，没有儿子，封地废除。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">三年：青龙三年（公元 235）。</span></p>
+<p class="yw">北海悼王蕤，黄初七年明帝即位，立为阳平县王。太和六年，改封北海。青龙元年，薨。二年<span class="zs-no">〔2〕</span>，以琅邪王子赞，奉蕤后，封昌乡公。景初二年，立为饶安王。正始七年，徙封文安<span class="zs-no">〔3〕</span>。正元、景元中，累增邑；并前三千五百户。</p>
+<p class="fy-inline">北海悼王曹蕤，黄初七年（公元 226），明帝即位，立他为阳平县王。太和六年（公元 232），改封北海王。青龙元年（公元233），去世。青龙二年（公元 234），让琅邪王的儿子曹赞，做曹蕤的后代，封为昌乡公。景初二年（公元 238），立曹赞为饶安王。正始七年（公元246），改封文安王。正元、景元年间，屡次为曹赞增加封邑；连同以前的共有三千五百户。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">二年：青龙二年（公元234）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">文安：县名。县治在今河北文安县东北。</span></p>
+<p class="yw">东武阳怀王鉴，黄初六年，立。其年薨。青龙三年，赐谥。无子，国除。</p>
+<p class="fy-inline">东武阳怀王曹鉴，黄初六年（公元 225），立为王。当年去世。青龙三年（公元235），赐给谥号。没有儿子，封地废除。</p>
+<p class="yw">东海定王霖，黄初三年，立为河东王。六年<span class="zs-no">〔4〕</span>，改封馆陶县<span class="zs-no">〔5〕</span>。</p>
+<p class="fy-inline">东海定王曹霖，黄初三年（公元 222），立为河东王。黄初六年（公元225），改封馆陶县。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">六年：黄初六年（公元 225 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">馆陶：县名。县治在今河北馆陶县。</span></p>
+<p class="yw">明帝即位，以先帝遗意，爱宠霖，异于诸国。而霖性粗暴，闺门之内，婢妾之间，多所残害。太和六年，改封奉海。嘉平（元）<span class="pz-no">〔二〕</span>年薨。</p>
+<p class="fy-inline">明帝即位，因为先帝临死前的关照，对曹霖的爱护恩宠，不同于其他各王。但曹霖性情粗暴，在家庭内，对婢妾常加残害。太和六年（公元232），改封东海王。嘉平二年（公元250），去世。</p>
+<p class="yw">子启嗣。景初、正元、景元中，累增邑；并前六千二百户。</p>
+<p class="fy-inline">他的儿子曹启继承爵位。景初、正元、景元年间，屡次给曹启增加封邑；连同以前的共有六千二百户。</p>
+<p class="yw">高贵乡公髦，霖之子也，入继大宗。</p>
+<p class="fy-inline">高贵乡公曹髦，就是曹霖的儿子，进入皇宫做了帝位继承人。</p>
+<p class="yw">元城哀王礼，黄初二年，封秦公，以京兆郡为国。三年<span class="zs-no">〔6〕</span>，改为京兆王。六年<span class="zs-no">〔7〕</span>，改封元城王。太和三年，薨。五年<span class="zs-no">〔8〕</span>，以任城王楷子悌，嗣礼后。六年<span class="zs-no">〔9〕</span>，改封梁王。景初、正元、景元中，累增邑；并前四千五百户。</p>
+<p class="fy-inline">元城哀王曹礼，黄初二年（公元 221），封为秦公，以京兆郡为封地。黄初三年（公元 222），改为京兆王。黄初六年（公元225），改封为元城王。太和三年（公元229），去世。太和五年（公元231），让任城王曹楷的儿子曹悌，继承曹礼，做他的后代。太和六年（公元 232），改封曹悌为梁王。景初、正元、景元年间，屡次给曹悌增加封邑；连同以前的共有四千五百户。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">六年：黄初六年（公元 225）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">五年：太和五年（公元 231）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">六年：太和六年（公元 232）。</span></p>
+<p class="yw">邯郸怀王邕，黄初二年，封淮南公，以九江郡为国。三年<span class="zs-no">〔10〕</span>，进为淮南王。四年<span class="zs-no">〔11〕</span>，改封陈。六年<span class="zs-no">〔12〕</span>，改封邯郸。太和三年，薨。五年<span class="zs-no">〔13〕</span>，以任城王楷子温，嗣邕后。六年<span class="zs-no">〔14〕</span>，改封鲁阳。景初、正元、景元中，累增邑；并前四千四百户。</p>
+<p class="fy-inline">邯郸怀王曹邕，黄初二年（公元 221），封为淮南公，以九江郡为封地。黄初三年（公元 222），晋升爵位为淮南王。黄初四年（公元 223），改封陈王。黄初六年（公元 225），改封邯郸王。太和三年（公元229），去世。太和五年（公元 231），让任城王曹楷的儿子曹温，继承曹邕，做他的后代。太和六年（公元 232），改封曹温为鲁阳王。景初、正元、景元年间，屡次为曹温增加封邑；连同以前的共有四千四百户。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">三年：黄初三年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">六年：黄初六年（公元 225）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">五年：太和五年（公元 231）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">六年：太和六年（公元 232）。</span></p>
+<p class="yw">清河悼王贡，黄初三年封。四年薨<span class="zs-no">〔15〕</span>，无子，国除。</p>
+<p class="fy-inline">清河悼王曹贡，黄初三年（公元222），封为王。黄初四年（公元223），去世，没有儿子，封地废除。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+<p class="yw">广平哀王俨，黄初三年封。四年薨<span class="zs-no">〔16〕</span>，无子，国除。</p>
+<p class="fy-inline">广平哀王曹俨，黄初三年（公元222），封为王。黄初四年（公元223），去世，没有儿子，封地废除。</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">四年：黄初四年（公元 223）。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v20-c11">
+<div class="chunk-head"><a class="chunk-vol" href="#v20-c01" onclick="go('v20-c01');return false;">第20卷 · 魏书20 武文世王公传第20</a><span class="chunk-prog">11 / 11</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：魏氏王公，既徒有国土之名，而无社稷之实；又禁防壅隔，同于囹圄；位号靡定<span class="zs-no">〔1〕</span>，大小岁易<span class="zs-no">〔2〕</span>；骨肉之恩乖<span class="zs-no">〔3〕</span>，《棠棣》之义废<span class="zs-no">〔4〕</span>：为法之弊，一至于此乎！<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">评论说：魏朝皇族的各个王公，空自享有封地的名义，并没有管理国土的实权；又受到严格禁令的防备阻隔，就像关在监狱之中的囚犯一般；爵位封号没有一定，封地大小年年改动；骨肉的感情被分离，《棠棣》一诗中歌颂的兄弟友爱关系遭到废弃：制定法规的弊端，竟然就到了这样的地步么！</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">靡定：不固定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">岁易：一年之中就要改变。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">乖：背离。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">《棠棣》之义：指兄弟关系。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《袁子》曰：“魏兴，承大乱之后，民人损减，不可则以古始。于是封建侯王，皆使寄地空名，而无其实。王国使有老兵百余人，以卫其国；虽有王侯之号，而乃侪为匹夫。悬隔千里之外，无朝聘之仪，邻国无会同之制。诸侯游猎，不得过三十里；又为设防辅、监国之官以伺察之。王侯皆思为布衣而不能得。既违宗国藩屏之义，又亏亲戚骨肉之恩。”</span></p>
+<p class="pz-item no-no">《魏氏春秋》载宗室曹冏上书曰：</p>
+<p class="pz-item no-no">“臣闻古之王者，必建同姓，以明亲亲；必树异姓，以明贤贤。故《传》曰‘庸勋亲亲，昵近尊贤’；《书》曰‘克明俊德，以亲九族’；《诗》云‘怀德维宁，宗子维城’。由是观之，非贤无与兴功，非亲无与辅治。夫亲亲之道，专用则其渐也微弱；贤贤之道，偏任则其弊也劫夺。先圣知其然也，故博求亲疏而并用之；近则有宗盟藩卫之固，远则有仁贤辅弼之助；盛则有与共有治，衰则有与守其土；安则有与享其福，危则有与同其祸。夫然，故能有其国家，保其社稷；历纪长久，本枝百世也。今魏，尊尊之法虽明，亲亲之道未备。《诗》不云乎，‘鹡鸰在原，兄弟急难’。以斯言之，明兄弟相救于丧乱之际，同心于忧祸之间；虽有阋墙之忿，不忘御侮之事。何则？忧患同也！今则不然：或任而不重，或释而不任；一旦疆埸称警，关门反拒，股肱不扶，胸心无卫。臣窃惟此，寝不安席；思献丹诚，贡策朱阙。谨撰合所闻，叙论成败。论曰：</p>
+<p class="pz-item no-no">昔夏、殷、周历世数十，而秦二世而亡。何则？三代之君，与天下共其民，故天下同其忧。秦王独制其民，故倾危而莫救。夫与民共其乐者，人必忧其忧；与民同其安者，人必拯其危。先王知独治之不能久也，故与人共治之；知独守之不能固也，故与人共守之；兼亲疏而两用，参同异而并建。是以轻重足以相镇，亲疏足以相卫；并兼路塞，逆节不生。及其衰也，桓、文帅礼；苞茅不贡，齐师伐楚；宋不城周，晋戮其宰：王纲弛而复张，诸侯傲而复肃。二霸之后，浸以陵迟。吴、楚凭江，负固方城；虽心希九鼎，而畏迫宗姬；奸情散于胸怀，逆谋消于唇吻。斯岂非信重亲戚，任用贤能，枝叶硕茂，本根赖之欤！自此之后，转相攻伐：吴并于越，晋分为三；鲁灭于楚，郑兼于韩。暨于战国，诸姬微矣，唯燕、卫独存；然皆弱小，西迫强秦，南畏齐、楚，忧惧灭亡，匪遑相恤。至于王赧，降为庶人；犹枝干相持，得居虚位。海内无主，（四）<span class="pz-no">〔三〕</span>十余年。秦据势胜之地，骋谲诈之术；征伐关东，蚕食九国；至于始皇，乃定天位。旷日若彼，用力若此，岂非深固根蒂不拔之道乎？《易》曰：‘其亡其亡，系于苞桑。’周德其可谓当之矣。</p>
+<p class="pz-item no-no">秦观周之弊，以为小弱见夺。于是废五等之爵，立郡县之官；弃礼乐之教，任苛刻之政；子弟无尺寸之封，功臣无立锥之地；内无宗子以自毗辅，外无诸侯以为藩卫；仁心不加于亲戚，惠泽不流于枝叶；譬犹芟刈股肱，独任胸腹；浮舟江海，捐弃楫棹。观者为之寒心，而始皇晏然自以为关中之固，金城千里，子孙帝王万世之业也：岂不悖哉！是时淳于越谏曰：‘臣闻殷、周之王，封子弟功臣，千有余（城）〔岁〕。今陛下君有海内，而子弟为匹夫；卒有田常六卿之臣，而无辅弼，何以相救？事不师古而能长久者，非所闻也。’始皇听李斯偏说而黜其议，至于身死之日，无所寄付；委天下之重于凡夫之手，托废立之命于奸臣之口；至令赵高之徒，诛锄宗室。胡亥少习刻薄之教，长遭凶父之业；不能改制易法，宠任兄弟；而乃师谈申、商，谘谋赵高；自幽深宫，委政谗贼：身残望夷，求为黔首，岂可得哉！遂乃郡国离心，众庶溃叛；胜、广倡之于前，刘、项弊之于后。向使始皇纳淳于之策，抑李斯之论；割裂州国，分王子弟；封三代之后，报功臣之劳；士有常君，民有定主；枝叶相扶，首尾为用；虽使子孙有失道之行，时人无汤、武之贤；奸谋未发，而身已屠戮；何区区之陈、项，而复得措其手足哉！故汉祖奋三尺之剑，驱乌集之众；五年之中，遂成帝业。自开辟以来，其兴立功勋，未有若汉祖之易也。夫伐深根者难为功，摧枯朽者易为力，理势然也。</p>
+<p class="pz-item no-no">汉监秦之失，封殖子弟；及诸吕擅权，图危刘氏；而天下所以不倾动，百姓所以不易心者，徒以诸侯强大，磐石膠固；东牟、朱虚受命于内，齐、代、吴、楚作卫于外故也。向使高祖踵亡秦之法，忽先王之制；则天下已传，非刘氏有也。然高祖封建，地过古制；大者跨州兼郡，小者连城数十；上下无别，权侔京室：故有吴、楚七国之患。贾谊曰：‘诸侯强盛，长乱起奸。夫欲天下之治安，莫若众建诸侯而少其力；令海内之势，若身之使臂，臂之使指；则下无背叛之心，上无诛伐之事。’文帝不从。至于孝景，猥用晁错之计，削黜诸侯；亲者怨恨，疏者震恐；吴、楚倡谋，五国从风。兆发高帝，衅钟文、景；由宽之过制，急之不渐故也。所谓末大必折，尾大难掉；尾同于体，犹或不从；况乎非体之尾，其可掉哉！武帝从主父之策，下推恩之令。自是之后，齐分为七，赵分为六；淮南三割，梁、代五分；遂以陵迟，子孙微弱；衣食租税，不预政事；或以酎金免削，或以无后国除。至于成帝，王氏擅朝。刘向谏曰：‘臣闻公族者，国之枝叶；枝叶落，则本根无所庇荫。方今同姓疏远，母党专政；排摈宗室，孤弱公族：非所以保守社稷，安固国嗣也。’其言深切，多所称引；成帝虽悲伤叹息而不能用。至于哀、平，异姓秉权。假周公之事，而为田常之乱；高拱而窃天位，一朝而臣四海。汉宗室王侯，解印释绂，贡奉社稷，犹惧不得为臣妾；或乃为之符命，颂莽恩德：岂不哀哉！由斯言之，非宗子独忠孝于惠、文之间，而叛逆于哀、平之际也；徒权轻势弱，不能有定耳。赖光武皇帝挺不世之姿，擒王莽于已成，绍汉嗣于既绝：斯岂非宗子之力也？而曾不监秦之失策，袭周之旧制；踵（王）〔亡〕国之法，而侥幸无疆之期。至于桓、灵，阉竖执衡；朝无死难之臣，外无同忧之国；君孤立于上，臣弄权于下；本末不能相御，身首不能相使。由是天下鼎沸，奸凶并争；宗庙焚为灰烬，宫室变为榛薮；居九州之地，而身无所安处。悲夫！</p>
+<p class="pz-item no-no">魏太祖武皇帝，躬圣明之资，兼神武之略；耻王纲之废绝，愍汉室之倾覆；龙飞谯、沛，凤翔兖、豫；扫除凶逆，翦灭鲸鲵；迎帝西京，定都颍邑：德动天地，义感人神。汉氏奉天，禅位大魏；大魏之兴，于今二十有四年矣。观五代之存亡而不用其长策，睹前车之倾覆而不改于辙迹。子弟王空虚之地，君有不使之民；宗室窜于闾阎，不闻邦国之政；权均匹夫，势齐凡庶；内无深根不拔之固，外无磐石宗盟之助：非所以安社稷，为万世之业也！且今之州牧、郡守，古之方伯、诸侯；皆跨有千里之土，兼军武之任；或比国数人，或兄弟并据；而宗室子弟，曾无一人间厕其间，与相维持：非所以强干弱枝，备万一之虞也！今之用贤，或超为名都之主，或为偏师之帅；而宗室有文者必限小县之宰，有武者必置百人之上；使夫廉高之士，毕志于衡轭之内；才能之人，耻与非类为伍：非所以劝进贤能，褒异宗室之礼也！夫泉竭则流涸，根朽则叶枯；枝繁者荫根，条落者本孤。故语曰‘百足之虫，至死不僵’，以扶之者众也。此言虽小，可以譬大。且墉基不可仓猝而成，威名不可一朝而立；皆为之有渐，建之有素。譬之种树，久则深固其本根，茂盛其枝叶；若造次徙于山林之中，植于宫阙之下；虽壅之以黑坟，暖之以春日；犹不救于枯槁，而何暇繁育哉！夫树犹亲戚，土犹士民；建置不久，则轻下慢上：平居犹惧其离叛，危急将若之何？是以圣王安而不逸，以虑危也；存而设备，以惧亡也。故疾风猝至而无摧拔之忧，天下有变而无倾危之患矣！”</p>
+<p class="pz-item no-no">冏，中常侍兄叔兴之后，少帝族祖也。是时，天子幼稚，冏冀以此论感悟曹爽；爽不能纳。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v20';
+var NC = 11;
+var CUR = "home";
+var PREV_HREF = "v19.html";
+var NEXT_HREF = "v21.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

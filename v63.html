@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第63卷 吴范刘惇赵达传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第63卷《吴范刘惇赵达传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：吴范字文则，会稽上虞人也。以治历数，知风气，闻于郡中。举有道，诣京都；世乱不行。">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v63.html">
+<meta property="og:title" content="《三国志》第63卷 吴范刘惇赵达传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第63卷《吴范刘惇赵达传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：吴范字文则，会稽上虞人也。以治历数，知风气，闻于郡中。举有道，诣京都；世乱不行。">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">63卷 · 1/6</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html" selected>第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v63-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v63-c01" onclick="go('v63-c01');return false;">第63卷 · 吴书18 吴范刘惇赵达传第18</a><span class="chunk-prog">1 / 6</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">吴范字文则，会稽上虞人也。以治历数<span class="zs-no">〔1〕</span>，知风气<span class="zs-no">〔2〕</span>，闻于郡中。举有道<span class="zs-no">〔3〕</span>，诣京都；世乱不行。</p>
+<p class="fy-inline">吴范，字文则，会稽郡上虞县人。他因为研习历法计算，懂得观察风和云气以预测事情结果和吉凶的方法，从而闻名于郡中。他被举荐为有道，前往京都；由于社会动乱而没有成行。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">历数：历法计算。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">风气：指观察风和云气以预测事情结果或吉凶的方法。古代很流行，参见《史记》卷二十七《天官书》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">有道：东汉选拔人才的科目之一。不是常科。由公卿、郡国守相推举。</span></p>
+<p class="yw">会孙权起于东南，范委身服事。每有灾祥，辄推数言状；其术多效，遂以显名。初，权在吴，欲讨黄祖。范曰：“今兹少利，不如明年。明年戊子<span class="zs-no">〔4〕</span>，荆州刘表亦身死国亡。”权遂征祖，卒不能克。明年，军出。行及寻阳，范见风气，因诣船贺，催兵急行。至即破祖，祖（得）夜亡<span class="zs-no">〔5〕</span>。权恐失之，范曰：“未远，必生擒祖。”至五更中，果得之。刘表竟死，荆州分割。</p>
+<p class="fy-inline">碰到孙权在东南兴起，吴范献身服务。每当有灾祸或吉祥出现，他总是要推算并说明情况；他的预测大多有效，结果在京城也出了名。当初，孙权在吴县，想讨伐黄祖。吴范说：“现今出兵不太有利，不如在明年。明年是戊子年，荆州牧刘表也会人死国亡。”孙权仍然出了兵，结果未能攻克黄祖。第二年，大军再度出动，走到寻阳时，吴范观察风和云气的情况后，赶到孙权的船上来庆贺，并让孙权催促兵马急速前进。赶到江夏郡，马上击溃黄祖的军队，黄祖本人在夜晚逃跑。孙权怕他逃脱，吴范说：“他跑得不远，必定会抓住他。”到当晚半夜过后的五更天时，果然把黄祖擒杀。而刘表也确实在这一年死去，荆州被瓜分。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">戊子：指建安十三年（公元 208）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">亡：逃亡。</span></p>
+<p class="yw">及壬辰岁<span class="zs-no">〔6〕</span>，范又白言：“岁在甲午<span class="zs-no">〔7〕</span>，刘备当得益州。”后吕岱从蜀还，遇之白帝；说备部众离落<span class="zs-no">〔8〕</span>，死亡且半<span class="zs-no">〔9〕</span>，事必不克。权以难范<span class="zs-no">〔10〕</span>，范曰：“臣所言者，天道也；而岱所见者，人事耳。”备卒得蜀。</p>
+<p class="fy-inline">到了壬辰这一年，吴范又报告说：“在后年甲午年，刘备会取得益州。”后来吕岱充当使者到了益州后回来，在白帝城碰到吴范；谈到刘备进入益州后部下的人马离散流落，死亡将近一半，并断言刘备攻克不下益州。孙权以此来反驳吴范，吴范说：“为臣所预言的是天意，而吕岱所看到的只是人事方面的情况啊。”刘备最后果然得到益州。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">壬辰：指建安十七年（公元 212）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">甲午：指建安十九年（公元 214）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">离落：离散流落。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">且：将近。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">难：反驳。</span></p>
+<p class="yw">权与吕蒙谋袭关羽；议之近臣，多曰不可。权以问范，范曰：“得之。”后羽在麦城，使使请降。权问范曰：“竟当降否？”范曰：“彼有走气；言降，诈耳！”权使潘璋邀其径路<span class="zs-no">〔11〕</span>，觇候者还<span class="zs-no">〔12〕</span>，白羽已去。范曰：“虽去，不免。”问其期，曰：“明日日中。”权立表下漏以待之<span class="zs-no">〔13〕</span>。及〔日〕中不至，权问其故，范曰：“时尚未正中也。”顷之，有风动帷。范拊手曰：“羽至矣！”须臾，外称“万岁<span class="zs-no">〔14〕</span>”，传言得羽。</p>
+<p class="fy-inline">孙权与吕蒙商议偷袭关羽；又征询亲近臣僚的意见，大多数人都说不行。孙权就此事问吴范，吴范说：“能够抓到他。”后来关羽被打败逃往麦城，派使者来请求投降。孙权问吴范：“关羽果真会投降么？”吴范说：“为臣看到有一股预示他要逃走的云气；他说投降是欺诈。”孙权派潘璋去截断关羽的退路，侦察兵回来报告，说关羽已经逃走了。吴范说：“即使他已逃走，也逃不脱。”孙权问什么时候能抓到关羽，吴范说：“在明天太阳当顶的中午。”孙权立即吩咐人树立晷表并装好计时的漏箭来等着。到中午太阳当顶的时候还没有消息传来，孙权问是什么原因，吴范说：“还没有到正中午啊。”一会儿，有风吹动帷幔，吴范双手一拍，说：“关羽到了！”转眼间，外面传来一阵高呼万岁的声音，果然传进来已经擒杀关羽的消息。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">邀：截断。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">觇候：侦察。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">表：即晷表。测量日影的长度方向以定一天时刻的仪器；漏：即漏壶</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">称万岁：高呼万岁。这里万岁是臣下对于君主的祝贺词，不是对皇帝的代称。</span></p>
+<p class="yw">后权与魏为好，范曰：“以风气言之：彼以貌来<span class="zs-no">〔15〕</span>，其实有谋；宜为之备。”刘备盛兵西陵<span class="zs-no">〔16〕</span>，范曰：“后当和亲<span class="zs-no">〔17〕</span>。”终皆如言。</p>
+<p class="fy-inline">后来孙权与魏国友好，吴范说：“从风和云气的情况看：对方虽然带着和善的姿态来，其实内心有阴谋；应当对此有防备。”刘备在西陵出动大量军队进攻孙权，吴范却说：“往后他会与我们和好亲善。”结果都像他所预言的这样。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">以貌来：带着和善的姿态前来。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">盛兵：调集大兵。指刘备东下伐吴一事。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">和亲：和好亲善。</span></p>
+<p class="yw">其占验明审如此<span class="zs-no">〔18〕</span>。权以范为骑都尉，领太史令。数从访问，欲知其（决）〔诀〕<span class="zs-no">〔19〕</span>。</p>
+<p class="fy-inline">他在预测上的应验就达到如此准确的程度。孙权任命吴范为骑都尉，兼太史令。又多次向他询问，想知道他断定事情结果和吉凶的诀窍。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">占验：预测的应验。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">诀：指断定事情结果或吉凶的诀窍。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v63-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v63-c01" onclick="go('v63-c01');return false;">第63卷 · 吴书18 吴范刘惇赵达传第18</a><span class="chunk-prog">2 / 6</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">范秘惜其术，不以至要语权：权由是恨之。<span class="pz-no">〔一〕</span>初，权为将军时，范尝白言：“江南有王气，亥子之间有大福庆。”权曰：“若终如言，以君为侯。”及立为吴王，范时侍宴，曰：“昔在吴中，尝言此事；大王识之邪？”权曰：“有之。”因呼左右，以侯绶带范。范知权欲以厌当前言，辄手推不受。及后论功行封，以范为都亭侯。诏临当出，权恚其爱道于己也，削除其pp&gt;</p>
+<p class="fy-inline">吴范内心吝惜他的绝技，不把至关重要的地方告诉孙权：孙权因此愤恨他。当初，孙权当将军的时候，吴范曾经报告说：“长江以南有帝王之气，在亥年或子年之后将有大喜庆的事发生。”孙权说：“如果最终像您所预言的那样，我将封您为侯爵。”到了孙权在壬寅年（公元 222）当了吴王，吴范当时在庆祝宴会上作陪，对孙权说：“从前在吴县，为臣就曾经说过这件事；大王还记得么？”孙权说：“有这回事。”于是吩咐左右，把侯爵的绶带取来给吴范佩上。吴范知道孙权想以此勉强搪塞从前的许诺，所以总是用手推开不接受。后来论功行赏，孙权封吴范为都亭侯。诏书临当送出去颁布时，孙权愤恨他对自己吝惜而不传授其绝技，又把他的名字从封侯的名单当中删去。</p>
+<p class="yw">范为人刚直，颇好自称。然与亲故交接，有终始。素与魏滕同邑相善。滕尝有罪，权责怒其严，敢有谏者死。范谓滕曰：“与汝偕死！”滕曰：“死而无益，何用死为？”范曰：“安能虑此，坐观汝邪？”乃髡头自缚诣门下，使铃下以闻。铃下不敢，曰：“必死！不敢白。”范曰：“汝有子邪？”曰：“有。”曰：“使汝为吴范死，子以属我。”铃下曰：“诺。</p>
+<p class="fy-inline">吴范为人刚直，很喜欢自夸。然而他与亲戚朋友交往时有始有终。他从小就与同县的魏滕友善。魏滕曾经犯罪，孙权对他严加怒斥，并且宣布敢有劝阻处死魏滕者也一同处死。吴范对魏滕说：“我与你一起死。”魏滕说：“你死而无益，何必死呢？”吴范说：“我怎能顾虑这一点，而坐视你丢掉生命不管啊？”于是他自己剪光头发，又把自己双手反绑，然后到了孙权的府署门前，请负责通报传令的办事员去向孙权通报。那办事员不敢，说：“我去通报必定被处死！不敢去啊。”吴范说：“你有儿子么？”那人说：“有。”吴范说：“假如你因我而死，你的儿子归我抚养好了。”那人说：“行。”于是推开内房门进去报告。他话还没说完，孙权就勃然大怒，想拔出手戟向他掷去。那人立即逃了出来。吴范借机闯了进去，不住叩头以至于鲜血长流，说话时声泪俱下。过了很久，孙权的怒气才消散，下令赦免了魏滕。</p>
+<p class="yw">滕见范谢曰：“父母能生长我，不能免我于死。丈夫相知，如汝&gt;</p>
+<p class="fy-inline">魏滕见到吴范道谢说：“父母能够养育我，却不能把我从死亡中拯救出来。男子汉交知心朋友，像您这样的一位就足够了，何必要很多啊！”</p>
+<p class="yw">黄武五年，范病卒。长子p&gt;</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">权追思之，募三州有能举知术数如吴范、赵达者</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">o</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">亥子：亥年或子年。据下面传文所言，赵达所指的“大福庆”，是指孙权当上吴王一事。而本书卷四十七记载，孙权受曹魏之封为吴王，时在魏文帝黄初元年（公元 2十&gt;</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">侯绶：侯爵所佩的绶带。当时侯爵绶带用紫白线</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">爱道于观望风气的）方法p&gt;8〕自称：自夸。</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">使：假使。p&gt;属（zhǔ）：托付3〕排&lt; ：推开房门。</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">免滕：免除了魏滕的罪行不予惩处。孙权赦免魏滕，其母亲吴夫人起了关键性人典录》。</p>
+<p class="fy-inline">黄武五年（公元 226），吴范生病去世。他的长子先死，而小儿子又年幼：所以他的绝技失传。</p>
+<p class="yw">三州：指孙吴统治的扬州、荆州和交州。术数：当时把天文、历算、阴阳五行、卜筮、风气等具有专门性方法和计算的技艺称这&gt;<span class="pz-no">〔一〕</span>者：故终不言。”</p>
+<p class="fy-inline">孙权追思他，悬赏征求扬、荆、交三州当中有能举荐擅长于预测事情的结果和吉凶，其方法和计算就像吴范、赵达那样神妙的人，将封为食邑有一千户的侯爵；结果却没能找到。</p>
+<p class="yw"><span class="pz-no">〔二〕</span>《会稽典录》曰：“滕字周林。祖父河内太守朗，字少英。列在‘八俊’。滕性刚直，行不苟合；虽遭困逼，终不回挠。初亦忤策，几殆，赖太妃救得免。”语见《）县令，鄱阳太守。</p>
+<p class="fy-inline">孙权追思他，悬赏征求扬、荆、交三州当中有能举荐擅长于预测事情的结果和吉凶，其方法和计算就像吴范、赵达那样神妙的人，将封为食邑有一千户的侯爵；结果却没能找到。</p>
+<p class="yw"><span class="pz-no">〔三〕</span>《吴录》曰：“范先知其死日，谓权曰：‘陛下某日，当丧军师。’权曰：‘吾无军师，焉得丧之？’范曰：‘陛下出军临敌，须臣言而后行；臣乃陛下之军师也此云“陛下”，非也。</p>
+<p class="fy-inline">孙权追思他，悬赏征求扬、荆、交三州当中有能举荐擅长于预测事情的结果和吉凶，其方法和计算就像吴范、赵达那样神妙的人，将封为食邑有一千户的侯爵；结果却没能找到。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v63-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v63-c01" onclick="go('v63-c01');return false;">第63卷 · 吴书18 吴范刘惇赵达传第18</a><span class="chunk-prog">3 / 6</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">刘惇字子仁，平原人也<span class="zs-no">〔1〕</span>。遭乱避地，客游庐陵，事孙辅<span class="zs-no">〔2〕</span>。以明天官、达占数，显于南土<span class="zs-no">〔3〕</span>。</p>
+<p class="fy-inline">刘惇，字子仁，平原国人。他在遭遇战乱时到其他地方躲避，客居在庐陵郡，为郡太守孙辅服务。他因为了解天文懂得占卜吉凶的方法而闻名于南方。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">平原：王国名。治所在今山东平原县西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">孙辅：传见本书卷五十一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">天官：天文；占数：占卜的计算</span></p>
+<p class="yw">每有水旱寇贼，皆先时处期<span class="zs-no">〔4〕</span>，无不中者。辅异焉，以为军师。军中咸敬事之，号曰“神明”。建安中，孙权在豫章。时有星变<span class="zs-no">〔5〕</span>，以问惇。惇曰：“灾在丹杨。”权曰：“何如？”曰：“客胜主人。到某日，当得问<span class="zs-no">〔6〕</span>。”是时边鸿作乱<span class="zs-no">〔7〕</span>，卒如惇言。</p>
+<p class="fy-inline">每当有水灾、旱灾、土匪等出现，他都能预先确定其出现的时间，没有哪一次不能预测准确。孙辅很感神奇，把他当作军师。军中将士都尊敬他，称他有神灵那样的先见之明。汉献帝建安年间，孙权在豫章郡。当时天上出现了异常的星象，就以此询问刘惇。刘惇说：“灾祸将在丹杨郡发生。”孙权问：“什么样的灾祸？”刘惇说：“是客人压倒主人，到某一天将得到消息。”当时有边鸿在丹杨作乱杀死郡太守孙翊，果然如刘惇所说的那样。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">处：确定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">星变：异常的星象。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">问：消息。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">边鸿作乱：指边鸿等刺杀孙权弟弟丹杨太守孙翊事，见本书卷五十一《孙翊传》。</span></p>
+<p class="yw">惇于诸术皆善，尤明太乙<span class="zs-no">〔8〕</span>；皆能推演其事，穷尽要妙。著书百余篇，名儒刁玄称以为奇。惇亦宝爱其术，不以告人；故世莫得而明也。</p>
+<p class="fy-inline">刘惇对各种占卜术都擅长，尤其精通太乙这种方法；他能对各种占卜术加以推求发挥，穷尽其奥妙。为此写了一百多篇文章，著名的儒家学者刁玄也啧啧称奇。刘惇很珍爱他的绝技，从不告诉别人；所以世人没有谁能弄清他的秘密。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">太乙：占卜术的一种。又称太一。《隋书》卷三十四《经籍志》三载有以“太一”命名的占卜书多种。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v63-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v63-c01" onclick="go('v63-c01');return false;">第63卷 · 吴书18 吴范刘惇赵达传第18</a><span class="chunk-prog">4 / 6</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">赵达，河南人也<span class="zs-no">〔1〕</span>。少从汉侍中单甫受学，用思精密。谓东南有王者气，可以避难，故脱身渡江。治九宫一算之术<span class="zs-no">〔2〕</span>，究其微旨。是以能应机立成，对问若神；至计飞蝗<span class="zs-no">〔3〕</span>，射隐伏<span class="zs-no">〔4〕</span>，无不中效。</p>
+<p class="fy-inline">赵达，河南郡人。他年轻时就跟随汉朝的侍中单甫学习，能够进行精密思考。他认为东南方有帝王之气，可以躲避中原的动乱，所以脱身南渡长江。他主要研习九宫一算这种占卜方法，能够推究其微妙之处。所以擅长用它来进行当场预测，回答就像有神灵指点那么准确；至于计算飞过的蝗虫数目，猜测被隐藏而看不见的东西，没有哪次预测不中。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">河南：即河南尹，是东汉京城洛阳所在的郡。治所在今河南洛阳市东。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">九宫一算：古代特别的算法名。计算时要使用一种数字表，表纵横三格，共有九格，格内有数字，故名。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">至：至于；计飞蝗：计算飞过的蝗虫数目</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">射隐伏：猜测被隐藏（而看不见）的东西。</span></p>
+<p class="yw">或难达曰：“飞者固不可校<span class="zs-no">〔5〕</span>，谁知其然？此殆妄耳！”达使其人取小豆数斗，播之席上。立处其数<span class="zs-no">〔6〕</span>，验覆果信。</p>
+<p class="fy-inline">有人反驳他说：“飞过的蝗虫数目又无法核实，谁知道对不对，这大概是乱说的吧！”赵达立即叫那人取来几斗小豆，倒在坐席上。马上计算确定其数目，然后一五一十数完后对比验证果然不差，那人才真正信服了。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">飞者：指蝗虫；校：考核</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">处：确定。</span></p>
+<p class="yw">尝过知故<span class="zs-no">〔7〕</span>，知故为之具食。食毕，谓曰：“仓猝乏酒，又无嘉肴；无以叙意，如何？”达因取盘中只箸<span class="zs-no">〔8〕</span>，再三纵横之<span class="zs-no">〔9〕</span>。乃言：“卿东壁下有美酒一斛，又有鹿肉三斤；何以辞无<span class="zs-no">〔10〕</span>？”时坐有他宾，内得主人情。主人惭曰：“以卿善射有无，欲相试耳。竟效如此！”遂出酒，酣饮。</p>
+<p class="fy-inline">赵达曾去拜访相识的老朋友，老朋友为他准备饮食。吃完之后，朋友对他说：“仓促之间没有准备酒，家里又没有好的下酒菜；无法畅叙情意，怎么办？”赵达就从盘子里取了一根筷子，横着竖着摆放了两三次。然后说：“你东面的墙壁下有美酒一斛，又有鹿肉三斤；怎么推辞说没有酒菜呢？”当时同座的还有其他宾客，心里知道主人的实情。主人满面羞惭地说：“因为你善于猜东西的有没有，想试一下。没想到竟然如此准确啊！”于是拿出酒肉大家畅饮。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">过：拜访；知故：相识的老朋友</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">只箸：单根筷子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">再三纵横之：竖着横着摆放了两三次。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">辞无：推辞说没有。</span></p>
+<p class="yw">又有书简上作千万数<span class="zs-no">〔11〕</span>，著空仓中封之；令达算之。达处如数，云：“但有名无实。”其精微若是。</p>
+<p class="fy-inline">又有人在小板上写着千、万之类的数字，密封在一座空仓库中；然后让赵达算其中有多少实物。赵达确定出与小板上相同的数字，又说：“不过这个数目有名无实。”他算法的精密微妙就像这样。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">书：写。</span></p>
+<p class="yw">达宝惜其术。自阚泽、殷礼皆名儒善士<span class="zs-no">〔12〕</span>，亲屈节就学：达秘而不告。太史丞公孙滕少师事达<span class="zs-no">〔13〕</span>，勤苦累年；达许教之者有年数矣，临当喻语而辄复止<span class="zs-no">〔14〕</span>。</p>
+<p class="fy-inline">赵达珍惜他的算法。阚泽、殷礼等都是著名的儒家学者和优秀人物，亲自屈尊到赵达处学习：赵达保守秘密而不告诉他们。太史丞公孙滕从年轻时起就把赵达作为老师对待，侍奉多年；赵达答应教他也是有年头了，但是临到应当告诉时总是又停止。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">阚泽：事见本书卷五十三《阚泽传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">太史丞：官名。协助太史令观察天象，制定历法，为朝廷祭祀、婚、丧活动选择时辰。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">喻语：告诉。</span></p>
+<p class="yw">滕他日赍酒具<span class="zs-no">〔15〕</span>，候颜色，拜跪而请。达曰：“吾先人得此术，欲图为帝王师；至仕来三世，不过太史郎：诚不欲复传之！且此术微妙，头乘尾除，一算之法，父子不相语。然以子笃好不倦，今真以相授矣。”饮酒数行<span class="zs-no">〔16〕</span>，达起取素书两卷<span class="zs-no">〔17〕</span>，大如手指。达曰：“当写读此，则自解也。吾久废，不复省之<span class="zs-no">〔18〕</span>。今欲思论一过<span class="zs-no">〔19〕</span>，数日当以相与。”</p>
+<p class="fy-inline">公孙滕有一天带去酒和食物，等他的脸色和蔼时，跪下向他请求。赵达说：“我的祖先得到这套算法，是打算凭借它当帝王的老师；但是从他当官起到而今已有三辈人出仕，官位都没有超过小小的太史郎：我确实不再想传它了！而且这种算法微妙，头乘尾除，一一计算的程序，连亲生父子都不会彼此告诉秘密。不过因为你好学不倦，现在我真的要传给你了。”饮酒几杯后，赵达起身取出两卷白绢写的书，裹着的书卷也不过手指粗的样子。赵达说：“你只要把上面的内容写下来阅读，就自然明白了。我已经长久荒废练习，没有再看它。而今我想再对着它思考讲论一遍，几天之后就把它送给你。”</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">酒具：酒和食物。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">数行：斟酒数次。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">素书：白绢写的书。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">省：看。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">一过：一遍。</span></p>
+<p class="yw">滕如期往，至，乃佯求索书<span class="zs-no">〔20〕</span>，惊言失之。云：“女婿昨来，必是渠所窃<span class="zs-no">〔21〕</span>！”遂从此绝。</p>
+<p class="fy-inline">公孙滕如期前往，到了后，赵达装出寻找书的样子，忽然惊呼宝书丢了。他说：“我女婿昨天来过，必定是他偷的！”于是公孙滕的希望落了空。</p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">求索：寻找。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">渠：他。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v63-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v63-c01" onclick="go('v63-c01');return false;">第63卷 · 吴书18 吴范刘惇赵达传第18</a><span class="chunk-prog">5 / 6</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">初，孙权行师征伐，每令达有所推步<span class="zs-no">〔1〕</span>，皆如其言。权问其法，达终不语；由此见薄，禄位不至。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">当初，孙权出兵征伐，每次让赵达进行推算战争的结果，都如他所料。孙权问他的方法，赵达始终不说；因此受到孙权的薄待，俸禄官位达不到他的期望。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">推步：分步推算（军事行动的结果）。</span></p>
+<p class="yw">达常笑谓诸星气风术者曰<span class="zs-no">〔2〕</span>：“当回算帷幕<span class="zs-no">〔3〕</span>，不出户牖以知天道。而反昼夜暴露，以望气祥<span class="zs-no">〔4〕</span>，不亦难乎！”</p>
+<p class="fy-inline">赵达常常讥笑那些观察星象、云气、风等以预测事情结果或吉凶的人，他说：“应当在挂上帷幔的密室中进行反复计算，不出门户就知道天机。而却昼夜暴露在房子外边，观察云气所显示的吉凶征兆，不也困难了点吗！”</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">星气风术者：观察星象、云气、风以预测事情结果或吉凶的人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">回算帷幕：在挂上帷幔的密室中进行反复计算。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">气祥：云气所显示的吉凶征兆。</span></p>
+<p class="yw">间居无为，引算自校<span class="zs-no">〔5〕</span>。乃叹曰：“吾算，讫尽某年月日，其终矣！”达妻数见达效，闻而哭泣。达欲弭妻意，乃更步算<span class="zs-no">〔6〕</span>。言：“向者谬误耳。尚未也！”后如期死。</p>
+<p class="fy-inline">闲居无事，他使用算法考核自己的寿数。不禁叹息说：“我计算中的数字，讫止于某年某月某日，大概这就是死期了！”他的妻子多次看到他的计算被事实证实，听到结果不禁大放悲声。赵达想安慰妻子，又重新推算。然后说：“前面那次算错了。还没有到死期啊。”后来他果然在第一次算出的时间去世。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">自校：考核自己（的寿数）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">步算：分步推算。</span></p>
+<p class="yw">权闻达有书，求之不得。乃录问其女<span class="zs-no">〔7〕</span>，及发棺，皆无所得：法术绝焉<span class="zs-no">〔8〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">孙权听说赵达的算法有书，派人到家里去找却没找到。又把他的女儿抓来追问，甚至挖墓打开他的棺材翻看，都毫无所获：他的算法从此失传了。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">录问：抓来追问。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">法术：方法。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《吴书》曰：“初，权即尊号，令达算‘作天子之后，当复几年’？达曰：‘高祖建元十二年；陛下倍之。’权大喜，左右称‘万岁’。果如达言。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《吴录》曰：“皇象字休明，广陵江都人。幼工书。时有张子并、陈梁甫能书。甫恨逋，并恨峻；象斟酌其间，甚得其妙，中国善书者不能及也。严武字子卿。卫尉畯再从子也。围棋莫与为辈。宋寿占梦，十不失一。曹不兴善画。权使画屏风，误落笔点素，因就以作蝇；既进御，权以为生蝇，举手弹之。孤城郑妪，能相人。及范、惇、达，八人，世皆称妙，谓之‘八绝’云。”</span></p>
+<p class="pz-item no-no">《晋阳秋》曰：“吴有葛（衡）〔衟〕字思真。明达天官，能为机巧。作浑天，使地居于中，以机动之，天转而地止：以上应晷度。”</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v63-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v63-c01" onclick="go('v63-c01');return false;">第63卷 · 吴书18 吴范刘惇赵达传第18</a><span class="chunk-prog">6 / 6</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：三子各于其术精矣，其用思妙矣；然君子（算）〔等〕役心神<span class="zs-no">〔1〕</span>，宜于大者远者。是以有识之士，舍彼而取此也。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">评论说：这三人各自在自己的占卜术上进行的钻研算是很精密了，运用的思考算是很微妙了；但是作为一个君子，同样是耗费心思精神，应当选择远大的目标。所以有识之士，会抛下那些雕虫小技而致力于建立丰功伟业啊。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">等役心神：同样是耗费心神。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">孙盛曰：“夫玄览未然，逆鉴来事，虽裨灶、梓慎其犹病诸，况术之下此者乎？吴史书达知东南当有王气，故轻举济江。魏承汉绪，受命中畿；达不能预睹兆萌，而流窜吴越。又不知吝术之鄙，见薄于时；安在其能逆睹天道而审帝王之符瑞哉！昔圣王观天地之文，以画八卦之象；故亹亹成于蓍策，变化形乎六爻；是以三《易》虽殊，卦繇理一。安有回转一筹，可以钩深测隐？意对逆占，而能遂知来物者乎？流俗好异，妄设神奇；不幸之中，仲尼所弃。是以君子志其大者，无所取诸。”</span></p>
+<p class="pz-item no-no">臣松之以为：盛云“君子志其大者，无所取诸”，故评家之旨，非新声也。其余所讥，则皆为非理。自中原酷乱，至于建安；数十年间，生民殆尽：比至小康，皆百死之余耳。江左虽有兵革，不能如中国之甚也；焉知达不算其安危，知祸有多少，利在东南，以全其身乎？而责不知魏氏将兴，流播吴越；在京房之筹，犹不能自免刑戮，况达但以秘术见薄，在悔吝之间乎！古之道术，盖非一方；探赜之功，岂惟六爻？苟得其要，则可以易而知之矣；回转一筹，胡足怪哉！达之推算，穷其要妙以知幽测隐，何愧于古？而以裨、梓限之，谓达为妄，非笃论也。</p>
+<p class="pz-item no-no">《抱朴子》曰：“时有葛仙公者，每饮酒醉，常入人家门前陂水中卧，竟日乃出。曾从吴主别到洌洲，还，遇大风，百官船多没；仙公船亦沉沦，吴主甚怅恨。明日使人钩求公船，而登高以望焉。久之，见公步从水上来，衣履不沾，而有酒色。既见而言曰：‘臣昨侍从而伍子胥见请，暂过设酒，忽忽不得，即委之。’又有姚光者，有火术。吴主身临试之：积荻数千束，使光坐其上；又以数千束荻裹之，因猛风而燔之。荻了尽，谓光当已化为烬；而光端坐灰中，振衣而起，把一卷书。吴主取其书视之，不能解也。”</p>
+<p class="pz-item no-no">又曰：“吴景帝有疾，求觋视者。得一人，景帝欲试之。乃杀鹅而埋于苑中，架小屋，施床几，以妇人屐履服物著其上。乃使觋视之，告曰：‘若能说此冢中鬼妇人形状者，当加赏而即信矣。’竟日尽夕，无言。帝推问之急，乃曰：‘实不见有鬼，但见一头白鹅立墓上；所以不即白之，疑是鬼神变化作此相，当候其真形；而定无复移易，不知何故。不敢不以实上闻。’景帝乃厚赐之。然则鹅死，亦有鬼也。”</p>
+<p class="pz-item no-no">葛洪《神仙传》曰：“仙人介象，字元则。会稽人。有诸方术。吴主闻之，征象到武昌，甚敬贵之，称为‘介君’。为起宅，以御帐给之，赐遗前后累千金。从象学蔽形之术，试还后宫，及出殿门，莫有见者。又使象作变化，种瓜菜百果，皆立生，可食。吴主共论鲙鱼何者最美，象曰：‘鲻鱼为上。’吴主曰：‘论近道鱼耳；此出海中，安可得邪？’象曰：‘可得耳。’乃令人于殿庭中作方坎，汲水满之。并求钩，象起饵之，垂纶于坎中。须臾，果得鲻鱼。吴主惊喜，问象曰：‘可食不？’象曰：‘故为陛下取以作生鲙，安敢取不可食之物！’乃使厨下切之。吴主曰：‘闻蜀使来，得蜀姜作鲙甚好；恨尔时无此！’象曰：‘蜀姜岂不易得！愿差所使者，并付直。’吴主指左右一人，以钱五十付之。象书一符，以著青竹杖中，使行人闭目骑杖；杖止，便买姜讫，复闭目。此人承其言骑杖，须臾止，已至成都。不知是何处，问人，人言是蜀市中；乃买姜。于时吴使张温，先在蜀，既于市中相识；甚惊，便作书寄其家。此人买姜毕，捉书负姜；骑杖闭目，须臾已还到吴：厨下切鲙适了。”</p>
+<p class="pz-item no-no">臣松之以为：葛洪所记，近为惑众；其书文颇行世，故撮取数事，载之篇末也。神仙之术，讵可测量？臣之臆断，以为“惑众”，所谓夏虫不知冷冰耳！</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v63';
+var NC = 6;
+var CUR = "home";
+var PREV_HREF = "v62.html";
+var NEXT_HREF = "v64.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

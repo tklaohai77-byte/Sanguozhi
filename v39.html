@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第39卷 董刘马陈董吕传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第39卷《董刘马陈董吕传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：董和字幼宰，南郡枝江人也。其先本巴郡江州人。汉末，和率宗族西迁，益州牧刘璋以为牛鞞、江原长，成都令。蜀土富实，时俗奢侈；货殖之家，侯服玉食；婚姻葬送，倾家竭产。">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v39.html">
+<meta property="og:title" content="《三国志》第39卷 董刘马陈董吕传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第39卷《董刘马陈董吕传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：董和字幼宰，南郡枝江人也。其先本巴郡江州人。汉末，和率宗族西迁，益州牧刘璋以为牛鞞、江原长，成都令。蜀土富实，时俗奢侈；货殖之家，侯服玉食；婚姻葬送，倾家竭产。">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">39卷 · 1/9</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html" selected>第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v39-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">1 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">董和字幼宰，南郡枝江人也<span class="zs-no">〔1〕</span>。其先本巴郡江州人。汉末，和率宗族西迁，益州牧刘璋以为牛鞞、<span class="pz-no">〔一〕</span>江原长，成都令<span class="zs-no">〔2〕</span>。蜀土富实，时俗奢侈；货殖之家<span class="zs-no">〔3〕</span>，侯服玉食<span class="zs-no">〔4〕</span>；婚姻葬送，倾家竭产。和躬率以俭，恶衣蔬食<span class="zs-no">〔5〕</span>，防遏逾僭<span class="zs-no">〔6〕</span>，为之轨制<span class="zs-no">〔7〕</span>；所在皆移风变善，畏而不犯。然县界豪强惮和严法，说璋转和为巴东属国都尉<span class="zs-no">〔8〕</span>；吏民老弱相携乞留和者数千人，璋听留二年。</p>
+<p class="fy-inline">董和，字幼宰，南郡枝江县人，他的先世本来是巴郡江州县人。汉朝末年，他带领宗族向西迁移到益州，益州牧刘璋前后任命他为牛鞞县长、江原县长、成都县令。蜀地富庶充实，当时的风俗奢侈：从事工商业用本钱生利润的家庭，穿的是华丽衣服，吃的是珍美食品；结婚或办丧事，大操大办倾家荡产。董和亲自在俭朴生活方面作出表率，穿粗布衣服，吃以蔬菜为主的饭食，防止生活享受上超越本分的行为，为此制定了标准和规定；所到之处风气都往好的方面改变，人民敬畏而不敢违犯这些标准和规定。但是成都县辖境内的豪强大族害怕董和的严厉法规，暗中劝刘璋改任他为巴东属国都尉。官吏百姓相互邀约去请求让董和继续留任的有数千人之多，刘璋只得同意他留任两年。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">枝江：县名。县治在今湖北枝江市东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">牛鞞：县名。县治在今四川简阳市；江原：县名</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">货殖之家：指工商业者。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">侯服：侯爵所穿的礼服。这里指华丽的衣着；玉食：非常珍美的食品</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">恶衣：穿粗布衣服；蔬食：吃以蔬菜为主的饭食</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">防遏逾僭：防止（生活上）超越本分的行为。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">为之轨制：为此制定了标准和规定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">巴东属国：属国名。治所在今重庆市彭水县。后改为涪陵郡。</span></p>
+<p class="yw">还，迁益州太守<span class="zs-no">〔9〕</span>，其清约如前。与蛮夷从事<span class="zs-no">〔10〕</span>，务推诚心；南土爱而信之。</p>
+<p class="fy-inline">从任上回来之后他升任益州郡太守，他依然像从前一样清廉节约。与少数族打交道，注重表现出诚意，南方地区的少数族都敬爱信任他。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">益州：郡名。治所在今云南晋宁区东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">从事：打交道。</span></p>
+<p class="yw">先主定蜀，征和为掌军中郎将<span class="zs-no">〔11〕</span>。与军师将军诸葛亮，并署左将军、大司马府事<span class="zs-no">〔12〕</span>；献可替否<span class="zs-no">〔13〕</span>，共为欢交。自和居官食禄，外牧殊域<span class="zs-no">〔14〕</span>，内干机衡<span class="zs-no">〔15〕</span>，二十余年；死之日，家无儋石之（财）〔储〕<span class="zs-no">〔16〕</span>。</p>
+<p class="fy-inline">先主刘备平定益州，召董和到成都出任掌军中郎将，与军师将军诸葛亮一起处理左将军府、大司马府的公务；进献合理建议，废除不合理的做法，两人结下友好情谊。自从董和当官领取俸禄之后，出外治理边远地区，入内处理机要事务，前后达二十多年，然而他去世时家中却连少量的积蓄也没有。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">掌军中郎将：官名。处理蜀汉军机事务。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">署：处理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">献可替否：进献合理的建议，废除不合理的做法。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">牧：治理；殊域：边远地区</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">干机衡：处理机要事务。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">儋石之储：形容少量的积蓄。十斗为一石，两石为一儋。</span></p>
+<p class="yw">亮后为丞相，教与群下曰<span class="zs-no">〔17〕</span>：“夫参署者<span class="zs-no">〔18〕</span>，集众思、广忠益也。若远小嫌<span class="zs-no">〔19〕</span>，难相违覆<span class="zs-no">〔20〕</span>，旷阙损矣<span class="zs-no">〔21〕</span>。违覆而得中<span class="zs-no">〔22〕</span>，犹弃弊v而获珠玉<span class="zs-no">〔23〕</span>。然人心苦不能尽<span class="zs-no">〔24〕</span>，惟徐元直处兹不惑<span class="zs-no">〔25〕</span>。又董幼宰参署七年，事有不至<span class="zs-no">〔26〕</span>，至于十返<span class="zs-no">〔27〕</span>，来相启告。苟能慕元直之十一<span class="zs-no">〔28〕</span>，幼宰之殷勤<span class="zs-no">〔29〕</span>，有忠于国，则亮可少过矣<span class="zs-no">〔30〕</span>。”</p>
+<p class="fy-inline">诸葛亮后来出任丞相，向各位僚属下达指示说：“之所以要设置机要事务的参与处理官员，就是想集思广益啊。如果为了避免小矛盾，就不愿意发表不同意见，那么就会出现政事荒废和失误的损失了。发表不同意见而使政事得到适当处置，就好比丢弃破鞋而得到了珍珠美玉一般。但是人们心中的想法，很难充分说出来，唯有徐元直处在这种情况时能够不犹豫迟疑；还有董幼宰参与处理政务七年，事情如有不周到之处，竟至于返回来十次，报告自己的看法。如果你们能仰慕学习徐元直精神的十分之一，以及董幼宰办事的勤勤恳恳，为国尽忠，那我就可以少犯过失了。”</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">教：长官对下属下达的指示叫做教。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">夫参署者：（之所以要设置机要事务的）参与处理官员。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">远小嫌：避免发生小矛盾。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">难：不愿意；违覆：发表不同的意见</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">旷阙：荒废和失误。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">得中：得到适当（的处置）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">弊蹻：破旧的鞋。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">心：这里指心中的想法。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">徐元直：即徐庶。徐庶字元直。事见本书卷三十五《诸葛亮传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">不至：不周到。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">十返：返回商量多达十次。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">十一：十分之一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">殷勤：办事勤恳的样子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">少过：少犯过错。</span></p>
+<p class="yw">又曰：“昔初交州平<span class="zs-no">〔31〕</span>，屡闻得失；后交元直，勤见启诲<span class="zs-no">〔32〕</span>；前参事于幼宰，每言则尽；后从事于伟度，<span class="pz-no">〔二〕</span>数有谏止。虽姿性鄙暗<span class="zs-no">〔33〕</span>，不能悉纳；然与此四子终始好合，亦足以明其不疑于直言也<span class="zs-no">〔34〕</span>。”其追思和如此。</p>
+<p class="fy-inline">又说：“我过去先与崔州平交往，屡次听到他指出我做事的得失；后来又与徐元直交朋友，承蒙他多加启发和指教；此前与董幼宰共同处理政事，每次他进言时都毫无保留；此后又与胡伟度共事，他也多次对我进行规劝阻止。虽然我的素质浅陋愚昧，不能全部采纳他们的意见，但是我与这四位始终保持了友好关系，这也就足以表明他们不会对直言规劝有任何犹豫了。”他就是如此怀念董和。</p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">州平：即崔州平。事见本书卷三十五《诸葛亮传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">勤见启诲：多次受到启发指教。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">姿性：人的素质；鄙暗：浅陋愚昧</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">不疑：不犹豫。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">鞞，音髀。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">伟度者，姓胡，名济，义阳人。为亮主簿，有忠荩之效，故见褒述。亮卒，为中典军，统诸军，封成阳亭侯。迁中监军，前将军，督汉中；假节，领兖州刺史；至右骠骑将军。济弟博，历长水校尉、尚书。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">2 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">刘巴字子初，零陵烝阳人也<span class="zs-no">〔1〕</span>。少知名。<span class="pz-no">〔一〕</span>荆州牧刘表连辟，及举茂才；皆不就。</p>
+<p class="fy-inline">刘巴，字子初，零陵郡阳县人。年轻时就很有名，荆州牧刘表多次聘请他任下属，又举荐他为茂才；他都不接受。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">烝阳：县名。县治在今湖南邵东县东南。</span></p>
+<p class="yw">表卒，曹公征荆州。先主奔江南，荆楚群士从之如云；而巴北诣曹公，曹公辟为掾，使招纳长沙、零陵、桂阳。<span class="pz-no">〔二〕</span>会先主略有三郡，巴不得反使<span class="zs-no">〔2〕</span>，遂远适交阯；<span class="pz-no">〔三〕</span>先主深以为恨。</p>
+<p class="fy-inline">刘表去世，曹操南征荆州。先主刘备逃奔江南，荆州名流跟随他的络绎不绝，而刘巴却独独往北去投奔曹操。曹操任命他为下属，让他去招降长沙、零陵、桂阳三郡。碰上先主前来攻占这三郡，刘巴不能回北方复命，又向南逃奔交阯；先主对此深为不满。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">反使：回去报告使命完成情况。</span></p>
+<p class="yw">巴复从交阯至蜀。<span class="pz-no">〔四〕</span>俄而先主定益州，巴辞谢罪负<span class="zs-no">〔3〕</span>，先主不责。<span class="pz-no">〔五〕</span>而诸葛孔明数称荐之，先主辟为左将军西曹掾<span class="zs-no">〔4〕</span>。<span class="pz-no">〔六〕</span>建安二十四年，先主为汉中王，巴为尚书。后代法正为尚书令。躬履清俭，不治产业。又自以归附非素<span class="zs-no">〔5〕</span>，惧见猜嫌；恭默守静，退无私交，非公事不言。<span class="pz-no">〔七〕</span></p>
+<p class="fy-inline">刘巴又从交阯来到益州。没有多久先主又平定了益州。刘巴为自己从前不肯归附先主的罪过深表歉意，先主没有责备他。由于诸葛亮多次称赞推荐，先主就任命他为自己左将军府的西曹掾。汉献帝建安二十四年（公元 219），先主为汉中王，刘巴任尚书。后又代替法正任尚书令。他为人清廉俭朴，不置私人产业。又觉得自己是后来归附者，而不是素来追随先主的老部下，害怕受到猜疑；所以恭敬沉默安安静静，从官署下班后没有私人交往，不是公事不会发表意见。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">辞谢罪负：为自己的罪过表示歉意。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">左将军西曹掾：官名。刘备左将军府下属，主管人事。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">非素：不是素来追随左右的老部下。</span></p>
+<p class="yw">先主称尊号，昭告于皇天上帝、后土神祗，凡诸文诰策命，皆巴所作也。</p>
+<p class="fy-inline">先主称帝，向皇天上帝、大地之神所作的公开祷告文书，以及有关的一切文告和封爵任官的文书，都出自刘巴之手。</p>
+<p class="yw">章武二年，卒。卒后，魏尚书仆射陈群，与丞相诸葛亮书，问巴消息，称曰“刘君子初”，甚敬重焉。<span class="pz-no">〔八〕</span></p>
+<p class="fy-inline">先主章武二年（公元 222）他去世。去世之后，魏朝的大臣尚书仆射陈群，与诸葛亮写信，询问刘巴的消息，称之为“刘君子初”，非常敬重他。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《零陵先贤传》曰：“巴祖父曜，苍梧太守。父祥，江夏太守，荡寇将军。时孙坚举兵讨董卓，以南阳太守张咨不给军粮，杀之。祥与同心，南阳士民由此怨祥；举兵攻之，与战，败亡。刘表亦素不善祥，拘巴，欲杀之；数遣祥故所亲信人，密诈谓巴曰：‘刘牧欲相危害，可相随逃之！’如此再三，巴辄不应。具以报表，表乃不杀巴。年十八，郡署户曹史、主记、主簿。刘先（主）欲遣周不疑，就巴学，巴答曰：‘昔游荆北，时涉师门；记问之学，不足纪名；内无杨朱守静之术，外无墨翟务时之风；犹天之南箕，虚而不用。赐书乃欲令贤甥摧鸾凤之艳，游燕雀之宇，将何以启明之哉？愧于‘有若无，实若虚’，何以堪之？’”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《零陵先贤传》曰：“曹公败于乌林；还北时，欲遣桓阶，阶辞不如巴。巴谓曹公曰：‘刘备据荆州；不可也！’公曰：‘备如相图，孤以六军继之也。’”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《零陵先贤传》云：“巴往零陵，事不成；欲游交州，道还京师。时诸葛亮在临烝，巴与亮书曰：‘乘危历险，到值思义之民，自与之众；承天之心，顺物之性，非余身谋所能劝动。若道穷数尽，将托命于沧海，不复顾荆州矣。’亮追谓曰：‘刘公，雄才盖世，据有荆土，莫不归德；天人去就，已可知矣。足下欲何之？’巴曰：‘受命而来，不成当还，此其宜也；足下何言邪！’”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《零陵先贤传》曰：“巴入交阯，更姓为张。与交阯太守士爕计议不合，乃由牂牁道去。为益州郡所拘留，太守欲杀之。主簿曰：‘此非常人，不可杀也！’主簿请自送至州，见益州牧刘璋。璋父焉，昔为巴父祥所举孝廉，见巴惊喜；每大事，辄以咨访。”臣松之按：刘焉在汉灵帝时，已经宗正、太常；出为益州牧，祥始以孙坚作长沙时，为江夏太守：不得举焉为孝廉，明也。</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《零陵先贤传》曰：“璋遣法正迎刘备，巴谏曰：‘备，雄人也，入必为害；不可纳也！’既入，巴复谏曰：‘若使备讨张鲁，是放虎于山林也！’璋不听，巴闭门称疾。备攻成都，令军中曰：‘其有害巴者，诛及三族！’及得巴，甚喜。”</span></p>
+<p class="pz-item"><span class="pz-no">〔六〕</span><span class="pz-body">《零陵先贤传》曰：“张飞尝就巴宿；巴不与语，飞遂忿恚。诸葛亮谓巴曰：‘张飞，虽实武人，敬慕足下。主公今方收合文武，以定大事；足下虽天素高亮，宜少降意也。’巴曰：‘大丈夫处世，当交四海英雄；如何与兵子共语乎！’备闻之，怒曰：‘孤欲定天下，而子初专乱之。其欲还北，假道于此，岂欲成孤事邪！’备又曰：‘子初才智绝人，如孤，可任用之；非孤者，难独任也！’亮亦曰：‘运筹策于帷幄之中，吾不如子初远矣。若提枹鼓，会军门，使百姓喜勇，当与人议之耳。’初攻刘璋，备与士众约：‘若事定，府库百物，孤无预焉！’及拔成都，士众皆舍干戈，赴诸藏竞取宝物；军用不足，备甚忧之。巴曰：‘易耳！但当铸直百钱，平诸物价，令吏为官市。’备从之，数月之间，府库充实。”</span></p>
+<p class="pz-item"><span class="pz-no">〔七〕</span><span class="pz-body">《零陵先贤传》曰：“是时，中夏人情未一，闻备在蜀，四方延颈；而备锐意欲即真。巴以为‘如此示天下不广，且欲缓之’。与主簿雍茂谏备。备以他事，杀茂；由是远人不复至矣。”</span></p>
+<p class="pz-item"><span class="pz-no">〔八〕</span><span class="pz-body">《零陵先贤传》曰：“辅吴将军张昭，尝对孙权论巴褊隘，不当拒张飞太甚。权曰：‘若令子初随世沉浮，容悦玄德，交非其人，何足称为高士乎？’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">3 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">马良字季常，襄阳宜城人也<span class="zs-no">〔1〕</span>。兄弟五人，并有才名；乡里为之谚曰：“马氏五常，白眉最良。”良眉中有白毛，故以称之。</p>
+<p class="fy-inline">马良，字季常，襄阳郡宜城县人。他们兄弟五人，都以具有才能而著名，家乡人为他们编了一条谚语：“马家五个‘常’，白眉最优良。”马良的眉毛中有白毛，所以人们这样称呼他。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">宜城：县名。县治在今湖北宜城市东南。</span></p>
+<p class="yw">先主领荆州，辟为从事。及先主入蜀，诸葛亮亦从后往；良留荆州，与亮书曰：“闻雒城已拔，此天祚也<span class="zs-no">〔2〕</span>。尊兄应期赞世<span class="zs-no">〔3〕</span>，配业光国<span class="zs-no">〔4〕</span>，魄兆现矣<span class="zs-no">〔5〕</span>。<span class="pz-no">〔一〕</span>夫变用雅虑<span class="zs-no">〔6〕</span>，审贵垂明<span class="zs-no">〔7〕</span>，于以简才<span class="zs-no">〔8〕</span>，宜适其时。若乃和光悦远<span class="zs-no">〔9〕</span>，迈德天壤<span class="zs-no">〔10〕</span>；使时闲于（听）〔德〕<span class="zs-no">〔11〕</span>，世服于道；齐高妙之音，正郑、卫之声<span class="zs-no">〔12〕</span>；并利于事，无相夺伦<span class="zs-no">〔13〕</span>：此乃管弦之至<span class="zs-no">〔14〕</span>，牙、旷之调也<span class="zs-no">〔15〕</span>。虽非钟期<span class="zs-no">〔16〕</span>，敢不击节<span class="zs-no">〔17〕</span>！”</p>
+<p class="fy-inline">先主刘备兼任荆州牧，聘请他担任从事。先主进入益州，诸葛亮后来也前往。马良留在荆州，与诸葛亮写信说：“听说雒城已被攻克，真是上天保佑啊。仁兄顺应上天的安排，辅佐当代君主，参与大业光耀国家，这样的征兆已经出现了。谋求变化要运用您正确合理的考虑，弄清情况要依仗您的洞察能力，至于选拔人才，应当说正是时候了。如果能普遍而公平地施行仁政，使远方的人喜悦归心；在天地间尽力施与恩德，使当今的人熟悉道德，服从正道；建立高尚美好的教化，纠正败坏的风俗时尚；各项政事都顺利实施，不会彼此打乱顺序：这种政治就好比是音乐的最高境界，伯牙、师旷才能奏出的曲调啊。我虽然不是知音的钟子期，却怎敢不敲击节拍参加这种曲调的合奏呀！”</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">天祚：上天保佑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">应期：顺应上天的安排；赞世：辅佐当代</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">配业：参与大业。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">魄兆：征兆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">变用雅虑：谋求变化要运用您正确合理的考虑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">审贵垂明：弄清情况要依仗您的洞察能力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">简才：选拔人才。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">和光：共同接受阳光的照耀。《老子》第四章有“和其光，同其尘”的话。这里比喻普遍而公平地施行仁政；悦远：使远方的人喜悦归心</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">迈德：尽力施与恩德。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">使时闲于德：使当代的人熟悉道德。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">郑、卫之声：先秦时郑、卫二国流行轻曼柔靡的音乐，后来即以郑、卫之声指不正派的靡靡之音。这里则比喻败坏的风俗时尚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">夺伦：打乱次序。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">管弦之至：音乐的最高境界。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">牙：即伯牙。古代著名的音乐家。善于鼓琴。他的好友钟子期，最能理解欣赏他的演奏。事见《吕氏春秋·本味》；旷：即师旷</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">钟期：即钟子期。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">节：一种竹制的乐器。用来敲击节拍。这里用击节表示自己愿为刘备的事业尽力。</span></p>
+<p class="yw">先主辟良为左将军掾。后遣使吴，良谓亮曰：“今衔国命<span class="zs-no">〔18〕</span>，协穆二家<span class="zs-no">〔19〕</span>；幸为良介于孙将军<span class="zs-no">〔20〕</span>。”亮曰：“君试自为文。”良即为草曰：“寡君遣掾马良<span class="zs-no">〔21〕</span>，通聘继好，以绍昆吾、豕韦之勋<span class="zs-no">〔22〕</span>。其人吉士<span class="zs-no">〔23〕</span>，荆楚之令<span class="zs-no">〔24〕</span>；鲜于造次之华<span class="zs-no">〔25〕</span>，而有克终之美<span class="zs-no">〔26〕</span>。愿降心存纳<span class="zs-no">〔27〕</span>，以慰将命。”权敬待之。</p>
+<p class="fy-inline">接着先主任命马良为左将军府的下属。后来他受命出使孙吴，马良对诸葛亮说：“而今我接受国家委派的使命，和睦双方；如果您能为我给孙权将军写一封私人介绍信，那我就幸运了。”诸葛亮说：“您试着自己起草文稿吧。”马良就起草说：“我国君主派遣下属马良前来访问加深友谊，以继承昆吾、豕韦那共同辅助王室的功勋。马良才华突出，是荆州的优秀人物；虽然缺少临机应变的口辩，却有很好完成任务的能力。希望您屈尊安抚接纳，以慰勉身负使者的人。”孙权对马良很尊敬优待。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">国命：国家委派的使命。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">协穆：和睦。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">介：介绍；孙将军：指孙权</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">寡君：对本国君主的称呼。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">绍：继承；昆吾：夏朝的同盟部落；豕韦：夏朝的同盟部落</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">吉士：才华突出的人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">令：美。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">鲜：缺少；造次之华：临机应变的才华</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">克终：能够很好完成（任务）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">存纳：安抚接纳。</span></p>
+<p class="yw">先主称尊号，以良为侍中。及东征吴，遣良入武陵，招纳五溪蛮夷；蛮夷渠帅皆受印号<span class="zs-no">〔28〕</span>，咸如意指<span class="zs-no">〔29〕</span>。会先主败绩于夷陵，良亦遇害。</p>
+<p class="fy-inline">先帝称帝，任命马良为侍中。后来东下征吴，先主派马良进入武陵郡争取居住在五溪的少数族；少数族首领都接受了先主赏赐的官印、官号，一切都符合先主最初的考虑打算。不久先主在夷陵大败，马良也在当地遇害身死。</p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">渠帅：首领。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">咸如意指：都像预想的那样。</span></p>
+<p class="yw">先主拜良子秉为骑都尉<span class="zs-no">〔30〕</span>。</p>
+<p class="fy-inline">先主任命他的儿子马秉为骑都尉。</p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">骑都尉：官名。统领皇帝侍卫队中的骑兵小分队。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之以为：良盖与亮结为兄弟，或相与有亲；亮年长，良故呼亮为“尊兄”耳。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">4 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">良弟谡，字幼常。以荆州从事随先主入蜀。除绵竹、成都令，越嶲太守<span class="zs-no">〔1〕</span>。</p>
+<p class="fy-inline">马良的弟弟马谡，字幼常。以荆州从事的身份随从先主入益州，前后任绵竹县令、成都县令、越嶲郡太守。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">除：朝廷的正式任命称为除。</span></p>
+<p class="yw">才器过人，好论军计；丞相诸葛亮深加器异。先主临薨谓亮曰：“马谡言过其实，不可大用：君其察之！”亮犹谓不然，以谡为参军；每引见谈论，自昼达夜。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">他的才能气度超过常人，喜欢议论军事计谋；丞相诸葛亮对他深为器重。先主临死前对诸葛亮说：“马谡的言论超过了自己的实际才干，不可大用：您要察觉这一点。”诸葛亮还认为不然，任命马谡为军事参谋；每次召见他谈话，都从白天一直谈到夜晚。</p>
+<p class="yw">建兴六年，亮出军向祁山。时有宿将魏延、吴壹等<span class="zs-no">〔2〕</span>，论者皆言以为宜令为先锋；而亮违众拔谡，统大众在前。与魏将张郃战于街亭，为郃所破，士卒离散；亮进无所据，退军还汉中。谡下狱，物故<span class="zs-no">〔3〕</span>，亮为之流涕。良死时年三十六，谡年三十九。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">后主建兴六年（公元 228），诸葛亮出兵祁山进行第一次北伐。当时战斗经验丰富的将领有魏延、吴壹等人，议论的人都说应当在他们中间选择先锋官；而诸葛亮拒绝众人意见提拔马谡，让他指挥前锋的大队人马。他与魏将张郃在街亭激战，结果被张郃击败，军队溃散。诸葛亮前进失去依据，只得退回汉中。马谡被逮捕入狱处死，诸葛亮因此而流泪。马良死时三十六岁，马谡死时三十九岁。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">宿将：战斗经验丰富的将领。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">物故：死亡。这里指被处死。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《襄阳记》曰：“建兴三年，亮征南中；谡送之数十里。亮曰：‘虽共谋之历年，今可更惠良规。’谡对曰：‘南中恃其险远，不服，久矣。虽今日破之，明日复反耳。今公方倾国北伐，以事强贼；彼知官势内虚，其叛亦速。若殄尽遗类，以除后患；既非仁者之情，且又不可仓猝也。夫用兵之道：攻心为上，攻城为下；心战为上，兵战为下：愿公服其心而已。’亮纳其策，赦孟获以服南方。故终亮之世，南方不敢复反。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《襄阳记》曰：“谡临终，与亮书曰：‘明公视谡犹子，谡视明公犹父；愿深惟殛鲧兴禹之议，使平生之交不亏于此：谡虽死，无恨于黄壤也！’于时十万之众，为之垂涕。亮自临祭，待其遗孤若平生。蒋琬后诣汉中，谓亮曰：‘昔楚杀得臣，然后文公喜可知也。天下未定而戮智计之士，岂不惜乎？’亮流涕曰：‘孙武所以能制胜于天下者，用法明也；是以杨干乱法，魏绛戮其仆。四海分裂，兵交方始；若复废法，何用讨贼邪！’”习凿齿曰：“诸葛亮之不能兼上国也，岂不宜哉！夫晋人规林父之后济，故废法而收功；楚成暗得臣之益己，故杀之以重败。今蜀僻陋一方，才少上国；而杀其俊杰，退收驽下之用；明法胜才，不师三败之道：将以成业，不亦难乎？且先主诫谡之不可大用，岂不谓其非才也？亮受诫而不获奉承，明谡之难废也。为天下宰匠，欲大收物之力，而不量才节任，随器付业。知之大过，则违明主之诫；裁之失中，即杀有益之人：难乎其可与言智者也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">5 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">陈震字孝起，南阳人也。先主领荆州牧，辟为从事，部诸郡<span class="zs-no">〔1〕</span>。随先主入蜀；蜀既定，为蜀郡北部都尉，因易郡名为汶山太守。转在犍为。</p>
+<p class="fy-inline">陈震，字孝起，南阳郡人。先主刘备兼任荆州牧，聘任他为从事，先后督察州内下属各郡。接着又随先主西上益州。益州平定之后，他担任蜀郡北部都尉。后来蜀郡北部改为汶山郡，他担任太守。又转任犍为郡太守。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">部：督察。当时州政府有部郡国从事，负责督促郡国公文，举报郡国官员的不法行为。</span></p>
+<p class="yw">建兴三年，入拜尚书。迁尚书令，奉命使吴。七年<span class="zs-no">〔2〕</span>，孙权称尊号，以震为卫尉<span class="zs-no">〔3〕</span>，贺权践阼<span class="zs-no">〔4〕</span>。诸葛亮与兄瑾书曰<span class="zs-no">〔5〕</span>：“孝起忠纯之性，老而益笃；及其赞述东西<span class="zs-no">〔6〕</span>，欢乐和合，有可贵者。”</p>
+<p class="fy-inline">后主建兴三年（公元 225），他入朝任尚书。升任尚书令，并奉命出使吴国。建兴七年（公元 229），孙权称帝，蜀国任命陈震为卫尉，去庆贺孙权登基。诸葛亮与在孙吴的哥哥诸葛瑾写信说：“孝起忠诚纯洁的品性，到老来更加突出；他在赞美称述东吴、西蜀，使双方愉快友好的方面，有可贵的贡献。”</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">七年：建兴七年（公元 229）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">卫尉：官名。负责皇宫大门警卫和宫内流动巡查。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">践阼：踏上台阶。指登帝位。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">瑾：即诸葛瑾（公元 174—241）。当时在孙吴任要职。传见本书卷五十二。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">赞述：赞美称述；东：指孙吴；西：指蜀汉</span></p>
+<p class="yw">震入吴界，移关侯曰<span class="zs-no">〔7〕</span>：“东之与西，驿使往来，冠盖相望<span class="zs-no">〔8〕</span>；申盟初好，日新其事。东尊应保圣祚<span class="zs-no">〔9〕</span>，告燎受符<span class="zs-no">〔10〕</span>，剖判土宇<span class="zs-no">〔11〕</span>；天下响应，各有所归。于此时也，以同心讨贼，则何寇不灭哉！西朝君臣，引领欣赖<span class="zs-no">〔12〕</span>。震以不才，得充下使，奉聘叙好；践界踊跃<span class="zs-no">〔13〕</span>，入则如归。献子适鲁<span class="zs-no">〔14〕</span>，犯其山讳<span class="zs-no">〔15〕</span>，《春秋》讥之；望必启告<span class="zs-no">〔16〕</span>，使行人睦焉<span class="zs-no">〔17〕</span>。即日张旍诰众<span class="zs-no">〔18〕</span>，各自约誓。顺流漂疾<span class="zs-no">〔19〕</span>，国典异制<span class="zs-no">〔20〕</span>；惧或有违，幸必斟诲<span class="zs-no">〔21〕</span>，示其所宜。”</p>
+<p class="fy-inline">陈震进入孙吴辖境，给孙吴守卫边境的官员递交一份公文说：“东西两国之间，乘坐驿站车马的使者往来不断，彼此都在路上望见；申明盟约加深友谊，每天这方面的事情都有新进展。贵国君主保有神圣的福分，祭告上天而承受上天的指命称帝，与我国分割天下土地；人民群起响应，从此各有归属。在这个时候，双方同心讨伐曹贼，什么敌人不能消灭呢！我国的君臣，都急于听到贵国的好消息，并且欣然把贵国作为可以依靠的外援。陈震我没有才德，有幸充当下等的使者，奉命拜访贵国叙述友谊；进入贵国地界后兴奋得跳跃起来，热情的接待使我有回家的感觉。从前范献子出使鲁国，在询问山名时犯了鲁国君主的名讳，《春秋》曾经讥评他；希望一定把贵国有关的避讳告诉我，让我能使双方关系和睦。从今天起我就悬挂旗帜告诫部下，各自起誓约束自己。顺流而下的船前进迅速，而两国法制彼此不同；恐怕有所违背，希望一定给予指点，说明怎样做才适当。”</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">移：不相统属的官府之间发送公文；关侯：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">冠盖：礼帽与车盖。代指官员。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">东尊：指孙权。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">告燎：祭祀名。称帝时设坛祭告上天，点燃柴火，把献给上天的礼品放在柴堆上一并燃烧，叫做告燎。又叫燎柴；受符：接受上天赐给的符命</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">剖判土宇：（与蜀汉）分割天下的土地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">引领：伸长脖子。比喻急于听到好消息。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">践界：踏上边界；踊跃：（兴奋得）跳跃起来</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">献子：即范献子。士氏，名鞅。春秋时晋国的臣僚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">犯其山讳：《国语·晋语》九记载：前 521 年，范献子出使鲁国，询问具山、敖山。由于鲁国从前的君主中，鲁献公名敖，鲁武公名具，所以范献子询问这两座山犯了鲁国君主的名讳，他为此深感羞愧。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">启告：启示告知（在孙吴的注意事项）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">行人：使者。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">旍：古代一种用牦牛尾和羽毛装饰的旗帜，用于指挥或开道；诰众：告戒部下</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">疾：快速。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">国典异制：两国典章的内容不同。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">斟诲：加以考虑和教诲。</span></p>
+<p class="yw">震到武昌<span class="zs-no">〔22〕</span>，孙权与震升坛歃盟<span class="zs-no">〔23〕</span>，交分天下：以徐、豫、幽、青，属吴；并、凉、冀、兖，属蜀；其司州之土<span class="zs-no">〔24〕</span>，以函谷关为界。震还，封城阳亭侯。</p>
+<p class="fy-inline">陈震到达当时孙吴的都城武昌，孙权与陈震登坛歃血为盟，中分天下：以曹魏的徐、豫、幽、青四州，归吴国；曹魏的并、凉、冀、兖四州，归蜀国；余下的曹魏司州土地，以函谷关为界，东面归吴，西边归蜀。陈震回来后，封为城阳亭侯。</p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">武昌：县名。县治在今湖北鄂州市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">歃：订立盟誓时，各方参加者轻啜一点牲口的血，或者以血涂口，以表示诚意，称之为歃血。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">司州：京城洛阳所在的州。通常称司隶校尉部。治所在今河南洛阳市东。</span></p>
+<p class="yw">九年<span class="zs-no">〔25〕</span>，都护李平坐诬罔废<span class="zs-no">〔26〕</span>。诸葛亮与长史蒋琬、侍中董允书曰：“孝起前临至吴，为吾说‘正方腹中有鳞甲<span class="zs-no">〔27〕</span>，乡党以为不可近’。吾以为‘鳞甲者’，但不当犯之耳；不图复有苏、张之事出于不意<span class="zs-no">〔28〕</span>。可使孝起知之。”</p>
+<p class="fy-inline">建兴九年（公元 231），都护李平因造谣欺骗朝廷而被废黜。诸葛亮与长史蒋琬、侍中董允写信说：“孝起此前出使孙吴临出发时，对我说‘李平性格孤傲就像腹内长了鳞甲一样，同乡人都认为他很难接近’。我觉得有鳞甲只要不去触犯他就行了；没有想到他又会出其不意仿效苏秦、张仪玩弄诡诈手段。可以让孝起知道这一切。”</p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">九年：建兴九年（公元 231）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">都护：官名。即中都护。刘备临死前任命李严为中都护，统内外诸军，镇守永安（今重庆市原奉节县东），是蜀汉全军的统帅。刘禅继位后，中都护的军权减弱。后来全军指挥权由丞相诸葛亮接管；李平：即李严；诬罔：造谣欺骗；废：废黜</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">正方：李严的字；有鳞甲：比喻性格孤傲，难以接近</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">苏、张：即苏秦、张仪。苏、张之事指玩弄诡诈手段。</span></p>
+<p class="yw">十三年<span class="zs-no">〔29〕</span>，震卒。子济嗣。</p>
+<p class="fy-inline">建兴十三年（公元 235），陈震去世。他的儿子陈济继承了爵位。</p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">十
+二年：建兴十二年（公元 235）。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">6 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">董允字休昭。掌军中郎将和之子也。先主立太子，允以选为舍人<span class="zs-no">〔1〕</span>。徙洗马<span class="zs-no">〔2〕</span>。</p>
+<p class="fy-inline">董允，字休昭，是掌军中郎将董和的儿子。先主刘备立太子，董允被挑选出来任太子舍人。转任太子洗马。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">舍人：官名。即太子舍人。太子宫中的官员，负责警卫。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">洗马：官名。即太子洗马。太子宫中的官员，负责聚会的礼仪，接收和发送公文，太子外出则充当先导。</span></p>
+<p class="yw">后主袭位，迁黄门侍郎。丞相亮将北征，住汉中；虑后主富于春秋<span class="zs-no">〔3〕</span>，朱紫难别<span class="zs-no">〔4〕</span>；以允秉心公亮<span class="zs-no">〔5〕</span>，欲任以宫省之事<span class="zs-no">〔6〕</span>。上疏曰：“侍中郭攸之、费祎、侍郎董允等，先帝简拔以遗陛下”；“至于斟酌损益，进尽忠言，则其任也”；“愚以为宫中之事，事无大小，悉以咨之；必能裨补阙漏，有所广益”；“若无兴德之言，则责允等以彰其咎”。亮寻请祎为参军；允迁为侍中，领虎贲中郎将<span class="zs-no">〔7〕</span>，统宿卫亲兵。攸之性素和顺，备员而已<span class="zs-no">〔8〕</span>；<span class="pz-no">〔一〕</span>献纳之任，允皆专之矣。</p>
+<p class="fy-inline">后主继承帝位，他升任黄门侍郎。丞相诸葛亮将要北伐中原，先进驻汉中；顾虑后主年纪轻，难以区分好坏是非；因为董允秉心公正，想委任他主管皇宫事务。便上了一道后世称为《出师表》的奏疏给后主，其中说：“侍中郭攸之、侍中费祎、黄门侍郎董允等，是先帝把他们挑选来留给陛下的”；“至于对政事进行斟酌改革，充分进献忠言，这就是他们的责任了”；“愚臣以为皇宫的事务，无论大小，都应当咨询他们，然后再施行，必定能弥补缺陷遗漏，吸收更多的有益意见”；“如果没有帮助陛下培养品德的言论，就责问董允等人以公开他们的过失”。没多久诸葛亮请求调费祎为自己的军事参谋；董允则升任侍中，兼虎贲中郎将，统领侍卫皇帝的贴身武士。郭攸之性情素来和顺，他当侍中只是充数而已；至于进献自己的忠言吸纳皇宫外群臣的有益建议，这方面的任务就由董允一人承担了。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">富于春秋：指年纪轻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">朱紫：古代以朱为正色，紫为杂色。这里比喻好坏是非。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">公亮：公正。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">宫省：宫廷。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">虎贲中郎将：官名。统领虎贲郎官，保卫皇宫殿堂。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">备员：充数。</span></p>
+<p class="yw">允处事为防制，甚尽匡救之理。后主常欲采择以充后宫<span class="zs-no">〔9〕</span>，允以为“古者天子后妃之数不过十二；今嫔嫱已具<span class="zs-no">〔10〕</span>，不宜增益”，终执不听；后主益严惮之<span class="zs-no">〔11〕</span>。</p>
+<p class="fy-inline">董允处理皇宫事务能预防制止奸邪，很能尽心匡正和补救后主的过失。后主曾经想选取美女扩充后宫，董允认为“古时候天子后妃的人数不超过十二人，现今妃嫔人数都已够了，不应当再增加”，始终不同意。后主因此更敬畏他。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">采择：选取（美女）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">嫔嫱：泛指皇帝的小妾。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">严惮：敬畏。</span></p>
+<p class="yw">尚书令蒋琬领益州刺史，上疏以让费祎及允；又表“允内侍历年，翼赞王室<span class="zs-no">〔12〕</span>，宜赐爵土以褒勋劳”。允固辞不受。</p>
+<p class="fy-inline">尚书令蒋琬兼任益州刺史，上疏把这一职务让给费祎和董允；又上表说“董允在皇宫内侍奉陛下多年，辅助皇朝，应当赐给爵位、封地以褒奖其勋劳”。董允坚辞不受。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">翼赞：辅佐扶助。</span></p>
+<p class="yw">后主渐长大，爱宦人黄皓。皓便辟佞慧<span class="zs-no">〔13〕</span>，欲自容入<span class="zs-no">〔14〕</span>。允常上则正色匡主<span class="zs-no">〔15〕</span>，下则数责于皓；皓畏允，不敢为非。终允之世，皓位不过黄门丞<span class="zs-no">〔16〕</span>。</p>
+<p class="fy-inline">后主逐渐长大之后，宠爱宦官黄皓。黄皓善于逢迎谄媚，会说花言巧语，生性狡黠，一心想取悦刘禅使之接纳和看重自己。董允常常对上严肃匡正后主，对下斥责黄皓；黄皓害怕董允，不敢为非作歹。董允在世时，黄皓的官位最高也不过是黄门丞。</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">便辟：善于逢迎谄媚；佞慧：会说花言巧语，生性狡黠</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">自容入：（取悦刘禅使之）接纳看重自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">匡：纠正（过失）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">黄门丞：官名。宫廷宦官的副长官。</span></p>
+<p class="yw">允尝与尚书令费祎、中典军胡济等，共期游宴<span class="zs-no">〔17〕</span>；严驾已办<span class="zs-no">〔18〕</span>，而郎中襄阳董恢，诣允修敬<span class="zs-no">〔19〕</span>。恢年少官微，见允停出，逡巡求去<span class="zs-no">〔20〕</span>。允不许，曰：“本所以出者，欲与同好游谈也。今君已自屈<span class="zs-no">〔21〕</span>，方展阔积<span class="zs-no">〔22〕</span>；舍此之谈，就彼之宴，非所谓也<span class="zs-no">〔23〕</span>。”乃命解骖<span class="zs-no">〔24〕</span>，祎等罢驾不行。其守正下士，凡此类也。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">董允曾经与尚书令费祎、中典军胡济等共同约定时间去外边游玩饮宴；物品和车辆都已准备好以后，却碰上担任郎中的襄阳郡人董恢前来谒见董允表示敬意。董恢年轻官小，看到董允正要外出，退缩着想要告辞。董允不同意，说：“我之所以外出的本意，是想与志趣相投的人游玩谈心啊。现今您已经委屈自己前来，正要畅谈分别以后积累的思念；放弃这里的谈话，去赴那边的聚会，说不过去啊。”于是命令解开驾车的马，费祎等人也都停车不走了。董允的坚守正道尊重人士，就像是这样。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">期：预定时间。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">严驾：物品和车辆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">修敬：表示敬意。指拜望。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">停出：正要出门。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">自屈：委屈自己（前来）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">阔积：分别以后积聚的思念。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">非所谓：说不过去。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">骖：驾车的马。</span></p>
+<p class="yw">延熙六年，加辅国将军。七年<span class="zs-no">〔25〕</span>，以侍中守尚书令，为大将军费祎副贰。</p>
+<p class="fy-inline">延熙六年（公元 243），他加任辅国将军。第二年，以侍中身份代理尚书令职务，充当大将军费祎的助手。</p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">七年：延熙七年（公元 244）。</span></p>
+<p class="yw">九年<span class="zs-no">〔26〕</span>，卒。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">延熙九年（公元246），董允去世。</p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">九年：延熙九年（公元 246）。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《楚国先贤传》曰：“攸之，南阳人。以器业知名于时。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《襄阳记》曰：“董恢字休绪，襄阳人。入蜀，以宣信中郎，副费祎使吴。孙权尝大醉问祎曰：‘杨仪、魏延，牧竖小人也。虽尝有鸣吠之益于时务，然既已任之，势不得轻；若一朝无诸葛亮，必为祸乱矣！诸君愦愦，曾不知防虑于此，岂所谓贻厥孙谋乎？’祎愕然，四顾视，不能即答。恢目祎曰：‘可速言：仪、延之不协，起于私忿耳，而无黥、韩难御之心也。今方扫除强贼，混一区夏；功以才成，业由才广。若舍此不任，防其后患；是犹备有风波而逆废舟楫，非长计也。’权大笑乐。诸葛亮闻之，以为知言。还，未满三日，辟为丞相府属。迁巴郡太守。”臣松之按：《汉晋春秋》亦载此语，不云董恢所教，辞亦小异；此二书俱出习氏而不同若此。本传云“恢年少官微”，若已为丞相府属，出作巴郡，则官不微矣。以此疑习氏之言为不审的也。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《华阳国志》曰：“时蜀人以诸葛亮、蒋琬、费祎及允为‘四相’，一号‘四英’也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">7 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">陈祗代允为侍中，与黄皓互相表里<span class="zs-no">〔1〕</span>；皓始预政事。祗死后，皓从黄门令，为中常侍、奉车都尉<span class="zs-no">〔2〕</span>，操弄威柄，终至覆国。蜀人无不追思允。及邓艾至蜀，闻皓奸险，收闭<span class="zs-no">〔3〕</span>，将杀之；而皓厚赂艾左右，得免。</p>
+<p class="fy-inline">陈祗代替董允为侍中，与黄皓内外勾结；黄皓才开始参预政事。陈祗死后，黄皓从黄门令，升任中常侍、奉车都尉，把持玩弄威权，终于导致国家灭亡。蜀人这时无不怀念董允。到了邓艾灭蜀，听说黄皓奸恶凶险，下令逮捕关押他，准备除掉；而黄皓以重礼贿赂邓艾的随从，才得免死。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">表里：内外勾结。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">中常侍：官名。皇帝的随身侍从宦官，负责传达诏命，处理公文，实权很大；奉车都尉：奉车都尉是中央行政机构的正式官职，通常不允许宫内的宦官担任</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">收闭：逮捕关押。</span></p>
+<p class="yw">祗字奉宗，汝南人。许靖兄之外孙也。少孤，长于靖家。弱冠知名。稍迁至选曹郎<span class="zs-no">〔4〕</span>。矜厉有威容<span class="zs-no">〔5〕</span>，多技艺，挟数术<span class="zs-no">〔6〕</span>。费祎甚异之，故超继允内侍<span class="zs-no">〔7〕</span>。</p>
+<p class="fy-inline">陈祗，字奉宗，汝南郡人。是许靖哥哥的外孙。他从小死去父亲，在许靖家长大，二十岁左右就已出名。逐渐升迁到选曹尚书郎的职位。他为人矜持严厉而容貌威严。多才多艺，又有心计和手段。费祎很器重他，所以提拔他继董允之后担任侍中。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">选曹郎：官名。即选曹尚书郎。尚书台中的选曹负责官员任命，主办官员是尚书，其助手为尚书郎。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">矜厉：矜持严厉。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">数术：心计和手段。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">超：提拔。</span></p>
+<p class="yw">吕乂卒，祗又以侍中守尚书令，加镇军将军。大将军姜维虽班在祗上，常率众在外，希亲朝政。祗上承主指<span class="zs-no">〔8〕</span>，下接阉竖；深见信爱，权重于维。</p>
+<p class="fy-inline">吕乂死后，陈祗又以侍中身份代理尚书令职务，加任镇军将军。大将军姜维虽然地位在陈祗之上，但是常常率众在外，很少过问朝政。陈祗上承后主旨意，下管宫廷宦官；深受后主的信任喜爱，实权反而比姜维还大。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">主指：君主的意图。</span></p>
+<p class="yw">景耀元年卒，后主痛惜，发言流涕。乃下诏曰：“祗统职一纪<span class="zs-no">〔9〕</span>，柔嘉惟则<span class="zs-no">〔10〕</span>，干肃有章<span class="zs-no">〔11〕</span>；和义利物，庶绩允明<span class="zs-no">〔12〕</span>。命不融远<span class="zs-no">〔13〕</span>，朕用悼焉！夫存有令问，则亡加美谥。谥曰忠侯。”赐子粲爵关内侯，拔次子裕为黄门侍郎。</p>
+<p class="fy-inline">景耀元年（公元 258）陈祗去世，后主痛惜不已，一说起就流泪。并下诏说：“陈祗任侍中职务长达十二年，柔顺美好，遵循规矩，干练严肃，很有章法；和蔼忠义，造福百姓，各项公务办得恰当清楚。可惜寿命不长久，朕因此很痛惜他！凡是生前建立美名的，死后都要给予好谥号。现在谥他为忠侯。”又赐陈祗的长子陈粲关内侯的爵位，提拔他的二儿子陈裕为黄门侍郎。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">一纪：十二年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">柔嘉惟则：柔和美好，遵循规矩。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">干肃：干练严肃。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">庶绩：各项公务。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">融远：长久。</span></p>
+<p class="yw">自祗之有宠，后主追怨允日深，谓为自轻<span class="zs-no">〔14〕</span>；由祗媚兹一人，皓构间浸润故耳<span class="zs-no">〔15〕</span>。</p>
+<p class="fy-inline">自从陈祗得宠，后主对已故的董允越来越恨，认为董允轻视自己；这都是由于陈祗谄媚后主，而黄皓设法诋毁董允并逐渐产生作用的缘故。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">自轻：轻视自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">构间浸润：设法诋毁而逐渐产生作用。</span></p>
+<p class="yw">允孙宏，晋巴西太守。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">董允的孙子董宏，晋朝时曾任巴西郡太守。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之以为：陈群子泰，陆逊子抗，传皆以子系父，不别载姓；及王肃、杜恕、张承、顾邵之流，莫不皆然；惟董允独否，未详其意。当以允名位优重，事迹逾父故邪？夏侯玄、陈表并有骍角之美，而亦如泰者：《魏书》总名此卷云《诸夏侯曹传》，故不复稍加品藻；陈武与表，俱至偏将军，以位不相过故也。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">8 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">吕乂字季阳，南阳人也。父常，送故将（军）刘焉入蜀<span class="zs-no">〔1〕</span>；值王路隔塞，遂不得还。乂少孤，好读书鼓琴。</p>
+<p class="fy-inline">吕乂，字季阳，南阳郡人。父亲吕常，护送以往曾任南阳郡太守的刘焉到益州；碰上通往朝廷的道路断绝，结果未能回去。吕乂从小死去父亲，喜欢读书弹琴。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">故将：过去的郡太守。当时习称郡太守为郡将，故将即故郡将。刘焉曾任南阳郡太守，对吕常而言是故将。</span></p>
+<p class="yw">初，先主定益州，置盐府校尉<span class="zs-no">〔2〕</span>，较盐铁之利<span class="zs-no">〔3〕</span>；后校尉王连请乂及南阳杜祺、南乡刘幹等并为典曹都尉<span class="zs-no">〔4〕</span>。乂迁新都、绵竹令，乃心隐恤<span class="zs-no">〔5〕</span>；百姓称之，为一州诸城之首。迁巴西太守。</p>
+<p class="fy-inline">起初，先主刘备平定益州，设置盐府校尉，垄断盐铁生产带来的利润；后来盐府校尉请求委派吕乂，以及南阳郡人杜祺、南乡郡人刘幹，一齐担任自己府署的典曹都尉。吕乂接着升任新都县令、绵竹县令，心中怜悯民众而加意抚恤；受到百姓的称赞，政绩列为全益州各县之首。不久他升任巴西郡太守。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">盐府：官署名。专门管理盐铁生产和销售；校尉：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">较：垄断。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">王连：传见本书卷四十一；典曹都尉：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">隐恤：怜悯抚恤。</span></p>
+<p class="yw">丞相诸葛亮连年出军，调发诸郡，多不相救<span class="zs-no">〔6〕</span>；乂募取兵五千人诣亮，慰喻检制<span class="zs-no">〔7〕</span>，无逃窜者。徙为汉中太守，兼领督农<span class="zs-no">〔8〕</span>，供继军粮。</p>
+<p class="fy-inline">丞相诸葛亮连年出兵，向各郡征调新兵时，大多不能向前线及时补充兵源；而吕乂在本郡招收五千人到诸葛亮大营去时，对新兵安慰约束，竟然没有一个逃跑的。他转任汉中郡太守，兼任督农，以供给军粮。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">救：及时补充。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">检制：约束。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">督农：官名。负责督察军粮的生产供应。</span></p>
+<p class="yw">亮卒，累迁广汉、蜀郡太守。蜀郡一都之会，户口众多；又亮卒之后，士伍亡命<span class="zs-no">〔9〕</span>，更相重冒<span class="zs-no">〔10〕</span>，奸巧非一。乂到官，为之防禁，开喻劝导；数年之中，漏脱自出者万余口。</p>
+<p class="fy-inline">诸葛亮死后，他先后升任广汉郡、蜀郡太守。蜀郡是一州的中心区域；人口众多，在诸葛亮死后，这里又有大批逃亡士兵，他们冒名顶替，在户口上搞的花样不止一种。吕乂到任后，在这方面采取预防和禁止措施，教育劝导；几年之间，黑人黑户主动出来登记的有一万多人。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">士伍：士兵；亡命：逃亡</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">重冒：冒名顶替。</span></p>
+<p class="yw">后入为尚书。代董允为尚书令，众事无留<span class="zs-no">〔11〕</span>，门无停宾<span class="zs-no">〔12〕</span>。乂历职内外，治身俭约，谦靖少言；为政简而不烦，号为清能。然持法刻深<span class="zs-no">〔13〕</span>，好用文俗吏<span class="zs-no">〔14〕</span>；故居大官，名声损于郡县<span class="zs-no">〔15〕</span>。延熙十四年卒。</p>
+<p class="fy-inline">后来他奉调入朝担任尚书。又继董允之后任尚书令，各项公务没有滞留和耽搁，门外也没有等待公务处理的来人。吕乂历任皇宫内外的职务，要求自己俭朴节约，为人谦虚安静，少言寡语；行政措施简要而不烦琐，人们对他有清廉能干的评价。不过他执行法律苛刻深重，喜欢使用熟悉法律规章条款但是文化素养不高的办事人员；所以他在出任尚书令之后，名声反而不如他在当郡县行政长官时好了。后主延熙十四年（公元251），吕乂去世。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">留：滞留耽搁。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">停宾：指等待公事处理结果的来人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">刻深：苛刻深重。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">文俗吏：熟悉法令规章条款但文化素养不高的办事员。这种人与出身儒生的官员有别。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">损于郡县：名声不如他担任郡县官员的时候好。</span></p>
+<p class="yw">子辰，景耀中为成都令。辰弟雅，谒者<span class="zs-no">〔16〕</span>。雅清厉有文才<span class="zs-no">〔17〕</span>，著《格论》十五篇。</p>
+<p class="fy-inline">他的儿子吕辰，在后主景耀年间任成都县令。吕辰的弟弟吕雅，曾任谒者仆射。吕雅为人清廉严格而有文才，曾著《格论》十五篇。</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">谒者：官名。即谒者仆射（yè）。主管谒者台的官员，皇帝外出担任引导。谒者台是负责礼仪的机构。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">清厉：清廉严格。</span></p>
+<p class="yw">杜祺，历郡守、监军、大将军司马；刘幹，官至巴西太守。皆与乂亲善，亦有当时之称<span class="zs-no">〔18〕</span>；而俭素守法，不及于乂。</p>
+<p class="fy-inline">杜祺，历任郡太守、监军、大将军府司马；刘幹，官做到巴西郡太守。他们都和吕乂亲近友善，也因为有从政才能而受到称赞；但是在俭朴守法方面，他们都不及吕乂了。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">当时：合乎时代需要。指具有从政的才能。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v39-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v39-c01" onclick="go('v39-c01');return false;">第39卷 · 蜀书9 董刘马陈董吕传第9</a><span class="chunk-prog">9 / 9</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：董和蹈《羔羊》之素<span class="zs-no">〔1〕</span>；刘巴履清尚之节；马良贞实，称为令士；陈震忠恪<span class="zs-no">〔2〕</span>，老而益笃；董允匡主，义形于色：皆蜀臣之良矣。吕乂临郡则垂称<span class="zs-no">〔3〕</span>，处朝则被损：亦黄、薛之流亚矣<span class="zs-no">〔4〕</span>。</p>
+<p class="fy-inline">评论说：董和的品质像羔羊皮一样洁白；刘巴具有清高的节操；马良正直诚实，被称为优秀人物；陈震忠诚谨慎，到老年益发突出；董允匡正君主，正义之气表现在脸上：都是蜀国的良臣啊。吕乂治理各郡时留下美名，入朝任职则声誉受损，也是汉朝黄霸、薛宣一类的人了。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">羔羊：小羊。《诗经》中有《羔羊》一篇；素：白色</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">忠恪：忠诚谨慎。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">垂称：留下美名。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">黄：指黄霸（？—前 51）。字次公。淮阳郡阳夏（今河南太康县）人。西汉宣帝时任扬州刺史、颍川郡太守，政绩评为天下第一。后调中央任御史大夫、丞相，表现远不如从前。传见《汉书》卷八十九；薛：指薛宣；流亚：同样的人物</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v39';
+var NC = 9;
+var CUR = "home";
+var PREV_HREF = "v38.html";
+var NEXT_HREF = "v40.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

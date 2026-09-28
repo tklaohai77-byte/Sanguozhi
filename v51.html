@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第51卷 宗室传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第51卷《宗室传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：孙静字幼台，坚季弟也。坚始举事，静纠合乡曲及（宗室）宗族人以为保障：众咸附焉。策破刘繇，定诸县，进攻会稽；遣人请静，静将家属与策会于钱唐。">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v51.html">
+<meta property="og:title" content="《三国志》第51卷 宗室传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第51卷《宗室传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：孙静字幼台，坚季弟也。坚始举事，静纠合乡曲及（宗室）宗族人以为保障：众咸附焉。策破刘繇，定诸县，进攻会稽；遣人请静，静将家属与策会于钱唐。">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">51卷 · 1/13</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html" selected>第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v51-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">1 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙静字幼台，坚季弟也<span class="zs-no">〔1〕</span>。坚始举事，静纠合乡曲及（宗室）〔宗族〕五六百人以为保障<span class="zs-no">〔2〕</span>：众咸附焉。策破刘繇，定诸县，进攻会稽；遣人请静，静将家属与策会于钱唐。</p>
+<p class="fy-inline">孙静，字幼台，是孙坚的三弟。孙坚开始起事时，孙静纠合了同乡和宗族共五六百人保卫家乡：周围的民众都来依附他。孙策攻破刘繇，平定江东各县，又进攻会稽郡；派人去请孙静出山，孙静带领家属与孙策在钱唐县相会。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">季弟：三弟。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">乡曲：乡亲。</span></p>
+<p class="yw">是时太守王朗，拒策于固陵<span class="zs-no">〔3〕</span>；策数渡水战，不能克。静说策曰：“朗负阻城守，难可猝拔。查渎，南去此数十里<span class="zs-no">〔4〕</span>，<span class="pz-no">〔一〕</span>而道之要径也。宜从彼据其内，所谓‘攻其无备，出其不意’者也。吾当自帅众，为军前队，破之必矣！”策曰：“善！”乃诈令军中曰：“顷连雨，水浊，兵饮之多腹痛。令促具罂缶数百口，澄水<span class="zs-no">〔5〕</span>。”至昏暮，罗以燃火诳朗<span class="zs-no">〔6〕</span>；便分军夜投查渎道，袭高迁屯<span class="zs-no">〔7〕</span>。<span class="pz-no">〔二〕</span>朗大惊，遣故丹杨太守周昕等，帅兵前战。策破昕等，斩之，遂定会稽。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">当时会稽郡太守王朗，在固陵一线抵御孙策；孙策多次渡过江去作战，未能得手。孙静劝孙策说：“王朗凭借城池坚守，难以一下子攻克。查渎，在这以南几十里，是交通的要道。应当从那里去占据敌军的内线，这就是所谓的攻其无备、出其不意啊。我要亲自带领人马，充当前锋，必定攻破对方无疑！”孙策说：“好！”于是孙策找了借口向军中下令说：“近来连连下雨，饮水浑浊，士兵喝了很多人腹痛。我命令赶快准备几百只瓮和罐，用来澄清饮水。”到了晚上，他却下令把瓮、罐分布摆放，灌上油点燃火流放到江中，制造军队已在此夜渡的假象以迷惑王朗，并立即分兵趁夜色经过查渎，前往偷袭高迁屯的敌军。王朗大惊，赶忙派从前的丹杨郡太守周昕等，率军前往迎战。孙策击败周昕等人，将其斩首，终于平定了会稽郡。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">固陵：地名。在今浙江杭州市萧山区西北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">查渎：地名。在今浙江杭州市萧山区西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">罂缶：瓮和罐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">罗：罗列。此处罗列的对象是上文所说的几百口瓮罐；用瓮罐点火之后流放在江面上，是制造军队在此乘船渡江的假象。卢弼认为这些瓮罐是用来制作渡江工具的，疑不确。因为上面史文已说到孙策军队曾几次渡江作战，未能取胜，又渡江退回。可见其早有充足的渡河工具，不需到这时才开始着手准备。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">高迁屯：地名。在今浙江杭州市萧山区东。</span></p>
+<p class="yw">表拜静为奋武校尉，欲授之重任；静恋坟墓、宗族，不乐出仕，求留镇守：策从之。</p>
+<p class="fy-inline">孙策上表委派孙静为奋武校尉，想授给他重任；而孙静却眷恋祖宗坟墓和宗族亲人，不喜欢出门当官，所以请求留在家乡镇守：孙策依从了他。</p>
+<p class="yw">权统事，就迁昭义中郎将<span class="zs-no">〔8〕</span>，终於家。有五子：暠、瑜、皎、奂、谦。暠三子：绰、超、恭。超为偏将军。恭，生峻；绰，生綝。</p>
+<p class="fy-inline">孙权继承哥哥孙策统管大业，派人就地宣布提升孙静为昭义中郎将，他后来在家中去世。孙静有五个儿子：孙暠、孙瑜、孙皎、孙奂、孙谦。其子孙暠又有三个儿子：孙绰、孙超、孙恭。孙超曾任偏将军。孙恭的儿子是孙峻，孙绰的儿子是孙綝。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">昭义中郎将：官名。领兵征伐。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">查，音祖加反。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">臣松之按：今永兴县有高迁桥。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《会稽典录》曰：“昕，字大明。少游京师，师事太傅陈蕃。博览群书，明于风角，善推灾异。辟太尉府，举高第，稍迁丹杨太守。曹公起义兵，昕前后遣兵万余人，助公征伐。袁术之在淮南也，昕恶其淫虐，绝不与通。”《献帝春秋》曰：“袁术遣吴景攻昕，未拔。景乃募百姓：敢从周昕者，死不赦。昕曰：‘我则不德，百姓何罪！’遂散兵，还本郡。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">2 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">瑜字仲异。以恭义校尉始领兵众<span class="zs-no">〔1〕</span>。是时，宾客诸将多江西人<span class="zs-no">〔2〕</span>，瑜虚心绥抚，得其欢心。</p>
+<p class="fy-inline">孙瑜，字仲异。他开始统领兵马时担任恭义校尉。当时，孙瑜手下的宾客部将多为长江北岸的人，他虚心加以安抚，得到他们的拥护。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">恭义校尉：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">江西：地区名。长江在今安徽芜湖市至江苏南京市之间，其流向大体是由南往北，当时人称自此以下长江北岸地区为江西，南岸地区为江东。</span></p>
+<p class="yw">建安九年，领丹杨太守；为众所附，至万余人。加绥远将军<span class="zs-no">〔3〕</span>。十一年<span class="zs-no">〔4〕</span>，与周瑜共讨麻、保二屯，破之。后从权拒曹公于濡须，权欲交战。瑜说权持重，权不从：军果无功。迁奋威将军<span class="zs-no">〔5〕</span>，领郡如故，自溧阳徙屯牛渚<span class="zs-no">〔6〕</span>。瑜以永安人饶助为襄安长<span class="zs-no">〔7〕</span>，无锡人颜连为居巢长<span class="zs-no">〔8〕</span>；使招纳庐江二郡<span class="zs-no">〔9〕</span>，各得降附。</p>
+<p class="fy-inline">汉献帝建安九年（公元 204），他兼任丹杨郡太守；部下很乐意跟随他，手下的军队发展到一万多人。孙权加授他绥远将军的军职。建安十一年（公元 206），他与周瑜共同进攻麻屯、保屯，大破敌军。后来随从孙权到濡须抵御曹操，孙权急于交战。孙瑜劝他慎重行事，孙权不听：出军对战果然劳而无功。孙瑜升任奋威将军，依旧兼任丹杨郡太守，驻地由溧阳县迁往长江边的牛渚。他任命永安县人饶助为襄安县长，无锡县人颜连为居巢县长；让他们去招纳长江北岸庐江、九江两郡的敌方百姓，各自得到不少前来投降的归附者。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">绥远将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">十一年：建安十一年（公元 206）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">奋威将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">溧阳：县名。县治在今江苏南京市高淳区东。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">襄安：县名。县治在今安徽无为县西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">无锡：县名。县治在今江苏无锡市；居巢：县名</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">二郡：指庐江郡与相邻的九江郡。</span></p>
+<p class="yw">济阴人马普笃学好古<span class="zs-no">〔10〕</span>，瑜厚礼之；使二府将吏子弟数百人，就受业<span class="zs-no">〔11〕</span>：遂立学官，临飨讲肄<span class="zs-no">〔12〕</span>。是时，诸将皆以军务为事，而瑜好乐坟典<span class="zs-no">〔13〕</span>；虽在戎旅，诵声不绝。</p>
+<p class="fy-inline">济阴郡人马普专心学问喜好古代典籍，孙瑜对他厚加礼待；让自己奋威将军府、丹杨郡太守府当中武将文官的几百子弟，前来学习接受教育：从此设立官方学校，他常常亲临学校视察并设宴犒劳，还参加课堂的讲习。当时，孙权手下诸将都只忙着处理军务，而孙瑜却喜欢阅读文献典籍；虽然身在军队，却读书之声不断。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">济阴：郡名。治所在今山东荷泽市定陶区西北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">二府：指奋威将军府、丹杨太守府。当时孙瑜兼任二职。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">临飨：亲临视察并设宴犒劳。讲肄（yì）：讲习。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">坟典：文献典籍。</span></p>
+<p class="yw">年三十九，建安二十年卒。瑜五子：弥、熙、耀、曼、纮。曼至将军，封侯。</p>
+<p class="fy-inline">建安二十年（公元 215），他去世，终年三十九岁。他有五个儿子：孙弥、孙熙、孙耀、孙曼、孙纮。孙曼官做到将军，封侯。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">3 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">瑜弟皎，字叔朗。始拜护军校尉<span class="zs-no">〔1〕</span>，领众二千余人。是时曹公数出濡须，皎每赴拒，号为精锐。迁都护<span class="zs-no">〔2〕</span>，征虏将军，代程普督夏口。黄盖及兄瑜卒，又并其军。赐沙羡、云杜、南新市、竟陵为奉邑<span class="zs-no">〔3〕</span>；自置长吏。</p>
+<p class="fy-inline">孙瑜的弟弟孙皎，字叔朗。开初担任护军校尉，带领二千人马。当时曹操多次前来进攻濡须，每一次孙皎都赶去迎击，被称为精锐之军。他升任都护、征虏将军，代替程普指挥夏口战区的军队。黄盖和孙皎的哥哥孙瑜去世之后，两人的部队也一并由孙皎统领。孙权还把沙羡、云杜、南新市、竟陵四县赐给孙皎做可以自行享用民众上交祖税的奉邑；孙皎可以自行任命这四县的行政长官。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">护军校尉：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">都护：官名。孙吴给少数重要将领的一种加衔。享有者可以指挥长江一大段防区的驻守将领。有时分置左右都护，职权相同；征虏将军：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">云杜：县名。县治在今湖北京山市；南新市：县名；竟陵：县名；奉邑：一种可以收取民户上交的租税以供私人享用的县</span></p>
+<p class="yw">轻财能施，善于交结。与诸葛瑾至厚，委庐江刘靖以得失，江夏李允以众事，广陵吴硕、河南张梁以军旅<span class="zs-no">〔4〕</span>：而倾心亲待，莫不自尽<span class="zs-no">〔5〕</span>。皎尝遣兵候<span class="zs-no">〔6〕</span>，获魏边将吏美女，以进皎。皎更其衣服，送还之，下令曰：“今所诛者曹氏，其百姓何罪？自今以往，不得击其老弱！”由是江淮间多归附者。</p>
+<p class="fy-inline">孙皎轻视财产能够把财产广泛施予别人，善于和人交往结识。例如他与诸葛瑾友谊极为深厚，把议论自己处事得失的任务委托给庐江郡人刘靖，又让江夏郡人李允充当助手办理各项公务，派广陵郡人吴硕、河南郡人张梁负责军事：对他们推心置腹热情对待，使他们人人尽心尽力工作。孙皎曾经派侦察兵出去活动，而侦察兵抓获了魏军边境将领所管辖区域内的民间美女，带回来献给孙皎。孙皎让女子们换上好衣服后，送她们回去，还为此下达指令说：“现今要诛灭的是曹操，他的百姓有什么罪过？从今以后，不准袭击敌方的老弱妇女！”由于这一措施，长江、淮河之间的魏方百姓前来归附他的很多。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">河南：郡名。即河南尹。是东汉京城洛阳所在的郡。治所在今河南洛阳市东。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">自尽：尽自己的力量。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">兵候：侦察兵。</span></p>
+<p class="yw">尝以小故与甘宁忿争<span class="zs-no">〔7〕</span>，或以谏宁。宁曰：“臣、子一例<span class="zs-no">〔8〕</span>：征虏虽公子<span class="zs-no">〔9〕</span>，何可专行侮人邪！吾值明主，但当输效力命<span class="zs-no">〔10〕</span>，以报所天；诚不能随俗屈曲矣！”</p>
+<p class="fy-inline">孙皎轻视财产能够把财产广泛施予别人，善于和人交往结识。例如他与诸葛瑾友谊极为深厚，把议论自己处事得失的任务委托给庐江郡人刘靖，又让江夏郡人李允充当助手办理各项公务，派广陵郡人吴硕、河南郡人张梁负责军事：对他们推心置腹热情对待，使他们人人尽心尽力工作。孙皎曾经派侦察兵出去活动，而侦察兵抓获了魏军边境将领所管辖区域内的民间美女，带回来献给孙皎。孙皎让女子们换上好衣服后，送她们回去，还为此下达指令说：“现今要诛灭的是曹操，他的百姓有什么罪过？从今以后，不准袭击敌方的老弱妇女！”由于这一措施，长江、淮河之间的魏方百姓前来归附他的很多。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">甘宁：传见本书卷五十五。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">臣、子一例：君主的臣僚和君主的公子在地位上是一样的。语出《公羊传》僖公元年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">征虏：指担任征虏将军的孙皎；公子：即公族子弟</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">输效力命：贡献力量和以生命报效。</span></p>
+<p class="yw">权闻之，以书让皎曰<span class="zs-no">〔11〕</span>：“自吾与北方为敌，中间十年<span class="zs-no">〔12〕</span>；初时相持，年小，今者且三十矣！孔子言‘三十而立’，非但谓五经也。授卿以精兵，委卿以大任，都护诸将于千里之外；欲使如楚任昭奚恤<span class="zs-no">〔13〕</span>，扬威于北境：非徒相使逞私志而已。近闻卿与甘兴霸饮<span class="zs-no">〔14〕</span>，因酒发作，侵陵其人；其人求属吕蒙督中。此人虽粗豪<span class="zs-no">〔15〕</span>，有不如人意时；然其较略大丈夫也<span class="zs-no">〔16〕</span>：吾亲之者，非私之也。我亲爱之，卿疏憎之；卿所为每与吾违，其可久乎？夫居敬而行简，可以临民；爱人多容<span class="zs-no">〔17〕</span>，可以得众。二者尚不能知，安可董督在远，御寇济难乎？卿行长大，特受重任；上有远方瞻望之视，下有部曲朝夕从事：何可恣意有盛怒邪？人谁无过？贵其能改；宜追前愆<span class="zs-no">〔18〕</span>，深自咎责！今故烦诸葛子瑜重宣吾意<span class="zs-no">〔19〕</span>。临书摧怆<span class="zs-no">〔20〕</span>，心悲泪下！”</p>
+<p class="fy-inline">他曾经为一件小事与将军甘宁发生激烈争执，有人劝甘宁忍让。甘宁说：“君主的臣僚和君主的公子在地位上是一样平等的：他虽然是主公家族的子弟，怎么可以独断专行欺侮人呢！我碰上了英明的君主，只会贡献力量用生命来报效，以感谢主公像上天那样的厚爱；确实不能随从世俗低头屈服啊！”孙权得知此事后，写信责备孙皎说：“自从我与北方为敌交战，已经有十年了；最初与北方相对峙时您还小，而今您却将近三十岁了！孔子说是‘三十而立’，不只是指他要完成儒家五经的编撰，而且也有自身修养的确立。现今授给您精兵，委您以重任，充当都护在千里之外江防沿线指挥众将官；是想让您像从前楚国的大臣昭奚恤那样，在北方的边境上显扬军威：而不是让您去随意发泄个人的情感而已。近来听说您与甘兴霸饮酒，借酒发作，欺侮了他；他上书请求改属吕蒙指挥。这个人虽然粗鲁，有不如人意的时候；然而基本上算得一个大丈夫。因此我亲近他，并不是要袒护他。可是我所亲近爱惜的人，您却疏远憎恶他；您所作所为每每与我相违背，这样能长久下去吗？停下来居住时举止恭敬而外出时一切从简，这样就可以治理民众；爱护别人而善于容忍，这样就可以得到人心。上述二者还不懂，怎么能在远方统领指挥大军，抵御强敌解除危难呢？您逐渐长大了，所以特别承当重任；上面有远方的朝廷君臣在注视着，下面有部下将士朝夕相处：哪里能随意大发怒火呀？人谁没有过错？贵在能勇于改正；您应当追悔不久前的过失，好好责备自己！现今特别劳烦诸葛子瑜前来再次表达我的意思。面对书信不禁伤感，心中悲怆眼泪也掉了下来！”</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">让：责备。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">中间：指历时。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">昭奚恤：战国时楚国的大臣。楚宣王让他领兵镇守北部边境，中原各国都很畏惧。事见《战国策·楚策》一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">甘兴霸：甘宁字兴霸。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">粗豪：粗鲁。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">较略：大体上（算是）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">容：容忍。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">迫：追悔；愆：过失</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">诸葛子瑜：诸葛瑾字子瑜。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">摧怆：伤悲。</span></p>
+<p class="yw">皎得书，上疏陈谢，遂与宁结厚。后吕蒙当袭南郡，权欲令皎与蒙为左、右部大督<span class="zs-no">〔21〕</span>。蒙说权曰：“若至尊以征虏能<span class="zs-no">〔22〕</span>，宜用之；以蒙能，宜用蒙。昔周瑜、程普，为左、右部督，共攻江陵；虽事决于瑜，普自恃久将，且俱是督，遂共不睦，几败国事：此目前之戒也！”权悟，谢蒙曰：“以卿为大督，命皎为后继。”擒关羽，定荆州，皎有力焉。</p>
+<p class="fy-inline">孙皎得到这封信，立即呈上表章表示歉意，然后与甘宁结为好友。后来吕蒙要出兵袭击南郡，孙权准备派孙皎与吕蒙分别担任左、右两部分军队的总指挥官。吕蒙劝孙权说：“如果主公认为孙将军合适，就应当只任用他为总指挥官；如果认为吕蒙我合适，就应当只任用我。当初周瑜、程普分别担任左、右两部分的总指挥官，共同进攻江陵城；虽然规定大事由周瑜决定，而程普仗恃自己是老将，而且都是总指挥官，所以和周瑜不和睦，几乎坏了国家大事：这可是近在眼前的鉴戒啊！”孙权醒悟，立即向吕蒙表示歉意说：“以您为总指挥官，命令孙皎为后援。”擒杀关羽，平定荆州，孙皎是出了力的。</p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">大督：官名。即大都督，各路军队的总指挥官。发动大战役时设立，不常置。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">至尊：对君主的尊称。</span></p>
+<p class="yw">建安二十四年卒。权追录其功，封子胤为丹杨侯。胤卒，无子。弟晞嗣，领兵；有罪自杀，国除<span class="zs-no">〔23〕</span>。弟咨、弥、仪，皆将军，封侯。咨，羽林督<span class="zs-no">〔24〕</span>；仪，无难督<span class="zs-no">〔25〕</span>。咨为滕胤所杀，仪为孙峻所害。</p>
+<p class="fy-inline">他在建安二十四年（公元 219）去世。孙权追评他的功劳，封他的儿子孙胤为丹杨侯。孙胤去世，没有儿子。由其弟弟孙晞继承爵位，并统领兵马；后来孙晞有罪自杀，封地被撤销。孙晞的弟弟孙咨、孙弥、孙仪，都当将军，封侯。其中孙咨，曾任羽林督；孙仪，曾任无难督。孙咨被滕胤处死，孙仪遭孙峻杀害。</p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">国除：封地被撤销。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">羽林督：官名。孙吴皇帝卫队指挥官之一，统领羽林分队。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">无难督：官名。孙吴皇帝卫队指挥官之一，统领无难分队。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">4 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">皎弟奂，字季明。兄皎既卒，代统其众；以扬武中郎将领江夏太守<span class="zs-no">〔1〕</span>。在事一年，遵皎旧迹；礼刘靖、李允、吴硕、张梁及江夏闾举等，并纳其善。奂讷于造次而敏于当官<span class="zs-no">〔2〕</span>，军民称之。</p>
+<p class="fy-inline">孙皎的弟弟孙奂，字季明。自从哥哥孙皎去世之后，他就接着统领孙皎的部队；以扬武中郎将的身份兼任江夏郡太守。上任第一年中，他遵循孙皎过去的做法，尊重优待刘靖、李允、吴硕、张梁以及江夏郡人闾举等，采纳他们的有益建议。孙奂在需要应急发挥口才的场合不善于言辞，而处理政事却很敏捷，军民都称赞他。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">扬武中郎将：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">讷于造次：在需要应急发挥口才的场合不善于言辞。</span></p>
+<p class="yw">黄武五年，权攻石阳。奂以地主<span class="zs-no">〔3〕</span>，使所部将军鲜于丹，帅五千人先断淮道<span class="zs-no">〔4〕</span>；自帅吴硕、张梁五千人，为军前锋：降高城<span class="zs-no">〔5〕</span>，得三将。大军引还，权诏使在前住；驾过其军，见奂军阵整齐。权叹曰：“初吾忧其迟钝；今治军，诸将少能及者：吾无忧矣！”拜扬威将军<span class="zs-no">〔6〕</span>，封沙羡侯；吴硕、张梁皆裨将军<span class="zs-no">〔7〕</span>，赐爵关内侯<span class="zs-no">〔8〕</span>。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">黄武五年（公元226），孙权率军由江夏郡进攻曹魏的石阳县。孙奂作为当地的军政长官，派遣部下的将军鲜于丹带领五千人马，先截断淮河方向的道路；而自己则统率吴硕、张梁共五千人马充当大军的前锋：他迫使敌方的高城守军投降，俘获三员敌将。大军凯旋时，孙权下诏让他在前方停下来；然后乘车经过孙奂的军队，只见队伍的阵形整整齐齐，孙权不禁赞叹说：“当初我还担忧他为人迟钝；而今看他治军的情况，诸将中少有能赶上他的，我不再担忧了！”于是提升孙奂为扬威将军，封沙羡侯。吴硕、张梁都升任裨将军，被赐予关内侯爵位。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">地主：当地的主人。孙权进攻石阳，是从孙奂治理的江夏郡出兵，所以这样说。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">淮道：淮河方向的道路。淮河在石阳的东北方。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">高城：地名。在今湖北汉川市西北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">扬威将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">裨将军：官名。属低级将军。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">关内侯：爵位名。比列侯低一等，也能收取民户租税，但民户的数量较少。</span></p>
+<p class="yw">奂亦爱乐儒生，复命部曲子弟就业；后仕进朝廷者，数十人。</p>
+<p class="fy-inline">孙奂也喜欢儒生，又命令部下武将文官的子弟前来学习；后来这些子弟中到朝廷任职的有几十人。</p>
+<p class="yw">年四十，嘉禾三年卒。子承嗣，以昭武中郎将代统兵<span class="zs-no">〔9〕</span>，领郡。赤乌六年卒。无子，封承庶弟壹，奉奂后，袭业为将。</p>
+<p class="fy-inline">嘉禾三年（公元 234），他四十岁时去世。儿子孙承继承了他的爵位，以昭武中郎将的身份接替父亲统领兵马，兼任江夏郡太守。孙承在赤乌六年（公元 243）去世。他没有儿子，孙权让孙承庶母所生的弟弟孙壹，作为孙奂的继承人，封孙壹爵位，由孙壹承袭父亲的兵马担任将军。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">昭武中郎将：官名。领兵征伐。</span></p>
+<p class="yw">孙峻之诛诸葛恪也，壹与全熙、施绩攻恪弟公安督融<span class="zs-no">〔10〕</span>，融自杀。壹从镇南迁镇军<span class="zs-no">〔11〕</span>，假节督夏口。及孙綝诛滕胤、吕据，据、胤皆壹之妹夫也；壹弟封又知胤、据谋，自杀：綝遣朱异潜袭壹。异至武昌，壹知其攻己；率部曲千余口，过将胤妻奔魏<span class="zs-no">〔12〕</span>。</p>
+<p class="fy-inline">孙峻诛杀诸葛恪时，孙壹受命与全熙、施绩一起进攻诸葛恪的弟弟，也就是当时担任公安战区军事指挥官的诸葛融，诸葛融被迫自杀。孙壹从镇南将军升任镇军将军，被授予节杖，担任夏口战区的军事指挥官。后来孙綝杀死滕胤、吕据，而滕、吕二人都是孙壹的妹夫；孙壹的弟弟孙封又知道这二人的密谋，恐惧自杀：所以孙綝又派朱异去偷袭孙壹。朱异的人马才到达夏口东面的武昌，孙壹就知道其目的是攻杀自己；随即率领部下一千多人，并在路过时带上滕胤的妻子也就是自己的妹妹，一起投奔魏国。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">公安督：官名。公安战区的指挥官；融：即诸葛融（？—公元253）</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">镇南：官名。即镇南将军。领兵征伐；镇军：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">部曲：部属；将：带领</span></p>
+<p class="yw">魏以壹为车骑将军，仪同三司<span class="zs-no">〔13〕</span>，封吴侯；以故主芳贵人邢氏，妻之<span class="zs-no">〔14〕</span>。邢美色妒忌；下不堪命<span class="zs-no">〔15〕</span>，遂共杀壹及邢氏。壹入魏（黄初）三年死<span class="zs-no">〔16〕</span>。</p>
+<p class="fy-inline">魏国任命他为车骑将军，仪仗队的规格与三公相同，封吴侯；又把被废黜的过去魏国君主曹芳的一名小妾邢氏，赏他做妻子。这邢氏虽然容颜美丽却生性妒忌；下人忍受不了她的驱使，就把孙壹和邢氏一齐杀了。孙壹投降魏国三年后死去。</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">仪同三司：享有的仪仗队规格与三公相同。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">故主：过去的君主；芳：即曹芳（公元 232—274）；贵人：宫廷女官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">下不堪命：下人忍受不了她的驱使。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">入魏三年死：孙壹死于曹魏甘露四年（公元 259）十一月，见本书卷四《三少帝纪》。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《江表传》曰：“初，权在武昌，欲还都建业；而虑水道溯流二千里，一旦有警，不相赴及：以此怀疑。及至夏口，于坞中大会百官，议之，诏曰：‘诸将吏勿拘位任，其有计者，为国言之！’诸将或陈‘宜立栅，栅夏口’，或言‘宜重设铁锁’者：权皆以为非计。时梁为小将，未有知名；乃越席而进曰：‘臣闻香饵引泉鱼，重币购勇士。今宜明树赏罚之信，遣将入沔，与敌争利；形势既成，彼不敢干也。使武昌有精兵万人，付智略者任将，常使严整；一旦有警，应声相赴。作甘水城，轻舰数千，诸所宜用，皆使备具。如此，开门延敌，敌自不来矣！’权以梁计为最得，即超增梁位。后稍以功进，至沔中督。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">5 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙贲字伯阳。父羌字圣（壹）〔台〕，坚同产兄也<span class="zs-no">〔1〕</span>。贲早失二亲，弟辅，婴孩；贲自赡育，友爱甚笃。为郡督邮，守长<span class="zs-no">〔2〕</span>。坚于长沙举义兵，贲去吏从征伐<span class="zs-no">〔3〕</span>。坚薨，贲摄帅余众<span class="zs-no">〔4〕</span>，扶送灵柩。</p>
+<p class="fy-inline">孙贲，字伯阳。他的父亲孙羌，字圣台，是孙坚的同胞哥哥。孙贲很早失去父母双亲，当时弟弟孙辅，还是小婴儿；孙贲亲自赡养哺育小弟，情意深挚。他后来出任本郡督邮，代理县长。孙坚在长沙郡发动义军讨伐董卓，孙贲离职随孙坚南征北战。孙坚去世，孙贲收集统率余下的将士，护送孙坚的灵柩回江东。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">同产：同母。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">守长：代理县长。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">去吏：弃官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">摄帅：收集统率。</span></p>
+<p class="yw">后袁术徙寿春，贲又依之。术从兄绍，用会稽周昂为九江太守；绍与术不协<span class="zs-no">〔5〕</span>，术遣贲攻破昂于阴陵<span class="zs-no">〔6〕</span>。术表贲领豫州刺史。转丹杨都尉，行征虏将军，讨平山越。为扬州刺史刘繇所追逐，因将士众还住历阳。顷之，术复使贲与吴景，共击樊能、张英等，未能拔。及策东渡，助贲、景破英、能等；遂进击刘繇，繇走豫章。策遣贲、景还寿春，报术。值术僭号，署置百官：除贲九江太守。贲不就，弃妻孥还江南<span class="zs-no">〔7〕</span>。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">后来，袁术转移到淮南的寿春县，他又去依附袁术。袁术的堂兄袁绍任用会稽郡人周昂为九江郡太守；袁绍并袁术不和，袁术派孙贲到阴陵县攻破周昂。于是袁术上表委派孙贲兼任豫州刺史。转任丹杨郡都尉，代行征虏将军职权，前去讨伐平定丹杨郡内的山越。后来被汉朝派来的扬州刺史刘繇逼迫驱逐，他只好带领部下退到历阳驻扎。没有多久，袁术又让他与吴景一起，攻击刘繇的部将樊能、张英等，却未能得手。到了孙策渡长江到江东，帮助孙贲、吴景击败张英、樊能；又进击刘繇，刘繇逃往豫章郡。孙策派孙贲、吴景回寿春，向袁术报告战况。碰上这时袁术非分地称帝，委任设置朝廷百官：任命孙贲为九江郡太守。孙贲不去就职，丢下妻室儿女跑回江东。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">不协：不和。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">阴陵：县名。县治在今安徽凤阳县西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">妻孥：妻子儿女。</span></p>
+<p class="yw">时策已平吴、会二郡，贲与策征庐江太守刘勋、江夏太守黄祖。军旋<span class="zs-no">〔8〕</span>，闻繇病死，过定豫章：上贲领太守<span class="zs-no">〔9〕</span>。<span class="pz-no">〔二〕</span>后封都亭侯。</p>
+<p class="fy-inline">这时孙策已经平定了吴、会稽二郡，孙贲就随同孙策征讨庐江郡太守刘勋、江夏郡太守黄祖。大军回来时，听说刘繇病死，在途中又顺便攻占了豫章郡：孙策上表委任孙贲兼任豫章郡太守，后来封都亭侯。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">旋：回还。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">上：上表朝廷推举。</span></p>
+<p class="yw">建安十三年，使者刘隐奉诏，拜贲为征虏将军，领郡如故。在官十一年卒。子邻嗣。</p>
+<p class="fy-inline">建安十三年（公元 208），汉朝的使者刘隐奉天子的诏命，任命孙贲为征虏将军，依旧兼任郡太守。他在这个职位上当官当了十一年之后去世。儿子孙邻继承了他的爵位。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《江表传》曰：“袁术以吴景守广陵；策族兄香，亦为术所用，作汝南太守；而令贲为将军，领兵在寿春。策与景等书曰：‘今征江东，未知二三君意云何耳？’景即弃守归，贲困而后免；香以道远，独不得还。”《吴书》曰：“香字文阳。父孺，字仲孺，坚再从弟也。仕郡主簿、功曹。香从坚征伐，有功，拜郎中。后为袁术驱驰，加征南将军。死于寿春。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《江表传》曰：“时丹杨僮芝，自署庐陵太守。策留贲弟辅，领兵住南昌。策谓贲曰：‘兄今据豫章，是扼僮芝咽喉而守其门户矣。但当伺其形便，因令国仪杖兵而进；使公瑾为作势援：一举可定也！’后贲闻芝病，即如策计；周瑜到巴丘，辅遂得进据庐陵。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">6 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">邻年九岁代<span class="zs-no">〔1〕</span>，领豫章，进封都乡侯。<span class="pz-no">〔一〕</span>在郡垂二十年，讨平叛贼，功绩修理。召还武昌，为绕帐督<span class="zs-no">〔2〕</span>。</p>
+<p class="fy-inline">孙邻九岁时即继承父亲的领兵权力，并且兼任豫章郡太守，晋封都乡侯。他在郡中任职近二十年，讨伐平定辖境内的叛乱分子，在政治上成绩显著。后来他被召回京城武昌，担任禁卫军的分队指挥官绕帐督。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">九岁代：九岁代替父亲领兵。孙权称王自立之前，除实行奉邑制外，还同时实行了领兵制。重要将领所统领的军队，在父兄死亡后可以传给子弟，形成世袭领兵的特殊现象。孙邻九岁时成为名义上的领兵官，并兼任太守职务，即是典型事例之一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">绕帐督：官名。孙吴皇帝卫队指挥官之一。统领绕帐分队。</span></p>
+<p class="yw">时太常潘濬掌荆州事<span class="zs-no">〔3〕</span>，重安长陈留舒燮有罪下狱<span class="zs-no">〔4〕</span>；濬尝失燮<span class="zs-no">〔5〕</span>，欲置之于法<span class="zs-no">〔6〕</span>。论者多为有言，濬犹不释。邻谓濬曰：“舒伯膺兄弟争死<span class="zs-no">〔7〕</span>，海内义之，以为美谈；仲膺又有奉国旧意<span class="zs-no">〔8〕</span>。今君杀其子弟，若天下一统，青盖北巡<span class="zs-no">〔9〕</span>；中州士人必问仲膺继嗣<span class="zs-no">〔10〕</span>，答者云‘潘承明杀燮<span class="zs-no">〔11〕</span>’，于事何如？”濬意即解，燮用得济<span class="zs-no">〔12〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">当时太常卿潘濬负责管理荆州的政务，重安县长陈留郡人舒燮有罪被关进监狱；潘濬曾经不满意舒燮，就想把他处以死刑。议论这件事的人大多为舒燮求情，而潘濬的愤恨仍然不消。孙邻就对潘濬说：“舒燮的父亲舒仲膺，和哥哥舒伯膺争着承担死罪以求救活对方，海内人士认为他们很重义气，传为美谈；加之仲膺当初又前来投奔我国表现出忠诚心意。如今您杀了仲膺的子弟，如果天下一统，我朝皇帝乘青盖车到北方巡视；中原士大夫必定要问舒仲膺的儿子怎么样，回答的人说潘承明早把他杀了，您觉得这事情如何？”潘濬听了愤恨马上打消，舒燮因此得救。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">潘濬掌荆州事：黄龙元年（公元 229），孙权把都城从武昌迁回建业。留陆逊与潘濬在武昌镇守，处理荆州上游的军政事务。见本书卷六十一《潘濬传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">重安：县名。县治在今湖南衡阳县西北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">失：不满意。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">置之于法：指处死。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">伯膺：舒燮的伯父字伯膺。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">仲膺：舒燮之父舒邵字仲膺；奉国：指投奔孙吴</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">青盖：青色车盖。当时皇帝礼仪专车上的车盖，外面为青色，内里为黄色，用羽毛装饰，所以有青盖、黄屋、羽盖多种称呼。这里代指孙吴皇帝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">中州：中原。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">承明：潘濬字承明。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">得济：得救。</span></p>
+<p class="yw">邻迁夏口、沔中督<span class="zs-no">〔13〕</span>，威远将军<span class="zs-no">〔14〕</span>：所居任职。</p>
+<p class="fy-inline">孙邻升任夏口战区军事指挥官，沔中战区军事指挥官，威远将军：在这些职位上都很称职。</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">沔中督：官名。沔中战区的指挥官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">威远将军：官名。领兵征伐。</span></p>
+<p class="yw">赤乌十二年卒。子苗嗣。苗弟旅，及叔父安、熙、绩，皆历列位<span class="zs-no">〔15〕</span>。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">他在赤乌十二年（公元249）去世。儿子孙苗继承了他的爵位。孙苗的弟弟孙旅以及孙苗的叔父孙安、孙熙、孙绩，都历任各种官职。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">列位：各种官位。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《吴书》曰：“邻，字公达。雅性精敏，幼有令誉。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《博物志》曰：“仲膺名邵。初，伯膺亲友为人所杀，仲膺为报怨。事觉，兄弟争死：皆得免。”袁术时，邵为阜陵长。亦见《江表传》。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《吴历》曰：“邻又有子曰述，为武昌督，平荆州事；震，无难督；谐，城门校尉；歆，乐乡督。震后御晋军，与张悌俱死。贲曾孙惠，字德施。”《惠别传》曰：“惠，好学有才智。晋永宁元年，赴齐王冏义，以功封晋兴侯。辟大司马贼曹属。冏骄矜僭侈，天下失望；惠献言于冏，讽以五难、四不可；劝令委让万机，归藩青岱。辞甚深切，冏不能纳，顷之果败。成都王颖，召为大将军参军。是时颖将有事于长沙，以陆机为前锋都督。惠与机，乡里亲厚，忧其致祸。谓之曰：‘子盍让都督于王粹乎？’机曰：‘将谓吾避贼首鼠，更速其害！’机寻被戮；二弟云、耽，亦见杀。惠甚伤恨之。永兴元年，乘舆幸邺。司空东海王越，治兵下邳。惠以书干越，诡其姓名，自称‘南岳逸民秦秘之’：勉以勤王匡世之略，辞义甚美。越省其书，榜题道衢，招求其人。惠乃出见，越即以为记室参军；专掌文疏，豫参谋议。每造书檄，越或驿马催之；应命立成，皆有辞旨。累迁显职，后为广武将军，安丰内史。年四十七，卒。惠文翰，凡数十首。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">7 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙辅字国仪。贲弟也。以扬武校尉佐孙策平三郡<span class="zs-no">〔1〕</span>。策讨丹杨七县，使辅西屯历阳，以拒袁术；并招诱余民，鸠合遗散<span class="zs-no">〔2〕</span>。又从策讨陵阳<span class="zs-no">〔3〕</span>，生得祖郎等。<span class="pz-no">〔一〕</span>策西袭庐江太守刘勋，辅随从；身先士卒，有功。策立辅为庐陵太守，抚定属城，分置长吏。</p>
+<p class="fy-inline">孙辅，字国仪。是孙贲的弟弟。他以扬武校尉的身份帮助孙策平定了江东的丹杨、吴、会稽三郡。孙策讨伐丹杨郡的七个县时，派孙辅到西面的历阳驻扎，以抵御袁术；同时让他招纳当地余下的民众，集合逃散的百姓。他又随孙策进攻历阳，生擒了敌军首领祖郎等人。孙策袭击西面庐江郡的太守刘勋时，孙辅也随同前往；身先士卒，立下战功。孙策委任他为庐陵郡太守，前去安抚所属各县，设立县级行政长官。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">扬武校尉：官名。领兵征伐；三郡：指孙策渡江后最先平定的丹杨、吴、会稽三郡</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">鸠合：集合。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">陵阳：县名。县治在今安徽青阳县东南。</span></p>
+<p class="yw">迁平南将军，假节，领交州刺史。遣使与曹公相闻，事觉，权幽系之。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">后来他升任平南将军，被授予节杖，兼任交州刺史。因为派遣使者与曹操联络，事情发觉，孙权把他关押起来。</p>
+<p class="yw">数岁卒。子兴、昭、伟、昕，皆历列位。</p>
+<p class="fy-inline">几年后去世。他的儿子孙兴、孙昭、孙伟、孙昕，都历任各种官职。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《江表传》曰：“策既平定江东，逐袁胤。袁术深怨策，乃阴遣间使赍印绶，与丹阳宗帅陵阳祖郎等；使激动山越，大合众，图共攻策。策自率将士讨郎，生获之。策谓郎曰：‘尔昔袭击孤，斫孤马鞍；今创军立事，除弃宿恨，惟取能用；与天下通耳，非但汝：汝莫恐怖！’郎叩头谢罪。即破械，赐衣服，署门下贼曹。及军还，郎与太史慈，俱在前导军，人以为荣。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《典略》曰：“辅恐权不能保守江东，因权出行东冶，乃遣人赍书，呼曹公。行人以告，权乃还，伪若不知；与张昭，共见辅。权谓辅曰：‘兄厌乐邪？何为呼他人？’辅云：‘无是。’权因投书与昭；昭示辅，辅惭，无辞。乃悉斩辅亲近，分其部曲，徒辅置东。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">8 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙翊字叔弼。权弟也，骁悍果烈，有兄策风。太守朱治举孝廉<span class="zs-no">〔1〕</span>，司空辟。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">孙翊，字叔弼。是孙权的弟弟。他骁勇强悍，果敢刚烈，有大哥孙策的风范。吴郡太守朱治举荐他为孝廉，司空聘他为下属。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">太守：指吴郡太守。孝廉由家乡所在郡的太守推举，而孙氏籍贯在吴郡富春县。</span></p>
+<p class="yw">建安八年，以偏将军领丹杨太守，时年二十。后卒为左右边鸿所杀，鸿亦即诛。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">汉献帝建安八年（公元 203），他以偏将军的身份兼任丹杨郡太守，当时刚好二十岁。后来却被左右的部将边鸿刺死，边鸿也随即被诛杀。</p>
+<p class="yw">子松，为射声校尉<span class="zs-no">〔2〕</span>，都乡侯。<span class="pz-no">〔三〕</span>黄龙三年卒。蜀丞相诸葛亮与兄瑾书曰：“既受东朝厚遇<span class="zs-no">〔3〕</span>，依依于子弟<span class="zs-no">〔4〕</span>。又子乔良器<span class="zs-no">〔5〕</span>，为之恻怆；见其所与亮器物，感用流涕！”其悼松如此，由亮养子乔咨述故云<span class="zs-no">〔6〕</span>。</p>
+<p class="fy-inline">孙翊的儿子孙松，担任射声校尉，封都乡侯。他在黄龙三年（公元231）去世。蜀国丞相诸葛亮给哥哥诸葛瑾写信时说：“我曾经在吴朝受到厚待，所以对孙氏子弟非常关心。子乔是一个优秀人才却不幸早死，为此很感悲伤；看到他赠送给我的东西，不禁泪流满面！”诸葛亮之所以如此痛悼孙松，是他的养子诸葛乔向他叙述了孙松情况的缘故。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">射声校尉：官名。京城特种兵的分队指挥官之一。统领射声营。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">东朝：当时蜀汉的人称孙吴为东朝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">依依于子弟：对孙氏家族的子弟非常关心。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">子乔：孙松字子乔。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">乔：即诸葛乔（公元 204—228），传附本书卷三十五《诸葛亮传》。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《典略》曰：“翊名俨。性似策。策临卒，张昭等谓策当以兵属俨；而策呼权，佩以印绶。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《吴历》载翊妻徐节行，宜与妫览等事相次，故列于后《孙韶传》中。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《吴录》曰：“松，善与人交，轻财好施。镇巴丘，数咨陆逊以得失。尝有小过，逊面责松，松意色不平。逊观其少释，谓曰：‘君过听不以某鄙，数见访及；是以承来意，进尽言。便变色，何也？’松笑曰：‘属亦自忿行事有此，岂有望邪！’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">9 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙匡字季佐。翊弟也。举孝廉、茂才。未试用，卒，时年二十余。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">孙匡，字季佐。是孙翊的弟弟。他曾被本郡举荐为孝廉，本州举荐为茂才。还没有受到朝廷的任用，就去世了，死时只有二十多岁。</p>
+<p class="yw">子泰，曹氏之甥也<span class="zs-no">〔1〕</span>。为长水校尉。嘉禾三年，从权围新城，中流矢死。泰子秀为前将军，夏口督<span class="zs-no">〔2〕</span>。</p>
+<p class="fy-inline">他的儿子孙泰，是曹操侄儿的外甥。官任长水校尉。嘉禾三年（公元234），他随从孙权围攻合肥新城，被流箭射死。孙泰的儿子孙秀，任前将军，夏口战区军事指挥官。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">曹氏之甥：孙匡娶曹操的侄女为妻，所以孙泰是曹氏的外甥。事见本书卷四十六《孙策传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">前将军：官名。领兵征伐。</span></p>
+<p class="yw">秀公室至亲<span class="zs-no">〔3〕</span>，握兵在外，皓意不能平。建衡二年，皓遣何定，将五千人，至夏口猎。先是，民间佥言秀当见图<span class="zs-no">〔4〕</span>；而定远猎<span class="zs-no">〔5〕</span>，秀遂惊：夜将妻子亲兵数百人奔晋。</p>
+<p class="fy-inline">孙秀是孙氏皇族中与皇帝关系最为亲近的成员之一，在外面掌握精兵，当时的皇帝孙皓心中不安。建衡二年（公元 270），孙皓派亲信将领何定，带了五千人马，到夏口打猎。在此之前，民间都传言孙秀要受到孙皓的谋算；而何定又远道跋涉到夏口来打猎，孙秀不免吃惊：连夜带着妻室儿女和亲兵共几百人投奔晋朝。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">公室：即公族。诸侯的家族。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">佥：都；见图：受到谋算</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">远猎：夏口在今湖北武汉市长江南岸，与建业距离千里以上，所以是远猎。</span></p>
+<p class="yw">晋以秀为骠骑将军，仪同三司，封会稽公。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">晋朝任命他为骠骑将军，仪仗队的规格与三公相同，封会稽公。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《江表传》曰：“曹休出洞口，吕范率军御之。时匡为定武中郎将，（遣）〔违〕范令放火，烧损茅芒。以乏军用，范即启送匡还吴；权别其族为丁氏，禁锢终身。”臣松之按：本传曰：“匡未试用，卒，时年二十余。”而《江表传》云吕范在洞口，匡为定武中郎将。既为定武，非为未试用。且孙坚以初平二年卒，洞口之役在黄初三年，坚卒至此合三十一年；匡时若尚在，本传不得云卒时年二十余也。此盖权别生弟朗，《江表传》误以为匡也。朗之名位，见《三朝录》及虞喜《志林》也。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《江表传》曰：“皓大怒，追改秀姓曰‘厉’。”干宝《晋纪》曰：“秀在晋朝，初闻皓降，群臣毕贺；秀称疾不与，南向流涕曰：‘昔讨逆弱冠以一校尉创业，今后主举江南而弃之；宗庙、山陵，于此为墟：悠悠苍天，此何人哉！’朝廷美之。”《晋诸公赞》曰：“吴平，降为伏波将军，开府如故。永宁中卒，追赠骠骑、开府。子俭，字仲节。给事中。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c10">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">10 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙韶字公礼。伯父河，字伯海。本姓俞氏，亦吴人也；孙策爱之，赐姓为孙，列之属籍<span class="zs-no">〔1〕</span>。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">孙韶，字公礼。他的伯父孙河，字伯海。本姓俞，也是吴郡人；孙策喜爱孙河，赐他姓孙，而且列入孙氏亲属的名册中。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">属籍：亲属的名册。</span></p>
+<p class="yw">后为将军，屯京城<span class="zs-no">〔2〕</span>。初，孙权杀吴郡太守盛宪，<span class="pz-no">〔二〕</span>宪故孝廉妫览、戴员亡匿山中<span class="zs-no">〔3〕</span>。孙翊为丹杨<span class="zs-no">〔4〕</span>，皆礼致之。览为丹杨都尉督兵<span class="zs-no">〔5〕</span>，员为郡丞<span class="zs-no">〔6〕</span>。及翊遇害，河驰赴宛陵<span class="zs-no">〔7〕</span>；责怒览、员以不能全（权）〔翊〕<span class="zs-no">〔8〕</span>，令使奸变得施。二人议曰：“伯海与将军疏远<span class="zs-no">〔9〕</span>，而责我乃（耳）〔尔〕<span class="zs-no">〔10〕</span>；讨虏若来<span class="zs-no">〔11〕</span>，吾属无遗矣<span class="zs-no">〔12〕</span>！”遂杀河，使人北迎扬州刺史刘馥<span class="zs-no">〔13〕</span>；令住历阳，以丹杨应之。会翊帐下徐元、孙高、傅婴等杀览、员<span class="zs-no">〔14〕</span>。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">后来孙河担任将军，驻扎在京这个地方的城堡中。当初，孙权诛杀了吴郡太守盛宪，盛宪从前举荐的孝廉妫览、戴员逃到山中藏了起来。孙翊就任丹杨郡太守，备办礼品把他们请出深山。妫览当了丹杨郡都尉指挥兵马，戴员则当了郡丞。孙翊被部下边鸿杀害之后，孙河立即驰马赶往丹杨郡的治所宛陵县；怒斥妫览、戴员，因为他们未能保护好孙翊，使得边鸿的奸恶阴谋得以实施。妫、戴二人下来后暗中商议说：“孙伯海与被害的孙将军关系疏远，都还怒斥我们到这样的程度；万一主公亲自来到，我们就连后代都不会留在世间了！”于是二人杀死孙河，派人到北面去迎接曹操的扬州刺史刘馥；请他赶到历阳，然后鼓动丹杨郡响应他。碰巧这时孙翊的亲信侍从徐元、孙高、傅婴等诛杀了妫览、戴员。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">京城：此处为地名。在今江苏镇江市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">故孝廉：过去举荐的孝廉。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">为丹杨：指出任丹杨太守。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">督兵：督领军队。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">郡丞：官名。郡太守的副手。协助太守处理公务。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">宛陵：县名。县治在今安徽宣城市宣州区。当时是丹杨郡治所。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">全：保全。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">将军：指被杀的孙翊。当时他任偏将军。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">乃耳：就像这样。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">讨虏：指孙权。当时他任讨虏将军。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">吾属：我们。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">刘馥：传见本书卷十五。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">帐下：指亲信随从。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《吴书》曰：“河，坚族子也。出后姑俞氏，后复姓为孙。河质性忠直，讷言敏行；有气干，能服勤。少从坚征讨，常为前驱。后领左右兵，典知内事：待以腹心之任。又从策平定吴、会。从权讨李术，术破，拜威寇中郎将，领庐江太守。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《会稽典录》曰：“宪字孝章。器量雅伟。举孝廉，补尚书郎。稍迁吴郡太守，以疾去官。孙策平定吴、会，诛其英豪；宪素有高名，策深忌之。初，宪与少府孔融善，融忧其不免祸，乃与曹公书曰：‘岁月不居，时节如流；五十之年，忽焉已至：公为始满，融又过二。海内知识，零落殆尽；惟会稽盛孝章尚存。其人困于孙氏，妻孥湮没，单孑独立，孤危愁苦；若使忧能伤人，此子不得复永年矣。《春秋传》曰：“诸侯有相灭亡者，桓公不能救，则桓公耻之。”今孝章，实丈夫之雄也，天下谈士依以扬声；而身不免于幽执，命不期于旦夕：是吾祖不当复论损益之友，而朱穆所以绝交也。公诚能驰一介之使，加咫尺之书；则孝章可致，友道可弘也。今之少年，喜谤前辈；或能讥平皮柄反。孝章。孝章要为有天下大名，九牧之民所共称叹。燕君市骏马之骨，非欲以骋道里，乃当以招绝足也。惟公匡复汉室，宗社将绝，又能正之；正之之术，实须得贤。珠玉无胫而自至者，以人好之也；况贤者之有足乎？昭王筑台以尊郭隗，隗虽小才，而逢大遇，竟能发明主之至心；故乐毅自魏往，剧辛自赵往，邹衍自齐往。向使郭隗倒悬而王不解，临溺而王不拯；则士亦将高翔远引，莫有北首燕路者矣。凡所称引，自公所知；而有云者，欲公崇笃斯义也。因表不悉。’由是征为骑都尉。制命未至，果为权所害。子匡奔魏，位至征东司马。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《吴历》曰：“妫览、戴员亲近边鸿等，数为翊所困，常欲叛逆；因吴主出征，遂其奸计。时诸县令长并会，见翊。翊以妻徐氏颇晓卜，翊入语徐：‘吾明日欲为长吏作主人，卿试卜之。’徐言：‘卦不能佳！可须异日。’翊以长吏来久，宜速遣，乃大请宾客。翊出入常持刀，尔时有酒色，空手送客；鸿从后斫翊，郡中扰乱，无救翊者：遂为鸿所杀，迸走入山。徐氏购募追捕，中宿乃得，览、员归罪杀鸿。诸将皆知览、员所为，而力不能讨。览入居军府中，悉取翊嫔妾及左右侍御。欲复取徐，恐逆之见害，乃绐之曰：‘乞须晦日，设祭除服。’时月垂竟，览听须祭毕。徐潜使所亲信，语翊亲近旧将孙高、傅婴等，说：‘览已虏略婢妾，今又欲见逼；所以外许之者，欲安其意以免祸耳。欲立微计，愿二君哀救！’高、婴涕泣答言：‘受府君恩遇，所以不即死难者，以死无益，欲思惟事计；事计未立，未敢启夫人耳。今日之事，实夙夜所怀也！’乃密呼翊时侍养者二十余人，以徐意语之；共盟誓，合谋。到晦日，设祭；徐氏哭泣尽哀毕，乃徐服，熏香沐浴；更于他室，安施帏帐，言笑欢悦，示无戚容。大小凄怆，怪其如此。览密觇视，无复疑意。徐呼高、婴与诸婢罗住户内，使人报览，说：‘已除凶即吉，惟府君敕命。’览盛意入，徐出户拜。览适得一拜，徐便大呼：‘二君可起！’高、婴俱出，共得杀览；余人即就外杀员。夫人乃还缞绖，奉览、员首，以祭翊墓。举军震骇，以为神异！吴主续至，悉族诛览、员余党；擢高、婴为牙门；其余皆加赐金帛，殊其门户。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c11">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">11 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">韶年十七，收河余众；缮治京城，起楼橹<span class="zs-no">〔1〕</span>，修器备以御敌。</p>
+<p class="fy-inline">孙韶当时十七岁，收容了孙河的部下；维修京这个地方的城堡，建起供瞭望敌情的高楼，制作军用器械和加强防备设施以抵御敌人。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">楼橹：瞭望的高楼。</span></p>
+<p class="yw">权闻乱，从椒丘还<span class="zs-no">〔2〕</span>；过定丹杨，引军归吴。夜至京城下营，试攻惊之；兵皆乘城传檄备警<span class="zs-no">〔3〕</span>，w声动地<span class="zs-no">〔4〕</span>，颇射外人：权使晓喻，乃止。</p>
+<p class="fy-inline">孙权得知丹杨郡发生变乱，从椒丘赶了回来；途中安定了丹杨郡，然后带兵回转吴县。大军在夜晚路过孙韶在京的军营，孙权决定试着进攻惊扰一下孙韶；结果孙韶的士兵立即登上城墙传送命令进入警戒状态，喊杀声惊天动地，箭像雨一般射来：孙权赶紧派人去说明情况这才停止。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">椒丘：城名。在今江西新建县东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">乘城：登城；传檄：传送命令</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">讙：喧嚷。</span></p>
+<p class="yw">明日见韶，甚器之；即拜承烈校尉<span class="zs-no">〔5〕</span>，统河部曲；食曲阿、丹徒二县<span class="zs-no">〔6〕</span>，自置长吏，一如河旧。后为广陵太守，偏将军。权为吴王，迁扬威将军，封建德侯。权称尊号，为镇北将军<span class="zs-no">〔7〕</span>。</p>
+<p class="fy-inline">第二天孙权召见了孙韶，对他非常器重；立即委任他为承烈校尉，统领孙河原来的部下；以曲阿、丹徒二县作为奉邑，可以自己委任这两县的行政长官，一切待遇都保持孙河当初的原样。后来孙韶又担任广陵郡太守、偏将军。孙权当了吴王，孙韶升任扬威将军，封建德侯。孙权称帝，孙韶任镇北将军。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">承烈校尉：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">食：指收取民户租税自己享用。这里的曲阿、丹徒二县，就是孙韶的奉邑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">镇北将军：官名。领兵征伐。</span></p>
+<p class="yw">韶为边将数十年，善养士卒，得其死力。常以警疆埸、远斥候为务<span class="zs-no">〔8〕</span>；先知动静，而为之备：故鲜有负败。青、徐、汝、沛颇来归附<span class="zs-no">〔9〕</span>，淮南滨江屯候皆撤兵远徙<span class="zs-no">〔10〕</span>；徐泗、江、淮之地，不居者各数百里。</p>
+<p class="fy-inline">孙韶在边境当守将几十年，善于对待将士，能够使他们拼死尽力。他经常把警戒边境、派出侦察兵到远方作为首要任务；先了解敌方动静然后作相应的防备：所以很少有失败。魏国的青、徐二州，以及豫州的汝南郡、沛国，都有不少民众前来投降归附他，而魏军在淮南滨临长江北岸的沿线军营哨所，都往北后退很远；使得徐州的泗水、长江、淮河一带，没有民众居住的地带宽达几百里。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">警疆埸：警戒边境；远斥候：派出侦察兵到远处</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">青：指曹魏的青州。治所在今山东淄博市东；徐：指曹魏的徐州；汝：指曹魏豫州的汝南郡；沛：指曹魏豫州的沛国</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">屯候：军营哨所。</span></p>
+<p class="yw">自权西征还，都武昌，韶不进见者十余年。权还建业，乃得朝觐。权问青、徐诸屯要害，远近人马众寡，魏将帅姓名；尽具识之<span class="zs-no">〔11〕</span>，有问咸对。身长八尺，仪貌都雅<span class="zs-no">〔12〕</span>。权欢悦曰：“吾久不见公礼，不图进益乃尔！”加领幽州牧，假节。</p>
+<p class="fy-inline">自从孙权西征关羽夺得荆州后回来，建都武昌，孙韶有十多年未能进京拜见孙权。直到孙权迁都回建业，孙韶才得以朝见。孙权问他魏军青、徐二州各处重要的屯兵据点，远近各地人马的多少，将帅的姓名等等；他不仅完全记得，而且有问必答。他身高八尺，仪容俊美文雅。孙权十分喜悦，说：“我好久没有见到公礼，没有想到他进步得这样快！”于是让孙韶兼任幽州牧，授予节杖。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">识：记得。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">都雅：俊美文雅。</span></p>
+<p class="yw">赤乌四年，卒。子越嗣，至右将军<span class="zs-no">〔13〕</span>。越兄楷，武卫大将军<span class="zs-no">〔14〕</span>，临成侯，代越为京下督。楷弟异，至领军将军<span class="zs-no">〔15〕</span>；奕，宗正卿；恢，武陵太守。</p>
+<p class="fy-inline">他在赤乌四年（公元 241）去世。儿子孙越继承了他的爵位，官做到右将军。孙越的哥哥孙楷，任武卫大将军，封临成侯，代替孙越担任京下战区的军事指挥官。孙楷弟弟孙异，官做到领军将军；弟弟孙奕任宗正卿，弟弟孙恢任武陵郡太守。</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">右将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">武卫大将军：官名。统领皇帝卫队。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">领军将军：官名。统领指挥京城卫戍军队。</span></p>
+<p class="yw">天玺元年，征楷为宫下镇、骠骑将军<span class="zs-no">〔16〕</span>。初，永安贼施但等，劫皓弟谦，袭建业；或白楷二端不即赴讨者<span class="zs-no">〔17〕</span>。皓数遣诘楷，楷常惶怖；而猝被召，遂将妻子亲兵数百人，归晋。晋以为车骑将军，封丹杨侯。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">天玺元年（公元 276），孙皓征召孙楷进京担任宫下镇、骠骑将军。当初，永安县的叛军首领施但等，劫持孙皓的弟弟孙谦，袭击建业；有人告发孙楷打两种主意不立即前去讨伐，孙皓多次派使者去追问孙楷，孙楷平常一直惶恐不安；这时猛然接到征召，于是带着妻室儿子和亲兵几百人投奔晋国。晋朝任命他为车骑将军，封丹杨侯。</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">宫下镇：官名。孙皓时设立的皇宫内警卫队长官，侍从保卫皇帝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">二端：迟疑观望。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《晋诸公赞》曰：“吴平，降为渡辽将军。永安元年卒。”</span></p>
+<p class="pz-item no-no">《吴录》曰：“楷处事严整，不如孙秀；而人间知名，过也。”</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c12">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">12 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">孙桓字叔武。河之子也。<span class="pz-no">〔一〕</span>年二十五，拜安东中郎将<span class="zs-no">〔1〕</span>。与陆逊共拒刘备，备军众甚盛，弥山盈谷。桓投刀奋命，与逊戮力，备遂败走。桓斩上（兜）〔夔〕道<span class="zs-no">〔2〕</span>，截其径要。</p>
+<p class="fy-inline">孙桓，字叔武。是孙河的儿子。他二十五岁时，被任命为安东中郎将。与陆逊一起抵御刘备的进攻，刘备的军队兵力强盛，漫山遍野都是人马。而孙桓挥刀指挥奋不顾身，与陆逊同心合力，刘备终于被打得大败而逃。这时孙桓砍伐树木以开辟通往长江上游夔国故地的通道，然后前去阻截刘备必经的退路。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">安东中郎将：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">斩上夔道：斩伐树木开辟通往上游夔国故地的道路。夔是先秦古国名，故地在今湖北秭归县。孙桓这样做是想抄近路截住刘备。</span></p>
+<p class="yw">备逾山越险，仅乃得免，忿恚叹曰：“吾昔初至京城，桓尚小儿；而今迫孤，乃至此也！”桓以功拜建武将军<span class="zs-no">〔3〕</span>，封丹徒侯。下督牛渚<span class="zs-no">〔4〕</span>，作横江坞<span class="zs-no">〔5〕</span>。会卒<span class="zs-no">〔6〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">刘备只好翻山越岭，才勉强得以逃脱险境，他又气又恼叹息说：“我当初到京下会见孙权时，孙桓还是一个小娃娃；而今竟然把我逼到如此地步啊！”事后孙桓因功升任建武将军，封丹徒侯。受命到下游做牛渚战区的军事指挥官，在横江修建军事堡垒。恰好他在这时去世。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">建武将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">下：调往长江下游；督牛渚：担任牛渚战区的指挥官</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">横江：地名。在今安徽和县东南长江边；坞：堡垒</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">会卒：碰巧（这时）死亡。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《吴书》曰：“河有四子：长助，曲阿长；次谊，海盐长：并早卒。次桓，仪容端正，器怀聪朗，博学强记，能论议应对。权常称为宗室颜渊，擢为武卫都尉。从讨关羽于华容，诱羽余党；得五千人，牛马、器械甚众。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《吴书》曰：“桓弟俊，字叔英。性度恢弘，才经文武。为定武中郎将，屯戍薄落。赤乌十三年卒。长子建，袭爵，平虏将军。少子慎，镇南将军。慎子丞，字显世。”</span></p>
+<p class="pz-item no-no">《文士传》曰：“丞好学，有文章，作《萤火赋》行于世。为黄门侍郎，与顾荣俱为侍臣。归命世，内侍多得罪尤；惟荣、丞，独获全。常使二人记事：丞答，顾问。乃下诏曰：‘自今以后，用侍郎，皆当如今宗室丞、顾荣畴也。’吴平，赴洛。为范阳、涿令，甚有称绩。永安中，陆机为成都王大都督，请丞为司马：与机俱被害。”</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v51-c13">
+<div class="chunk-head"><a class="chunk-vol" href="#v51-c01" onclick="go('v51-c01');return false;">第51卷 · 吴书6 宗室传第6</a><span class="chunk-prog">13 / 13</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：夫亲亲恩义<span class="zs-no">〔1〕</span>，古今之常；“宗子维城<span class="zs-no">〔2〕</span>”，诗人所称<span class="zs-no">〔3〕</span>。况此诸孙，或赞兴初基，或镇据边陲，克堪厥任，不忝其荣者乎<span class="zs-no">〔4〕</span>？故详著云。</p>
+<p class="fy-inline">评论说：亲戚的情谊关系，古往今来一直存在；王族子弟好比是保护王朝的城墙，这是《诗经·板》一诗中的句子。何况这里的各位孙氏家族成员，有的帮助开创国家的最初基础，有的长期镇守边境，都能胜任他们的职务，不辜负他们所得到的荣誉呢？所以在这一卷里对他们详加记述。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">亲亲：亲戚。这是当时习语。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">宗子维城：王族子弟就是（保护王朝的）城墙。句出《诗经·板》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">诗人：指《诗经》诗歌的作者。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">不忝其荣：不辜负他们（得到）的荣誉。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v51';
+var NC = 13;
+var CUR = "home";
+var PREV_HREF = "v50.html";
+var NEXT_HREF = "v52.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

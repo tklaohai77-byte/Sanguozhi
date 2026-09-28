@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第35卷 诸葛亮传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第35卷《诸葛亮传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：诸葛亮字孔明，琅邪阳都人（也）。汉司隶校尉诸葛丰后也。父珪，字君贡。汉末为太山郡丞。">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v35.html">
+<meta property="og:title" content="《三国志》第35卷 诸葛亮传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第35卷《诸葛亮传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：诸葛亮字孔明，琅邪阳都人（也）。汉司隶校尉诸葛丰后也。父珪，字君贡。汉末为太山郡丞。">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">35卷 · 1/12</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html" selected>第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v35-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">1 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">诸葛亮字孔明，琅邪阳都人（也）<span class="zs-no">〔1〕</span>。汉司隶校尉诸葛丰后也。父珪，字君贡。汉末为太山郡丞。</p>
+<p class="fy-inline">诸葛亮，字孔明，琅邪郡阳都县人。是汉朝司隶校尉诸葛丰的后代。他的父亲诸葛珪，字君贡，汉朝末年任泰山郡丞。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">阳都：县名。县治在今山东沂南县南砖埠乡的孙家黄疃村。现今尚有故城城墙等遗迹留存。在故城范围内，曾出土汉代画像石、陶器、铜器等文物。诸葛亮字孔明。“孔”在这里是非常的意思。“亮”在这里指光亮，“孔明”意为非常鲜明，配合起来便是这一光亮非常鲜明。如此取名的用意，是希望诸葛亮将来成为光彩照人的杰出人才。</span></p>
+<p class="yw">亮早孤<span class="zs-no">〔2〕</span>。从父玄，为袁术所署豫章太守<span class="zs-no">〔3〕</span>，玄将亮及亮弟均之官<span class="zs-no">〔4〕</span>。会汉朝更选朱皓代玄；玄素与荆州牧刘表有旧，往依之。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">诸葛亮很早就死了父亲，而他的叔父诸葛玄被袁术委任为豫章郡太守，诸葛玄就带着诸葛亮、诸葛亮的弟弟诸葛均去上任。碰上汉朝又选派朱皓来取代诸葛玄，诸葛玄与荆州牧刘表有老交情，就带着家属前去投靠刘表。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">孤：指父亲死。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">豫章：郡名。治所在今江西省南昌市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">之官：到任。</span></p>
+<p class="yw">玄卒，亮躬耕陇亩<span class="zs-no">〔5〕</span>。好为《梁父吟》<span class="zs-no">〔6〕</span>，<span class="pz-no">〔二〕</span>身长八尺<span class="zs-no">〔7〕</span>，每自比于管仲、乐毅<span class="zs-no">〔8〕</span>。</p>
+<p class="fy-inline">诸葛玄死后，诸葛亮亲自在田野耕种，喜欢唱《梁父吟》这首乐府歌曲。他身高八尺，常常把自己比作管仲、乐毅。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">躬耕陇亩：亲自在田野耕种。关于诸葛亮的躬耕地，自来有湖北襄阳市、河南南阳市两处的争论。但是依据最为接近三国时期的典籍文献中，关于当时军事争夺的形势和行政地理分划，以及当时人们习用的籍贯表达用语等诸多方面的确切资料来考察，其躬耕地应当在今湖北襄阳市城西 10 公里的隆中一带。现今的隆中是一处规模宏大的三国名胜地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">《梁父吟》：汉代乐府歌曲名。属于《楚调曲》中的一首。歌唱时用笙、笛、节、琴、筝、琵琶、瑟七种乐器伴奏。《乐府诗集》卷四十一载有题名为诸葛亮所作的《梁父吟》歌词一首：“步出齐东门，遥望荡阴里。里中有三墓，累累正相似。问是谁家墓？田疆、古冶子。力能排南山，文能绝地纪。一朝被谗言，二桃杀三士。谁能为此谋？国相齐晏子。”</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">八尺：根据 20 世纪的 90 年代所能见到的大量考古实物资料，三国时期的每尺长度，相当于现今 24 厘米。所以当时的八尺，相当于现今 1．92 米左右。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">管仲：名夷吾，字仲。春秋初期政治家。由鲍叔牙推荐，受齐桓公重用，推行多方面改革，国力大振。在此基础上，让齐桓公以“尊王攘夷”为号召，使之成为春秋时期第一个霸主。传见《史记》卷六十二；乐毅：中山国灵寿（今河北平山县东北）人</span></p>
+<p class="yw">时人莫之许也<span class="zs-no">〔9〕</span>，惟博陵崔州平、颍川徐庶元直与亮友善，谓为信然<span class="zs-no">〔10〕</span>。<span class="pz-no">〔三〕</span>时先主屯新野。徐庶见先主，先主器之<span class="zs-no">〔11〕</span>；谓先主曰：“诸葛孔明者，卧龙也<span class="zs-no">〔12〕</span>。将军岂愿见之乎<span class="zs-no">〔13〕</span>？”<span class="pz-no">〔四〕</span>先主曰：“君与俱来！”庶曰：“此人可就见<span class="zs-no">〔14〕</span>，不可屈致也<span class="zs-no">〔15〕</span>：将军宜枉驾顾之<span class="zs-no">〔16〕</span>！”</p>
+<p class="fy-inline">当时他周围的人不同意这一点，只有博陵郡人崔州平、颍川郡人徐庶（字元直）与他友好亲近，认为确实是这样。当时先主刘备驻扎在新野县。徐庶来见先主，先主很器重他，他对先主说：“诸葛孔明，好比是一条卧着还没有飞腾的龙，将军难道不想见他吗？”先主说：“您可以和他一起来！”徐庶说：“这个人只能到他家去会见，不可能把他勉强叫来；将军您应当委屈大驾去拜访他！”</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">莫之许：不同意这一点。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">谓为信然：认为确实如此。崔州平，名钧。其父崔烈，本为幽州的名士，后来用五百万钱换得担任三公之一的司徒，崔钧因而批评父亲带有“铜臭”，令天下人士失望，可见其人的正直品格。他与诸葛亮结为至交，并非偶然。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">器：器重。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">卧龙：比喻等待时机施展才能抱负的杰出人物。当时对杰出人物常用龙来形容，不一定专指帝王。三国时期，还有一位杰出人物，也被时人誉为“卧龙”，就是曹魏末期的名士嵇康。孔明与嵇康不仅都有“卧龙”的美誉，两人而且还有多方面的相似之处。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">岂：是不是。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">就见：到他那里去会见。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">屈致：（让他）屈意前来。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">枉驾：委曲大驾。指亲自登门。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《献帝春秋》曰：“初，豫章太守周术病卒，刘表上诸葛玄为豫章太守，治南昌。汉朝闻周术死，遣朱皓代玄。皓从扬州刺史刘繇求兵，击玄；玄退屯西城：皓入南昌。建安二年正月，西城民反，杀玄，送首诣繇。”此书所云，与本传不同。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《汉晋春秋》曰：“亮家于南阳之邓县，在襄阳城西二十里，号曰‘隆中’。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">按《崔氏谱》：州平，太尉烈子，均之弟也。</span></p>
+<p class="pz-item no-no">《魏略》曰：“亮在荆州，以建安初，与颍川石广元，徐元直、汝南孟公威等俱游学。三人务于精熟，而亮独观其大略。每晨夜从容，常抱膝长啸，而谓三人曰：‘卿三人仕进，可至刺史、郡守也。’三人问其‘所至’，亮但笑而不言。后公威思乡里，欲北归；亮谓之曰：‘中国饶士大夫，邀游何必故乡邪！’”</p>
+<p class="pz-item no-no">臣松之以为：《魏略》此言，谓诸葛亮为公威计者，可也；若谓兼为己言，可谓未达其心矣。老氏称“知人者智，自知者明”；凡在贤达之流，固必兼而有焉。以诸葛亮之鉴识，岂不能自审其分乎？夫其高吟俟时，情见乎言；志气所有，既已定于其始矣。若使游步中华，骋其龙光，岂夫多士所能沉翳哉！委质魏氏，展其器能，诚非陈长文、司马仲达所能颉颃；而况于余哉！苟不患功业不就，道之不行；虽志恢宇宙而终不北向者，盖以权御已移，汉祚将倾；方将翊赞宗杰，以兴微继绝克复为己任故也：岂其区区利在边鄙而已乎！此相如所谓“鹍鹏已翔于辽廓，而罗者犹视于薮泽”者矣。</p>
+<p class="pz-item no-no">公威名建，在魏亦贵达。</p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《襄阳记》曰：“刘备访世事于司马德操。德操曰：‘儒生俗士，岂识时务！识时务者在乎俊杰；此间自有伏龙、凤雏。’备问：‘为谁？’曰：‘诸葛孔明、庞士元也！’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">2 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">由是先主遂诣亮；凡三往，乃见。因屏人曰<span class="zs-no">〔1〕</span>：“汉室倾颓，奸臣窃命<span class="zs-no">〔2〕</span>，主上蒙尘<span class="zs-no">〔3〕</span>。孤不度德量力<span class="zs-no">〔4〕</span>，欲信大义于天下<span class="zs-no">〔5〕</span>；而智术短浅，遂用猖獗<span class="zs-no">〔6〕</span>。至于今日，然志犹未已，君谓计将安出？”</p>
+<p class="fy-inline">于是先主去拜访诸葛亮，总共去了三次，才得以见面。先主让左右随从退下之后问道：“汉朝衰落，奸臣窃夺皇权，天子流亡在京城洛阳之外。我不能正确估计自己的品德和才能，想要在天下人的面前伸张大义；可惜我智慧谋略短浅，因而连遭挫折一直未能成功。但是直到今天，我的志向依然没有放弃，您认为应当怎么办呢！”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">屏人：让左右的人退下。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">奸臣：指曹操；窃命：窃夺皇权</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">主上：指汉献帝；蒙尘：天子在外流亡</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">孤：当时诸侯的自称。刘备在建安元年（公元 196）封宜城亭侯，所以自称孤。度（duó）：衡量。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">信：伸张。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">用：因而；猖獗：受到挫折</span></p>
+<p class="yw">亮答曰：“自董卓以来，豪杰并起，跨州连郡者不可胜数。曹操比于袁绍，则名微而众寡；然操遂能克绍，以弱为强者：非惟天时，抑亦人谋也。今操已拥百万之众，挟天子而令诸侯<span class="zs-no">〔7〕</span>：此诚不可与争锋<span class="zs-no">〔8〕</span>。孙权据有江东<span class="zs-no">〔9〕</span>，已历三世<span class="zs-no">〔10〕</span>；国险而民附，贤能为之用：此可以为援而不可图也。荆州北据汉沔<span class="zs-no">〔11〕</span>，利尽南海<span class="zs-no">〔12〕</span>，东连吴、会<span class="zs-no">〔13〕</span>，西通巴、蜀；此用武之国，而其主不能守：此殆天所以资将军，将军岂有意乎？益州险塞<span class="zs-no">〔14〕</span>，沃野千里，天府之土<span class="zs-no">〔15〕</span>；高祖因之，以成帝业<span class="zs-no">〔16〕</span>。刘璋暗弱<span class="zs-no">〔17〕</span>，张鲁在北；民殷国富而不知存恤<span class="zs-no">〔18〕</span>，智能之士思得明君。将军既帝室之胄<span class="zs-no">〔19〕</span>，信义著于四海，总揽英雄，思贤如渴；若跨有荆、益，保其岩阻，西和诸戎<span class="zs-no">〔20〕</span>，南抚夷、越<span class="zs-no">〔21〕</span>；外结好孙权，内修政理<span class="zs-no">〔22〕</span>。天下有变，则命一上将将荆州之军，以向宛、洛<span class="zs-no">〔23〕</span>；将军身率益州之众，出于秦川<span class="zs-no">〔24〕</span>：百姓孰敢不箪食壶浆以迎将军者乎<span class="zs-no">〔25〕</span>？诚如是，则霸业可成<span class="zs-no">〔26〕</span>，汉室可兴矣！”先主曰：“善！”于是与亮情好日密。</p>
+<p class="fy-inline">诸葛亮答复说：“自从董卓之乱以后，群雄并起，占据的土地跨州连郡者数都数不清。其中的曹操与袁绍相比，名气没有对方大，人马没有对方多，然而曹操之所以最终能击败袁绍，使自己转弱为强的原因，不单是占了天时之利，恐怕也在于发挥了人的谋略优势啊。而今曹操已经拥有上百万的军队，挟制天子以向全国各地的官员发号施令，这确实不能和他一争高低。孙权占有江东地区，已经经历了三辈人；其辖境占有长江天险而且人民又拥护他，还有一批贤能人才为他效力：这可以作为外援而不能打主意吞灭他。我们所在的荆州，北面依据汉水，水路交通便利而可以达到南海，东面连接吴郡和会稽郡，西面通往巴国和蜀国的故地；这是一个适于运用武力的地方，而它的主人却没有能力长久保有它：这大概是上天用来资助将军的，将军是不是对此有意呢？西面的益州，周围被险峻的山脉阻隔，沃野千里，堪称是天府之国；我朝高祖就借助益州完成了帝王的大业。但是现今统治益州的刘璋昏庸软弱，又有张鲁在他的北面构成威胁；人口众多地方富庶而他不知道关心爱护，具有智慧才能的人士都想得到一位英明的领导人。将军您既是皇族的后裔，而且信誉和义气都著称于天下，努力延揽英雄，渴望得到贤才；如果能够跨据荆州、益州，凭借险峻的山脉保卫辖境，西面与各少数族和平共处，南面安抚越人等少数族；对外与孙权结为友好邻邦，对内努力改善政治。天下局势一旦有了变化，就命令一位高级将领带领荆州的军队，向宛县、洛阳进军；而将军您则亲自统率益州的兵马，出击秦岭以北的平原地带：那么老百姓们谁敢不用竹篮盛着饭食，用壶装着饮料，前来迎接您呢？确实能像这样的话，将军的霸主功业就可以完成，汉朝也可以复兴了！”</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">挟：挟制。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">争锋：直接对抗。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">江东：地区名。长江自今芜湖至南京间，流向大体是由南向北，当时习称自此以下长江南岸的地区为江东，北岸的地区为江西。江东又称江左，江西又称江右。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">三世：指孙权父亲孙坚、哥哥孙策、孙权。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">汉沔：河流名。即汉水。又称沔水。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">利尽南海：水路交通便利而可以达到南海。荆州南部桂阳郡境内的溱水（今广东北江）、沤水（今广东连江）、零陵郡境内的漓水（今广西桂江）等，都向南流至南海，所以这样说。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">吴：吴郡。治所在今江苏苏州市。会（kuài）：会稽郡。治所在今浙江绍兴市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">险塞：周围被险峻的山脉阻塞。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">天府：上天的仓库。比喻物产极为丰富。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">因：凭借。汉高祖刘邦最初被项羽封为汉王，统治巴、蜀、汉中四十一县地。后来他从汉中出兵，夺得天下。见《汉书》卷一上《高帝纪》上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">暗弱：昏庸软弱。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">存恤：关怀爱护。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">胄：后代。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">戎：西方少数族的泛称。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">夷：西南方少数族的泛称；越：南方少数族名</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">政理：政治。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">宛：县名。县治在今河南南阳市；洛：指东汉京城洛阳</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">秦川：地区名。这里指今陕西、甘肃两省秦岭以北的平原地带。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">箪食壶浆：用竹篮盛着饭食，用壶装着饮料。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">霸业：霸主的功业。霸主指诸侯中带头拥护天子安定社会的领袖。以上诸葛亮的隆中对策，展现出非凡的大局观，这与他独特的读书方法，即“观其大略”有直接关系，并非对儒经“务在精熟”的迂阔书生所能做到。然而诸葛亮之所以会养成如此独特的读书方法，又和他受到东汉后期学术新风气，特别是襄阳学派学术新风气的熏陶，有着密切的关系。</span></p>
+<p class="yw">关羽、张飞等不悦。先主解之曰：“孤之有孔明，犹鱼之有水也。愿诸君勿复言！”羽、飞乃止。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">先主说：“好！”于是与诸葛亮的友好情谊日益加深。</p>
+<p class="fy-inline">关羽、张飞等人为此不太高兴，先主开解他们说：“我有了孔明，就像鱼有了水一样，希望诸位不要多话好吗？”关羽、张飞这才不再说什么了。</p>
+<p class="yw">刘表长子琦，亦深器亮。表受后妻之言，爱少子琮，不悦于琦。琦每欲与亮谋自安之术，亮辄拒塞<span class="zs-no">〔27〕</span>，未与处画<span class="zs-no">〔28〕</span>。琦乃将亮游观后园，共上高楼；饮宴之间，令人去梯，因谓亮曰：“今日上不至天，下不至地；言出子口，入于吾耳：可以言未？”亮答曰：“君不见申生在内而危<span class="zs-no">〔29〕</span>，重耳在外而安乎？”琦意感悟，阴规出计<span class="zs-no">〔30〕</span>；会黄祖死<span class="zs-no">〔31〕</span>，得出，遂为江夏太守。</p>
+<p class="fy-inline">刘表的长子刘琦，也非常器重诸葛亮。刘表听了续弦妻子的话，偏爱小儿子刘琮，而不喜欢刘琦。刘琦每次要想和诸葛亮商量如何保障自己安全的办法，诸葛亮总是拒绝或搪塞他，不给他出谋划策。刘琦就带着诸葛亮去游览后花园，两人一起上到高楼，饮宴开始之后，刘琦叫人在下面抽开楼梯，然后对诸葛亮说：“今天这里就我们两人，上不挨天，下不挨地，话从您的口中出来，只进到我的耳朵里，可以说了不？”诸葛亮这才回答说：“您难道没看见从前申生留在国内就危险，重耳跑到国外就安全吗？”刘琦的心中立时醒悟，暗中谋划出外的主意。恰巧这时刘表的部下江夏郡太守黄祖去世，刘琦得到出外的机会，去担任江夏郡太守。</p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">辄：总是。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">处画：出谋划策。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">申生：春秋时晋献公的太子。晋献公宠爱骊姬，骊姬为了使自己亲生的儿子成为太子，设计诬陷申生有毒杀父亲的企图，申生被迫自杀。申生死后，骊姬开始诋毁申生的弟弟重耳。重耳逃到国外，流亡各国达二十年。前636 年，他在秦国的支持下回国夺得国君位置，为晋文公。事见《史记》卷三十九《晋世家》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">规：谋划。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">会：碰上。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏略》曰：“刘备屯于樊城，是时，曹公方定河北。亮知荆州次当受敌；而刘表性缓，不晓军事，亮乃北行见备。备与亮非旧，又以其年少，以诸生意待之。坐集既毕，众宾皆去；而亮独留，备亦不问其所欲言。备性好结毦，时适有人以髦牛尾与备者，备因手自结之。亮乃进曰：‘明将军当复有远志，但结毦而已邪！’备知亮非常人也，乃投毦而答曰：‘是何言与？我聊以忘忧耳！’亮遂言曰：‘将军度刘镇南孰与曹公邪？’备曰：‘不及。’亮又曰：‘将军自度何如也？’备曰：‘亦不如。’曰：‘今皆不及，而将军之众不过数千人；以此待敌，得无非计乎？’备曰：‘我亦愁之，当若之何？’亮曰：‘今荆州非少人也，而著籍者寡；平居发调，则人心不悦。可语镇南：令国中凡有游户，皆使自实；因录以益众，可也。’备从其计，故众遂强。备由此知亮有英略，乃以上客礼之。”</span></p>
+<p class="pz-item no-no">《九州春秋》所言，亦如之。</p>
+<p class="pz-item no-no">臣松之以为：亮表云“先帝不以臣卑鄙，猥自枉屈，三顾臣于草庐之中，咨臣以当世之事”，则非亮先诣备，明矣！虽闻见异辞，各生彼此；然乖背至是，亦良为可怪！</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">3 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">俄而表卒。琮闻曹公来征，遣使请降。先主在樊闻之，率其众南行，亮与徐庶并从；为曹公所追破，获庶母。庶辞先主而指其心曰：“本欲与将军共图王霸之业者，以此方寸之地也<span class="zs-no">〔1〕</span>。今已失老母，方寸乱矣；无益于事，请从此别。”遂诣曹公。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">不久刘表去世，接替他的刘琮听说曹操前来进攻荆州，派遣使者前去请求投降。先主在樊城得知消息，赶忙带领部下向南撤退，诸葛亮与徐庶一起随从，结果被曹操追上击败，徐庶的母亲被俘虏。徐庶来向先主告辞并指着自己的心说：“之所以本来想和将军一起建立王霸的功业，就是因为这颗心还能发挥思考作用。现今老母丢失，我的心已经乱了，对您的大事不再有帮助，请求就此告别。”于是徐庶去投奔曹操。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">以：凭着；方寸之地：指心</span></p>
+<p class="yw">先主至于夏口<span class="zs-no">〔2〕</span>，亮曰：“事急矣！请奉命求救于孙将军<span class="zs-no">〔3〕</span>。”</p>
+<p class="fy-inline">先主一行逃到夏口之后，诸葛亮说：“事情很紧急了！请求将军派我去向孙将军求救吧。”</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">夏口：地名。在今湖北武汉市长江南岸。见《晋书》卷十五《地理志》下“武昌郡”条。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">孙将军：指孙权。当时被汉朝任命为讨虏将军。</span></p>
+<p class="yw">时权拥军在柴桑<span class="zs-no">〔4〕</span>，观望成败。亮说权曰<span class="zs-no">〔5〕</span>：“海内大乱，将军起兵据有江东；刘豫州亦收众汉南：与曹操并争天下。今操芟夷大难<span class="zs-no">〔6〕</span>，略已平矣；遂破荆州，威震四海。英雄无所用武<span class="zs-no">〔7〕</span>，故豫州遁逃至此。将军量力而处之：若能以吴、越之众与中国抗衡<span class="zs-no">〔8〕</span>，不如早与之绝；若不能当，何不案兵束甲<span class="zs-no">〔9〕</span>，北面而事之<span class="zs-no">〔10〕</span>？今将军外托服从之名，而内怀犹豫之计；事急而不断，祸至无日矣！”</p>
+<p class="fy-inline">当时孙权带领大军来到柴桑驻扎，观望曹、刘双方的成败。诸葛亮劝孙权说：“海内大乱，将军您起兵据有江东；我们刘将军也在汉水南岸招集人马：与曹操一起争夺天下。现今曹操削除了各支强大的割据势力，大体上北方已被他平定，接着出兵攻破荆州，声威震动四海。由于无法与曹操抗衡，所以刘将军才逃避到这里。将军您可以衡量自己的力量然后作出选择：如果能以江东的军队与中原对敌，不如早点与曹操断绝关系；如果抵抗不住，为什么不放下兵器，捆起铠甲，向曹操屈膝称臣呢？如今将军表面上在服从曹操，而内心却犹豫观望，事情如此紧急还不作出决断，灾祸马上就要临头了！”</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">拥军：率军；柴桑：县名</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">说：劝说。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">芟夷：削除；大难：指袁术、吕布、袁绍等割据势力</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">无所用武：指无法与曹操抗衡。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">吴、越：均先秦国名。吴国的中心在今江苏苏州市，越国的中心在今浙江绍兴市。孙权占领的江东，即吴、越的故地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">案兵束甲：放下兵器，捆起铠甲。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">北面：指称臣。古代君主的位置坐北朝南，臣下朝见君主面向北方。</span></p>
+<p class="yw">权曰：“苟如君言，刘豫州何不遂事之乎？”亮曰：“田横<span class="zs-no">〔11〕</span>，齐之壮士耳，犹守义不辱；况刘豫州王室之胄，英才盖世，众士慕仰，若水之归海？若事之不济，此乃天也；安能复为之下乎！”</p>
+<p class="fy-inline">孙权却反问道：“如果像您所说，那你们刘将军为什么不去投降曹操呢？”诸葛亮回答说：“田横，不过是齐国这个诸侯国的一名壮士，都还能坚守大义宁死不受屈辱；何况我们刘将军乃是皇族后裔，英才盖世，众人仰慕，如同水归大海？如果大事不成功，那是天意如此；怎么能又去向曹操低头呢！”</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">田横：临淄郡狄县（今山东高青县东南）人。战国时齐国的王族成员。秦末，随兄田荣起兵反秦，据有齐国故地。后田荣自立为齐王，不久被项羽击败，死，田横又自立为齐王。刘邦建立西汉王朝，召他到洛阳。他不愿做刘邦的下属，在将要到达洛阳的途中自杀。事见《史记》卷九十四《田儋列传》。</span></p>
+<p class="yw">权勃然曰：“吾不能举全吴之地，十万之众，受制于人。吾计决矣！非刘豫州，莫可以当曹操者；然豫州新败之后，安能抗此难乎？”亮曰：“豫州军虽败于长坂，今战士还者及关羽水军，精甲万人；刘琦合江夏战士，亦不下万人。曹操之众，远来疲弊；闻追豫州，轻骑一日一夜行三百余里。此所谓‘强弩之末<span class="zs-no">〔12〕</span>，势不能穿鲁缟’者也<span class="zs-no">〔13〕</span>。故兵法忌之，曰‘必蹶上将军’<span class="zs-no">〔14〕</span>。且北方之人，不习水战；又荆州之民附操者，逼兵势耳，非心服也。今将军诚能命猛将统兵数万<span class="zs-no">〔15〕</span>，与豫州协规同力，破操军必矣！操军破，必北还；如此则荆、吴之势强<span class="zs-no">〔16〕</span>，鼎足之形成矣。成败之机，在于今日！”</p>
+<p class="fy-inline">孙权勃然激动起来，说：“那我也不能拿着整个吴国故地，还有十万雄兵，去受别人的控制！我的主意已经定了！除了刘将军，没有别的人能抵挡曹操。不过你们新近吃了败仗，怎么能抵御这样的大敌啊？”诸葛亮回答说：“我军虽然在当阳的长坂遭到挫折，现今陆续归队的战士加上关羽的水军，还有精锐的甲兵一万人；刘琦招集的江夏郡战士，也不下一万人。曹操的军队，远道而来必然疲惫，听说当时追击我军时，轻装的骑兵一天一夜就急行军三百多里，这就是古语所说的‘强弩发出的箭飞到尽头时，力量还穿不透鲁国产的细绢’这种情形。所以兵法上忌讳实施远距离进攻，说是这样‘必定会使先头部队的将领遭到挫折’。再说北方的人，不熟习水战；而荆州的民众之所以附从曹操，是迫于武力，并不是真心服他。现今将军您如果确实能派遣猛将统领几万雄兵，与我们刘将军同心协力，那么击败曹操是必然的。曹操一旦失败，肯定退回北方；这样刘、孙的势力强盛，鼎足分立的形势就造成了。成败的机会，就在今天！”</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">末：指到达最大射程最后一小段时的飞箭。这两句见于《汉书》卷五十二《韩安国传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">鲁缟：鲁国出产的细绢。很容易刺破。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">必蹶上将军：《孙子·军争篇》认为实施长途的奔袭，既可能取胜，也可能遇到危险，所以有“五十里而争利，则蹶上将军，其法半至”的句子。意思是飞奔五十里去争利（一旦遇到意外），先头部队的将领将会受挫折，队伍只有半数能赶到目的地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">诚：确实。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">荆：指在荆州的刘备势力；吴：指在江东的孙权势力</span></p>
+<p class="yw">权大悦，即遣周瑜、程普、鲁肃等水军三万，随亮诣先主，并力拒曹公。<span class="pz-no">〔二〕</span>曹公败于赤壁，引军归邺。</p>
+<p class="fy-inline">孙权听了大为高兴，立即派遣周瑜、程普、鲁肃等带领水军三万人，随诸葛亮去见先主，合力抵抗曹操。曹操在赤壁被击败，领兵回邺县去了。</p>
+<p class="yw">先主遂收江南<span class="zs-no">〔17〕</span>，以亮为军师中郎将；使督零陵、桂阳、长沙三郡，调其赋税，以充军实<span class="pz-no">〔三〕</span>。</p>
+<p class="fy-inline">先主动手占领荆州在长江以南的部分，委任诸葛亮为军师中郎将，指挥零陵、桂阳、长沙三郡的军队，征收调运赋税，以充实军事物资储备。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">江南：指荆州的江南部分。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏略》曰：“庶先名福。本单家子。少好任侠击剑。中平末，尝为人报仇，白垩突面，被发而走；为吏所得，问其姓字，闭口不言。吏乃于车上立柱维磔之，击鼓以令于市廛；莫敢识者，而其党伍共篡解之，得脱。于是感激，弃其刀戟，更疏巾单衣，折节学问。始诣精舍，诸生闻其前作贼，不肯与共止。福乃卑躬早起，常独扫除，动静先意；听习经业，义理精熟。遂与同郡石韬相亲爱。初平中，中州兵起，乃与韬南客荆州；到，又与诸葛亮特相善。及荆州内附，孔明与刘备相随去；福与韬，俱来北。至黄初中，韬仕历郡守、典农校尉；福至右中郎将、御史中丞。逮（大）〔太〕和中，诸葛亮出陇右，闻元直、广元仕才如此，叹曰：‘魏殊多士邪！何彼二人不见用乎？’庶后数年病卒，有碑在彭城，今犹存焉。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《袁子》曰：“张子布荐亮于孙权，亮不肯留。人问其故，曰：‘孙将军可谓人士，然观其度：能贤亮，而不能尽亮。吾是以不留。’”臣松之以为：袁孝尼著文立论，甚重诸葛之为人；至如此言，则失之殊远。观亮君臣相遇，可谓希世一时；终始之分，谁能间之？宁有中违断金，甫怀择主？设使权尽其量，便当翻然去就乎？葛生行己，岂其然哉！关羽为曹公所获，遇之甚厚，可谓能尽其用矣；犹义不背本，曾谓孔明之不若云长乎？</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《零陵先贤传》云：“亮，时住临烝。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">4 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">建安十六年，益州牧刘璋遣法正迎先主，使击张鲁。亮与关羽镇荆州。</p>
+<p class="fy-inline">汉献帝建安十六年（公元 211），益州牧刘璋派法正迎接先主到益州，去帮自己攻击张鲁。诸葛亮与关羽留镇荆州。</p>
+<p class="yw">先主自葭萌还攻璋；亮与张飞、赵云等率众溯江，分定郡县；与先主共围成都。成都平，以亮为军师将军，署左将军府事<span class="zs-no">〔1〕</span>。先主外出，亮常镇守成都，足食足兵。</p>
+<p class="fy-inline">先主从葭萌县回军进攻刘璋，诸葛亮与张飞、赵云等带领援军溯长江而上，分兵平定沿途郡县，与先主共同围攻成都。成都攻克后，先主委任诸葛亮为军师将军，代理先主左将军府的公务。先主外出时，经常由诸葛亮镇守成都，充分保证了前方的军粮供应和兵力补充。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">署：代理。</span></p>
+<p class="yw">二十六年<span class="zs-no">〔2〕</span>，群下劝先主称尊号<span class="zs-no">〔3〕</span>，先主未许。亮说曰：“昔吴汉、耿弇等初劝世祖即帝位<span class="zs-no">〔4〕</span>，世祖辞让，前后数四，耿纯进言曰<span class="zs-no">〔5〕</span>：‘天下英雄喁喁<span class="zs-no">〔6〕</span>，冀有所望<span class="zs-no">〔7〕</span>。如不从议者，士大夫各归求主<span class="zs-no">〔8〕</span>，无为从公也<span class="zs-no">〔9〕</span>！’世祖感纯言深至<span class="zs-no">〔10〕</span>，遂然诺之<span class="zs-no">〔11〕</span>。今曹氏篡汉，天下无主；大王刘氏苗族<span class="zs-no">〔12〕</span>，绍世而起<span class="zs-no">〔13〕</span>：今即帝位，乃其宜也！士大夫随大王久勤苦者，亦欲望尺寸之功如纯言耳<span class="zs-no">〔14〕</span>。”</p>
+<p class="fy-inline">建安二十六年（公元 221），群臣劝先主称帝，开始先主不同意。诸葛亮劝他说：“从前吴汉、耿弇等人开初劝世祖光武皇帝登上帝位时，世祖也推辞谦让，前后多次。耿纯向他进言说：‘天下的英雄仰慕企盼，都希望您登上尊位之后能获取富贵。如果您不听从他们的建议，士大夫们就会各自回家寻找新主人，不必要再跟随您了。’世祖觉得耿纯的话深刻透彻，就同意了。如今曹丕篡夺汉帝的位置，天下没有主人。大王是刘氏后裔，接续汉代而兴起：现在登上帝位，完全是应当的。士大夫跟随大王长期勤勤恳恳吃苦耐劳的目的，也是希望建立微薄功劳然后得到像耿纯所说的奖赏啊。”</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">二十六年：建安二十六年（公元 221 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">称尊号：称帝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">耿弇：字伯昭。扶风茂陵（今陕西兴平市东北）人。新莽末年投奔刘秀，屡建战功。东汉建立，任建威大将军，封好畤（zhì）侯。传见《后汉书》卷十九；世祖：东汉光武帝刘秀的庙号</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">耿纯：字伯山。钜鹿郡宋子（今河北赵县东北）人。新莽末年投奔刘秀，随从征战，任前将军，封东光侯。传见《后汉书》卷二十一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">喁喁：众人仰慕企盼的样子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">冀有所望：指希望新皇帝登基后自己能获取富贵。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">求主：另找新主人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">无为：不必要。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">深至：深刻透彻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">然诺：应允。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">苗族：后裔。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">绍世：接续汉代。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">望尺寸之功：希望（您当皇帝后奖赏他们）微薄的功劳。</span></p>
+<p class="yw">先主于是即帝位。策亮为丞相曰：“朕遭家不造<span class="zs-no">〔15〕</span>，奉承大统；兢兢业业，不敢康宁<span class="zs-no">〔16〕</span>；思靖百姓<span class="zs-no">〔17〕</span>，惧未能绥。於戏！丞相亮其悉朕意，无怠辅朕之阙<span class="zs-no">〔18〕</span>；助宣重光，以照明天下。君其勖哉<span class="zs-no">〔19〕</span>！”</p>
+<p class="fy-inline">先主这才同意登位称帝。称帝后下达委任诸葛亮为丞相的文书说：“朕碰上家族的不幸，继承帝位；兢兢业业，不敢停下来享受安乐；一心想安定百姓，生怕未能做到。啊！丞相诸葛亮您要充分了解朕的心意，在帮助朕弥补过失方面不要懈怠；以便重新发扬汉朝的光辉，以照亮天下。您可要自勉啊！”</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">遭家不造：碰上家族的不幸。这是《诗经·闵予小子》中的诗句。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">康宁：（停下来享受）安乐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">靖：安定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">无怠：不要懈怠；阙：过失</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">勖：勉励。</span></p>
+<p class="yw">亮以丞相录尚书事，假节。张飞卒后，领司隶校尉。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">诸葛亮以丞相身份总管尚书台的公务，持有节杖。张飞死后，他又兼任司隶校尉。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《蜀记》曰：“晋初，扶风王骏镇关中；司马高平刘宝、长史荥阳桓隰诸官属士大夫，共论诸葛亮。于时谈者，多讥亮托身非所，劳困蜀民，力小谋大，不能度德量力。金城郭冲以为：‘亮权智英略，有逾管、晏；功业未济，论者惑焉。’条亮五事隐没不闻于世者，宝等亦不能复难；扶风王慨然善冲之言。”</span></p>
+<p class="pz-item no-no">臣松之以为：亮之异美，诚所愿闻；然冲之所说，实皆可疑。谨随事难之如左：</p>
+<p class="pz-item no-no">其一事曰：“亮刑法峻急，刻剥百姓，自君子小人咸怀怨叹。法正谏曰：‘昔高祖入关，约法三章，秦民知德。今君假借威力，跨据一州，初有其国，未垂惠抚；且客主之义，宜相降下：愿缓刑弛禁，以慰其望。’亮答曰：‘君知其一，未知其二。秦以无道，政苛民怨，匹夫大呼，天下土崩；高祖因之，可以弘济。刘璋暗弱，自焉以来有累世之恩，文法羁縻，互相承奉，德政不举，威刑不肃；蜀土人士，专权自恣，君臣之道，渐以陵替。宠之以位，位极则贱；顺之以恩，恩竭则慢：所以致弊，实由于此！吾今威之以法，法行则知恩；限之以爵，爵加则知荣；荣恩并济，上下有节：为治之要，于斯而著。’”</p>
+<p class="pz-item no-no">难曰：按法正，在刘主前死；今称法正谏，则刘主在也。诸葛职为股肱，事归元首；刘主之世，亮又未领益州，庆赏刑政，不出于己。寻冲所述亮答，专自有其能，有违人臣自处之宜；以亮谦顺之体，殆必不然。又云亮“刑法峻急，刻剥百姓”，未闻善政以刻剥为称。</p>
+<p class="pz-item no-no">其二事曰：“曹公遣刺客见刘备；方得交接，开论伐魏形势，甚合备计，稍欲亲近。刺者尚未得便会，既而亮入，魏客神色失措；亮因而察之，亦知非常人。须臾，客如厕，备谓亮曰：‘向得奇士，足以助君补益。’亮问‘所在’？备曰：‘起者其人也。’亮徐叹曰：‘观客色动而神惧，视低而忤数；奸形外漏，邪心内藏：必曹氏刺客也！’追之，已越墙而走。”</p>
+<p class="pz-item no-no">难曰：凡为刺客，皆暴虎冯河，死而无悔者也。刘主有知人之鉴，而惑于此客；则此客，必一时之奇士也。又语诸葛云“足以助君补益”，则亦诸葛之流亚也。凡如诸葛之俦，鲜有为人作刺客者矣；时主亦当惜其器用，必不投之死地也。且此人不死，要应显达为魏，竟是谁乎？何其寂蔑而无闻？</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">5 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">章武三年春，先主于永安病笃<span class="zs-no">〔1〕</span>；召亮于成都，属以后事。谓亮曰：“君才十倍曹丕，必能安国，终定大事。若嗣子可辅，辅之；如其不才<span class="zs-no">〔2〕</span>，君可自取<span class="zs-no">〔3〕</span>。”亮涕泣曰：“臣敢竭股肱之力<span class="zs-no">〔4〕</span>，效忠贞之节，继之以死！”先主又为诏敕后主曰：“汝与丞相从事<span class="zs-no">〔5〕</span>，事之如父。”<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">章武三年（公元 223）春，先主在永安病重；从成都召来诸葛亮，把后事托付给他。对他说：“您的才能比曹丕强十倍，必定能安定国家，最终完成大业。如果继承我的儿子刘禅可以辅佐，您就辅佐他；如果他不成才，您可以自行选取处置办法。”诸葛亮流着眼泪回答说：“为臣岂敢不竭尽我作为辅佐大臣的力量，用忠贞的节操来报效，直到献出我的生命！”先主又下达诏书训示后主说：“你与丞相今后相处，要把他当作父亲来对待。”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">病笃：病重。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">不才：不成才。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">自取：自己选取（处置办法）。意指可以废黜刘禅另立皇子为君。通常理解为刘备要诸葛亮自立为皇帝，恐怕与情理不合。首先，蜀汉与曹魏之所以势不两立，就在于曹氏以臣代君篡夺皇权，如果要诸葛亮取代刘禅，则是又出一个曹丕，岂不与蜀汉奉行的政治原则完全矛盾？给予诸葛亮废立君主的权力，如同从前的霍光，也就算敬重信任到极点了。东晋时期的重要政治人物如桓温，对此的理解也不是取代刘禅。其次，取字理解为取而代之，不免有增加文字以作训诂之嫌。而选取则是常用之义。详见拙文《刘备遗嘱“君可自取”句辨释》，载《魏晋南北朝史研究》，湖北人民出版社，1996 年；《刘备遗嘱再考察》，《成都大学学报》（社会科学版），2008 年第 6 期。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">股肱之力：大臣辅佐君主的力量。诸葛亮回答的这几句话，本于春秋时晋国大夫荀息之语，见《左传》僖公九年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">从事：相处。</span></p>
+<p class="yw">建兴元年，封亮武乡侯<span class="zs-no">〔6〕</span>；开府治事<span class="zs-no">〔7〕</span>。顷之，又领益州牧；政事无巨细，咸决于亮。南中诸郡，并皆叛乱。亮以新遭大丧，故未便加兵；且遣使聘吴，因结和亲<span class="zs-no">〔8〕</span>，遂为与国<span class="zs-no">〔9〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">后主建兴元年（公元 233），诸葛亮被封为武乡侯；开始正式设立丞相府署以治理国家政事。不久，又兼任益州牧；蜀汉的政事不论大小，都由他决定。这时南中地区的各郡，一齐发动叛乱。诸葛亮因为先主刚去世，所以没有立即出兵平叛；又派遣使者访问孙吴，建立和睦亲善的关系，从而成为友好相处的国家。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">武乡：县名。西汉时属琅邪郡，后撤销。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">开府：设立丞相府署。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">结和亲：结成和睦亲善的关系。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">与国：相互友好相处的国家。</span></p>
+<p class="yw">三年春<span class="zs-no">〔10〕</span>，亮率众南征<span class="zs-no">〔11〕</span>。<span class="pz-no">〔三〕</span>其秋，悉平：军资所出<span class="zs-no">〔12〕</span>，国以富饶；<span class="pz-no">〔四〕</span>乃治戎讲武，以俟大举。</p>
+<p class="fy-inline">建兴三年（公元 225）春，诸葛亮亲自领兵南征，当年秋天，南中地区全部平定：从这里调出了大批军事物资，国家因此而富足；于是加紧训练军队，以待大举出兵北伐。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">三年：建兴三年（公元 225）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">南征：指平定南中。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">军资：据《华阳国志》卷四《南中志》记载，当时从南中调运出来的军用物资有金、银、丹砂、漆以及牛马等。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">孙盛曰：“夫杖道扶义，体存信顺，然后能匡主济功，终定大业。语曰‘弈者举棋不定，犹不胜其偶’，况量君之才否而二三其节，可以摧服强邻囊括四海者乎？备之命亮，乱孰甚焉！世或有谓备欲以固委付之诚，且以一蜀人之志。君子曰：‘不然！苟所寄忠贤，则不须若斯之诲；如非其人，不宜启篡逆之途。’是以古之顾命，必贻话言：诡伪之辞，非托孤之谓。幸值刘禅暗弱，无猜险之性；诸葛威略，足以检卫异端。故使异同之心，无由自起耳。不然，殆生疑隙不逞之衅。谓之为权，不亦惑哉！”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《亮集》曰：“是岁，魏司徒华歆、司空王朗、尚书令陈群、太史令许芝、谒者仆射诸葛璋，各有书与亮：陈天命人事，欲使举国称藩。亮遂不报书，作《正议》曰：‘昔在项羽，起不由德；虽处华夏，秉帝者之势；卒就汤镬，为后永戒。魏不审鉴，今次之矣；免身为幸，戒在子孙。而二三子各以耆艾之齿，承伪指而进书；有若崇、竦称莽之功，亦将逼于元祸苟免者邪？昔世祖之创迹旧基，奋羸卒数千，摧莽强旅四十余万于昆阳之郊；夫据道讨淫，不在众寡。及至孟德，以其谲胜之力，举数十万之师，救张郃于阳平；势穷虑悔，仅能自脱，辱其锋锐之众，遂丧汉中之地；深知神器不可妄获，旋还未至，感毒而死。子桓淫逸，继之以篡。纵使二三子多逞苏、张诡靡之说，奉进|兜滔天之辞；欲以诬毁唐帝，讽解禹、稷：所谓徒丧文藻，烦劳翰墨者矣：夫大人君子之所不为也！又《军诫》曰：“万人必死，横行天下。”昔轩辕氏整卒数万，制四方，定海内；况以数十万之众，据正道而临有罪，可得干拟者哉？’”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">诏赐亮金鈇钺一具，曲盖一，前后羽葆鼓吹各一部，虎贲六十人。事在《亮集》。</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《汉晋春秋》曰：“亮至南中，所在战捷。闻孟获者，为夷、汉所服，募生致之。既得，使观于营阵之间，问曰：‘此军何如？’获对曰：‘向者不知虚实，故败；今蒙赐观看营阵，若只如此，即定易胜耳！’亮笑，纵使更战。七纵七擒，而亮犹遣获；获止不去，曰：‘公，天威也！南人不复反矣。’遂至滇池。南中平，皆即其渠率而用之。或以谏亮，亮曰：‘若留外人，则当留兵；兵留，则无所食。一不易也；加夷新伤破，父兄死丧；留外人而无兵者，必成祸患。二不易也；又夷累有废杀之罪，自嫌衅重；若留外人，终不相信。三不易也。今吾欲使不留兵，不运粮；而纲纪粗定，夷、汉粗安，故耳。’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">6 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">五年<span class="zs-no">〔1〕</span>，率诸军北驻汉中。临发，上疏曰<span class="zs-no">〔2〕</span>：</p>
+<p class="fy-inline">建兴五年（公元 227）春，诸葛亮带领各路军队从成都北上进驻汉中郡。临出发时，向后主上了一道奏疏说：</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">五年：建兴五年（公元 227）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">上疏：这道奏疏，《文选》卷三十七题名为《出师表》，表文开头有“臣亮言”三字。</span></p>
+<p class="yw">先帝创业未半而中道崩殂<span class="zs-no">〔3〕</span>，今天下三分，益州疲弊<span class="zs-no">〔4〕</span>：此诚危急存亡之秋也<span class="zs-no">〔5〕</span>。然待卫之臣不懈于内<span class="zs-no">〔6〕</span>，忠志之士忘身于外者<span class="zs-no">〔7〕</span>，盖追先帝之殊遇<span class="zs-no">〔8〕</span>，欲报之于陛下也。诚宜开张圣听<span class="zs-no">〔9〕</span>，以光先帝遗德，恢弘志士之气；不宜妄自菲薄<span class="zs-no">〔10〕</span>，引喻失义<span class="zs-no">〔11〕</span>，以塞忠谏之路也。</p>
+<p class="fy-inline">先皇帝开创大业还没有到一半而中途驾崩，如今天下三分，国力困乏：这确实是决定生死存亡的危急时候啊。然而在皇宫内侍卫陛下的臣僚依然毫不懈怠，在皇宫外各个官署的忠诚的志士依然以忘我精神为国效劳，他们这样做是因为怀念先皇帝给予的特殊礼遇，想在陛下身上表示报答之心。所以陛下您确实应当广泛听取臣下的意见，以显示先皇帝遗传的美德；激励有志之士的气概，不应当随随便便不尊重自己，谈话引用的比喻不合道理，从而堵塞了忠言进谏的途径。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">中道：中途。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">疲弊：指国力困乏。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">秋：时候。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">内：皇宫内。即下文的“宫中”。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">外：皇宫外。这里指设在皇宫外的丞相府，当时是蜀汉的中央行政机构。即下文的“府中”。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">追：怀念；殊遇：特殊的礼遇</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">开张圣听：广泛听取臣下的意见。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">妄自菲薄：随随便便自己不尊重自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">引喻失义：谈话时引用的比喻不合道理。自此以下，连向后主列举了三点“不宜”。</span></p>
+<p class="yw">宫中、府中俱为一体；陟罚臧否<span class="zs-no">〔12〕</span>，不宜异同<span class="zs-no">〔13〕</span>。若有作奸犯科及为忠善者<span class="zs-no">〔14〕</span>，宜付有司论其刑赏<span class="zs-no">〔15〕</span>，以昭陛下平明之理<span class="zs-no">〔16〕</span>；不宜偏私，使内外异法也。</p>
+<p class="fy-inline">皇宫和丞相府本是一体；所以对两处的官员进行赏罚和褒贬，不应当有偏轻偏重的差别。如果有干坏事违犯法规，以及为人忠诚善良的官员，都应当交付有关部门评论给予什么刑罚或者奖赏，从而表现陛下您公平英明的政事治理；不应当有所偏袒，使得皇宫内和皇宫外的法规出现不同。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">陟罚：奖赏与惩罚。臧否（pǐ）：褒贬。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">异同：不同。当时习用的偏义复合词。又作同异，意思都侧重在“异”上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">作奸：干坏事；犯科：违犯法规</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">有司：有关部门。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">昭：显示；平明：公平明察；理：治理</span></p>
+<p class="yw">侍中、侍郎郭攸之、费祎、董允等<span class="zs-no">〔17〕</span>，此皆良实，志虑忠纯，是以先帝简拔以遗陛下<span class="zs-no">〔18〕</span>。愚以为宫中之事<span class="zs-no">〔19〕</span>，事无大小，悉以咨之，然后施行；必能裨补阙漏<span class="zs-no">〔20〕</span>，有所广益。将军向宠<span class="zs-no">〔21〕</span>，性行淑均<span class="zs-no">〔22〕</span>，晓畅军事；试用于昔日，先帝称之曰能，是以众议举宠为督<span class="zs-no">〔23〕</span>。愚以为营中之事<span class="zs-no">〔24〕</span>，悉以咨之；必能使行阵和睦<span class="zs-no">〔25〕</span>，优劣得所。亲贤臣，远小人，此先汉所以兴隆也<span class="zs-no">〔26〕</span>；亲小人，远贤臣，此后汉所以倾颓也。先帝在时，每与臣论此事，未尝不叹息痛恨于桓、灵也<span class="zs-no">〔27〕</span>。侍中、尚书、长史、参军<span class="zs-no">〔28〕</span>，此悉贞良死节之臣<span class="zs-no">〔29〕</span>，愿陛下亲之信之，则汉室之隆，可计日而待也。</p>
+<p class="fy-inline">侍中郭攸之、侍中费祎、黄门侍郎董允等，都是些优良诚实，志向思想忠诚纯洁的人，所以先帝把他们挑选来留给陛下担任侍从官员。愚臣以为皇宫的事务，无论大小，都应当咨询他们，然后再施行；必能弥补缺陷遗漏，吸收更多的有益意见。将军向宠，性情品行和善公正，通晓军事；从前被试用时，先皇帝称赞他很能干，所以众人推举他担任中部督以统领宫廷禁卫军。愚臣以为禁卫军营的事务，都向他咨询；必定能使将士和睦，各类人才都安排到适当的岗位。亲近贤臣，疏远小人，这是前汉皇朝之所以兴隆的原因；亲近小人，疏远贤臣，这是后汉皇朝之所以崩溃的根源。先皇帝在世时，每逢与愚臣谈论此事，都不会不对桓帝、灵帝的作为感到痛心和遗憾。侍中郭攸之、侍中费祎、尚书陈震、长史张裔、参军蒋琬，这都是些坚贞优良能够以死来显示节操的忠臣，但愿陛下能亲近他们信任他们，那么汉朝的重新兴隆，就指日可待了。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">侍郎：官名。这里指黄门侍郎。是皇帝的侍从官员。当时郭攸之、费祎任侍中，董允任黄门侍郎；郭攸之：事见《三国志》卷三十九《董允传》；董允：传见本书卷三十九</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">遗：留给。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">愚：谦虚的自称。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">裨补：弥补。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">向宠：传附本书卷四十一《向朗传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">淑均：和善公正。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">督：这里指中部督。蜀汉官名。是宫廷禁卫军的司令长官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">营：禁卫军军营。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">行阵：行列阵势。这里指军队。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">先汉：即西汉。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">痛恨：痛心和遗憾；桓、灵：即东汉桓帝、灵帝</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">侍中：指郭攸之、费祎；尚书：指陈震（？—公元 235）；长史：指担任丞相留府长史的张裔；参军：指担任丞相府参军的蒋琬</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">死节：能够以死来显示忠节。</span></p>
+<p class="yw">臣本布衣<span class="zs-no">〔30〕</span>，躬耕于南阳<span class="zs-no">〔31〕</span>；苟全性命于乱世<span class="zs-no">〔32〕</span>，不求闻达于诸侯<span class="zs-no">〔33〕</span>。先帝不以臣卑鄙<span class="zs-no">〔34〕</span>，猥自枉屈<span class="zs-no">〔35〕</span>，三顾臣于草庐之中，咨臣以当世之事；由是感激<span class="zs-no">〔36〕</span>，遂许先帝以驱驰<span class="zs-no">〔37〕</span>；后值倾覆<span class="zs-no">〔38〕</span>，受任于败军之际；奉命于危难之间：尔来二十有一年矣<span class="zs-no">〔39〕</span>。<span class="pz-no">〔一〕</span>先帝知臣谨慎，故临崩寄臣以大事也。受命以来，夙夜忧叹，恐托付不效<span class="zs-no">〔40〕</span>，以伤先帝之明；故五月渡泸<span class="zs-no">〔41〕</span>，深入不毛<span class="zs-no">〔42〕</span>。<span class="pz-no">〔二〕</span>今南方已定，兵甲已足；当奖率三军<span class="zs-no">〔43〕</span>，北定中原；庶竭驽钝<span class="zs-no">〔44〕</span>，攘除奸凶<span class="zs-no">〔45〕</span>；兴复汉室，还于旧都。此臣所以报先帝，而忠陛下之职分也。至于斟酌损益，进尽忠言，则攸之、袆、允之任也。</p>
+<p class="fy-inline">愚臣本是一名平民百姓，亲自在南阳郡耕种土地；最初只是想在乱世保全身体和生命，并不希求在地方长官中间显扬声名。而先皇帝没有嫌弃愚臣身份卑贱，多次劳动大驾屈尊来看我，先后到愚臣的草屋来看望了三次，向我咨询当前的政事；愚臣因此深受感动，同意为先皇帝效力；后来碰上大举伐吴失利，愚臣在军队被击溃的时候承当重任；面临危难的局势接受先皇帝遗留的命令：从当初先皇帝三到草庐至今已经二十一年了。先皇帝知道愚臣做人谨慎，所以在去世前把大事托付给我。自从接受先皇帝遗留的命令以来，愚臣日夜忧心感叹，唯恐接受的托付没有成效，从而有损于先皇帝的英明；因而才在五月间渡过泸水，深入到南中这不毛之地。而今南中地区已经平定，兵器和铠甲也备办充足；应当勉励和统率三军，北上平定中原；希望能竭尽我低下的能力，扫除奸贼恶人；振兴恢复汉朝，回到旧都洛阳。这就是愚臣用来报答先皇帝的一切，也是我忠于陛下而应尽的职责。至于对政事进行斟酌改革，充分进献忠言，应当是郭攸之、费祎、董允他们的责任。</p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">布衣：平民。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">南阳：郡名。治所在今河南南阳市。当时的人提到自己或别人的籍贯时，如果不需要详细说明，通常只是提郡而不提州、县。这种例子在本书中甚多。正因为如此，魏晋以来各地的世家大族又习称为郡望。诸葛亮当初曾经在隆中躬耕，而隆中为南阳郡邓县的属地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">性命：身体和生命。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">闻达：（声名）显扬。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">卑鄙：卑贱。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">猥：多次；枉屈：劳动大驾屈尊（来看我）</span></p>
+<p class="zs-inline"><span class="zs-no">〔36〕</span><span class="zs-body">感激：感动。孔明深受感动，主要在于二人之间的悬殊差距。在年龄上刘备虚岁 47，比诸葛亮大 20 岁。在地位上刘备的左将军是高级军职，相当于现今的少将，诸葛亮仅是一介平民。在资历上刘备已入官场二十多年，诸葛亮却没有从政经历。后世往往只赞美刘备“三顾频繁”，却对“猥自枉屈”有所忽略。</span></p>
+<p class="zs-inline"><span class="zs-no">〔37〕</span><span class="zs-body">驱驰：指效力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔38〕</span><span class="zs-body">倾覆：指刘备伐吴惨遭失败一事。</span></p>
+<p class="zs-inline"><span class="zs-no">〔39〕</span><span class="zs-body">尔来：从那以来。这一句总括上文，所以是从刘备三顾时的建安十二年（公元 207）算起。</span></p>
+<p class="zs-inline"><span class="zs-no">〔40〕</span><span class="zs-body">不效：没有成效。</span></p>
+<p class="zs-inline"><span class="zs-no">〔41〕</span><span class="zs-body">泸：河流名。即今雅砻江下游以及金沙江汇入雅砻江之后的一段。</span></p>
+<p class="zs-inline"><span class="zs-no">〔42〕</span><span class="zs-body">不毛：不容易种植庄稼的高山峡谷地区。</span></p>
+<p class="zs-inline"><span class="zs-no">〔43〕</span><span class="zs-body">奖率：勉励和统率。</span></p>
+<p class="zs-inline"><span class="zs-no">〔44〕</span><span class="zs-body">驽钝：劣马和钝刀。比喻自己才能低下，是自谦的话。</span></p>
+<p class="zs-inline"><span class="zs-no">〔45〕</span><span class="zs-body">攘除：扫除；奸凶：指曹魏君臣</span></p>
+<p class="yw">愿陛下托臣以讨贼兴复之效；不效，则治臣之罪，以告先帝之灵。〔若无兴德之言，则〕责攸之、祎、允等之慢<span class="zs-no">〔46〕</span>，以彰其咎。陛下亦宜自谋<span class="zs-no">〔47〕</span>，以咨诹善道<span class="zs-no">〔48〕</span>，察纳雅言<span class="zs-no">〔49〕</span>，深追先帝遗诏。</p>
+<p class="fy-inline">希望陛下委托愚臣在讨伐奸贼兴复汉朝方面取得成效；如果没有成效，就追究愚臣的罪责，然后禀告先皇帝的神灵。如果没有帮助陛下培养品德的言论，就责问郭攸之、费祎、董允等人的轻忽，以公开他们的过失。但是陛下您本人也应当自己认真考虑，征询和吸取好的建议，考察和采纳正直的言论，认真回想先皇帝的遗诏。</p>
+<p class="zs-inline"><span class="zs-no">〔46〕</span><span class="zs-body">慢：轻忽。</span></p>
+<p class="zs-inline"><span class="zs-no">〔47〕</span><span class="zs-body">自谋：自己好好考虑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔48〕</span><span class="zs-body">咨诹：征询和采纳；善道：好的建议</span></p>
+<p class="zs-inline"><span class="zs-no">〔49〕</span><span class="zs-body">雅言：正直的言论。</span></p>
+<p class="yw">臣不胜受恩感激；今当远离，临表涕零，不知所言！</p>
+<p class="fy-inline">愚臣深受大恩，所以忍不住激动之情；现今就要远离，面对我写的这封表章泪流满面，不知道该说什么了。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之按：刘备以建安十三年败，遗亮使吴；亮以建兴五年抗表北伐，自倾覆至此，整二十年。然则备始与亮相遇，在败军之前一年时也。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《汉书·地理志》曰：“泸惟水，出牂牁郡句町县。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">7 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">遂行，屯于沔阳。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">于是诸葛亮率众出发，前往汉中驻扎在沔水的北岸。</p>
+<p class="yw">六年春<span class="zs-no">〔1〕</span>，扬声由斜谷道取郿<span class="zs-no">〔2〕</span>，使赵云、邓芝为疑军<span class="zs-no">〔3〕</span>，据箕谷<span class="zs-no">〔4〕</span>；魏大将军曹真举众拒之。亮身率诸军攻祁山<span class="zs-no">〔5〕</span>，戎阵整齐，赏罚肃而号令明；南安、天水、安定三郡叛魏应亮，关中响震<span class="zs-no">〔6〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">建兴六年（公元 228）春天，诸葛亮故意放出将要从斜谷道攻取曹魏郡县的风声，并派赵云、邓芝率领军队迷惑敌人，前往占领箕谷，曹魏的大将军曹真率领全军前来抵御。而诸葛亮却亲自统带各路军队进攻西面的祁山，蜀军阵势整齐，赏罚严格而号令明确，南安、天水、安定三郡都叛变曹魏而响应诸葛亮，关中地区大受震动。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">六年：建兴六年（公元 228）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">扬声：故意放出风声。斜（yé）谷道：褒斜栈道的斜谷段。褒斜栈道是先秦以来南北走向穿越秦岭的主要通道，也是诸葛亮五次北伐最后一次使用的道路。由秦岭南面的褒水河谷即褒谷，和当时武功水所流经的斜谷组合，故名。栈道是中国古代穿越西南地区险峻山脉而修建的一种特殊道路。沿着河谷，在河岸一侧峭壁上横向打入方形深孔，将相应尺寸的方木插入深孔，在其上铺设厚木板，即可形成人和车辆通行的道路。栈道的工程量远比挖山铺路要小，成本也低得多，更为重要者，是对沿途自然环境的破坏也最小，堪称中国古代先民的伟大创造。连接关中平原和成都平原的栈道，起源于先秦，在诸葛亮北伐时又大规模兴修，主要集中在今川陕交界的山脉和汉中市北穿越秦岭的褒斜河谷这两段。现今四川广元市北面的朝天关，已利用当时留存的栈道深孔，恢复了一段栈道，成为蜀道风景线上三国文化景观之一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">邓芝：传见本书卷四十五；疑军：使敌人疑惑而产生错觉的军队</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">箕谷：地名。通常认为在今陕西汉中市西北褒城镇北，即褒斜道的南口附近，这是不对的。首先，褒斜道的南口邻近汉中郡治所南郑，距曹魏的地盘还远隔一座秦岭，在这里屯兵，起不了吸引敌军主力的作用。其次，据《诸葛亮集》中诸葛亮与其兄诸葛瑾的书信记载，赵云从箕谷向南败退之后，途中曾烧毁赤崖一段栈道，可见箕谷在赤崖之北。而赤崖的位置，据今人实地考察，在今陕西留坝县东北柘梨园镇北七公里。因此，箕谷的正确位置，应在今陕西太白县附近的褒河谷中。参见郭荣章《石门摩崖刻石研究》中《三国时的褒斜栈道》一文。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">祁山：地名。在今甘肃礼县东二十三公里祁山堡。现今尚有古营垒、武侯祠、卧龙桥等遗迹留存。当地民众每年二月在此举行民俗大庙会，祈祝祭拜，远近闻名。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">响震：震动。</span></p>
+<p class="yw">魏明帝西镇长安，命张郃拒亮。亮使马谡督诸军在前，与郃战于街亭<span class="zs-no">〔7〕</span>。谡违亮节度，举动失宜，大为郃所破。亮拔西县千余家<span class="zs-no">〔8〕</span>，还于汉中，<span class="pz-no">〔三〕</span>戮谡以谢众<span class="zs-no">〔9〕</span>。</p>
+<p class="fy-inline">魏明帝曹叡亲自赶到西边的长安镇守，命令大将张郃迎战诸葛亮，诸葛亮派马谡指挥各路军队充当前锋，与张郃在街亭交战。马谡违背诸葛亮的部署，举动不恰当，结果被张郃打得大败。诸葛亮只好把西县的一千多家百姓带走，撤退回汉中，依法处死马谡以向大家表示歉意。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">街亭：地名。具体位置说法纷纭，大约有在今甘肃庄浪县东南韩店乡、秦安县东北陇城镇、天水市东南街子镇等。但是结合诸葛亮攻取祁山之后兵锋指向长安，魏明帝从长安紧急派遣张郃迎战，以及街亭失守之后诸葛亮退守祁山等地理方向综合考虑，当以在天水市东南的街子镇为合理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">西县：县名。县治在今甘肃礼县东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">谢众：向众人道歉。</span></p>
+<p class="yw">上疏曰：“臣以弱才，叨窃非据<span class="zs-no">〔10〕</span>，亲秉旄钺以厉三军<span class="zs-no">〔11〕</span>；不能训章明法，临事而惧<span class="zs-no">〔12〕</span>；至有街亭违命之阙，箕谷不戒之失<span class="zs-no">〔13〕</span>。咎皆在臣，授任无方；臣明不知人<span class="zs-no">〔14〕</span>，恤事多暗<span class="zs-no">〔15〕</span>。《春秋》责帅<span class="zs-no">〔16〕</span>，臣职是当<span class="zs-no">〔17〕</span>；请自贬三等，以督厥咎<span class="zs-no">〔18〕</span>。”</p>
+<p class="fy-inline">为此诸葛亮向后主上了一道奏疏说：“为臣才能劣弱，很惭愧占据了不该我拥有的位置，亲自秉持节杖、黄钺以勉励三军；却不能向部下训示规章申明法令，也不能临事谨慎小心；以至于发生街亭战将不遵守命令，箕谷守军不听从告诫的过失。错误都是因为为臣在选任人才上没有方法；为臣对人和事的观察能力不足以充分了解人，考虑事情多有糊涂的地方。《春秋》中认为战争失利首先要追究主帅的责任，我的职务使我应当承担这次战败的责任；为臣请求把自己的官职贬低三等，以督促我改正自己的过失。”于是诸葛亮降职为右将军，代行丞相职权，依旧总领各路军队。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">非据：不应当占据（的位置）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">旄：牦牛尾巴。这里指用牦牛尾巴做装饰的节。节是带有牦牛尾巴的竹竿，由皇帝授给领兵出征的大臣，表示给予诛杀的威权；钺：用黄金装饰的大斧</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">惧：指谨慎小心。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">箕谷不戒之失：指赵云等人在箕谷被曹真击败一事。参见本书卷三十六《赵云传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">明：对人和事的观察能力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">恤事：考虑事情。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">责帅：（战争失利首先要）追究主帅的责任。前 597 年，荀林父统率晋军与楚军作战，大败，韩厥质问他说：“子为元帅，师不用命，谁之罪也？”这里就指这件事。见《左传》宣公十二年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">臣职是当：我的职务使我应当承担这次战败的责任。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">以督厥咎：以督促（我改正）我的过失。</span></p>
+<p class="yw">于是以亮为右将军，行丞相事，所总统如前。<span class="pz-no">〔四〕</span>冬，亮复出散关<span class="zs-no">〔19〕</span>，围陈仓<span class="zs-no">〔20〕</span>。曹真拒之，亮粮尽而还。魏将王双率骑追亮，亮与战；破之，斩双。</p>
+<p class="fy-inline">当年冬天，诸葛亮又从散关出兵，围攻陈仓县。曹真前往迎战，诸葛亮粮尽后退兵。魏将王双带领骑兵穷追，诸葛亮回头与之交战；大破敌人，临阵斩了王双。</p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">散关：关隘名。在今陕西宝鸡市西南。这次进攻方向，转移到祁山以东。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">陈仓：县名。在今陕西宝鸡市东。故城遗址在今陕西宝鸡市东郊约 7.5 公里处，曾有汉魏文物出土。</span></p>
+<p class="yw">七年<span class="zs-no">〔21〕</span>，亮遣陈式攻武都、阴平。魏雍州刺史郭淮率众欲击式，亮自出至建威<span class="zs-no">〔22〕</span>；淮退还，遂平二郡。</p>
+<p class="fy-inline">建兴七年（公元 229），诸葛亮派陈式去进攻曹魏的武都、阴平二郡。曹魏的雍州刺史郭淮准备出兵进攻陈式，而诸葛亮亲自出兵推进到建威牵制；郭淮只好退回，陈式顺利平定了这两郡。</p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">七年：建兴七年（公元 229）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">建威：地名。在今甘肃西和县南。</span></p>
+<p class="yw">诏策亮曰：“街亭之役，咎由马谡；而君引愆<span class="zs-no">〔23〕</span>，深自贬抑；重违君意<span class="zs-no">〔24〕</span>，听顺所守。前年耀师<span class="zs-no">〔25〕</span>，馘斩王双<span class="zs-no">〔26〕</span>；今岁爰征<span class="zs-no">〔27〕</span>，郭淮遁走；降集氐、羌，兴复二郡；威镇凶暴，功勋显然。方今天下骚扰，元恶未枭；君受大任，干国之重<span class="zs-no">〔28〕</span>，而久自挹损，非所以光扬洪烈矣。今复君丞相，君其勿辞。”<span class="pz-no">〔五〕</span></p>
+<p class="fy-inline">后主向诸葛亮下达诏书说：“街亭一战失利，罪过在马谡身上；而您主动承担过失，深深贬低压抑自己；因为不好违背您的意愿，所以听从了您坚持执行的处置措施。去年出动军队显示威力，把敌将王双斩首割下左耳；今年改换地方出征，郭淮逃走；接受氐、羌百姓的投降并安抚他们，收复了武都、阴平二郡；威势镇慑了凶恶残暴的敌人，功勋显著。如今天下骚动，元凶曹叡还没有被诛杀；您接受重任，承担国家的军政要务，而长久抑制贬损自己，这不是使伟大事业发扬光辉的办法。现今恢复您的丞相职务，您可不要推辞。”</p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">引愆：自己承担过失。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">重违：难以违背。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">耀师：出动军队显示威力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">馘：杀死敌人后割下左耳。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">爰征：改换（地方）出征。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">干：承担。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">郭冲三事曰：“亮屯于阳平，遣魏延诸军并兵东下，亮惟留万人守城。晋宣帝率二十万众拒亮，而与延军错道，径至前，当亮六十里所。侦候白宣帝，说‘亮在城中，兵少力弱’。亮亦知宣帝垂至，已与相逼；欲前赴延军，相去又远；回迹反追，势不相及；将士失色，莫知其计。亮意气自若，敕军中皆卧旗息鼓，不得妄出庵幔；又令大开四城门，扫地却洒。宣帝常谓亮持重，而猥见势弱，疑其有伏兵，于是引军北趣山。明日食时，亮谓参佐拊手大笑曰：‘司马懿必谓吾怯，将有强伏，循山走矣！’候逻还白，如亮所言。宣帝后知，深以为恨。”</span></p>
+<p class="pz-item no-no">难曰：按阳平在汉中。亮初屯阳平，宣帝尚为荆州都督，镇宛城；至曹真死后，始与亮于关中相抗御耳。魏尝遣宣帝自宛由西城伐蜀，值霖雨，不果。此之前后，无复有于阳平交兵事。就如冲言，宣帝既举二十万众，已知亮兵少力弱；若疑其有伏兵，正可设防持重，何至便走乎？按《魏延传》云：“延每随亮出，辄欲请精兵万人，与亮异道会于潼关；亮制而不许，延常谓亮为怯，叹己才用之不尽也。”亮尚不以延为万人别统，岂得如冲言，顿使将重兵在前，而以轻弱自守乎？且冲与扶风王言，显彰宣帝之短；对子毁父，理所不容！而云“扶风王慨然善冲之言”，故知此书举引皆虚。</p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《魏略》曰：“始，国家以蜀中惟有刘备。备既死，数岁寂然无声，是以略无备预。而猝闻亮出，朝野恐惧；陇右、祁山尤甚，故三郡同时应亮。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">郭冲四事曰：“亮出祁山，陇西、南安二郡应时降；围天水，拔冀城，虏姜维，驱略士女数千人还蜀。人皆贺亮，亮颜色愀然有戚容，谢曰：‘普天之下，莫非汉民；国家威力未举，使百姓困于豺狼之吻。一夫有死，皆亮之罪；以此相贺，能不为愧！’于是蜀人咸知亮有吞魏之志，非惟拓境而已。”</span></p>
+<p class="pz-item no-no">难曰：亮有吞魏之志久矣，不始于此众人方知也。且于时师出无成，伤缺而返者众，三君归降而不能有。姜维，天水之匹夫耳，获之则于魏何损？拔西县千家，不补街亭所丧，以何为功，而蜀人相贺乎？</p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《汉晋春秋》曰：“或劝亮更发兵者，亮曰：‘大军在祁山、箕谷，皆多于贼：而不能破贼、为贼所破者，则此病不在兵少也。在一人耳。今欲减兵省将，明罚思过，校变通之道于将来；若不能然者，虽兵多何益？自今以后，诸有忠虑于国，但勤攻吾之阙，则事可定，贼可死，功可v足而待矣！’于是考微劳，甄烈壮，引咎责躬，布所失于天下；厉兵讲武，以为后图，戎士简练，民忘其败矣。亮闻孙权破曹休，魏兵东下，关中虚弱。十一月，上言曰：‘先帝虑汉，贼不两立，王业不偏安，故托臣以讨贼也。以先帝之明，量臣之才，故知臣伐贼才弱敌强也。然不伐贼，王业亦亡；惟坐待亡，孰与伐之？是故托臣而弗疑也。臣受命之日，寝不安席，食不甘味；思惟北征，宜先入南，故五月渡泸，深入不毛，并日而食。臣非不自惜也，顾王业不得偏全于蜀都，故冒危难以奉先帝之遗意也；而议者谓为非计。今贼适疲于西，又务於东；兵法乘劳，此进趋之时也。谨陈其事如左：高帝明并日月，谋臣渊深，然涉险被创，危然后安。今陛下未及高帝，谋臣不如良、平；而欲以长计取胜，坐定天下。此臣之未解一也；刘繇、王朗，各据州郡；论安言计，动引圣人；群疑满腹，众难塞胸；今岁不战，明年不征；使孙策坐大，遂并江东。此臣之未解二也；曹操智计殊绝于人；其用兵也，仿佛孙、吴；然困于南阳，险于鸟巢，危于祁连，逼于黎阳，几败北山，殆死潼关；然后，伪定一时耳。况臣才弱，而欲以不危而定之。此臣之未解三也；曹操五攻昌霸不下，四越巢湖不成，任用李服而李服图之，委夏侯而夏侯败亡；先帝每称操为能，犹有此失；况臣驽下，何能必胜？此臣之未解四也；自臣到汉中，中间期年耳。然丧赵云、阳群、马玉、阎芝、丁立、白寿、刘郃、邓铜等及曲长、屯将七十余人，突将、无前、)叟、青羌散骑、武骑一千余人。此皆数十年之内所纠合四方之精锐，非一州之所有。若复数年，则损三分之二也；当何以图敌？此臣之未解五也；今民穷兵疲，而事不可息；事不可息，则住与行劳费正等；而不及今图之，欲以一州之地与贼持久。此臣之未解六也。夫难平者，事也。昔先帝败军于楚，当此时，曹操拊手谓：天下以定。然后先帝东连吴、越，西取巴、蜀，举兵北征，夏侯授首。此操之失计而汉事将成也。然后吴更违盟，关羽毁败，秭归蹉跌，曹丕称帝。凡事如是，难可逆见。臣鞠躬尽力，死而后已；至于成败利钝，非臣之明所能逆睹也。’于是有散关之役。”</span></p>
+<p class="pz-item no-no">此表，《亮集》所无；出张俨《默记》。</p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《汉晋春秋》曰：“是岁，孙权称尊号，其群臣以并尊二帝来告。议者咸以为：‘交之无益，而名体弗顺；宜显明正义，绝其盟好。’亮曰：‘权有僭逆之心久矣！国家所以略其衅情者，求掎角之援也。今若加显绝，仇我必深；便当移兵东戍，与之角力；须并其土，乃议中原。彼贤才尚多，将相缉穆，未可一朝定也。顿兵相持，坐而须老；使北贼得计，非算之上者。昔孝文卑辞匈奴，先帝优与吴盟；皆应权通变，弘思远益，非匹夫之为（分）〔忿〕者也。今议者咸以“权利在鼎足，不能并力；且志望已满，无上岸之情”。推此，皆似是而非也。何者？其智力不侔，故限江自保；权之不能越江，犹魏贼之不能渡汉，非力有余而利不取也。若大军致讨，彼高当分裂其地以为后规；下当略民广境，示武于内：非端坐者也。若就其不动而睦于我，我之北伐，无东顾之忧，河南之众不得尽西，此之为利，亦已深矣。权僭之罪，未宜明也。’乃遣卫尉陈震庆权正号。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">8 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">九年<span class="zs-no">〔1〕</span>，亮复出祁山，以木牛运，<span class="pz-no">〔一〕</span>粮尽退军；与魏将张郃交战，射杀郃。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">建兴九年（公元 231），诸葛亮又出兵祁山，以木牛作运输工具，粮尽而退兵；与魏军大将张郃交战，将其射死。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">九年：建兴九年（公元 231）。张郃中箭身亡之处名叫木门，在今天水西南约 60 余公里的牡丹乡木门村，位于祁山以东不远。木门道所经过的峡谷，深邃陡峭，最窄处宽度仅 50 米左右。附近曾有当时的箭镞、刀、矛、弓等文物出土。</span></p>
+<p class="yw">十二年春<span class="zs-no">〔2〕</span>，亮悉大众由斜谷出，以流马运；据武功五丈原<span class="zs-no">〔3〕</span>，与司马宣王对于渭南<span class="zs-no">〔4〕</span>。亮每患粮不继，使己志不申；是以分兵屯田，为久驻之基。耕者杂于渭滨居民之间，而百姓安堵<span class="zs-no">〔5〕</span>，军无私焉<span class="zs-no">〔6〕</span>。<span class="pz-no">〔三〕</span>相持百余日。</p>
+<p class="fy-inline">建兴十二年（公元 234）春，诸葛亮出动全军从斜谷道北进，以流马作运输工具；占据武功水西边的五丈原，与魏军主帅司马懿在渭水南岸对峙。诸葛亮在北伐中常常担心军粮不能保证供给，使得自己的大志难以实现；所以这一次决定分出兵力在当地实行屯田，打下长久驻扎的基础。从事耕种的将士夹杂在渭水岸边的居民中间，而当地的老百姓都像墙壁一样安安定定不受惊扰。军队没有任何抢掠百姓谋取私利的行为。如此相持了一百多天。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">十二年：建兴十二年（公元 234）。以上诸葛亮出兵北伐共计五次，经由祁山只有两次。后世所说的“六出祁山”并非历史真实。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">武功：这里指武功水。河流名。为渭水南岸的支流。从秦岭发源，向北经斜谷，至斜谷口后，再经过五丈原的东侧，北流汇入渭河。凭借五丈原的高地，但又紧靠武功水的水源，在此屯兵是吸取街亭失利经验的明智之举。或误以为此处的武功是县名，不确，当时的武功县，治所尚在五丈原以东近百里之遥，是在魏军的有效控制之下；五丈原：地名</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">渭南：渭水南岸。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">安堵：像墙壁一样安定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">无私：指没有抢掠百姓谋取私利的行为。</span></p>
+<p class="yw">其年八月，亮疾病；卒于军，时年五十四。<span class="pz-no">〔四〕</span>及军退，宣王案行其营垒处所<span class="zs-no">〔7〕</span>，曰：“天下奇才也！”<span class="pz-no">〔五〕</span></p>
+<p class="fy-inline">当年八月，诸葛亮患病；死在军中，时年五十四岁。蜀军撤退之后，司马懿巡视蜀军的营垒布置，不由得赞叹说：“诸葛亮真是天下奇才啊！”</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">案行：巡察。</span></p>
+<p class="yw">亮遗命：“葬汉中定军山<span class="zs-no">〔8〕</span>：因山为坟<span class="zs-no">〔9〕</span>；冢足容棺<span class="zs-no">〔10〕</span>；敛以时服<span class="zs-no">〔11〕</span>，不须器物<span class="zs-no">〔12〕</span>。”</p>
+<p class="fy-inline">诸葛亮临终前吩咐：“把我安葬在汉中的定军山麓：借助山势建造坟墓，墓穴只要能容纳棺材就可以了；用与时令相应的平常衣服装敛，不用殉葬的器具物品。”</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">定军山：山名。在今陕西勉县城南五公里。山势呈东西走向，绵延近十公里。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">因山：借助山势。今定军山北麓有规模不小的武侯墓园。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">冢：墓穴。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">时服：与时令相应的平常衣物。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">器物：指殉葬物品。</span></p>
+<p class="yw">诏策曰：“惟君体资文武<span class="zs-no">〔13〕</span>，明睿笃诚；受遗托孤，匡辅朕躬；继绝兴微，志存靖乱。爰整六师，无岁不征；神武赫然，威镇八荒<span class="zs-no">〔14〕</span>；将建殊功于季汉<span class="zs-no">〔15〕</span>，参伊、周之巨勋<span class="zs-no">〔16〕</span>。如何不吊，事临垂克<span class="zs-no">〔17〕</span>，遘疾陨丧<span class="zs-no">〔18〕</span>？朕用伤悼，肝心若裂！夫崇德序功<span class="zs-no">〔19〕</span>，纪行命谥<span class="zs-no">〔20〕</span>；所以光昭将来<span class="zs-no">〔21〕</span>，刊载不朽。今使使持节、左中郎将杜琼<span class="zs-no">〔22〕</span>，赠君丞相、武乡侯印绶，谥君为忠武侯。魂而有灵，嘉兹宠荣<span class="zs-no">〔23〕</span>。呜呼哀哉！呜呼哀哉！”</p>
+<p class="fy-inline">后主下达诏书说：“您的天赋中兼有文武两种才能，明智诚实；接受先皇帝临终前托付儿子的命令，匡正辅佐朕身；立志接续断绝了的王朝命运，振兴衰落的皇室，平定祸乱。所以才整顿军队，没有哪一年不进行征伐；显示出非凡的军事才干，威风镇慑了最边远的地区；即将在汉代的衰落时期建立起丰功伟绩，与从前的伊尹、周公并肩媲美。为什么上天如此不仁慈，在大事即将成功之际，却让您得病而去世了！朕伤痛悲悼，肝和心都像要裂开一般。尊崇德泽叙述功劳，记录生平经历确定谥号；是用以照耀未来，永垂不朽的。现在派左中郎将杜琼为使者，持有节杖，前来赠送您丞相、武乡侯两方印章和绶带，并谥您为忠武侯。您的魂魄如果有灵，将会喜欢接受这样的尊荣。啊，悲伤呀！啊，悲伤呀！”</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">体资文武：天赋中兼有文武两种才能。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">八荒：指离中国极远的地区。古代认为中国有九州，九州之外为四海，四海之外为八荒。见刘向《说苑·辨物》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">季汉：汉代的衰落时期。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">伊、周：指伊尹、周公。两人不仅分别帮助商汤、周武王建立新王朝，而且又在开国君主死后成功地辅佐了他们的接班人，与诸葛亮的情况类似，所以用他们作比喻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">垂克：将要成功。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">遘：遇上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">序功：叙述功劳。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">纪行：记录经历；命谥：确定谥号</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">所以：用以。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">杜琼：传见本书卷四十二。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">嘉：喜欢。</span></p>
+<p class="yw">初，亮自表后主曰：“成都有桑八百株<span class="zs-no">〔24〕</span>，薄田十五顷；子弟衣食，自有余饶。至于臣在外任，无别调度<span class="zs-no">〔25〕</span>；随身衣食，悉仰于官<span class="zs-no">〔26〕</span>；不别治生<span class="zs-no">〔27〕</span>，以长尺寸<span class="zs-no">〔28〕</span>。若臣死之日，不使内有余帛<span class="zs-no">〔29〕</span>，外有赢财<span class="zs-no">〔30〕</span>，以负陛下。”及卒，如其所言。</p>
+<p class="fy-inline">当初，诸葛亮自己曾向后主上表说：“为臣在成都有桑树八百株，瘠薄的田地十五顷；子弟的衣食，已经有富余。至于为臣在外面任职，没有另外的财物征调收取；随身的衣服食品，都依靠公家供给；所以我不经营产业，以谋取利润。如果为臣有一天死去，将不让家中有多余的布帛，家外有多余的财产，从而辜负陛下的厚望。”到诸葛亮死时，一切都像他所说的那样。</p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">成都：指在成都家中的私产。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">调度：财物的征调收取。这是当时习语。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">官：公家。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">治生：经营产业。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">长尺寸：指产生利润。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">内：指家中。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">外：指当官的处所；赢：多余的</span></p>
+<p class="yw">亮性长于巧思，损益连弩<span class="zs-no">〔31〕</span>，木牛流马，皆出其意；推演兵法，作八阵图<span class="zs-no">〔32〕</span>，咸得其要云。<span class="pz-no">〔六〕</span></p>
+<p class="fy-inline">诸葛亮生性长于巧妙的思考，他改进了一次能发射多支箭的强弩，而制作木牛、流马，也出自他的创意；他又推广发展古代的兵法，作八阵图，都能吸取其精要之处。</p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">连弩：能够一次发射多支箭的强弩。1964年在四川郫县出土了蜀汉景耀四年（公元 261）制造的弩机实物，标称的开弓拉力为“十石”，约合今二百七十公斤，即是这种连弩。木牛、流马，见卷三十三《后主传》注释。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">八阵：一套排列军队迎战来敌的阵形。八阵的名称，由来已久。1972 年山东临沂市银雀山出土的《孙膑兵法》竹简三十篇中，就有《八阵》一篇。本书卷一《武帝纪》建安二十一年裴注引《魏书》，说汉代的每年十月，京城的警卫部队北军五营，照例要按八阵进行演习。《后汉书》卷二十三《窦融传附窦宪传》，记载窦宪进攻匈奴时曾用八阵的战法。可见诸葛亮的《八阵图》，是在前人兵法的基础上加以发展而形成的。至于诸葛八阵的主要功用，从《魏书》卷五十四《高闾传》中可以看出。北魏孝文帝时，北方柔然的骑兵强盛，屡次南侵；高闾向朝廷建议：“采诸葛亮八阵之法，为平地御寇之方”</span></p>
+<p class="yw">亮言教书奏多可观，别为一集。</p>
+<p class="fy-inline">诸葛亮的言论、指示、书信、奏章大多值得阅读，已经单独编为一本文集。</p>
+<p class="yw">景耀六年春，诏为亮立庙于沔阳<span class="zs-no">〔33〕</span>。<span class="pz-no">〔七〕</span>秋，魏镇西将军钟会征蜀，至汉川；祭亮之庙，令军士不得于亮墓所左右刍牧樵采<span class="zs-no">〔34〕</span>。</p>
+<p class="fy-inline">景耀六年（公元 263）春天，后主下诏在沔阳县为诸葛亮建立神庙。这一年秋天，曹魏的征西将军钟会征伐蜀国，来到汉水平原；曾到诸葛亮的神庙祭祀，并下令禁止军队士兵在诸葛亮的墓地放牧牲口和砍柴割草。</p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">立庙于沔阳：诸葛亮庙原在定军山墓前。今陕西勉县西郊的武侯祠庙，是明代移到这里的。现今海内外，纪念诸葛亮的武侯祠数量众多。而最为人们熟悉的当数四川成都武侯祠。成都武侯祠是由刘备的惠陵（包括陵墓和祠庙）演变而来。其中的刘备殿、孔明殿等建筑和蜀汉君臣塑像群，建于明清时期，不仅和谐精美，更是非常罕见独特的君臣合祭型神庙建筑，与惠陵构成一体，是众多三国名胜古迹中最先批准的国家文物保护单位，在名扬海内外，有“三国文化圣地”的美誉。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">刍牧：放牧牲口。</span></p>
+<p class="yw">亮弟均，官至长水校尉。亮子瞻，嗣爵。<span class="pz-no">〔八〕</span></p>
+<p class="fy-inline">诸葛亮的弟弟诸葛均，官做到长水校尉。诸葛亮的儿子诸葛瞻，继承了他的爵位。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《汉晋春秋》曰：“亮围祁山，招鲜卑轲比能；比能等至故北地吕城以应亮。于是魏大司马曹真有疾，司马宣王自荆州入朝。魏明帝曰：‘西方事重，非君莫可付者。’乃使西屯长安，督张郃、费曜、戴陵、郭淮等。宣王使曜、陵留精兵四千，守上邽，余众悉出，西救祁山。郃欲分兵驻雍、郿，宣王曰：‘料前军能独当之者，将军言是也；若不能当而分为前后，此楚之三军所以为黥布擒也。’遂进。亮分兵留攻，自逆宣王于上邽。郭淮、费曜等邀亮，亮破之，因大芟刈其麦；与宣王遇于上邽之东，敛兵依险，军不得交，亮引而还。宣王寻亮，至于卤城。张郃曰：‘彼远来逆我，请战不得；谓我利在不战，欲以长计制之也。且祁山知大军已在近，人情自固；可止屯于此，分为奇兵，示出其后；不宜进前而不敢逼，坐失民望也。今亮悬军食少，亦行去矣。’宣王不从，故寻亮。既至，又登山掘营，不肯战。贾栩、魏平，数请战，因曰：‘公畏蜀如虎，奈天下笑何！’宣王病之。诸将咸请战，五月辛巳，乃使张郃攻无当监何平于南围，自案中道向亮。亮使魏延、高翔、吴班赴拒，大破之，获甲首三千级，玄铠五千领，角弩三千一百张。宣王还保营。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">郭冲五事曰：“魏明帝自征蜀，幸长安。遣宣王督张郃诸军，雍、凉劲卒，三十余万，潜军密进，规向剑阁。亮时在祁山，旌旗利器，守在险要；十二更下，在者八万。时魏军始阵，幡兵适交；参佐咸以贼众强盛，非力不制，宜权停下兵一月，以并声势。亮曰：‘吾统武行师，以大信为本。得原失信，古人所惜。去者束装以待期，妻子鹤望而计日；虽临征难，义所不废！’皆催遣令去。于是去者感悦，愿留一战；住者愤踊，思致死命。相谓曰：‘诸葛公之恩，死犹不报也！’临战之日，莫不拔刃争先，以一当十；杀张郃，却宣王，一战大克：此信之由也。”</span></p>
+<p class="pz-item no-no">难曰：臣松之按：亮前出祁山，魏明帝身至长安耳；此年，不复自来。且亮大军在关、陇，魏人何由得越亮，径向剑阁？亮既在战场，本无久住之规，而方休兵还蜀：皆非经通之言。孙盛、习凿齿，搜求异同，罔有所遗，而并不载冲言：知其乖剌多矣。</p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《汉晋春秋》曰：“亮自至，数挑战。宣王亦表，固请战。使卫尉辛毗，持节以制之。姜维谓亮曰：‘辛佐治仗节而到，贼不复出矣。’亮曰：‘彼本无战情；所以固请战者，以示武于其众耳。将在军，君命有所不受；苟能制吾，岂千里而请战邪！’”</span></p>
+<p class="pz-item no-no">《魏氏春秋》曰：“亮使至，问其寝食及其事之烦简，不问戎事。使对曰：‘诸葛公，夙兴夜寐；罚二十以上，皆亲揽焉。所啖食，不至数升。’宣王曰：‘亮将死矣。’”</p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《魏书》曰：“亮粮尽势穷，忧恚呕血，一夕烧营遁走；入谷，道发病卒。”</span></p>
+<p class="pz-item no-no">《汉晋春秋》曰：“亮卒于郭氏坞。”</p>
+<p class="pz-item no-no">《晋阳秋》曰：“有星赤而芒角，自东北，西南流，投于亮营；三投再还，往大还小。俄而亮卒。”</p>
+<p class="pz-item no-no">臣松之以为：亮在渭滨，魏人蹑迹；胜负之形，未可测量。而云“呕血”，盖因亮自亡而自夸大也。夫以孔明之略，岂为仲达呕血乎？及至刘琨丧师，与晋元帝笺亦云“亮军败呕血”，此则引虚记以为言也。其云“入谷”而卒，缘蜀人入谷发丧故也。</p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《汉晋春秋》曰：“杨仪等整军而出，百姓奔告宣王，宣王追焉。姜维令仪反旗鸣鼓，若将向宣王者；宣王乃退，不敢逼。于是仪结阵而去，入谷然后发丧。宣王之退也，百姓为之谚曰：‘死诸葛走生仲达！’或以告宣王，宣王曰：‘吾能料生，不便料死也。’”</span></p>
+<p class="pz-item"><span class="pz-no">〔六〕</span><span class="pz-body">《魏氏春秋》曰：“亮作八务、七戒、六恐、五惧；皆有条章，以训厉臣子。又损益连弩，谓之‘元戎’；以铁为矢，矢长八寸，一弩十矢俱发。”</span></p>
+<p class="pz-item no-no">《亮集》载作木牛流马法曰：</p>
+<p class="pz-item no-no">“木牛者，方腹曲头，一脚四足，头入领中，舌著于腹。载多而行少，宜可大用，不可小使。特行者数十里，群行者二十里也。曲者为牛头，双者为牛脚，横者为牛领，转者为牛足，覆者为牛背，方者为牛腹，垂者为牛舌，曲者为牛肋，刻者为牛齿，立者为牛角，细者为牛鞅，摄者为牛鞦轴。牛仰双辕，人行六尺，牛行四步。载一岁粮，日行二十里，而人不大劳。</p>
+<p class="pz-item no-no">流马尺寸之数：肋长三尺五寸，广三寸，厚二寸二分，左右同。前轴孔分墨，去头四寸，径中二寸。前脚孔分墨二寸，去前轴孔四寸五分，广一寸。前杠孔去前脚孔分墨二寸七分，孔长二寸，广一寸。后轴孔去前杠分墨一尺五分，大小与前同。后脚孔分墨，去后轴孔三寸五分，大小与前同。后杠孔去后脚孔分墨二寸七分，后载克去后杠孔分墨四寸五分。前杠长一尺八寸，广二寸，厚一寸五分，后杠与等。板方囊二枚：厚八分，长二尺七寸，高一尺六寸五分，广一尺六寸；每枚受米二斛三斗。从上杠孔去肋下七寸，前后同。上杠孔，去下杠孔分墨一尺三寸，孔长一寸五分，广七分；八孔同。前后四脚，广二寸，厚一寸五分。形制如象，靬长四寸，径面四寸三分。孔径中三脚杠，长二尺一寸，广一寸五分，厚一寸四分，同杠耳。”</p>
+<p class="pz-item"><span class="pz-no">〔七〕</span><span class="pz-body">《襄阳记》曰：“亮初亡，所在各求为立庙，朝议以礼秩不听。百姓遂因时节，私祭之于道陌上。言事者或以为‘可听立庙于成都’者，后主不从。步兵校尉习隆、中书郎向充等，共上表曰：‘臣闻周人怀召伯之德，甘棠为之不伐；越王思范蠡之功，铸金以存其像。自汉兴以来，小善小德而图形立庙者多矣；况亮德范遐迩，勋盖季世？王室之不坏，实斯人是赖；而蒸尝止于私门，庙像阙而莫立；使百姓巷祭，戎夷野祀：非所以存德念功，述追在昔者也。今若尽顺民心，则渎而无典；建之京师，又逼宗庙：此圣怀所以惟疑也。臣愚以为宜因近其墓，立之于沔阳，使所亲属以时赐祭；凡其臣故吏欲奉祠者，皆限至庙。断其私祀，以崇正礼。’于是始从之。”</span></p>
+<p class="pz-item"><span class="pz-no">〔八〕</span><span class="pz-body">《襄阳记》曰：“黄承彦者，高爽开列，为沔南名士。谓诸葛孔明曰：‘闻君择妇；身有丑女，黄头黑色，而才堪相配。’孔明许〔焉〕，即载送之。时人以为笑乐，乡里为之谚曰：‘莫作孔明择妇，（止）〔正〕得阿承丑女。’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">9 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">诸葛氏集目录</p>
+<p class="fy-inline">《诸葛亮文集》目录</p>
+<p class="yw">开府作牧第一</p>
+<p class="fy-inline">开府作牧第一</p>
+<p class="yw">权制第二</p>
+<p class="fy-inline">权制第二</p>
+<p class="yw">南征第三</p>
+<p class="fy-inline">南征第三</p>
+<p class="yw">北出第四</p>
+<p class="fy-inline">北出第四</p>
+<p class="yw">计算第五</p>
+<p class="fy-inline">计算第五</p>
+<p class="yw">训厉第六</p>
+<p class="fy-inline">训厉第六</p>
+<p class="yw">综核上第七</p>
+<p class="fy-inline">综核上第七</p>
+<p class="yw">综核下第八</p>
+<p class="fy-inline">综核下第八</p>
+<p class="yw">杂言上第九</p>
+<p class="fy-inline">杂言上第九</p>
+<p class="yw">杂言下第十</p>
+<p class="fy-inline">杂言下第十</p>
+<p class="yw">贵和第十一</p>
+<p class="fy-inline">贵和第十一</p>
+<p class="yw">兵要第十二</p>
+<p class="fy-inline">兵要第十二</p>
+<p class="yw">传运第十三</p>
+<p class="fy-inline">传运第十三</p>
+<p class="yw">与孙权书第十四</p>
+<p class="fy-inline">与孙权书第十四</p>
+<p class="yw">与诸葛瑾书第十五</p>
+<p class="fy-inline">与诸葛瑾书第十五</p>
+<p class="yw">与孟达书第十六</p>
+<p class="fy-inline">与孟达书第十六</p>
+<p class="yw">废李平第十七</p>
+<p class="fy-inline">废李平第十七</p>
+<p class="yw">法检上第十八</p>
+<p class="fy-inline">法检上第十八</p>
+<p class="yw">法检下第十九</p>
+<p class="fy-inline">法检下第十九</p>
+<p class="yw">科令上第二十</p>
+<p class="fy-inline">科令上第二十</p>
+<p class="yw">科令下第二十一</p>
+<p class="fy-inline">科令下第二十一</p>
+<p class="yw">军令上第二十二三</p>
+<p class="fy-inline">军令上第二十二</p>
+<p class="yw">军令中第二十</p>
+<p class="fy-inline">军令中第二十三</p>
+<p class="yw">军令下第二十四</p>
+<p class="fy-inline">军令下第二十四</p>
+<p class="yw">右二十四篇，凡十万四千一百一十二字。</p>
+<p class="fy-inline">以上二十四篇，共十万四千一百一十二字。</p>
+<p class="yw">臣寿等言：臣前在著作郎<span class="zs-no">〔1〕</span>，侍中、领中书监、济北侯臣荀勖，中书令、关内侯臣和峤奏<span class="zs-no">〔2〕</span>，使臣定故蜀丞相诸葛亮故事<span class="zs-no">〔3〕</span>。亮毗佐危国<span class="zs-no">〔4〕</span>，负阻不宾；然犹存录其言，耻善有遗<span class="zs-no">〔5〕</span>：诚是大晋光明至德，泽被无疆。自古以来，未之有伦也<span class="zs-no">〔6〕</span>。辄删除复重，随类相从，凡为二十四篇，篇名如右。</p>
+<p class="fy-inline">臣陈寿等谨报告：为臣此前在任著作郎时，侍中兼中书监、济北侯臣荀勖，中书令、关内侯臣和峤上奏，让臣编定过去蜀国丞相诸葛亮所写的公务文书。诸葛亮辅佐处境危险的国家，依靠高山的阻隔不服从中央王朝；然而陛下还允许保存记录他的言论，以好的言论有散失为耻：这确实是大晋皇朝具有至高无上的光辉德泽，使普天之下的人民受到恩惠的表现。从古至今，还没有能与之相比的美好举动。为臣自己决定删除内容重复的篇目，分类编排，总共编为二十四篇，篇名如上。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">著作郎：官名。专门负责修撰本朝历史。陈寿任西晋著作郎事，见《晋书》卷八十二《陈寿传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">荀勖：字公曾。颍川郡颍阴（今河南许昌市）人。出身世家大族。曹魏时积极支持司马氏。西晋建立，任中书监，兼侍中，封侯，长期掌管机要。精于法律和古文字，曾参与制定《晋律》，又曾整理汲郡出土的古文竹简。传见《晋书》卷三十九。和峤（？—公元 292）：字长舆。汝南郡西平（今河南舞阳县东南）人。出身世家大族。西晋武帝时任中书令，后任太子太傅。传见《晋书》卷四十五。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">故事：过去的公务文书。当时习称公务文书为事。参见周一良《魏晋南北朝史札记》中“事”条。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">危国：处境危险的国家。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">耻善有遗：以好的言论有散失为耻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">未之有伦：没有能与之相比的。</span></p>
+<p class="yw">亮少有逸群之才<span class="zs-no">〔7〕</span>，英霸之器<span class="zs-no">〔8〕</span>；身长八尺，容貌甚伟：时人异焉。遭汉末扰乱，随叔父玄避难荆州；躬耕于野，不求闻达。时左将军刘备以亮有殊量<span class="zs-no">〔9〕</span>，乃三顾亮于草庐之中；亮深谓备雄姿杰出，遂解带写诚<span class="zs-no">〔10〕</span>，厚相结纳。及魏武帝南征荆州，刘琮举州委质；而备失势众寡<span class="zs-no">〔11〕</span>，无立锥之地。亮时年二十七，乃建奇策；身使孙权<span class="zs-no">〔12〕</span>，求援吴、会。权既宿服仰备<span class="zs-no">〔13〕</span>，又睹亮奇雅，甚敬重之；即遣兵三万人以助备，备得用与武帝交战，大破其军；乘胜克捷，江南悉平。后备又西取益州；益州既定，以亮为军师将军。备称尊号，拜亮为丞相，录尚书事。</p>
+<p class="fy-inline">诸葛亮从年轻时起就表现出超群的才能，英雄的气度；身高八尺，容貌很不寻常：当时的人都感到惊异。遇到汉末动乱，他随叔父诸葛玄逃难来到荆州，在田野上亲自耕种；不求声名显扬。当时的左将军刘备因为他有特殊的气量，所以到他住的草屋去探访了三次；他也深深认为刘备雄才杰出，于是就敞开胸怀抒发诚意，相互结下深厚情谊。魏武帝曹操南征荆州，刘琮献出整个荆州投降；而刘备失势而人少，没有立足之地。诸葛亮当时才二十七岁，进献一条奇妙的计策；亲自出使孙权，到江东求援。孙权既自来就佩服景仰刘备，又看到诸葛亮外貌非凡风度高雅，非常敬重他；当即派兵三万支援刘备，刘备得以用来与武帝交战，大破其军；乘胜扩大战果，荆州的长江以南四郡全部平定。后来刘备又西上夺取益州。益州既定，刘备任命诸葛亮为军师将军。刘备称帝，以诸葛亮为丞相，总领尚书台事务。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">逸群：超群。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">英霸之器：英雄的气度。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">殊量：特殊的气量。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">解带：比喻敞开胸怀；写诚：抒发诚意</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">众寡：人少。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">身：亲自。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">宿：向来。</span></p>
+<p class="yw">及备殂没，嗣子幼弱；事无巨细，亮皆专之。于是外连东吴，内平南越<span class="zs-no">〔14〕</span>；立法施度，整理戎旅；工械技巧，物究其极；科教严明<span class="zs-no">〔15〕</span>，赏罚必信<span class="zs-no">〔16〕</span>；无恶不惩，无善不显：至于吏不容奸，人怀自厉；道不拾遗，强不侵弱，风化肃然也。当此之时，亮之素志，进欲龙骧虎视<span class="zs-no">〔17〕</span>，苞括四海；退欲跨陵边疆<span class="zs-no">〔18〕</span>，震荡宇内。又自以为无身之日<span class="zs-no">〔19〕</span>，则未有能蹈涉中原、抗衡上国者<span class="zs-no">〔20〕</span>，是以用兵不戢<span class="zs-no">〔21〕</span>，屡耀其武。</p>
+<p class="fy-inline">刘备死后，继承位置的儿子幼弱；事无巨细，都由诸葛亮决断。于是他对外联合孙吴，对内平定南中的少数族地区；建立制度，整训军队；军用器械的制造技巧，他有精深的研究；他的规章指令严格明确，赏赐和处罚说话一定算数；没有不惩治的坏人坏事，也没有不表彰的好人好事，以至于出现官员中不存在奸邪，人人都勉励自己努力工作；路不拾遗，强不欺弱的局面出现，社会风气一片良好。在这个时候，诸葛亮一直抱着的志向是：进要像龙飞虎视，占领四海；退而求其次也要跨越边境，进攻魏国以震动天下。又认为一旦自己去世，蜀国就没有能够进攻中原而与魏国抗衡的人，所以他用兵不止，多次炫耀武力。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">南越：指南中的少数族。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">科教：规章和指令。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">信：说话算数。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">龙骧虎视：像龙飞腾，像虎雄视。比喻人雄心勃勃要做一番大事业。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">跨陵：跨越；边疆：指曹魏与蜀汉的边界</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">无身：指死亡。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">上国：指曹魏。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">不戢：不停止。</span></p>
+<p class="yw">然亮才，于治戎为长<span class="zs-no">〔22〕</span>，奇谋为短；理民之干，优于将略。而所与对敌，或值人杰<span class="zs-no">〔23〕</span>；加众寡不侔<span class="zs-no">〔24〕</span>，攻守异体<span class="zs-no">〔25〕</span>；故虽连年动众，未能有克。昔萧何荐韩信，管仲举王子城父<span class="zs-no">〔26〕</span>；皆忖己之长，未能兼有故也。亮之器能政理，抑亦管、萧之亚匹也<span class="zs-no">〔27〕</span>；而时之名将无城父、韩信，故使功业陵迟<span class="zs-no">〔28〕</span>，大义不及邪？盖天命有归，不可以智力争也！</p>
+<p class="fy-inline">然而他的才能，在治军上最为擅长，在运用奇谋上就不免逊色；总的说来是治理民众的行政才干，要优于当统帅时的谋略。再者他所对敌的魏军统帅，有时又碰上了人中英杰；加之人口的多寡不相等，攻方和守方所处的地位不同；所以他虽然连年出兵，最终却没有什么战绩。从前萧何推荐韩信，管仲也保举了王子城父，他们都是估量自己的长处，觉得未能兼有文武才这样做。诸葛亮的政治才能，或许也比得上管仲、萧何了；是不是当时蜀国的军队却没有王子城父、韩信那样的名将，所以这才使他的功业衰败，对君主的承诺未能实现啊？恐怕还是天命已经确定由大晋取代魏朝，凡人已经不能凭智力去争夺了。</p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">治戎：治军。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">人杰：指司马懿。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">众寡不侔：（拥有的人民）多少不相等。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">异体：指所处的地位不同。古人认为战争中攻方要比守方加倍吃力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">王子城父：人名。齐国的大臣。当时出自王族的子弟，多以“王子”为氏。擅长军事，作战勇敢。管仲认为自己在这方面不如他，向齐桓公推荐他任大司马，事见《吕氏春秋·勿躬》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">亚匹：同一等。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">陵迟：衰败。</span></p>
+<p class="yw">青龙二年春，亮帅众出武功；分兵屯田，为久驻之基。其秋病卒。黎庶追思<span class="zs-no">〔29〕</span>，以为口实<span class="zs-no">〔30〕</span>。至今梁、益之民，咨述亮者<span class="zs-no">〔31〕</span>，言犹在耳；虽《甘棠》之咏召公<span class="zs-no">〔32〕</span>，郑人之歌子产<span class="zs-no">〔33〕</span>，无以远譬也<span class="zs-no">〔34〕</span>。孟轲有云<span class="zs-no">〔35〕</span>：“以逸道使民<span class="zs-no">〔36〕</span>，虽劳不怨；以生道杀人<span class="zs-no">〔37〕</span>，虽死不忿。”信矣！</p>
+<p class="fy-inline">魏明帝青龙二年（公元 234）春天，诸葛亮统兵到达武功水；在五丈原分兵屯田，打下长久驻扎的基础。当年秋天，因病去世。黎民百姓非常思念他，常常把他作为谈话的资料。至今梁、益二州，黎民百姓们赞叹追述他的话，随处都还可以听到；即使是《诗经·甘棠》一诗赞美召公，郑国人民歌颂子产，用来譬比他也相差不远了。孟轲曾经说过：“出于让百姓得到安乐的目的而使唤他们，他们虽然劳累也不会埋怨；出于让百姓得到生存的目的而请他们献身，他们虽然死去也不会愤恨。”从诸葛亮的情况来看，这些话真是可信啊！</p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">黎庶：百姓。现今西南各地还有很多纪念诸葛亮的名胜古迹，以及大量歌颂赞美他的传说长期流传。这些都是“黎庶追思”的确证。而他的诸多政绩中，不仅有功当时而且更流惠后世者，莫过于创建都江堰管理维修制度的重大贡献。此堰由先秦李冰父子开凿。诸葛亮执政时才专门设置堰官机构，配备上千人丁，专门负责管理维修。由于完善制度的建立，为后世树立典范，使得都江堰成为两千年来至今依然在发挥巨大效益的著名古代水利工程。因此，在天府之国的成都平原地区，受惠的上千万民众，对他极为景仰怀念。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">口实：谈话的资料。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">咨述：赞叹追述。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">《甘棠》：《诗经》中的一篇。周成王时召公治陕西，外出巡视，在一棵甘棠树下办公，走后人们怀念他，就作了这首赞美诗。见《史记》卷三十四《燕召公世家》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">子产：春秋时郑国的政治家。出身贵族。郑简公时执政，实施改革。整理田地疆界，修复沟渠，实施新的征税制度，把法律条文铸在鼎上公布，保存人民发表意见的场所，使郑国政治趋于安定。传见《史记》卷一百一十九。子产死后，人民怀念他，歌唱道：“我有子弟，子产诲之；我有田畴，子产殖之；子产而死，谁其嗣之？”见《左传》襄公三十年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">无以远譬：用来譬比也相差不远。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">孟轲：即孟子。邹（今山东邹城市东南）人。战国时期的思想家。曾在孔子弟子原宪的门人手下求学。游历各国后，因主张不被采用，退而著书立说。提出“民贵君轻”、人“性善”等观点，对后来的儒学发展有很大的影响。被视为孔子学说的继承者，有“亚圣”的称号。著作现存《孟子》。传见《史记》卷七十四。</span></p>
+<p class="zs-inline"><span class="zs-no">〔36〕</span><span class="zs-body">以逸道使民：出于使百姓得到安乐的目的而使唤他们。这里四句出自《孟子·尽心》上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔37〕</span><span class="zs-body">以生道杀人：出于使百姓得到生存的目的而要求他们献身。</span></p>
+<p class="yw">论者或怪亮文彩不艳，而过于丁宁周至<span class="zs-no">〔38〕</span>。臣愚以为咎繇大贤也<span class="zs-no">〔39〕</span>，周公圣人也；考之《尚书》，咎繇之谟略而雅<span class="zs-no">〔40〕</span>，周公之诰烦而悉<span class="zs-no">〔41〕</span>。何则？咎繇与舜、禹共谈，周公与群下矢誓故也。亮所与言，尽众人凡士，故其文指不得及远也<span class="zs-no">〔42〕</span>。然其声教遗言<span class="zs-no">〔43〕</span>，皆经事综物<span class="zs-no">〔44〕</span>；公诚之心，形于文墨；足以知其人之意理，而有补于当世。伏惟陛下迈踪古圣<span class="zs-no">〔45〕</span>，荡然无忌<span class="zs-no">〔46〕</span>；故虽敌国诽谤之言，咸肆其辞而无所革讳<span class="zs-no">〔47〕</span>，所以明大通之道也。谨录写上诣著作<span class="zs-no">〔48〕</span>。</p>
+<p class="fy-inline">议论的人有的奇怪他的文章没有艳丽的辞采，在叮嘱人的时候又过于周详。臣的愚见认为：皋陶是大贤人，周公是大圣人；然而考察《尚书·皋陶谟》一篇简略而典雅，周公的《大诰》一篇却烦琐而详尽。为什么呢？因为皋陶是与虞舜、夏禹谈话，而周公却是在和下属们起誓立约啊。诸葛亮的谈话对象，都是普通的人们，所以他的文意不能抒发得太远。但是他的训示教诲等遗留下来的言论，都是在总理公务中作出的；他那公正忠诚之心，在字里行间充分流露出来；足以使人了解他的心意和政事治理，而对当政的人有所补益。为臣跪着想到陛下追随古代圣明君主的足迹前进，胸怀开阔无所忌讳；所以即使是蜀这个敌国的诽谤言辞，也都让其文字陈列展示出来而没有加以删除和避讳，想以此表明大晋皇朝的伟大通达。谨抄录誊写诸葛亮的文集上交到著作局。</p>
+<p class="zs-inline"><span class="zs-no">〔38〕</span><span class="zs-body">丁宁：即叮咛；周至：周到</span></p>
+<p class="zs-inline"><span class="zs-no">〔39〕</span><span class="zs-body">咎繇：即皋陶。</span></p>
+<p class="zs-inline"><span class="zs-no">〔40〕</span><span class="zs-body">咎繇之谟：《尚书》有《皋陶谟》一篇，记录皋陶与舜、禹讨论治理国家的谋略，中心发言人是皋陶，故名；略而雅：简略而典雅</span></p>
+<p class="zs-inline"><span class="zs-no">〔41〕</span><span class="zs-body">周公之诰：这里指《尚书》中的《大诰》一篇，记录周公平定管叔、蔡叔、武庚三人叛乱时对群臣的通告；烦而悉：烦琐而详尽</span></p>
+<p class="zs-inline"><span class="zs-no">〔42〕</span><span class="zs-body">文指：文意。</span></p>
+<p class="zs-inline"><span class="zs-no">〔43〕</span><span class="zs-body">声教：训示教诲。</span></p>
+<p class="zs-inline"><span class="zs-no">〔44〕</span><span class="zs-body">经事综物：总理公事。经事与综物同义。</span></p>
+<p class="zs-inline"><span class="zs-no">〔45〕</span><span class="zs-body">迈踪：随足迹前进。</span></p>
+<p class="zs-inline"><span class="zs-no">〔46〕</span><span class="zs-body">荡然：胸怀开阔的样子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔47〕</span><span class="zs-body">肆其辞：让他们的文字陈列展示出来。</span></p>
+<p class="zs-inline"><span class="zs-no">〔48〕</span><span class="zs-body">上诣著作：上交给著作局。著作局是西晋专门负责本朝历史撰述的官署。后改称著作省。</span></p>
+<p class="yw">臣寿诚惶诚恐<span class="zs-no">〔49〕</span>，顿首顿首<span class="zs-no">〔50〕</span>，死罪死罪！泰始十年二月一日癸巳，平阳侯相臣陈寿上<span class="zs-no">〔51〕</span>。</p>
+<p class="fy-inline">臣陈寿确实惶恐不安，叩头叩头，死罪死罪。泰始十年二月一日癸巳，平阳侯相陈寿谨上。</p>
+<p class="zs-inline"><span class="zs-no">〔49〕</span><span class="zs-body">诚：确实。</span></p>
+<p class="zs-inline"><span class="zs-no">〔50〕</span><span class="zs-body">顿首：叩头。顿首顿首和下文的死罪死罪，是当时臣下写奏章的常用结束语。</span></p>
+<p class="zs-inline"><span class="zs-no">〔51〕</span><span class="zs-body">平阳：县名。县治在今山西临汾市西南；侯相：官名</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c10">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">10 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">乔字伯松。亮兄瑾之第二子也<span class="zs-no">〔1〕</span>。本字仲慎，与兄元逊俱有名于时<span class="zs-no">〔2〕</span>；论者以为乔才不及兄，而性业过之<span class="zs-no">〔3〕</span>。初，亮未有子，求乔为嗣，瑾启孙权遣乔来西；亮以乔为己嫡子，故易其字焉<span class="zs-no">〔4〕</span>。拜为驸马都尉，随亮至汉中。<span class="pz-no">〔一〕</span>年二十五，建兴（元）<span class="pz-no">〔六〕</span>年卒。</p>
+<p class="fy-inline">诸葛乔，字伯松。是诸葛亮哥哥诸葛瑾的第二个儿子。本来字仲慎，他与哥哥诸葛恪在当时都有名气；而议论的人认为他的才能虽不及哥哥，而品行的修养则更胜一筹。当初，诸葛亮没有儿子，把诸葛乔要来做养子，诸葛瑾报告孙权后送诸葛乔到西蜀；诸葛亮让他作为自己的嫡长子，所以把他的字改为伯松。他担任驸马都尉，随诸葛亮到汉中。在建兴六年（公元 228）去世，死时才二十五岁。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">瑾：即诸葛瑾（公元 174—241）。传见本书卷五十二。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">元逊：即诸葛恪（公元 203—253 ）。恪字元逊。传见本书卷六十四。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">性业：品行的修养。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">易：改换。古代取名字时，兄弟的排行常用伯、仲、叔、季的字样来表示。诸葛乔是诸葛瑾的次子，所以字仲慎。过继给诸葛亮后成为长子，因而改字伯松。</span></p>
+<p class="yw">子攀，官至行护军、翊武将军<span class="zs-no">〔5〕</span>，亦早卒。诸葛恪见诛于吴<span class="zs-no">〔6〕</span>，子孙皆尽，而亮自有胄裔；故攀还，复为瑾后<span class="zs-no">〔7〕</span>。</p>
+<p class="fy-inline">他的儿子诸葛攀，官做到翊武将军，代理护军职务，也早死。诸葛恪在吴国被杀后，子孙灭绝，而诸葛亮后来有了亲生后代；所以诸葛攀回到吴国做诸葛瑾的继承人。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">行护军：官名。代理护军职务，负责协调各军行动。翊（yì）武将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">见诛：被杀。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">后：继承人。</span></p>
+<p class="yw">瞻字思远。建兴十二年，亮出武功，与兄瑾书曰：“瞻今已八岁，聪慧可爱；嫌其早成<span class="zs-no">〔8〕</span>，恐不为重器耳<span class="zs-no">〔9〕</span>。”年十七，尚公主<span class="zs-no">〔10〕</span>，拜骑都尉。其明年，为羽林中郎将<span class="zs-no">〔11〕</span>，屡迁射声校尉、侍中、尚书仆射<span class="zs-no">〔12〕</span>，加军师将军<span class="zs-no">〔13〕</span>。</p>
+<p class="fy-inline">诸葛瞻，字思远。建兴十二年（公元 234），诸葛亮出兵到武功，给哥哥诸葛瑾写信说：“瞻儿已满八岁，聪慧可爱；我嫌他过早表现出非凡的智力，怕以后成不了大器啊。”十七岁时，诸葛瞻娶了公主为妻，当了骑都尉。第二年为羽林中郎将，此后不断升迁，任射声校尉、侍中、尚书仆射，加授军师将军这一诸葛亮曾经担任过的职务。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">早成：小时候表现出非凡的智力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">重器：大器。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">尚：娶皇族公主为妻叫做尚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">羽林中郎将：官名。统率羽林郎官，保卫宫廷。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">射声校尉：官名。统率射声营的善射士兵，保卫京城。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">加军师将军：军师将军是诸葛亮担任过的职务，再授给诸葛瞻有纪念死者和优宠生者的意思。</span></p>
+<p class="yw">瞻工书画，强识念<span class="zs-no">〔14〕</span>；蜀人追思亮，咸爱其才敏。每朝廷有一善政佳事，虽非瞻所建倡，百姓皆传相告曰：“葛侯之所为也<span class="zs-no">〔15〕</span>。”是以美声溢誉，有过其实。</p>
+<p class="fy-inline">他擅长书画，记忆能力特别强；蜀国人缅怀诸葛亮，所以都喜欢诸葛瞻的才能和聪敏。每当朝廷有一种好政治措施或者好事情出现，虽然不是诸葛瞻建议和倡导的，但是百姓却都向别人说：“这是葛侯所做的啊。”因此，他所享有的美好声誉，不免超过了事实。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">强识念：记忆能力强。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">葛侯：对诸葛瞻的尊称。诸葛亮死，瞻继承武乡侯爵。当时人尊称封侯的人时，常称某侯。</span></p>
+<p class="yw">景耀四年，为行都护、卫将军<span class="zs-no">〔16〕</span>，与辅国大将军、南乡侯董厥，并平尚书事<span class="zs-no">〔17〕</span>。</p>
+<p class="fy-inline">景耀四年（公元 261），他担任卫将军，代理中都护职务，与辅国大将军、南乡侯董厥共同处理尚书台的机要公务。</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">都护：指中都护。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">平尚书事：表示职权的名号。当时的辅政大臣，常加录尚书事的名号，表示总揽朝廷政务。如果资历较轻，则称平尚书事。</span></p>
+<p class="yw">六年冬<span class="zs-no">〔18〕</span>，魏征西将军邓艾伐蜀，自阴平由景谷道旁入<span class="zs-no">〔19〕</span>。瞻督诸军至涪停住；前锋破，退还，住绵竹。艾遣书诱瞻曰：“若降者，必表为琅邪王<span class="zs-no">〔20〕</span>。”瞻怒，斩艾使。遂战，大败；临阵死，时年三十七。众皆离散，艾长驱至成都。</p>
+<p class="fy-inline">景耀六年（公元 263）冬天，魏国征西将军邓艾伐蜀，从阴平经过景谷道旁边的小路进入蜀国腹地。诸葛瞻指挥各路军队北上到涪县抵御；由于前锋被击败，往回撤退，在绵竹安营。邓艾送来书信引诱他投降，说：“如果你投降我一定向朝廷上表请求封你为琅邪郡王。”他勃然大怒，把邓艾的使者斩首，又挥兵出战，结果大败；临阵战死，终年三十七岁。部下溃散后，邓艾长驱直入到达成都。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">六年：景耀六年（公元 263）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">景谷道：古道路名。在今四川青川县东，沿青川河河谷。东北接白水关，西南通江油关；旁入：邓艾为了避开白水关守军，并未走景谷道的正路，而是从景谷道西北一条大体平行的小路，越摩天岭，径趋江油，所以称为旁入</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">琅邪王：诸葛氏是琅邪郡人，所以用封琅邪王作引诱。</span></p>
+<p class="yw">瞻长子尚，与瞻俱没<span class="zs-no">〔21〕</span>。<span class="pz-no">〔二〕</span>次子京及攀子显等，咸熙元年内移河东。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">诸葛瞻的长子诸葛尚，与父亲一齐战死。次子诸葛京，以及诸葛攀的儿子诸葛显等，在魏元帝咸熙元年（公元 264）内迁到了河东郡。</p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">俱没：诸葛瞻父子捐躯之地，在当时的绵竹县，治所在今四川德阳市黄许镇，而不在今绵竹市。但是现今绵竹市内依然有清代所建的双忠祠和园林，纪念他们父子。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">亮与兄瑾书曰：“乔，本当还成都。今诸将子弟皆得传运，思惟宜同荣辱；今使乔督五六百兵，与诸子弟，传于谷中。”书在《亮集》。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">干宝曰：“瞻虽智不足以扶危，勇不足以拒敌；而能外不负国，内不改父之志：忠孝存焉。”《华阳国志》曰：“尚叹曰：‘父子荷国重恩，不早斩黄皓，以至倾败。用生何为！’乃驰赴魏军而死。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">按《诸葛氏谱》云：“京字行宗。”《晋泰始起居注》载诏曰：“诸葛亮在蜀，尽其心力；其子瞻，临难而死义。天下之善一也，其孙京，随才署吏。”后为郿令。尚书仆射山涛《启事》曰：“郿令诸葛京：祖父亮，遇汉乱分隔，父子在蜀；虽不达天命，要为尽心所事。京治郿，自复有称；臣以为宜以补东宫舍人，以明事人之理，副梁、益之论。”京位至江州刺史。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c11">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">11 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">董厥者，丞相亮时为府令史<span class="zs-no">〔1〕</span>，亮称之曰：“董令史，良士也。吾每与之言，思慎宜适<span class="zs-no">〔2〕</span>。”徙为主簿。亮卒后，稍迁至尚书仆射。代陈祗为尚书令<span class="zs-no">〔3〕</span>。迁〔辅国〕大将军，平台事<span class="zs-no">〔4〕</span>。而义阳樊建代焉。<span class="pz-no">〔一〕</span>延熙（二）十四年，以校尉使吴；值孙权病笃<span class="zs-no">〔5〕</span>，不自见建。权问诸葛恪曰：“樊建何如宗预也<span class="zs-no">〔6〕</span>？”恪对曰：“才识不及预，而雅性过之。”后为侍中，守尚书令<span class="zs-no">〔7〕</span>。</p>
+<p class="fy-inline">董厥这个人，在诸葛亮执政时曾任丞相府的令史，诸葛亮称赞他说：“董令史，是优秀人才啊。我每次与他谈话，他对事情的思虑都很恰当。”调他任丞相府主簿。诸葛亮死后，他逐渐升迁为尚书仆射。代替陈祗为尚书令。他升任辅国大将军，参与处理尚书台的机要公务，由义阳郡人樊建继任尚书令。延熙十四年（公元251），樊建以校尉身份出使孙吴；碰上孙权病重，没有亲自见他。孙权向诸葛恪说：“樊建比起上一位蜀国使者宗预怎么样？”诸葛恪回答说：“才能见识不及宗预，而文雅品性胜宗预一筹。”后来樊建任侍中，又代理尚书令职务。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">府：指丞相府；令史：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">思慎宜适：（对事情的）思虑很恰当。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">陈祗：传附本书卷三十九《董允传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">台：指尚书台。平台事即平尚书事。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">值：碰上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">何如：与……相比怎么样；宗预：传见本书卷四十五</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">守：品级较低的官代理较高的职务。</span></p>
+<p class="yw">自瞻、厥、建统事，姜维常征伐在外，宦人黄皓窃弄机柄；咸共将护<span class="zs-no">〔8〕</span>，无能匡矫，<span class="pz-no">〔二〕</span>然建特不与皓和好往来。</p>
+<p class="fy-inline">自从诸葛瞻、董厥、樊建总管政务之后，姜维常出征在外，宦官黄皓窃据机要权力；他们三人都迁就黄皓，没有谁能纠正他，不过其中唯有樊建不与黄皓友好或往来。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">将护：迁就。</span></p>
+<p class="yw">蜀破之明年春，厥、建俱诣京都，同为相国参军<span class="zs-no">〔9〕</span>；其秋并兼散骑常侍，使蜀慰劳<span class="zs-no">〔10〕</span>。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">蜀国灭亡的第二年春天，董厥、樊建都来到京城洛阳，一同担任相国府的军事参谋；当年秋天又都兼任散骑常侍，充当使者到蜀国故地慰劳官兵百姓。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">相国参军：官名。司马昭相国府的下属。参谋军事。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">使：出使。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">按《晋百官表》：“董厥字龚袭，亦义阳人。建字长元。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">孙盛《异同记》曰：“瞻、厥等以维好战无功，国内疲弊；宜表后主，召还为益州刺史，夺其兵权。蜀长老犹有瞻表‘以阎宇代维’故事。晋永和三年，蜀史常璩说蜀长老云：‘陈寿尝为瞻吏，为瞻所辱；故因此事归恶黄皓，而云瞻不能匡矫也。’”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《汉晋春秋》曰：“樊建为给事中，晋武帝问诸葛亮之治国。建对曰：‘闻恶必改，而不矜过；赏罚之信，足感神明。’帝曰：‘善哉！使我得此人以自辅，岂有今日之劳乎？’建稽首曰：‘臣窃闻天下之论，皆谓邓艾见枉，陛下知而不理；此岂冯唐之所谓“虽得颇、牧而不能用”者乎！’帝笑曰：‘吾方欲明之，卿言起我意。’于是发诏（治）〔理〕艾焉。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v35-c12">
+<div class="chunk-head"><a class="chunk-vol" href="#v35-c01" onclick="go('v35-c01');return false;">第35卷 · 蜀书5 诸葛亮传第5</a><span class="chunk-prog">12 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：诸葛亮之为相国也：抚百姓，示仪轨<span class="zs-no">〔1〕</span>；约官职<span class="zs-no">〔2〕</span>，从权制<span class="zs-no">〔3〕</span>；开诚心，布公道；尽忠益时者，虽仇必赏；犯法怠慢者，虽亲必罚；服罪输情者，虽重必释<span class="zs-no">〔4〕</span>；游辞巧饰者<span class="zs-no">〔5〕</span>，虽轻必戮；善无微而不赏，恶无纤而不贬；庶事精练，物理其本<span class="zs-no">〔6〕</span>；循名责实，虚伪不齿。终于邦域之内，咸畏而爱之，刑政虽峻而无怨者，以其用心平而劝戒明也。可谓识治之良才，管、萧之亚匹矣！然连年动众，未能成功；盖应变将略，非其所长欤<span class="zs-no">〔7〕</span>？<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">评论说：诸葛亮担任丞相治理蜀国：安抚百姓，向他们宣布礼仪法规；精简官职，采用合乎时宜的制度；显示诚心，办事公道；竭尽忠心对社会作出贡献的即使是仇人也必定奖赏，触犯法律做事懈怠不认真的即使是亲近的人也必定惩罚；承认罪过表示悔改诚意的即使罪过严重也必定释放，对罪过用花言巧语掩饰的即使罪过较轻也必定处死；好人好事哪怕再小也要表彰，坏人坏事哪怕再小也要贬斥；精通熟习各项政事，对民众从根本上加以治理；要求实际与名义相符合，不允许弄虚作假。之所以最终在蜀国的辖境之内，人们都敬畏他而又热爱他，刑律和政治虽然严厉而毫无怨言的原因，就在于他用心公平而勉励告诫十分明确啊。他真可以说是懂得治理国家的优秀人才，能与管仲、萧何相媲美的人物了！不过他连年出兵北伐，都未能成功；大概临机应变的军事谋略，不是他所擅长的方面吧？</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">仪轨：礼仪法规。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">约：精简。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">权制：合乎时宜的制度。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">输情：表示（悔改的）诚意。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">游辞：花言巧语。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">理其本：从根本上治理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">非其所长：此处“应变将略非其所长”的评价，并非出自陈寿真心。司马懿生前与诸葛亮对垒，曾对诸葛亮有“好兵而无权变”的公开评价。陈寿著书在西晋武帝时，此时司马懿的评语，不仅是当事人的权威认定，更上升为先祖皇帝钦定的“金口玉言”，陈寿不能不采纳。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《袁子》曰：“或问：‘诸葛亮何如人也？’袁子曰：‘张飞、关羽与刘备俱起，爪牙腹心之臣，而武人也。晚得诸葛亮，因以为佐相，而群臣悦服，刘备足信、亮足重故也。及其受六尺之孤，摄一国之政，事凡庸之君；专权而不失礼，行君事而国人不疑：如此，即以为君臣百姓之心欣戴之矣。行法严而国人悦服，用民尽其力而下不怨。及其兵出入如宾，行不寇，刍荛者不猎，如在国中。其用兵也，止如山，进退如风；兵出之日，天下震动，而人心不忧。亮死至今数十年，国人歌思，如周人之思召公也。孔子曰“雍也可使南面”，诸葛亮有焉。’又问：‘诸葛亮始出陇右，南安、天水、安定三郡人反应之；若亮速进，则三郡非中国之有也，而亮徐行不进；既而官兵上陇，三郡复，亮无尺寸之功，失此机。何也？’袁子曰：‘蜀兵轻锐，良将少，亮始出，未知中国强弱；是以疑而尝之。且大会者不求近功，所以不进也。’曰：‘何以知其疑也？’袁子曰：‘初出迟重，屯营重复，后转降，未进兵欲战；亮勇而能斗，三郡反而不速应。此其疑征也。’曰：‘何以知其勇而能斗也？’袁子曰：‘亮之在街亭也，前军大破，亮屯去数里，不救；官兵相接，又徐行。此其勇也。亮之行军，安静而坚重；安静则易动，坚重则可以进退。亮法令明，赏罚信，士卒用命，赴险而不顾。此所以能斗也。’曰：‘亮率数万之众，其所兴造，若数十万之功，是其奇者也；所至，营垒、井灶、圊溷、藩篱、障塞皆应绳墨；一月之行，去之如始至，劳费而徒为饰好。何也？’袁子曰：‘蜀人轻脱，亮故坚用之。’曰：‘何以知其然也？’袁子曰：‘亮治实而不治名，志大而所欲远。非求近速者也。’曰：‘亮好治官府、次舍、桥梁、道路，此非急务，何也？’袁子曰：‘小国贤才少，故欲其尊严也。亮之治蜀，田畴辟，仓廪实，器械利，蓄积饶；朝会不华，路无醉人。夫本立故末治，有余力而后及小事。此所以劝其功也。’曰：‘子之论诸葛亮，则有证也。以亮之才而少其功，何也？’子曰：‘亮，持本者也；其于应变，则非所长也，故不敢用其短。’曰：‘然则吾子美之，何也？’袁子曰：‘此固贤者之远矣，安可以备体责也。夫能知所短而不用，此贤者之大也，知所短，则知所长矣。夫前识与言而不中，亮之所不用也。此吾之所谓可也。’”</span></p>
+<p class="pz-item no-no">吴大鸿胪张俨，作《默记》，其《述佐篇》论亮与司马宣王书曰：“汉朝倾覆，天下崩坏；豪杰之士，竞希神器。魏氏跨中土，刘氏据益州；并称兵海内，为世霸主。诸葛、司马二相，遭值际会，托身明主；或收功于蜀汉，或册名于伊、洛。丕、备既没，后嗣绝统；各受保阿之任，辅翼幼主，不负然诺之诚；亦一国之宗臣，霸王之贤佐也。历前世以观近事，二相优劣，可得而详也：孔明起巴、蜀之地，蹈一州之土；方之大国，其战士人民，盖有九分之一也。而以贡贽大吴，抗对北敌，至使耕战有伍，刑法整齐，提步卒数万，长驱祁山，慨然有饮马河、洛之志。仲达据天下十倍之地，仗兼并之众，据牢城，拥精锐；无擒敌之意，务自保全而已，使彼孔明自来自去。若此人不亡，终其志意，连年运思，刻日兴谋，则凉、雍不解甲，中国不释鞍：胜负之势，亦已决矣。昔子产治郑，诸侯不敢加兵；蜀相其近之矣，方之司马，不亦优乎！或曰：‘兵者凶器，战者危事也。有国者不务保安境内，绥静百姓；而好开辟土地，征伐天下，未为得计也。诸葛丞相诚有匡佐之才，然处孤绝之地，战士不满五万；自可闭关守险，君臣无事；空劳师旅，无岁不征；未能进咫尺之地，开帝王之基；而使国内受其荒残，西土苦其役调。魏司马懿才用兵众，未易可轻；量敌而进，兵家所慎。若丞相必有以策之，则未见坦然之勋；若无策以裁之，则非明哲之谓，海内归向之意也。余窃疑焉，请闻其说。’答曰：‘盖闻汤以七十里、文王以百里之地而有天下，皆用征伐而定之。揖让而登王位者，惟舜、禹而已。今蜀、魏为敌战之国，势不俱王。自操、备时，强弱悬殊；而备犹出兵阳平，擒夏侯渊；羽围襄阳，将降曹仁，生获于禁。当时北边大小忧惧，孟德身出南阳，乐进、徐晃等为救，围不即解；故蒋子通言彼时有徙许渡河之计；会国家袭取南郡，羽乃解军。玄德与操，智力多少、士众众寡、用兵行军之道，不可同年而语：犹能暂以取胜，是时又无大吴掎角之势也。今仲达之才，减于孔明；当时之势，异于曩日；玄德尚与抗衡，孔明何以不可出军而图敌邪？昔乐毅以弱燕之众，兼从五国之兵，长驱强齐，下七十余城。今蜀汉之卒，不少燕军；君臣之接，信于乐毅；加以国家为唇齿之援，东西相应，首尾如蛇，形势重大，不比于五国之兵也。何惮于彼而不可哉？夫兵以奇胜，制敌以智；土地广狭，人马多少，未可偏恃也。余观彼治国之体：当时既肃整，遗教在后；及其辞意恳切，陈进取之图；忠谋謇謇，义形于主：虽古之管、晏，何以加之乎？’”</p>
+<p class="pz-item no-no">《蜀记》曰：“晋永兴中，镇南将军刘弘至隆中；观亮故宅，立碣表闾。命太傅掾犍为李兴，为文曰：‘天子命我，于沔之阳；听鼓鼙而永思，庶先哲之遗光；登隆山以远望，轼诸葛之故乡。盖神物应机，大器无方；通人靡滞，大德不常。故谷风发而驺虞啸，云雷升而潜鳞骧；挚解褐于三聘，尼得招而褰裳；管豹变于受命，贡感激以回庄；异徐生之摘宝，释卧龙于深藏；伟刘氏之倾盖，嘉吾子之周行。夫有知己之主，则有竭命之良；固所以三分我汉鼎，跨带我边荒；抗衡我北面，驰骋我魏疆者也。英哉吾子，独含天灵；岂神之祗？岂人之精？何思之深！何德之清！异世通梦，恨不同生。推子八阵，不在孙、吴；木牛之奇，则非般模。神弩之功，一何微妙！千井齐甃，又何秘要！昔在颠、夭，有名无迹；孰若吾侪，良筹妙画？臧文既没，以言见称；又未若子，言行并征。夷吾反坫，乐毅不终；奚比于尔，明哲守冲？临终受寄，让过许由；负扆莅事，民言不流。刑中于郑，教美于鲁；蜀民知耻，河、渭安堵。匪皋则伊，宁彼管、晏？岂徒圣宣，慷慨屡叹！昔尔之隐，卜惟此宅；仁智所处，能无规廓。日居月诸，时殒其夕；谁能不殁？贵有遗格。惟子之勋，移风来世；咏歌余典，懦夫将厉。遐哉邈矣！厥规卓矣！凡若吾子，难可究已。畴昔之乖，万里殊途；今我来思，觌尔故墟。汉高归魂于丰、沛，太公五世而反周；想罔两以仿佛，冀影响之有余。魂而有灵，岂其识诸！’”</p>
+<p class="pz-item no-no">王隐《晋书》云：“李兴，密之子；一名安。”</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v35';
+var NC = 12;
+var CUR = "home";
+var PREV_HREF = "v34.html";
+var NEXT_HREF = "v36.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

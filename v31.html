@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第31卷 刘二牧传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第31卷《刘二牧传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：刘焉字君郎，江夏竟陵人也。汉鲁恭王之后裔，章帝元和中徙封竟陵：支庶家焉。焉少仕州郡，以宗室拜中郎。后以师祝公丧去官，居阳城山，积学教授。举贤良方正，辟司徒府。历">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v31.html">
+<meta property="og:title" content="《三国志》第31卷 刘二牧传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第31卷《刘二牧传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：刘焉字君郎，江夏竟陵人也。汉鲁恭王之后裔，章帝元和中徙封竟陵：支庶家焉。焉少仕州郡，以宗室拜中郎。后以师祝公丧去官，居阳城山，积学教授。举贤良方正，辟司徒府。历">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">31卷 · 1/4</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html" selected>第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v31-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v31-c01" onclick="go('v31-c01');return false;">第31卷 · 蜀书1 刘二牧传第1</a><span class="chunk-prog">1 / 4</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">刘焉字君郎，江夏竟陵人也<span class="zs-no">〔1〕</span>。汉鲁恭王之后裔<span class="zs-no">〔2〕</span>，章帝元和中徙封竟陵<span class="zs-no">〔3〕</span>：支庶家焉<span class="zs-no">〔4〕</span>。焉少仕州郡，以宗室拜中郎。后以师祝公丧去官<span class="zs-no">〔5〕</span>，<span class="pz-no">〔一〕</span>居阳城山<span class="zs-no">〔6〕</span>，积学教授。举贤良方正<span class="zs-no">〔7〕</span>，辟司徒府。历洛阳令、冀州刺史、南阳太守、宗正、太常<span class="zs-no">〔8〕</span>。</p>
+<p class="fy-inline">刘焉，字君郎，江夏郡竟陵县人。他是汉朝鲁恭王刘余的后代，汉章帝元和年间，刘余的嫡系子孙改封在竟陵县，家族中的旁系支派也就在这里安家定居下来。刘焉年轻时曾在家乡所在的荆州、江夏郡政府中做事，后来因为是皇族成员而被朝廷委任为中郎，碰上老师祝恬去世而离职在家居丧。刘焉住在阳城山，钻研学术，教育学生，被举荐为贤良方正，在司徒府担任下属。此后历任洛阳县令、冀州刺史、南阳郡太守、宗正、太常。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">竟陵：县名。县治在今湖北潜江市西北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">鲁恭王：即刘余。西汉景帝刘启的儿子。封鲁王，死后的谥号为恭。传见《史记》卷五十九《五宗世家》、《汉书》卷五十三《景十三王传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">章帝：即刘炟（公元 57—89）。东汉皇帝。公元 76 至 89 年在位。事详《后汉书》卷三。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">支庶：家族中嫡长子以外的旁出亲属支派。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">祝公：即祝恬，字伯休。中山国卢奴（今河北定州市）人。事见《后汉书》卷七《桓帝纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">阳城山：山名。在今河南登封市东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">贤良方正：汉代人才选拔的科目名。不常设。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">宗正：官名。九卿之一。负责皇族内部事务处理，由皇族成员担任。</span></p>
+<p class="yw">焉睹灵帝政治衰缺，王室多故<span class="zs-no">〔9〕</span>，乃建议言：“刺史、太守，货赂为官<span class="zs-no">〔10〕</span>，割剥百姓，以致离叛。可选清名重臣，以为牧伯<span class="zs-no">〔11〕</span>，镇安方夏<span class="zs-no">〔12〕</span>。”焉内求交阯牧<span class="zs-no">〔13〕</span>，欲避世难。议未即行，侍中广汉董扶，私谓焉曰：“京师将乱。益州分野有天子气<span class="zs-no">〔14〕</span>。”焉闻扶言，意更在益州。</p>
+<p class="fy-inline">汉灵帝时刘焉目睹政治衰败，王朝中不断出现变故，就向朝廷建议说：“现今各地的州刺史、郡太守，当官收受财物贿赂，剥削百姓，逼得他们背离和反叛。可以挑选一批具有清廉名声的重要京官，出外担任州牧，以镇守安定全国各地。”刘焉暗中请求让自己担任交阯的州牧，准备到遥远的南方躲避社会动乱。事情还没有实现，当时担任侍中的广汉郡人董扶悄悄对刘焉说：“京城洛阳将要发生大乱，我看到与益州相对应的天空星区出现了预示天子降临的云气。”刘焉听了这话，心里就想到益州当州牧。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">故：变故。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">货赂为官：当官收受财物贿赂。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">牧伯：指州牧。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">方夏：全国各地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">交阯：州名。即后来的交州。当时治所在今越南河内市东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">益州：州名。当时治所在今四川广汉市北；分野：古代相信天人感应，人们根据地上的州国来划分天上的星空，把星空中的二十八宿分别指配给地上的州国，并把对应的星宿称为该州国的分野</span></p>
+<p class="yw">会益州刺史郤俭，赋敛烦扰，谣言远闻<span class="zs-no">〔15〕</span>；<span class="pz-no">〔二〕</span>而并州杀刺史张（壹）〔懿〕，凉州杀刺史耿鄙；焉谋得施，出为监军使者<span class="zs-no">〔16〕</span>，领益州牧，封阳城侯，当收俭治罪。<span class="pz-no">〔三〕</span>扶亦求为蜀郡（西部）属国都尉<span class="zs-no">〔17〕</span>；及太仓令（会）巴西赵韪去官<span class="zs-no">〔18〕</span>，俱随焉。<span class="pz-no">〔四〕</span></p>
+<p class="fy-inline">碰巧这时益州刺史郤俭在当地横征暴敛，民间对他怨恨不满的歌谣和言辞流传到远方，而这时并州刺史张壹、凉州刺史耿鄙，都被当地反抗的百姓杀死，所以刘焉的想法得以实现。朝廷任命他为监军使者，兼任益州牧，封阳城侯，并且要他去逮捕郤俭治罪。与此同时，董扶也请求到益州去担任蜀郡属国都尉，在京城担任太仓令的巴西郡人赵韪也辞了职，两人都跟随刘焉前往益州。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">谣言：（民间对郤俭不满的）民谣和传言。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">监军使者：官名。监督益州的军队。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">蜀郡属国：属国名。治所在今四川雅安市名山区北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">太仓令：官名。负责管理中央的粮食仓库，接受从各地调运入京的粮食；巴西：郡名</span></p>
+<p class="yw">是时，（涼）〔益〕州逆贼马相、赵祗等，于绵竹县自号“黄巾”，合聚疲役之民<span class="zs-no">〔19〕</span>，一二日中得数千人；先杀绵竹令李升，吏民翕集<span class="zs-no">〔20〕</span>，合万余人；便前破雒县，攻益州杀俭<span class="zs-no">〔21〕</span>，又到蜀郡、犍为<span class="zs-no">〔22〕</span>；旬月之间，破坏三郡<span class="zs-no">〔23〕</span>。相自称天子，众以万数。</p>
+<p class="fy-inline">这时，益州的叛乱势力首领马相、赵祗等在绵竹县起事，自称是黄巾军；聚集那些被徭役弄得苦不堪言的百姓，一两天内就招纳了几千人，先杀了绵竹县令李升。政府中的办事员以及附近百姓纷纷前来投奔，很快就发展到一万多人；立即向前攻破雒县，杀进州政府把郤俭处死，又进攻蜀郡、犍为郡。个把月内，所到的三郡，即雒县所在的广汉郡，以及蜀郡、犍为郡，都被攻破而受害严重。</p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">疲役：疲于劳役。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">翕集：纷纷聚集。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">益州：这里指益州的州政府府署。当时益州的治所设在雒县。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">犍为：郡名。治所在今四川眉山市彭山区东南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">三郡：指蜀郡、犍为郡和雒县所在的广汉郡。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之按：祝公，司徒祝恬也。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">俭，郤正祖也。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《续汉书》曰：“是时，用刘虞为幽州，刘焉为益州，刘表为荆州，贾琮为冀州。虞等皆海内清名之士，或从列卿、尚书，以选为牧伯；各以本秩居任。”旧典：“传车参驾，施赤为帷裳。”</span></p>
+<p class="pz-item no-no">臣松之按：灵帝崩后，义军起，孙坚杀荆州刺史王叡，然后刘表为荆州，不与焉同时也。</p>
+<p class="pz-item no-no">《汉灵帝纪》曰：“帝引见焉，宣示方略，加以赏赐，敕：‘焉为益州刺史。前刺史刘隽、郤俭，皆贪残放滥，取受狼藉；元元无聊，呼嗟充野。焉到，便收摄行法，以示万姓；勿令漏露，使痈疽决溃，为国生梗！’焉受命而行，以道路不通，住荆州东界。”</p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">陈寿《益部耆旧传》曰：“董扶字茂安。少从师学，兼通数经，善欧阳《尚书》；又事聘士杨厚，究极图谶。遂至京师，游览太学。还家讲授，弟子自远而至。永康元年，日有蚀之；诏举贤良方正之士，策问得失。左冯翊赵谦等举扶，扶以病不诣；遥于长安上封事，遂称疾笃归家。前后宰府十辟，公车三征，再举贤良方正、博士、有道，皆不就；名称尤重。大将军何进表荐扶日：‘资游、夏之德，述孔氏之风，内怀焦、董消复之术。方今并、凉骚扰，西戎蠢叛，宜敕公车特召，待以异礼，咨谋奇策。’于是灵帝征扶，即拜侍中。在朝称为儒宗，甚见器重。求为蜀郡属国都尉。扶出一岁而灵帝崩，天下大乱。后去官，年八十二，卒于家。始扶发辞抗论，益部少双，故号曰‘（致）〔至〕止’：言人莫能当，所至而谈止也。后，丞相诸葛亮问秦宓以扶所长，宓曰：‘董扶褒秋毫之善，贬纤芥之恶。’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v31-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v31-c01" onclick="go('v31-c01');return false;">第31卷 · 蜀书1 刘二牧传第1</a><span class="chunk-prog">2 / 4</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">州从事贾龙（素）〔先〕领〔家〕兵数百人，在犍为东界，摄敛吏民，得千余人；攻相等，数日破走，州界清静。龙乃选吏卒迎焉。</p>
+<p class="fy-inline">益州的从事贾龙，此前率领家兵数百人在犍为郡东边驻扎。他招集官员百姓，得到一千多人；前去进攻马相等人，几天之间就把对方打败赶走，益州境内恢复平静。这时贾龙才挑选可靠的办事员和士兵，前去迎接刘焉。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">异计：指割据益州自立的计谋。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">鬼道：当时人对五斗米道的称呼。五斗米道是道教各派中创立最早的一派。又叫天师道。东汉顺帝时由张陵在鹄鸣山（今四川大邑县西北）创立。由于该道把初来学道的人称为“鬼卒”，所以被叫做鬼道。见本书卷八《张鲁传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">少容：看起来年轻的面容。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">督义司马：官名。领兵征伐。这是刘焉为张鲁临时设立的官职。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">谷：指由汉中穿过秦岭到关中的谷道。如褒斜（yé）谷道、骆谷道、子午谷道等</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">米贼：也指五斗米道。学此道的人要先交五斗米，故名。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">乘舆：皇帝的礼仪专车队。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">表上：写表章上奏朝廷。子夏（前507一？）：姓卜，名商，字子夏。温国（今河南温县西）人。孔子弟子。长于学术研究，传见《史记》卷六十七《仲尼弟子列传》。西河：古称西部地区南北流向的黄河河段为西河。这里指今陕西、山西两省交界上的河段。孔子死后，子夏在西河讲学授徒。疑圣人：怀疑子夏的道德学问可以与孔子相比美。子夏在西河，儿子死，悲痛过度而眼睛失明。曾子去看他，他叹息自己无罪过却遭到上天惩罚。曾子听了勃然发怒，数落他有三罪。其中头一条就是在西河讲学不大提孔子，使得人们以为他的道德学问可以与孔子相比美。事见《礼记·檀弓》。刘表用这一典故来比喻刘焉有与汉朝皇帝抗衡的野心。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">叔子：第三个儿子。据《华阳国志》卷 5 记载，刘焉有四个儿子：长子刘范、次子刘诞，第三子刘瑁，第四子刘璋</span></p>
+<p class="yw">焉徙治绵竹；抚纳离叛，务行宽惠，阴图异计。张鲁母始以鬼道，又有少容，常往来焉家。故焉遣鲁为督义司马，住汉中；断绝谷、阁，杀害汉使。焉上书言“米贼断道，不得复通”；又托他事杀州中豪强王咸、李权等十余人，以立威刑。<span class="pz-no">〔一〕</span>犍为太守任岐及贾龙由此反攻焉，焉击杀岐、龙。<span class="pz-no">〔二〕</span>焉意渐盛，造作乘舆车具千余乘。荆州牧刘表，表上“焉有有似子夏在西河疑圣人之论。时焉子范为左中郎将，诞治书御史，璋为奉车都尉；皆从献帝在长安。<span class="pz-no">〔三〕</span>惟（小）〔叔〕子别部司马瑁，素随焉。</p>
+<p class="fy-inline">刘焉把益州的治所从雒县迁到绵竹，安抚招纳背离叛逃的民众，努力推行宽宏优惠的政策，暗中有割据称雄的异常打算。张鲁的母亲开始在绵竹一带传播五斗米道，她的面容看起来又很年轻，所以常常出入刘焉家。刘焉就派张鲁为督义司马，驻守汉中郡，截断秦岭的各条山谷通路和栈道，杀害汉朝的使者。刘焉向朝廷上奏，说是信奉五斗米道的叛贼在汉中阻拦道路，所以与朝廷不能再联系通使，又借其他的事情杀死益州的豪强王咸、李权等十余人，以树立自己的权威。犍为郡太守任岐和贾龙对此不满而合力进攻刘焉，刘焉反把任、贾二人杀死。刘焉此时割据称雄的心情日益强烈，开始下令按照皇帝的礼仪专车队的规格和标准制造了一千多辆车。荆州牧刘表向朝廷上奏，曾揭发刘焉有与汉朝皇帝抗衡的野心。当时刘焉的大儿子刘范任左中郎将，二儿子刘诞任治书御史，四儿子刘璋任奉车都尉，都随从汉献帝在长安，只有他的第三个儿子刘瑁，以别部司马的身份一直在他身边随从。汉献帝派刘璋去劝告刘焉谨守本分，刘焉趁机留下刘璋不再让他回朝。</p>
+<p class="zs-inline no-no">阁：阁道</p>
+<p class="zs-inline no-no">别部司马：官名</p>
+<p class="yw">献帝使璋晓喻焉<span class="zs-no">〔10〕</span>，焉留璋不遣。<span class="pz-no">〔四〕</span>时征西将军马腾屯郿而反<span class="zs-no">〔11〕</span>，焉及范与腾通谋，引兵袭长安。范谋泄，奔槐里<span class="zs-no">〔12〕</span>。腾败，退还凉州；范应时见杀，于是收诞行刑。<span class="pz-no">〔五〕</span>议郎河南庞羲与焉通家<span class="zs-no">〔13〕</span>，乃募将焉诸孙入蜀<span class="zs-no">〔14〕</span>。</p>
+<p class="fy-inline">这时，征西将军马腾驻扎在郿县而起兵反叛，刘焉让刘范暗中与马腾合谋，让马腾带兵攻打长安。结果事情败露，刘范逃奔槐里去投靠马腾。而马腾兵败，退回凉州，刘范立即被逮捕处死，刘诞也一并被砍头。在朝当议郎的河南郡人庞羲，与刘焉是世交，用钱请人找到刘焉在长安的孙儿们，带着他们逃到了益州。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">晓喻：劝告。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">马腾：传见本书卷三十六《马超传》裴注引《典略》；郿：县名；反：据本书卷六《董卓传》，当时马腾等人起兵攻长安，是想除掉挟持汉献帝的董卓余党李傕、郭汜等，不是谋反</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">槐里：县名。县治在今陕西兴平市东南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">通家：世交。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">募：出钱寻找；将：携带</span></p>
+<p class="yw">时焉被天火烧城<span class="zs-no">〔15〕</span>，车具荡尽，延及民家。焉徙治成都。既痛其<span class="pz-no">〔二〕</span>子，又感祅灾<span class="zs-no">〔16〕</span>，兴平元年，痈疽发背而卒。</p>
+<p class="fy-inline">刘焉所在的绵竹城，突然发生物体自燃引起的大火灾；他以前制造的皇帝礼仪专车队的一千多辆车，也被烧得精光，还烧了许多百姓住房。刘焉只好把治所迁到成都。他既痛惜自己被处死的两个儿子，又受到不祥火灾的打击，在兴平元年（公元 194）背上生出大毒疮而去世。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">天火：由雷击或物体自燃引起的火灾。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">祅灾：不祥的灾祸。此处指上文提到的天火。</span></p>
+<p class="yw">州大吏赵韪等贪璋温仁<span class="zs-no">〔17〕</span>，共上璋为益州刺史。诏书因以为监军使者，领益州牧。以韪为征东中郎将<span class="zs-no">〔18〕</span>，率众击刘表。<span class="pz-no">〔六〕</span></p>
+<p class="fy-inline">益州的重要官员赵韪等人偏爱温和仁慈的刘璋，所以共同上奏朝廷推举刘璋任益州刺史。朝廷下达诏书，任命刘璋为监军使者，兼任益州牧，又任命赵韪为征东中郎将，让他们出兵讨伐荆州的刘表。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">大吏：重要官员。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">征东中郎将：官名。领兵征伐。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《益部耆旧杂记》曰：“李权字伯豫。为临邛长。子福，见犍为杨戏《辅臣赞》。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《英雄记》曰：“刘焉起兵，不与天下讨董卓；保州，自守。犍为太守任岐，自称‘将军’，与从事陈超举兵击焉；焉击破之。董卓使司徒赵谦将兵向州，说校尉贾龙，使引兵还击焉；焉出青羌与战，故能破杀。岐、龙等，皆蜀郡人。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《英雄记》曰：“范（闻）父焉，为益州牧。董卓所征发，皆不至；收范兄弟三人，锁械于郿坞，为阴狱以系之。”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《典略》曰：“时璋为奉车都尉，在京师，焉托疾召璋。璋自表省焉，焉遂留璋，不还。”</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《英雄记》曰：“范从长安亡之马腾营，从焉求兵；焉使校尉孙肇将兵往助之，败于长安。”</span></p>
+<p class="pz-item"><span class="pz-no">〔六〕</span><span class="pz-body">《英雄记》曰：“焉死，子璋代为刺史。会长安拜颍川扈瑁为刺史，入汉中。荆州别驾刘阖，璋将沈弥、娄发、甘宁反；击璋不胜，走入荆州。璋使赵韪进攻荆州，屯朐䏰。”上蠢，下如振反。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v31-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v31-c01" onclick="go('v31-c01');return false;">第31卷 · 蜀书1 刘二牧传第1</a><span class="chunk-prog">3 / 4</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">璋，字季玉。既袭焉位，而张鲁稍骄恣，不承顺璋；璋杀鲁母及弟，遂为仇敌。璋累遣厐羲等攻鲁，〔数为〕所破。鲁部曲多在巴西，故以羲为巴西太守，领兵御鲁。<span class="pz-no">〔一〕</span>后羲与璋情好携隙<span class="zs-no">〔1〕</span>；赵韪称兵内向<span class="zs-no">〔2〕</span>，众散见杀：皆由璋明断少而外言入故也<span class="zs-no">〔3〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">刘璋，字季玉。他承袭刘焉位置之后，张鲁骄傲放纵，不服从刘璋领导；刘璋杀了张鲁的母亲和弟弟，彼此变成仇敌。刘璋多次派遣庞羲等人进攻张鲁，又一再被张鲁打败。张鲁的部下多是巴西郡人，刘璋便派庞羲为巴西郡太守，领兵抵御张鲁。后来庞羲与刘璋感情背离产生矛盾，而赵韪也举兵进攻刘璋，失败被杀，这都是由于刘璋缺乏见识和判断，偏听偏信外面的谗言造成的。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">携隙：背离和出现矛盾。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">称兵：举兵。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">外言：外面的谗言。刘璋与庞羲、赵韪发生矛盾事，详见《华阳国志》卷五。</span></p>
+<p class="yw">璋闻曹公征荆州，已定汉（中）〔南〕，遣河内阴溥致敬于曹公。加璋振威将军，兄瑁平寇将军。瑁狂疾物故<span class="zs-no">〔4〕</span>。<span class="pz-no">〔三〕</span>璋复遣别驾从事蜀郡张肃，送叟兵三百人并杂御物于曹公<span class="zs-no">〔5〕</span>；曹公拜肃为广汉太守。</p>
+<p class="fy-inline">刘璋听说曹操出兵征讨荆州，并且已经平定了汉水以南地区，便派遣河内郡人阴溥为使者，前去向曹操致敬。曹操上奏朝廷后加授刘璋振威将军的军职，加授刘瑁平寇将军的军职。刘瑁是刘璋的哥哥，因为得了疯病而去世。刘璋又派别驾从事蜀郡人张肃为使者，给曹操送去三百少数族的战士和其他各种各样的贡品，曹操任命张肃为广汉郡太守。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">物故：死亡。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">叟：当时益州人称本地的氐、羌等少数族为叟。叟兵勇悍善战，当时很有名；杂御物：各种各样的贡品</span></p>
+<p class="yw">璋复遣别驾张松诣曹公<span class="zs-no">〔6〕</span>。曹公时已定荆州，走先主<span class="zs-no">〔7〕</span>，不复存录松<span class="zs-no">〔8〕</span>；松以此怨。会曹公军不利于赤壁<span class="zs-no">〔9〕</span>，兼以疫死。松还，疵毁曹公，劝璋自绝。<span class="pz-no">〔四〕</span>因说璋曰：“刘豫州<span class="zs-no">〔10〕</span>，使君之肺腑<span class="zs-no">〔11〕</span>，可与交通<span class="zs-no">〔12〕</span>。”璋皆然之，遣法正连好先主<span class="zs-no">〔13〕</span>；寻又令正及孟达送兵数千助先主守御<span class="zs-no">〔14〕</span>，正遂还。</p>
+<p class="fy-inline">不久，刘璋又派别驾从事张松为使者，前去拜见曹操。曹操当时已经平定荆州，赶走先主刘备，得意之余，所以对张松既未慰劳也不看重，张松为此怨恨不已。碰上这时曹操在赤壁之战中失败，再加上军队流行传染病而多有死亡。张松回到益州之后，就在刘璋面前诋毁曹操，劝刘璋与曹操断绝关系，又借机进言说：“豫州牧刘备，是您的同姓宗亲，可以和他交往。”刘璋对他所说的一切都欣然同意，便派遣下属法正去先主那里结成友好关系，接着又让法正与孟达给先主送去几千士兵以帮助其防守，然后法正才回来。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">张松：字子乔，是上文所说张肃的弟弟。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">走先主：使刘备逃跑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">存录：慰劳和看重。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">赤壁：地名。初步奠定三国分立局面的古战场。具体位置有多种说法，但都认为在今湖北境内的长江之滨。其中，主张赤壁在江北汉阳、黄冈的说法与《三国志》记载不符，难以令人信服。认为赤壁在江南者有三说：即蒲圻县西北（《括地志》、《通典》、《元和郡县志》），嘉鱼县东北（《大清一统志》）和武昌县西（《水经注》）。蒲圻赤壁与北岸乌林相对，与《三国志》的记载相吻合。结合当时战况与现存遗迹，当以赤壁在蒲圻县西北为是。经国家批准，蒲圻县已正式更名为赤壁市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">刘豫州：指刘备。此前刘备曾被汉朝正式任命为豫州牧。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">肺腑：比喻同姓宗亲。刘璋是西汉景帝儿子刘余的后代，而刘备自称祖上是景帝的另一个儿子刘胜，所以这样说。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">交通：交往。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">法正：传见本书卷三十七。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">孟达：事见本书卷三《明帝纪》裴注引《魏略》、卷四十《刘封传》。</span></p>
+<p class="yw">后松复说璋曰：“今州中诸将庞羲、李异等，皆恃功骄豪，欲有外意<span class="zs-no">〔15〕</span>；不得豫州<span class="zs-no">〔16〕</span>，则敌攻其外，民攻其内：必败之道也。”璋又从之，遣法正请先主。璋主簿黄权陈其利害<span class="zs-no">〔17〕</span>，从事广汉王累自倒悬于州门以谏<span class="zs-no">〔18〕</span>；璋一无所纳，敕在所：供奉先主<span class="zs-no">〔19〕</span>；先主入境如归<span class="zs-no">〔20〕</span>。</p>
+<p class="fy-inline">这时张松又劝刘璋说：“现今益州境内的领兵将领如庞羲、李异等人，都仗恃功劳骄傲放纵，而且想与外边的势力勾结。如果不能把刘备请来，那么敌人从外边进攻，这些人从内部响应，这可是必败无疑的啊。”刘璋又听从了他的话，派法正去请先主来益州。刘璋的主簿黄权用利害关系竭力劝阻刘璋不要这么办，州政府的从事广汉郡人王累，则把自己倒吊在州政府的大门来向刘璋进谏，刘璋一概不听。他还下达指示要沿途的政府为先主的队伍提供一切必需品，使先主进入益州就好像回到自己的占领区一样。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">外意：联络投靠外敌的打算。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">豫州：也指刘备。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">黄权：传见本书卷四十三。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">王累：广汉郡新都（今四川成都市新都区）人。传见《华阳国志》卷十中；州门：指州政府府署的大门</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">在所：（刘备人马经过的）地方。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">归：回到自己的占领区。</span></p>
+<p class="yw">先主至江州<span class="zs-no">〔21〕</span>，北由垫江水，<span class="pz-no">〔五〕</span>诣涪<span class="zs-no">〔22〕</span>；<span class="pz-no">〔六〕</span>去成都三百六十里，是岁建安十六年也。璋率步骑三万余人，车乘帐幔，精光曜日，往就与会。先主所将将士，更相之适<span class="zs-no">〔23〕</span>，欢饮百余日。璋资给先主，使讨张鲁，然后分别。<span class="pz-no">〔七〕</span></p>
+<p class="fy-inline">先主率军西上到达江州，取道北面的垫江县由水路到达涪县。涪县在成都北面三百六十里，这一年是汉献帝建安十六年（公元211）。刘璋带领步兵、骑兵三万多人，车辆帐篷，在太阳下闪光耀眼，前往涪城与先主相会；先主手下的将士，与对方相互拜访，设宴欢饮一百多天。刘璋资助先主一大批军用物资和若干名战士，让先主前往汉中讨伐张鲁，然后双方才分手告别。</p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">江州：县名。县治在今重庆市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">垫江：县名。县治在今重庆市合川区。这里的垫江水，指今涪江；涪：县名</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">之适：拜访。刘璋与刘备见面聚会之处，相传在今绵阳东郊的富乐山，现今有规模宏大的纪念性园林。</span></p>
+<p class="yw">明年，先主至葭萌<span class="zs-no">〔24〕</span>；还兵南向<span class="zs-no">〔25〕</span>，所在皆克。</p>
+<p class="fy-inline">第二年，先主到达葭萌县，随即率军向南进攻刘璋，一路势如破竹。</p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">葭萌：县名。县治在今四川广元市西南昭化镇。现今尚有古城遗址。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">南向：指向南面的刘璋进攻。</span></p>
+<p class="yw">十九年<span class="zs-no">〔26〕</span>，进围成都数十日。城中尚有精兵三万人，谷帛支一年。吏民咸欲死战，璋言：“父子在州二十余年，无恩德以加百姓。百姓攻战三年，肌膏草野者<span class="zs-no">〔27〕</span>，以璋故也。何心能安！”遂开城出降，群下莫不流涕。</p>
+<p class="fy-inline">建安十九年（公元214），先主挥兵进围成都，包围了数十天。这时城中还有三万精兵，谷物布帛足够用一年，官员百姓都表示要与对方决一死战。刘璋却说：“我们父子在益州二十多年，对百姓无恩无德。而今百姓已与对方攻战三年，死者肌体腐烂后肥沃了长满青草的原野，这都是为了我刘璋啊，我的心又怎么能安定呀！”于是下令打开城门投降，下属无不痛哭流涕。</p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">十九年：建安十九年（公元 214）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">肌膏草野：死者肌体腐烂后肥沃了长满青草的原野。</span></p>
+<p class="yw">先主迁璋于南郡公安<span class="zs-no">〔28〕</span>，尽归其财物，（及）故佩振威将军印绶<span class="zs-no">〔29〕</span>。孙权杀关羽，取荆州；以璋为益州牧，驻秭归<span class="zs-no">〔30〕</span>。</p>
+<p class="fy-inline">先主把刘璋安置到南郡的公安县，把家产全部还给他，让他依旧持有振威将军的印章和绶带。后来孙权袭杀关羽，占领荆州，任命刘璋为益州牧，驻扎在秭归县。</p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">南郡：郡名。治所在今湖北荆州市荆州区；公安：地名，在今湖北公安县西北</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">故：依旧。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">秭归：县名。县治在今湖北秭归县。</span></p>
+<p class="yw">璋卒，南中豪率雍闿据益郡反<span class="zs-no">〔31〕</span>，附于吴。权复以璋子阐为益州刺史，处交、益界首。丞相诸葛亮平南土<span class="zs-no">〔32〕</span>，阐还吴，为御史中丞。<span class="pz-no">〔八〕</span>初，璋长子循妻，庞羲女也。先主定蜀，羲为左将军司马<span class="zs-no">〔33〕</span>；璋时从羲启留循<span class="zs-no">〔34〕</span>，先主以为奉车中郎将<span class="zs-no">〔35〕</span>。是以璋二子之后，分在吴、蜀。</p>
+<p class="fy-inline">刘璋死后，南中地区的豪强首领雍闿占据益州郡造反，投降孙吴。孙权又委任刘璋的儿子刘阐为益州刺史，驻守在交州与益州的交界处。丞相诸葛亮平定南中地区后，刘阐回转吴国，出任御史中丞。起初，刘璋的长子刘循所娶的妻子，是庞羲的女儿。先主得到益州，庞羲在先主的左将军府担任司马。刘璋前往南郡前听从庞羲的请求留下刘循在成都，后来先主任命刘循为奉车中郎将。所以刘璋两个儿子的后代，分别住在吴、蜀二国。</p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">南中：地区名。相当于今四川省大渡河以南部分和云南、贵州两省。因在蜀汉根据地巴、蜀以南，故名；豪率：豪强首领；益郡：指益州郡</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">南土：即南中。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">左将军：指刘备。刘备入蜀前的正式官衔为左将军，入蜀后一直以左将军的名义发号施令，直到自立为汉中王为止。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">从羲启：听从庞羲的请求。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">奉车中郎将：官名。这是刘备为刘循特别设立的官衔。至于职责则和奉车都尉相同，是为君主管理礼仪车辆。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《英雄记》曰：“庞羲与璋有旧，又免璋诸子于难；故璋厚德羲，以羲为巴西太守，遂专权势。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《英雄记》曰：“先是，南阳、三辅人，流入益州数万家；收以为兵，名曰‘东州兵’。璋性宽柔，无威略。东州人侵暴旧民，璋不能禁；政令多阙，益州颇怨。赵韪素得人心，璋委任之。韪因民怨，谋叛，乃厚赂荆州请和；阴结州中大姓，与俱起兵，还击璋。蜀郡、广汉、犍为，皆应韪，璋驰入成都城守。东州人畏（威）〔见诛灭〕，咸同心并力助璋，皆殊死战；遂破反者，进攻韪于江州。韪将庞乐、李异反杀韪军，斩韪。”</span></p>
+<p class="pz-item no-no">《汉献帝春秋》曰：“汉朝闻益州乱，遣五官中郎将牛亶，为益州刺史；征璋为卿，不至。”</p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">臣松之按：魏台访“物故”之义，高堂隆答曰：“闻之先师：物，无也；故，事也；言无复所能于事也。”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《汉晋春秋》曰：“张松见曹公；曹公方自矜伐，不存录松。松归，乃劝璋自绝。”习凿齿曰：“昔齐桓一矜其功而叛者九国，曹操暂自骄伐而天下三分。皆勤之于数十年之内，而弃之于俯仰之顷。岂不惜乎！是以君子劳谦日昃，虑以下人；功高而居之以让，势尊而守之以卑。情近于物，故虽贵而人不厌其重；德洽群生，故业广而天下愈欣其庆。夫然，故能有其富贵，保其功业；隆显当时，传福百世。何骄矜之有哉！君子是以知曹操之不能遂兼天下者也。”</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">垫，音徒协反。</span></p>
+<p class="pz-item"><span class="pz-no">〔六〕</span><span class="pz-body">涪，音浮。</span></p>
+<p class="pz-item"><span class="pz-no">〔七〕</span><span class="pz-body">《吴书》曰：“璋以米二十万斛，骑千匹，车千乘，缯絮锦帛，以资送刘备。”</span></p>
+<p class="pz-item"><span class="pz-no">〔八〕</span><span class="pz-body">《吴书》曰：“阐，一名纬。为人恭恪，轻财爱义，有仁让之风。后疾终于家。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v31-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v31-c01" onclick="go('v31-c01');return false;">第31卷 · 蜀书1 刘二牧传第1</a><span class="chunk-prog">4 / 4</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：昔魏豹闻许负之言，则纳薄姬于室<span class="zs-no">〔1〕</span>；<span class="pz-no">〔一〕</span>刘歆见图谶之文，则名字改易<span class="zs-no">〔2〕</span>；终于不免其身<span class="zs-no">〔3〕</span>，而庆钟二主<span class="zs-no">〔4〕</span>。此则神明不可虚要<span class="zs-no">〔5〕</span>，天命不可妄冀<span class="zs-no">〔6〕</span>，必然之验也。而刘焉闻董扶之辞，则心存益土；听相者之言，则求婚吴氏<span class="zs-no">〔7〕</span>；遽造舆服<span class="zs-no">〔8〕</span>，图窃神器<span class="zs-no">〔9〕</span>：其惑甚矣！璋才非人雄，而据土乱世<span class="zs-no">〔10〕</span>；负乘致寇<span class="zs-no">〔11〕</span>，自然之理。其见夺取，非不幸也。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">评论说：从前魏豹听了许负的话就娶薄姬为小妾，刘歆看到预言性书籍中的文句就把自己的名字改了，然而他们终究免不了死于非命，福分却落在了汉高祖、汉光武帝两位君主身上。由此而知神灵不可能无缘无故给你福分，承受天命当皇帝的大福更是不可能妄自追求，这是受到验证的必然真理。而刘焉听了董扶的话后一心想去益州，听了看相术士的话又为儿子刘瑁聘娶吴家女儿为妻，忙着制造皇帝的礼仪专车，打主意窃据帝位，他受到的迷惑也太深了！刘璋论才干算不上英雄，却在乱世割据一方土地。背上背着财物的人跑去乘华丽的马车，将会招致强盗的抢劫，这是自然而然的事；后来他的地盘被别人夺取，完全可以理解而并非偶然。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">魏豹：战国末年魏国的贵族。陈胜起义，曾立他的哥哥魏咎为魏王。秦军攻魏，魏咎自杀，他逃亡到楚国，借到数千人马，攻下魏二十余城，自立为王。项羽大封诸侯时，改封西魏王。后被汉将韩信攻破，俘获押送到荥阳，被杀死。传见《史记》卷九十、《汉书》卷三十三。薄姬（？—前 155）：其母魏氏，是魏豹同族亲戚。因善于看相的许负说薄姬会生一个当皇帝的儿子，所以魏豹娶她为小妾。魏豹死，又被刘邦收入后宫，生下代王刘恒。后刘恒继位为文帝，尊她为皇太后。传见《史记》卷四十九、《汉书》卷九十七上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">刘歆：字子骏，西汉皇族。早年曾受西汉成帝之命，与父亲刘向整理皇家藏书。刘向死，他继续这项工作，最后编成我国第一部皇家藏书的分类目录《七略》。他知识广博，尤其擅长经学。王莽执政，因早年与刘歆同任黄门郎，所以特别看重他，从此成为王莽的支持者。王莽称帝，被任命为国师，封嘉新公。新朝末年，与王涉、董忠等密谋推翻王莽，失败，自杀。传附《汉书》卷三十六《楚元王传》；图谶：预示未来事情变化特别是帝王出现的神秘图形和隐语；名字改易：刘歆看到《河图赤伏符》这本图谶书籍中有“刘秀发兵捕不道，四夷云集龙斗野，四七之际火为主”的句子，认为未来的真命天子是一个叫做刘秀的人，就把自己的名改为秀，字改为颖叔，希望能应验在自己身上</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">不免其身：指未能免除被杀或自杀的灾祸。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">庆钟：福庆落在……身上；二主：指汉高祖刘邦、光武帝刘秀</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">虚要：无缘无故能够取得。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">冀：希求。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">求婚吴氏：刘焉听说吴家女子有大贵之相，就赶快聘她为儿子刘瑁的妻子。事见本卷三十四《先主吴穆皇后传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">舆服：指皇帝御用的车辆和服饰。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">神器：指皇帝权位。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">据土乱世：在乱世割据一方。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">负乘致寇：背上背着东西的人如果去乘车，将会招致强盗的抢劫。这一句出自《周易·解卦》的爻辞。背东西的人低贱，本来危险很小，而华丽的车辆虽好，却是强盗抢劫的目标。背东西的人硬要去乘车，被强盗抢劫了只能怨自己。这里比喻刘璋才德凡劣而占据益州，所以被刘备取代。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">孔衍《汉魏春秋》曰：“许负，河内温县之妇人。汉高祖封为明雌亭侯。”臣松之以为：今东人呼母为“负”，衍以许负为妇人，如为有似；然汉高祖时封皆列侯，未有乡亭之爵：疑此封为不然。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">张璠曰：“刘璋愚弱而守善言，斯亦宋襄公、徐偃王之徒，未为无道之主也。张松、法正，虽君臣之义不正，然固以委名附质；进不显陈事势，若韩嵩、刘（光）〔先〕之说刘表；退不告绝奔亡，若陈平、韩信之去项羽；而两端携贰。为谋不忠，罪之次也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v31';
+var NC = 4;
+var CUR = "home";
+var PREV_HREF = "v30.html";
+var NEXT_HREF = "v32.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

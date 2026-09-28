@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第56卷 朱治朱然吕范朱桓传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第56卷《朱治朱然吕范朱桓传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：朱治字君理，丹杨故鄣人也。初为县吏，后察孝廉，州辟从事。随孙坚征伐。">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v56.html">
+<meta property="og:title" content="《三国志》第56卷 朱治朱然吕范朱桓传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第56卷《朱治朱然吕范朱桓传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：朱治字君理，丹杨故鄣人也。初为县吏，后察孝廉，州辟从事。随孙坚征伐。">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">56卷 · 1/15</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html" selected>第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v56-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">1 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">朱治字君理，丹杨故鄣人也。初为县吏，后察孝廉，州辟从事。随孙坚征伐。</p>
+<p class="fy-inline">朱治，字君理，丹杨郡故鄣县人。起初他在本县政府当办事员，后来本郡太守举荐他为孝廉，本州刺史聘任他为从事史。又随孙坚南征北战。</p>
+<p class="yw">中平五年，拜司马。从讨长沙、零、桂等三郡贼周朝、苏马等，有功，坚表治行都尉<span class="zs-no">〔1〕</span>。从破董卓于阳人，入洛阳。表治行督军校尉<span class="zs-no">〔2〕</span>，特将步骑<span class="zs-no">〔3〕</span>，东助徐州牧陶谦讨黄巾。</p>
+<p class="fy-inline">汉灵帝中平五年（公元 188），朱治被孙坚任命为司马。跟着孙坚讨伐长沙、零陵、桂阳三郡的叛匪周朝、苏马等，立下战功，孙坚上表朝廷后让朱治代理都尉职务。接着朱治又随孙坚在阳人击败董卓，攻入洛阳。孙坚上表朝廷后让朱治代理督军校尉职务，特别带领步兵、骑兵，到东边帮助徐州牧陶谦讨伐黄巾军。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">行：代理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">督军校尉：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">将：统率。</span></p>
+<p class="yw">会坚薨，治扶翼策<span class="zs-no">〔4〕</span>，依就袁术。后知术政德不立，乃劝策还平江东。</p>
+<p class="fy-inline">碰上孙坚去世，朱治辅助孙策，前去依附袁术。后来他看到袁术的政绩德泽都不行，就劝孙策回去平定江东。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">扶翼：辅助。</span></p>
+<p class="yw">时太傅马日！在寿春<span class="zs-no">〔5〕</span>，辟治为掾。迁吴郡都尉。是时吴景已在丹杨<span class="zs-no">〔6〕</span>，而策为术攻庐江；于是刘繇恐为袁、孙所并<span class="zs-no">〔7〕</span>，遂构嫌隙<span class="zs-no">〔8〕</span>。而策家门尽在州下<span class="zs-no">〔9〕</span>，治乃使人于曲阿迎太妃及权兄弟，所以供奉辅护，甚有恩纪<span class="zs-no">〔10〕</span>。</p>
+<p class="fy-inline">当时太傅马日"在寿春，聘朱治为自己的下属。不久朱治升任吴郡的都尉。孙策的舅父吴景已在丹杨郡当太守，而孙策本人则替袁术去进攻庐江郡；扬州刺史刘繇怕自己被袁术、孙策吞并，所以和孙策产生仇怨。而孙策的家属却都在刘繇州治所在地曲阿县，朱治赶紧派人到曲阿去把孙策母亲和孙权兄弟接到自己的住处，对他们的供养侍奉辅助保护，都非常有情分。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">太傅：官名。皇帝的辅导老师。地位尊崇，在三公之上，但无固定任务。马日（mí）!（dī）：事见本书卷六《袁术传》裴注引《三辅决录注》、《献帝春秋》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">吴景：事见本书卷五十《吴夫人传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">刘繇：传见本书卷四十九。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">构嫌隙：造成仇怨。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">家门：家属；州下：州治所在地</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">恩纪：情分。；吴：县名</span></p>
+<p class="yw">治从钱唐欲进到吴<span class="zs-no">〔11〕</span>，吴郡太守许贡拒之于由拳。治与战，大破之。贡南就山贼严白虎。</p>
+<p class="fy-inline">朱治想从自己的驻地钱塘县推进到吴县，而吴郡太守许贡在由拳县阻击他。他与许贡激战，打得对方大败而逃。许贡跑到南边去投靠山区叛匪首领严白虎。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">钱唐：县名。县治在今浙江杭州市。当时是吴郡都尉的驻地</span></p>
+<p class="yw">治遂入郡，领太守事。策既走刘繇<span class="zs-no">〔12〕</span>，东定会稽。权年十五，治举为孝廉。</p>
+<p class="fy-inline">朱治便进入吴郡的治所吴县，代理太守职务。孙策赶走刘繇之后，也平定了吴郡东边的会稽郡。孙权十五岁时，朱治举荐他为孝廉。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">走刘繇：使刘繇逃跑。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">2 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">后策薨，治与张昭等共尊奉权。建安七年，权表治为（九）真太守，行扶义将军；割娄、由拳、无锡、毗陵为奉邑<span class="zs-no">〔1〕</span>，置长吏<span class="zs-no">〔2〕</span>。征讨夷越<span class="zs-no">〔3〕</span>，佐定东南，擒截黄巾余类陈败、万秉等。</p>
+<p class="fy-inline">后来孙策去世，朱治与张昭等共同尊奉孙权为主事人。汉献帝建安七年（公元 202），孙权上表朝廷后正式委任朱治为吴郡太守，代理扶义将军职务；划出娄、由拳、无锡、毗陵四县为朱治的奉邑，除收取四县民户租税自己享用外，他还可以自行任命四县的县级行政长官。朱治在当地征讨举兵反抗的少数族，帮助孙权平定东南地区，阻截擒获黄巾军残余势力的首领陈败、万秉等。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">毗陵：县名。县治在今江苏常州市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">置长吏：自行任命各奉邑县的行政长官。这是当时享有奉邑者的一项特权。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">夷越：指东南地区的少数族。</span></p>
+<p class="yw">黄武元年，封毗陵侯，领郡如故。二年<span class="zs-no">〔4〕</span>，拜安国将军<span class="zs-no">〔5〕</span>，金印紫绶<span class="zs-no">〔6〕</span>，徙封故鄣。权历位上将<span class="zs-no">〔7〕</span>，及为吴王；治每进见，权常亲迎，执版交拜<span class="zs-no">〔8〕</span>。飨宴赠赐，恩敬特隆，至从行吏皆得奉贽私觌<span class="zs-no">〔9〕</span>：其见异如此。</p>
+<p class="fy-inline">孙权黄武元年（公元 222），朱治被封为毗陵侯，依旧兼任吴郡太守。黄武二年（公元223），他升任安国将军，使用金质印章、紫色绶带，改封故鄣侯。孙权担任高级将领，以及当了吴王之后；朱治每次前来拜见，孙权常常要亲自出迎，两人都捧着手版相互行跪拜礼。设宴款待和赏赐物品，对朱治给以特别优厚的礼遇，以至于随从朱治前来的官员，都得以向孙权送上礼品进行私人拜见：朱治受到的异常尊敬就达到这样的程度。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">二年：黄武二年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">安国将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">金印紫绶：金质官印配以紫色丝绳。当时官印的材质和上面所系丝绳的颜色，随官位的高低而不同，金印紫绶是最高一等。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">上将：高级将领。指孙权担任过的车骑将军、骠骑将军。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">版：即手版；交拜：相互行跪拜礼</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">至：以至于。贽（zhì）：见面礼。私觌（dí）：私人之间的见面。</span></p>
+<p class="yw">初，权弟翊，性峭急<span class="zs-no">〔10〕</span>，喜怒快意<span class="zs-no">〔11〕</span>。治数责数<span class="zs-no">〔12〕</span>，喻以道义。权从兄豫章太守贲<span class="zs-no">〔13〕</span>，女为曹公子妇<span class="zs-no">〔14〕</span>。及曹公破荆州，威震南土。贲畏惧，欲遣子入质。治闻之，求往见贲，为陈安危；<span class="pz-no">〔一〕</span>贲由此遂止。权常叹治忧勤王事。</p>
+<p class="fy-inline">当初，孙权的弟弟孙翊，性情严厉急躁，喜怒都随意无常。朱治多次责备他，用道义进行劝导。孙权的堂兄豫章郡太守孙贲，女儿是曹操的媳妇。曹操攻破荆州，威震南方。孙贲心中害怕，想送儿子到曹操那里作人质表示投诚。朱治听说后，请求前去见孙贲，为他分析形势的安危；孙贲因此才打消了主意。孙权经常赞叹朱治为国事而忧劳不已的精神。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">峭急：严厉急躁。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">快意：随意。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">责数：责备。朱治又曾举孙翊为孝廉，是孙翊的上司，所以有资格责备他。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">贲：即孙贲。传见本书卷五十一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">子妇：儿媳妇。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《江表传》载治说贲曰：“破虏将军昔率义兵入讨董卓，声冠中夏：义士壮之。讨逆继世，廓定六郡；特以君侯骨肉至亲，器为时生；故表汉朝，剖符大郡，兼建将校，仍关综两府：荣冠宗室，为远近所瞻。加讨虏聪明神武，继承洪业；揽结英雄，周济世务；军众日盛，事业日隆。虽昔萧王之在河北，无以加也；必克成王基，应运东南。故刘玄德远布腹心，求见拯救。此天下所共知也。前在东，闻道路之言，云将军‘有异趣’，良用怃然！今曹公阻兵，倾覆汉室，幼帝流离；百姓元元，未知所归。而中国萧条，或百里无烟；城邑空虚，道殣相望；士叹于外，妇怨乎室；加之以师旅，因之以饥馑。以此料之，岂能越长江与我争利哉！将军当斯时也，而欲背骨肉之亲，违万安之计，割同气之肤，啖虎狼之口；为一女子，改虑易图；失机毫厘，差以千里：岂不惜哉！”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">3 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">性俭约，虽在富贵，车服惟供事<span class="zs-no">〔1〕</span>。权优异之：自令督军御史典属城文书<span class="zs-no">〔2〕</span>，治领四县租税而已<span class="zs-no">〔3〕</span>。然公族子弟及吴四姓多出仕郡<span class="zs-no">〔4〕</span>，郡吏常以千数；治率数年一遣诣王府<span class="zs-no">〔5〕</span>，所遣数百人。每岁时献御，权答报过厚。</p>
+<p class="fy-inline">朱治生性俭朴节约，虽然身处富贵，车马服饰都只要求能供给实际的需要即可。孙权为了特别优待他，自己派了督军御史去帮朱治处理吴郡下属各县呈送上来的文书，让朱治坐享奉邑四县的租税而已。不过住在吴郡的孙氏宗族子弟，以及吴县的顾氏、陆氏、朱氏、张氏四个世家大族的子弟，在吴郡政府中充当办事官员的很多，以至于郡政府中办事官员常有上千人；朱治大抵每隔几年就要选送其中的一些优秀人才到孙权的吴王府去任职，所选送的有几百人之多。每逢新年和四季中的节日朱治都要向孙权进献贡品，孙权的回礼也总是非常丰厚。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">惟供事：只要求能供给实际的需要。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">督军御史：官名。负责办理公务文书；典：负责办理；属城：指吴郡的属县</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">四县：即朱治的奉邑娄、由拳、无锡、毗陵。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">公族子弟：指孙氏宗族的子弟。孙氏籍贯在富阳，为吴郡属县；吴四姓：指吴郡吴县的四个世家大族；仕郡：在吴郡政府中任职</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">率：大抵；遣诣王府：派遣（其中的优秀者）到孙权的吴王府任职</span></p>
+<p class="yw">是时丹杨深地，颇有奸叛，亦以年向老，思恋土风<span class="zs-no">〔6〕</span>；自表屯故鄣，镇抚山越。诸父老故人，莫不诣门；治皆引进，与共饮宴：乡党以为荣。</p>
+<p class="fy-inline">当时丹杨郡的深山地区，还有不少叛乱分子，朱治又因为自己年纪渐老，思恋故土的风俗；所以主动上表请求到家乡故鄣县驻扎，以震慑安抚山越族人。他到故鄣后，当地父老和故旧，无不登门拜访；朱治全都请进门来会见，与他们一起饮宴，乡亲们都引以为荣。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">土风：当地的风俗。朱治是丹杨郡人。</span></p>
+<p class="yw">在故鄣岁余，还吴。黄武三年卒，在郡三十一年，年六十九。</p>
+<p class="fy-inline">他在故鄣住了一年多，又回到吴郡的治所吴县。黄武三年（公元224）他去世，在吴郡任职太守长达三十一年，终年六十九岁。</p>
+<p class="yw">子才，素为校尉领兵；既嗣父爵，迁偏将军。<span class="pz-no">〔一〕</span>才弟纪，权以策女妻之；亦以校尉领兵。纪弟纬、万岁，皆早夭。才子琬，袭爵为将，至镇西将军。</p>
+<p class="fy-inline">他的儿子朱才，一直以校尉的官衔领兵；父亲死后继承其爵位，又升任偏将军。朱才的弟弟朱纪，孙权把孙策的女儿嫁给他为妻；也以校尉的官衔领兵。朱纪的弟弟朱纬、朱万岁，都早年夭亡。朱才的儿子朱琬，继承爵位并领兵为将，官做到镇西将军。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《吴书》曰：“才，字君业。为人精敏，善骑射。权爱异之，常侍从游戏。少以父任为武卫校尉，领兵随从征伐，屡有功捷。本郡议者以才少处荣贵，未留意于乡党。才乃叹曰：‘我初为将，谓跨马蹈敌，当身履锋，足以扬名；不知乡党复追迹其举措乎！’于是更折节为恭，留意于宾客；轻财尚义，施不望报；又学兵法，名声始闻于远近。会疾卒。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">4 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">朱然字义封。治姊子也，本姓施氏。初治未有子，然年十三，乃启策乞以为嗣<span class="zs-no">〔1〕</span>。策命丹杨郡以羊酒召然<span class="zs-no">〔2〕</span>。然到吴，策优以礼贺。然尝与权同学书，结恩爱。</p>
+<p class="fy-inline">朱然，字义封。是朱治姐姐的儿子，本来姓施。当初，朱治没有儿子，朱然十三岁时，朱治报告孙策请求以朱然为继承人。孙策下令让丹杨郡政府派人带着羊、酒之类的礼物去征召朱然。朱然到吴县后，孙策送了厚礼以表庆贺。朱然曾经与孙权一同读书学习，结下深厚情谊。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">启策：报告孙策。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">羊酒：作为礼品送给朱然家的羊和酒。</span></p>
+<p class="yw">至权统事，以然为余姚长。时年十九。后迁山阴令，加折冲校尉，督五县。权奇其能，分丹杨为临川郡，然为太守，<span class="pz-no">〔一〕</span>授兵二千人。会山贼盛起，然平讨，旬月而定。</p>
+<p class="fy-inline">到孙权统管大事之后，任命朱然为余姚县长。当时朱然才十九岁。后来朱然升任山阴县令，加任折冲校尉，指挥五个县的地方军队。孙权器重他的才能，分出丹杨郡的一部分地区设立临川郡，以朱然为太守，授给二千人的正规军队。恰巧这时山区的叛匪大举作乱，朱然领兵前去征讨，个把月后就完全平定。</p>
+<p class="yw">曹公出濡须，然备大坞及三关屯<span class="zs-no">〔3〕</span>，拜偏将军。</p>
+<p class="fy-inline">曹操进攻濡须，朱然受命把守大坞和三关一带的营地，升任偏将军。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">大坞：即濡须坞；三关：地名；屯：营垒</span></p>
+<p class="yw">建安二十四年，从讨关羽；别与潘璋到临沮擒羽，迁昭武将军，封西安乡侯。虎威将军吕蒙病笃。权问曰：“卿如不起，谁可代者？”蒙对曰：“朱然胆守有余，愚以为可任。”蒙卒，权假然节<span class="zs-no">〔4〕</span>，镇江陵。</p>
+<p class="fy-inline">汉献帝建安二十四年（公元 219），他随大军讨伐关羽，领兵与潘璋赶到临沮县擒杀了关羽，因功升任昭武将军，封西安乡侯。虎威将军吕蒙病势沉重，孙权问他：“您如果再不能起来，谁可以代替您呢？”吕蒙回答说：“以朱然的胆量操守而论，接替我的职务绰绰有余：我的愚见认为可以任用他。”吕蒙去世，孙权授给朱然节杖，镇守江陵。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">假：授给；节：一种表示享有诛杀威权的器物</span></p>
+<p class="yw">黄武元年，刘备举兵攻宜都；然督五千人，与陆逊并力拒备。然别攻破备前锋，断其后道：备遂破走。拜征北将军<span class="zs-no">〔5〕</span>，封永安侯。</p>
+<p class="fy-inline">孙权黄武元年（公元 222），刘备率领大军东下进攻宜都；朱然指挥五千人，与陆逊合力抵御刘备。朱然独自攻破刘备的先头部队，又去截断对方的退路：刘备大败而逃。朱然升任征北将军，封永安侯。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">征北将军：官名。领兵征伐。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之按：此郡寻罢，非今临川郡。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">5 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">魏遣曹真、夏侯尚、张郃等，攻江陵；魏文帝自住宛，为其势援，连屯围城。</p>
+<p class="fy-inline">魏国派曹真、夏侯尚、张郃等将，大举进攻江陵；魏文帝亲自进驻宛县，充当声援，魏军把营寨连起来包围了江陵城。</p>
+<p class="yw">权遣将军孙盛，督万人备州上<span class="zs-no">〔1〕</span>，立围坞，为然外救。郃渡兵攻盛，盛不能拒，即时却退。郃据州上围守，然中外断绝。权遣潘璋、杨粲等解〔围〕，而围不解。时然城中兵多肿病<span class="zs-no">〔2〕</span>，堪战者才五千人。真等起土山，凿地道，立楼橹临城<span class="zs-no">〔3〕</span>，弓矢雨注。将士皆失色，然晏如而无恐意<span class="zs-no">〔4〕</span>；方厉吏士，伺间隙攻破两屯。魏攻围然凡六月日<span class="zs-no">〔5〕</span>，未退。</p>
+<p class="fy-inline">孙权派将军孙盛，指挥一万人马在城南长江中的百里洲上防守，建立围栅壁垒，作为城中朱然的外援。张郃渡江进攻孙盛，孙盛抵挡不住，很快退却。张郃夺取了百里洲上的围栅、壁垒，朱然与外面的联系完全断绝。孙权又急派潘璋、杨粲前去解围而依然未成功。当时城中朱然的士兵患肿病的很多，能够作战的只有五千人。曹真等在城墙外垒起土山，开挖地道，架设高楼，向城中射出像雨点一般密集的飞箭。将士们都惊慌失色，但是朱然却举止安然毫不恐惧；激励将士，看准机会攻破敌军两处营地。魏军围攻朱然长达六个月的时间，仍未退兵。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">州：指江陵中州。又名百里洲。长江中的洲岛。在今湖北荆州市荆州区西。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">肿：即由于饥饿而导致的营养不良性水肿。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">楼橹：攻城的木架高楼。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">晏如：安然。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">六月日：六个月。</span></p>
+<p class="yw">江陵令姚泰，领兵备城北门，见外兵盛，城中人少，谷食欲尽<span class="zs-no">〔6〕</span>；因与敌交通，谋为内应。垂发<span class="zs-no">〔7〕</span>，事觉，然治戮泰。尚等不能克，乃撤攻，退还。由是然名震于敌国，改封当阳侯。</p>
+<p class="fy-inline">江陵县令姚泰，领兵防守北边的城门，看到外面的敌人多，里面的士兵少，粮食又快吃光；因而与敌军联系，准备叛变充当内应。即将行动时，事情发觉，朱然惩治处死姚泰。夏侯尚等打不下城池，只好撤军退回。从此朱然威名震动敌国，孙权改封他为当阳侯。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">欲：将。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">垂：将要。</span></p>
+<p class="yw">（六）<span class="pz-no">〔五〕</span>年<span class="zs-no">〔8〕</span>，权自率众攻石阳；及至旋师，潘璋断后。夜出错乱，敌追击璋，璋不能禁。然即还住，拒敌，使前船得引极远，徐乃后发。</p>
+<p class="fy-inline">黄武五年（公元 226），孙权亲自率军进攻魏国的石阳；到了回军的时候，由潘璋断后。晚上出发时军队发生错乱，敌军前来追击，潘璋制止不住。朱然立即掉头回来停下，迎战敌人，使自己军队前面的船队全部安全走远之后，才慢慢从后面出发。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">五年：黄武五年（公元226）。</span></p>
+<p class="yw">黄龙元年，拜车骑将军，右护军<span class="zs-no">〔9〕</span>，领兖州牧。顷之<span class="zs-no">〔10〕</span>，以兖州在蜀分<span class="zs-no">〔11〕</span>，解牧职。</p>
+<p class="fy-inline">黄龙元年（公元 229），朱然升任车骑将军，右护军，兼任兖州牧。没过多久，因为兖州被分给蜀国，所以解除了他兖州牧的职务。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">右护军：官名。孙吴置左、右护军，是全军的协调人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">顷之：没过多久。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">兖州在蜀分：公元 229 年吴蜀二国结盟中分天下，曹魏的兖州被分给蜀汉。详见本书卷四十七《吴主传》。</span></p>
+<p class="yw">嘉禾三年，权与蜀克期大举；权自向新城<span class="zs-no">〔12〕</span>，然与全琮各受斧钺<span class="zs-no">〔13〕</span>，为左、右督<span class="zs-no">〔14〕</span>。会吏士疾病，故未攻而退。</p>
+<p class="fy-inline">嘉禾三年（公元 234），孙权与蜀国约定时间同时大举进攻魏国；孙权亲自攻向合肥新城，朱然与全琮都被授给斧钺，分别担任左部、右部各军的总指挥官。恰巧这时将士有许多人患病，所以没有发起攻击就退回。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">新城：地名，即合肥新城。在今安徽合肥市西北。尚有遗址留存。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">斧钺：即黄钺。以黄金作装饰的大斧状兵器，帝王的仪仗之一。领兵大将如被授以黄钺，则表示代表君主出征或指挥，具有特殊的诛杀威权。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">左、右督：官名。即左部大都督、右部大都督。是左部各军、右部各军的总指挥官。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">6 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">赤乌五年，征柤中<span class="zs-no">〔1〕</span>。<span class="pz-no">〔一〕</span>魏将蒲忠、胡质各将数千人<span class="zs-no">〔2〕</span>。忠要遮险隘<span class="zs-no">〔3〕</span>，图断然后：质为忠继援。时然所督兵将先四出，闻问不暇收合<span class="zs-no">〔4〕</span>，便将帐下现兵八百人逆掩。忠战不利，质等皆退。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">赤乌五年（公元242），朱然出兵进攻曹魏的柤中。魏将蒲忠、胡质各自带领几千人马。蒲忠赶到险要狭窄的地方阻截，想卡断朱然的后路，而胡质则充当其后援。当时朱然所指挥的兵将已经分散到四方去执行任务，得知消息之后没有时间收聚部队，立即带领现有的侍卫队八百壮士前去迎战。蒲忠在交手后失利，胡质等人随之退却。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">柤中：地区名。在今湖北南漳县东。是平坦肥沃的耕作区。据本书卷四十七《吴主传》，朱然第一次进攻柤中，在赤乌四年（公元241）而非五年，此处史文疑有误。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">胡质：传见本书卷二十七。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">要遮：截断。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">闻问：得知消息。</span></p>
+<p class="yw">九年<span class="zs-no">〔5〕</span>，复征柤中。魏将李兴等闻然深入，率步骑六千断然后道；然夜出逆之，军以胜返。</p>
+<p class="fy-inline">赤乌九年（公元 246），他再次进攻柤中。魏将李兴等听说朱然等孤军深入，带领六千步兵、骑兵企图截断他的后路；朱然在夜晚出兵迎头痛击，军队获胜后凯旋。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">九年：赤乌九年（公元 246）。</span></p>
+<p class="yw">先是，归义马茂怀奸<span class="zs-no">〔6〕</span>，觉，诛；权深忿之。然临行上疏曰：“马茂小子，敢负恩养！臣今奉天威，事蒙克捷，欲令所获，震耀远近，方舟塞江<span class="zs-no">〔7〕</span>，使足可观：以解上下之忿。惟陛下识臣先言<span class="zs-no">〔8〕</span>，责臣后效！”</p>
+<p class="fy-inline">在此之前，起义投降的魏将马茂心怀奸计想刺杀孙权，发觉后被处死；孙权极为愤怒。所以朱然在临出发前上了一道奏疏说：“马茂这个小子，胆敢辜负陛下的恩情和养育！为臣现在凭借陛下天生的神威，出战一定能获得大捷，要想使所获得的战果，在远近地区都产生震动和得到显耀，并排的战船要布满江河，使威武的军容令人叹为观止：以消除君臣上下的愤怒。希望陛下记住为臣先说的这些话，要求为臣以后取得实际效果！”</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">归义：起义投降。这里指起义投降的人。马茂（？—公元 245 ）：事见本书卷四十七《吴主传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">方舟：并排的船。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">识：记住。</span></p>
+<p class="yw">权时抑表不出。然既献捷，群臣上贺；权乃举酒作乐，而出然表曰：“此家前初有表<span class="zs-no">〔9〕</span>，孤以为难必<span class="zs-no">〔10〕</span>；今果如其言，可谓明于见事也！”遣使拜然为左大司马，右军师<span class="zs-no">〔11〕</span>。</p>
+<p class="fy-inline">孙权在当时把奏疏压下来没有拿给大家看。朱然凯旋报捷之后，群臣向孙权祝贺；孙权吩咐摆酒奏乐，然后才把朱然的奏疏拿出来，说：“这位在当初就有表章，朕以为事情难以肯定；而今果如其言，真可以说是有先见之明了！”于是派使者前去宣布提升朱然为左大司马，右军师。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">此家：这位。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">难必：难以肯定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">右军师：官名。参谋军事。当时孙吴置有左、右军师。是朝廷军队的两位参谋长。如果左、右大司马兼任军师职务，则左大司马兼右军师，右大司马兼左军师。</span></p>
+<p class="yw">然长不盈七尺，气候分明<span class="zs-no">〔12〕</span>，内行修洁<span class="zs-no">〔13〕</span>。其所文采<span class="zs-no">〔14〕</span>，惟施军器，余皆质素。终日钦钦<span class="zs-no">〔15〕</span>，常在战场；临急胆定，尤过绝人。虽世无事，每朝夕严鼓<span class="zs-no">〔16〕</span>，兵在营者，咸行装就队<span class="zs-no">〔17〕</span>。以此玩敌<span class="zs-no">〔18〕</span>，使不知所备：故出辄有功。诸葛瑾子融，步骘子协，虽各袭任，权特复使然总为大督。又陆逊亦（本）〔卒〕，功臣名将存者惟然，莫与比隆。</p>
+<p class="fy-inline">朱然身高不到七尺，但是气概不凡，注重自身品行的培养和纯洁。凡是花纹和色彩，都只用来涂饰军用器械，其余的物品都是质朴的本色。他整天都在思虑公务，经常上战场；面临危急局面时他的胆大镇定，大大超过常人。即使国家没有战事，每天早晚也要敲击战鼓召集军队并要求作好出发准备，这时士兵在军营中的，全都要收拾好行装入列整队。他用这一手段来麻痹敌人，使对方无法防备他在何时出击：所以他一出击总要立下战功。诸葛瑾的儿子诸葛恪，步骘的儿子步协，虽然各自继承了父亲的领兵权力，孙权特别又使朱然统领他们成为总指挥官。又因为陆逊也去世，老一辈的功臣名将在世的只有朱然，没有人能和他所受到的隆厚待遇相比。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">气候：气概。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">内行：自身的品行。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">文采：花纹和色彩。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">钦钦：思虑的样子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">严鼓：作好出发准备并敲鼓召集队伍。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">行装：收拾行装。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">玩敌：麻痹敌人。</span></p>
+<p class="yw">寝疾二年，后渐增笃；权昼为减膳，夜为不寐；中使医药口食之物<span class="zs-no">〔19〕</span>，相望于道。然每遣使表疾病消息<span class="zs-no">〔20〕</span>，权辄召见；口自问讯，入赐酒食，出送布帛。自创业功臣疾病，权意之所钟：吕蒙、凌统最重，然其次矣。</p>
+<p class="fy-inline">他卧病在床两年，后来病势逐渐加重；孙权白天为他减少了御膳的数量，晚上愁得睡不着觉；前往送去医药和珍贵食品的宫廷使者，在路上接连不断。朱然每次派使者进京报告疾病和将息调养的情况时，孙权总要召见；亲口询问，使者进门要赐酒食，出门要送布帛。在创业功臣生病的事情中，孙权心意的关注程度，以吕蒙、凌统为最重，其次就是朱然了。</p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">中使：宫中的使者。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">消息：将息调养。这是当时习语。朱然死后，葬在今安徽马鞍山市境内。1984 年其墓被考古工作者发掘，出土了名谒、凭几、密封文件盒等一批珍贵器物，是孙吴时期考古学上的重要发现。</span></p>
+<p class="yw">年六十八，赤乌十二年卒。权素服举哀，为之感恸。子绩嗣。</p>
+<p class="fy-inline">赤乌十二年（公元 249），朱然六十八岁时去世。孙权穿上白色的丧服哭悼，为他的死亡而伤感悲恸。他的儿子朱绩继承了爵位。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《襄阳记》曰：“柤，音如租税之租。柤中在上黄界，去襄阳一百五十里。魏时夷王梅敷兄弟三人，部曲万余家屯此；分布在中庐、宜城西山鄢、沔二谷中。土地平敞，宜桑麻，有水陆良田，沔南之膏腴沃壤：谓之柤中。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">孙氏《异同评》曰：“《魏（志）〔书〕》及《江表传》云，然以景初元年、正始二年再出为寇，所破胡质、蒲忠在景初元年。《魏志》承《魏书》，依违不说质等为然所破，而直云然退耳。《吴志》说赤乌五年，于魏为正始三年，魏将蒲忠与朱然战，忠不利，质等皆退。按《魏少帝纪》及《孙权传》，是岁并无事，当是陈寿误以吴嘉禾六年为赤乌五年耳。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">7 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">绩字公绪。以父任为郎<span class="zs-no">〔1〕</span>。后拜建忠都尉<span class="zs-no">〔2〕</span>。叔父才卒，绩领其兵。随太常潘璿讨五溪<span class="zs-no">〔3〕</span>，以胆力称。迁偏将军，营下督<span class="zs-no">〔4〕</span>，领盗贼事，持法不倾。鲁王霸注意交绩<span class="zs-no">〔5〕</span>，尝至其廨<span class="zs-no">〔6〕</span>，就之坐<span class="zs-no">〔7〕</span>，欲与结好；绩下地住立<span class="zs-no">〔8〕</span>，辞而不当。</p>
+<p class="fy-inline">朱绩，字公绪。他最先是因为父亲担任高级官员而被任命为郎官。后来升任建忠都尉。他的叔父朱才去世，由他继续带领朱才的兵马。随太常卿潘濬去讨伐五溪的少数族叛乱，以有胆量力气而著称。他升任偏将军、营下督，兼管平定叛匪事务，执法公正不阿。鲁王孙霸倾注情意去结交朱绩，曾经到他的官署，靠近他坐下来，想和他结下友好情谊；朱绩却马上离开坐席站起来，推辞不接受。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">以父任为郎：因父亲担任高级官员而被任命为郎官。这是自汉代以来对公卿子弟的一种特殊优待办法。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">建忠校尉：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">讨五溪：讨伐居住在五溪的少数族。五溪即雄溪、{溪、辰溪、酉溪、无溪。在今湖南西部。当时是武陵蛮族聚居地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">营下督：官名。负责维持治安。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">霸：即孙霸（？—公元 250）。传见本书卷五十九；注意：倾注情意</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">廨：办公的官署。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">就之坐：靠近施绩坐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">下地：离开坐席移到地上。</span></p>
+<p class="yw">然卒，绩袭业，拜平魏将军<span class="zs-no">〔9〕</span>，乐乡督<span class="zs-no">〔10〕</span>。明年，魏征南将军王昶，率众攻江陵城，不克而退。绩与奋威将军诸葛融书曰：“昶远来疲困，马无所食；力屈而走，此天助也。今追之力少，可引兵相继；吾欲破之于前，足下乘之于后。岂一人之功哉？宜同断金之义<span class="zs-no">〔11〕</span>！”融答许绩。绩便引兵及昶于纪南<span class="zs-no">〔12〕</span>。纪南去城三十里，绩先战胜而融不进，绩后失利。权深嘉绩，盛责怒融。融兄大将军恪贵重，故融得不废。初绩与恪、融不平<span class="zs-no">〔13〕</span>，及此事变，为隙益甚。</p>
+<p class="fy-inline">朱然去世，朱绩承袭了父亲的领兵权力。升任平魏将军，出任乐乡战区的军事指挥官。第二年，魏国征南将军王昶率军进攻江陵城，未能得手而撤退。朱绩与奋威将军诸葛融写信说：“王昶军队远来疲乏困倦，战马没有饲料；力量耗尽而撤退，这是上天帮助我们的好机会。现今我想发起追击而兵力不足，您可以领兵随后；我想在前面击破他们，然后您再去踏平敌阵。这岂止是我一个人的功劳啊？足下您应当与我齐心合力！”诸葛融回信同意。朱绩就领兵在纪南追上王昶。纪南离江陵城三十里，朱绩先已取胜而诸葛融却不前进，导致朱绩后来失利。孙权非常嘉许朱绩，同时大发雷霆怒责诸葛融。只是因为当时诸葛融的哥哥诸葛恪身任大将军地位尊贵重要，所以诸葛融才没有被撤职。当初朱绩与诸葛恪、诸葛融就不和，有了这一变故，双方结仇更深。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">平魏将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">乐乡督：官名。乐乡战区的指挥官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">断金：斩断金属。《周易·系辞》上有“二人同心，其利断金”的句子，所以这里指两个人齐心合力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">纪南：城名。在今湖北荆州市荆州区西北。是楚国故都。现今有遗迹留存。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">不平：不和。</span></p>
+<p class="yw">建兴元年，迁镇东将军。二年春<span class="zs-no">〔14〕</span>，恪向新城，要绩并力<span class="zs-no">〔15〕</span>；而留置半州，使融兼其任。冬，恪、融被害，绩复还乐乡，假节。</p>
+<p class="fy-inline">孙亮建兴元年（公元223），朱绩升任镇东将军。第二年春天，诸葛恪率大军进攻合肥新城，约朱绩合力出兵；中途把他留在半州，却派诸葛融兼任朱绩原来担任的乐乡战区军事指挥官职务。当年冬天，诸葛恪、诸葛融被杀害，朱绩又回到乐乡战区任职，并被授予节杖。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">二年：建兴二年（公元 224）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">要：约定。</span></p>
+<p class="yw">太平二年，拜骠骑将军。孙2 秉政，大臣疑贰<span class="zs-no">〔16〕</span>。绩恐吴必扰乱，而中国乘衅<span class="zs-no">〔17〕</span>；乃密书结蜀，使为并兼之虑<span class="zs-no">〔18〕</span>。蜀遣右将军阎宇将兵五千，增白帝守，以须绩之后命<span class="zs-no">〔19〕</span>。</p>
+<p class="fy-inline">太平二年（公元 257），他升任骠骑将军。孙綝执掌朝政，大臣之间相互猜疑离心。朱绩担心吴国必然发生动乱，而魏国会乘机进攻；于是秘密写信团结蜀国，让他们作好防止被魏国兼并的考虑。蜀国随即派右将军阎宇带兵五千，去增加白帝城的防守，以等待朱绩以后的通报。</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">疑贰：猜疑离心。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">中国：中原。指曹魏。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">并兼之虑：（防止被曹魏）兼并的考虑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">须：等待。</span></p>
+<p class="yw">永安初，迁上大将军，都护，督自巴丘上迄西陵。元兴元年，就拜左大司马<span class="zs-no">〔20〕</span>。</p>
+<p class="fy-inline">孙休永安初年，他升任上大将军，都护，指挥自巴丘以上直到西陵这一大段长江防线的军队。孙皓元兴元年（公元 264），他就地升任左大司马。</p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">就：就地。</span></p>
+<p class="yw">初，然为治行丧竟<span class="zs-no">〔21〕</span>，乞复本姓：权不许。绩以五凤中<span class="zs-no">〔22〕</span>，表还为施氏。</p>
+<p class="fy-inline">当初，朱然在为朱治居丧期满之后，请求恢复原姓：孙权不同意。朱绩在孙亮五凤年间，上表请求恢复姓施，得到批准。</p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">竟：完毕。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">五凤：废帝孙亮的年号。</span></p>
+<p class="yw">建衡二年卒。</p>
+<p class="fy-inline">他在建衡二年（公元270）去世。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">8 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">吕范字子衡，汝南细阳人也。少为县吏，有容观姿貌。邑人刘氏，家富女美。范求之，女母嫌，欲勿与。刘氏曰：“观吕子衡，宁当久贫者邪？”遂与之pp&gt;</p>
+<p class="fy-inline">吕范，字子衡，汝南郡细阳县人。年轻时在本县政府当办事员，具有出众的仪表外貌。本县有位姓刘的，家庭富有女儿美丽。吕范前去求婚，刘某的妻子嫌弃吕范，想不同意。刘某却说：“看吕子衡的相貌，岂会是长久贫困的人吗？”于是让女儿与吕范结婚。</p>
+<p class="yw">后避乱寿春，孙策见而异之。范遂自委昵，将私客百人归策。时太妃在江都，策遣范迎之。徐州牧陶谦谓范为袁氏觇候，讽县掠考范；范亲客健儿篡取以归。时唯范与孙河常从策，跋涉辛苦，危难不避。策亦〔以〕亲戚待之，每与升堂，饮宴于太/</p>
+<p class="fy-inline">后来他避乱来到寿春，孙策见到后觉得他不同寻常。吕范也主动投靠附从，带着自己私有的奴客一百人归依孙策。当时孙策的母亲在江都县，孙策派吕范前去迎接。徐州牧陶谦却认为吕范是袁术派来窥察情况的侦探，暗示江都县拷打审问吕范；吕范亲信奴客中的健儿前去把他抢了回来。当时只有吕范、孙河经常随从孙策，艰苦跋涉，不避危难。孙策也把他当作亲戚对待，每每与他进入内堂，在孙策母亲的面前饮宴。</p>
+<p class="yw">后从策攻破庐江。还，俱东渡；到横江、当利，破张英、于麋，下小丹杨、湖孰，领湖孰相。策定秣陵、曲阿，收笮融、刘繇余众；</p>
+<p class="fy-inline">后来吕范随孙策攻破庐江郡。回来后一起渡长江到江东，在横江、当利，攻破张英、于麋，又打下了丹杨县、湖孰县，他兼任了湖孰侯相。孙策平定秣陵、曲阿二县，收容笮融、刘繇的人马；把吕范的军队增加到步兵二千人、骑兵五十人。</p>
+<p class="yw">后领宛陵令，讨破丹杨贼。还吴，迁都督。<span class="pz-no">〔一〕</span>是时，下邳陈瑀自号吴郡太守，住海西，与强族严白虎交通。策自将讨虎，别遣范与徐逸攻瑀于海西，枭其大将陈牧。<span class="pz-no">〔二〕</span>又从攻祖郎于陵阳，太史慈于勇里。七县平定，拜征虏中郎将〔1&gt;</p>
+<p class="fy-inline">后来吕范兼任宛陵县令，击溃丹杨郡的叛匪。回到吴县，升任都督。</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">细阳：//&lt;/p</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">人</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">袁氏：觇&gt;</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">下：攻克。指</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">相：官名，即侯相。当时制度，某县如果成为一侯爵的改。</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">都督：官名。即营都督，协助主将管理军营杂务。后来孙权开始在长江沿线各战区设简同。</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw">〔。县治在今江苏灌南县&lt;</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw"><span class="pz-no">〔一〕</span>《江表传》曰：“策从容独与范棋，范曰：‘今将军事业日大，士众日盛；范在远，闻纲纪犹有不整者。范愿暂领都督，佐将军部分之。’策曰：‘子衡，卿既士大夫，加手下已有大众，立功于外；岂宜复屈小职，知军中细碎事乎！’范曰：‘不然。今舍本土而托将军者，非为妻子也，欲济世务；犹同舟涉海，一事不牢，即俱受其败：此亦范计，非但将军也！’褠，著袴褶，执鞭，诣</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+<p class="yw"><span class="pz-no">〔二〕</span>《九州春秋》曰：“初平三年，扬州刺史陈祎死，袁术使瑀领扬州牧。后术为曹公所败于封丘，南人叛瑀，瑀拒之。术走阴陵，好辞以下瑀；瑀不知权，而又怯，不即攻术。术于淮北集，瑀走归下邳。”</p>
+<p class="fy-inline">当时，下邳郡人陈瑀自称是吴郡太守，停留在海西县，与当地豪强大族严白虎来往。孙策亲自讨伐严白虎，另外派吕范与徐逸到海西县进攻陈瑀，杀了他的大将陈牧。接着吕范又随孙策到陵阳县进攻祖郎，到勇里进攻太史慈。先后攻克七个县城，他升任征虏中郎将，在征讨江夏郡的黄祖后，他又回军平定了鄱阳县的叛乱。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">9 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">策薨，奔丧于吴。后权复征江夏，范与张昭留守。曹公至赤壁，与周瑜等俱拒破之。拜裨将军，领彭泽太守<span class="zs-no">〔1〕</span>，以彭泽、柴桑、历（阳）〔陵〕为奉邑。</p>
+<p class="fy-inline">孙策去世，吕范到吴县奔丧。孙权统管大事之后又进攻江夏郡，派吕范与张昭留守。曹操率大军到达赤壁，吕范与周瑜等一起抵抗并击败曹操。升任裨将军，兼任彭泽郡太守，把彭泽、柴桑、历陵三县赐给他作奉邑。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">彭泽：郡名，治所在今江西湖口县东。</span></p>
+<p class="yw">刘备诣京见权，范密请留备。后迁平南将军<span class="zs-no">〔2〕</span>，屯柴桑。权讨关羽，过范馆。谓曰：“昔早从卿言，无此劳也！今当上取之，卿为我守建业。”</p>
+<p class="fy-inline">刘备到京下见孙权，吕范秘密请求孙权扣留刘备。吕范升任平南将军，驻扎在柴桑。</p>
+<p class="fy-inline">孙权讨伐关羽，经过吕范的府署。对他说：“从前要是听您的话扣下刘备，就没这场劳累了啊！而今要到上游攻取荆州，请您去下游为我镇守建业。”</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">平南将军：官名。领兵征伐。</span></p>
+<p class="yw">权破羽还，都武昌。拜范建威将军，封宛陵侯，领丹杨太守；治建业，督扶州以下至海<span class="zs-no">〔3〕</span>。转以溧阳、怀安、宁国为奉邑<span class="zs-no">〔4〕</span>。</p>
+<p class="fy-inline">孙权攻破关羽回来，建都在武昌。提升吕范为建威将军，封宛陵侯，兼丹杨郡太守；治所设在建业，指挥从扶州以下到长江入海口这一大段长江防线的军队。改以溧阳、怀安、宁国三县为奉邑。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">扶州：长江中洲岛名。当在今安徽马鞍山市一带。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">怀安：县名。县治在今安徽宁国市东南；宁国：县名</span></p>
+<p class="yw">曹休、张辽、臧霸等来伐；范督徐盛、全琮、孙韶等，以舟师拒休等于洞口。迁前将军，假节，改封南昌侯。时遭大风，船人覆溺，死者数千，还军。</p>
+<p class="fy-inline">曹魏派大将曹休、张辽、臧霸等大举进攻；吕范指挥徐盛、全琮、孙韶等将，出动水军在洞口抵御曹休等。孙权提升他为前将军，授予节杖，改封南昌侯。当时遭遇大风，船只倾覆士兵淹死，死了几千人，军队撤回。</p>
+<p class="yw">拜扬州牧。性好威仪。州民如陆逊、全琮及贵公子<span class="zs-no">〔5〕</span>，皆修敬虔肃<span class="zs-no">〔6〕</span>，不敢轻脱<span class="zs-no">〔7〕</span>。</p>
+<p class="fy-inline">吕范又兼任扬州牧。吕范生性喜欢威严的仪容。扬州人中的大官如陆逊、全琮以及其他的权贵子弟，都对他这位父母官毕恭毕敬，不敢轻率。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">州民：指扬州牧朱治管辖之下的扬州人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">修敬：表示尊敬。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">轻脱：轻率。</span></p>
+<p class="yw">其居处服饰，于时奢靡，然勤事奉法。故权悦其忠，不怪其侈。<span class="pz-no">〔一〕</span>初，策使范典主财计<span class="zs-no">〔8〕</span>。权时年少，私从有求；范必关白<span class="zs-no">〔9〕</span>，不敢专许：当时以此见望<span class="zs-no">〔10〕</span>。权守阳羡长，有所私用，策或料覆<span class="zs-no">〔11〕</span>。功曹周谷辄为傅著簿书<span class="zs-no">〔12〕</span>，使无谴问：权临时悦之。及后统事，以范忠诚，厚见信任；以谷能欺更簿书<span class="zs-no">〔13〕</span>，不用也。</p>
+<p class="fy-inline">他的住宅服饰，在当时算得上奢侈豪华，然而他勤于国事遵守法令。所以孙权喜欢他的忠诚，不责怪他的奢侈。当初，孙策让吕范主管自己的财务。孙权当时还年轻，私下向他要财物；吕范必定要向孙策报告，不敢擅自允许：当时为此也曾受到孙权的怨恨。孙权代理阳羡县长职务时，私人有什么开支，孙策有时要复查。县政府的功曹周谷，总是要替孙权掩盖而虚报账目，使孙权不致遭到责备：孙权在那时也喜欢周谷。到了孙权后来统管大事，因为吕范忠诚，倍加信任；至于周谷则因为他能对账目作欺骗性更改，所以根本不用他。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">财计：财务计划。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">关白：报告。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">见望：受到怨恨。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">料覆：复查。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">功曹：官名。主管人事财务；傅著：增添；簿书：账簿记载</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">欺更：欺骗性更改。</span></p>
+<p class="yw">黄武七年，范迁大司马；印绶未下，疾卒。权素服举哀，遣使者追赠印绶。</p>
+<p class="fy-inline">黄武七年（公元 228），吕范升任大司马；还没来得及颁发印章、绶带，他就生病去世。孙权穿上白色丧服哭悼他，派使者追赠他大司马的印章、绶带。</p>
+<p class="yw">及还都建业，权过范墓，呼曰：“子衡！”言及流涕，祀以太牢<span class="zs-no">〔14〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">后来孙权迁都回建业，曾经去看他的坟墓，在墓前呼唤道：“子衡！”说起吕范的往事就流泪，并用牛、羊、猪三牲进行了祭奠。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">太牢：祭祀时以牛、羊、猪各一作祭品，称为太牢。是祭牲的最高规格。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《江表传》曰：“人有白范与贺齐：奢丽夸绮，服饰僭拟王者。权曰：‘昔管仲逾礼，桓公优而容之，无损于霸。今子衡、公苗，身无夷吾之失；但其器械精好，舟车严整耳；此适足作军容，何损于治哉？’告者乃不敢复言。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《江表传》曰：“初，权移都建业，大会将相文武，（时）〔特〕谓严畯曰：‘孤昔叹鲁子敬比邓禹，吕子衡方吴汉；闻卿诸人，未平此论：今定云何？’畯退席曰：‘臣未解指趣，谓肃、范受饶，褒叹过实。’权曰：‘昔邓仲华初见光武：光武时受更始使，抚河北，行大司马事耳，未有帝王志也。禹劝之以复汉业，是禹开初议之端矣。子敬英爽有殊略，孤始与一语，便及大计；与禹相似，故比之。吕子衡忠笃亮直，性虽好奢，然以忧公为先，不足为损。避袁术，自归于兄；兄作大将，别领部曲，故忧兄事，乞为都督；办护修整，加之恪勤，与吴汉相类：故方之。皆有指趣，非孤私之也。’畯乃服。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c10">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">10 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">范长子先卒，次子据嗣。据字世议。以父任为郎。后范寝疾，拜副军校尉<span class="zs-no">〔1〕</span>，佐领军事。</p>
+<p class="fy-inline">吕范的长子先死，由次子吕据继承他的爵位。吕据，字世议。最初因父亲是高级官员而被任命为郎官。后来吕范卧病在床，孙权任命他为副军校尉，辅助吕范管理军务。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">副军校尉：官名。辅助主将指挥军队。</span></p>
+<p class="yw">范卒，迁安军中郎将<span class="zs-no">〔2〕</span>。数讨山贼，诸深恶剧地<span class="zs-no">〔3〕</span>，所击皆破。随太常潘濬讨五溪，复有功。朱然攻樊，据与朱异破城外围；还，拜偏将军。入补马闲右部督<span class="zs-no">〔4〕</span>。迁越骑校尉。太元元年，大风；江水溢流，渐淹城门。权使视水，独见据使人取大船以备害。权嘉之，拜荡魏将军<span class="zs-no">〔5〕</span>。权寝疾，以据为太子右部督<span class="zs-no">〔6〕</span>。</p>
+<p class="fy-inline">吕范去世，吕据升任安军中郎将。他多次领兵讨伐山区的叛匪，凡是深山中叛乱分子聚集，社会动荡剧烈而难以治理的地区，他前去进攻都能把叛匪击溃。他后来随太常卿潘濬去讨伐五溪的少数族叛军，也建立战功。朱然出兵进攻樊城，吕据与朱异攻破城外魏军的营地；回来后他升任偏将军。又进京担任马闲右部督，接着升任越骑校尉。太元元年（公元 251），出现大风，长江水溢出堤岸，浸湿淹进建业城的城门。孙权派人查看水情，看到只有吕据在指挥部下调来大船以防不测。孙权对此极为嘉许，提升他为荡魏将军。孙权卧病在床，任命吕据为太子卫队右部分队的指挥官。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">安军中郎将：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">剧地：社会动荡剧烈而难以治理的地区。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">马闲右部督：官名。统领马闲营的骑兵，保卫京城。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">荡魏将军：官名。领兵与曹魏作战。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">太子右部督：官名。太子卫队中右部支队的指挥官。</span></p>
+<p class="yw">太子即位，拜右将军。魏出东兴，据赴讨有功。明年，孙峻杀诸葛恪；迁据为骠骑将军，平西宫事<span class="zs-no">〔7〕</span>。</p>
+<p class="fy-inline">太子孙亮即位为帝，任命吕据为右将军。魏军进攻东兴，吕据赶去迎战有功。第二年，孙峻谋杀了执政的诸葛恪；提升吕据为骠骑将军，负责处理武昌西宫的事务。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">平西宫事：官名。负责处理西宫的事务。西宫是指孙吴西都武昌的皇宫。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">自代：代替自己。自己指孙峻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">中书：官名。这里指中书郎。负责传达皇帝诏令。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">都下兵：京都地区的驻军</span></p>
+<p class="yw">五凤二年，假节，与峻等袭寿春；还遇魏将曹珍，破之于高亭。</p>
+<p class="fy-inline">五凤二年（公元 255），吕据被授予节杖，与孙峻等人袭击寿春；回来时与魏将曹珍遭遇，在高亭打得对方大败而逃。</p>
+<p class="yw">太平元年，帅师侵魏。未及淮，闻孙峻死，以从弟2自代；据大怒，引军还，欲废綝。綝闻之，使中书奉诏，诏文钦、刘纂、唐咨等，使取据；又遣从兄（虑）〔宪〕，以都下兵逆据于江都。左右劝据降魏，据曰：“耻为叛臣！”遂自杀。夷三族。</p>
+<p class="fy-inline">太平元年（公元 256），吕据率领大军进攻魏国。还没有到达淮河，听说孙峻去世，临死前让堂弟孙綝代替自己；吕据大怒，带领军队赶了回来，想废掉孙綝。孙綝听说后，派中书郎带着皇帝的诏书，命令文钦、刘纂、唐咨等将去杀吕据；又派自己的堂兄孙宪，指挥京城驻军到江都迎战吕据。吕据身边的侍从劝他投降魏国，他说：“我以当叛臣为耻！”于是自杀。孙綝诛杀了他的三族。</p>
+<p class="zs-inline no-no">逆：迎面攻取</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c11">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">11 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">朱桓字休穆，吴郡吴人也。孙权为将军，桓给事幕府<span class="zs-no">〔1〕</span>。除余姚长，往，遇疫疠<span class="zs-no">〔2〕</span>，谷食荒贵。桓分部良吏<span class="zs-no">〔3〕</span>，隐亲医药<span class="zs-no">〔4〕</span>；飧粥相继，士民感戴之。迁荡寇校尉<span class="zs-no">〔5〕</span>，授兵二千人，使部伍吴、会二郡<span class="zs-no">〔6〕</span>。鸠合遗散<span class="zs-no">〔7〕</span>，期年之间<span class="zs-no">〔8〕</span>，得万余人。后丹杨、鄱阳山贼蜂起，攻没城郭，杀略长吏，处处屯聚。桓督领诸将，周旋赴讨<span class="zs-no">〔9〕</span>，应皆平定。稍迁裨将军，封新城亭侯。后代周泰为濡须督。</p>
+<p class="fy-inline">朱桓，字休穆，吴郡吴县人。孙权当将军统管大事时，朱桓在孙权的将军府中服务。被任命为余姚县长。他前去上任时正碰见当地发生传染病，粮食缺乏而价格高昂。朱桓分别部署优秀办事员，前往抚恤并亲自发送医药；不断施舍粥饭，官员百姓都非常感激拥戴他。朱桓升任荡寇校尉，被授予二千人马，前往吴郡、会稽郡围取山越族人，然后把其中强壮者充当士兵。又招聚逃散的百姓，一年多的时间里，他得到一万多人。后来丹杨、鄱阳二郡的山区叛匪蜂拥而起，攻陷城池，杀害劫持各县行政长官，到处驻扎。朱桓指挥部下众将，辗转征战，全部及时平定。他逐渐升到裨将军，封新城亭侯。接着他代替周泰当了濡须战区的军事指挥官。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">幕府：将军的办公府署。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">疫疠：传染病。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">分部：分别部署。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">隐亲：抚恤并亲自给予。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">荡寇校尉：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">部伍：当时把指挥部署军队围取山越然后把强壮者充当士兵的行动称为部伍。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">鸠合：聚合。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">期年：整整一年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">周旋：辗转。</span></p>
+<p class="yw">黄武元年，魏使大司马曹仁步骑数万，向濡须。仁欲以兵袭取州上<span class="zs-no">〔10〕</span>；伪先扬声<span class="zs-no">〔11〕</span>，欲东攻羡溪<span class="zs-no">〔12〕</span>。桓分兵将赴羡溪；既发，猝得仁进军距濡须七十里问<span class="zs-no">〔13〕</span>。桓遣使追还羡溪兵，兵未到而仁奄至。时桓手下及所部兵，在者五千人；诸将业业<span class="zs-no">〔14〕</span>，各有惧心。</p>
+<p class="fy-inline">孙权黄武元年（公元 222），魏国派大司马曹仁统领步兵、骑兵几万人，进攻濡须。曹仁想出兵袭取濡须南面长江中的中洲；假意先放出风声，说要进攻东边的羡溪。朱桓分兵将要赶赴羡溪救援；出发之后，猛然得到曹仁大军已前进到距濡须七十里的消息。朱桓急派使者前去把赶往羡溪的人马追召回来，军队还未回来而曹军已大举杀到。当时朱桓自己直接统领加上受他指挥的军队，实有的人数只有五千；众将战战兢兢，各自心中畏惧。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">州：即下文所说的中洲。又称濡须中洲。长江中的洲岛。在今安徽无为县南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">扬声：放出消息。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">羡溪：地名。在今安徽巢湖市东南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">问：消息。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">业业：畏惧的样子。</span></p>
+<p class="yw">桓喻之曰：“凡两军交对，胜负在将，不在众寡！诸君闻曹仁用兵行师，孰与桓邪？兵法所以称客倍而主人半者<span class="zs-no">〔15〕</span>，谓俱在平原，无城池之守，又谓士众勇怯齐等故耳。今仁既非智勇；加其士卒甚怯，又千里步涉，人马疲困。桓与诸君，共据高城；南临大江<span class="zs-no">〔16〕</span>，北背山陵；以逸待劳，为主制客：此百战百胜之势也。虽曹丕自来，尚不足忧；况仁等邪！”</p>
+<p class="fy-inline">朱桓开解他们说：“凡是两军对阵交锋，胜负取决于主将，而不在士兵的多少。诸位听说曹仁用兵出军，比起我朱桓来如何？兵法上面曾经说作客的进攻者在吃力的程度上要比当主人的防守者大一倍，那还只是指双方都在平原上，没有城池作凭借，而且士兵的勇敢怯懦情况都等同时的结果。如今进攻我们的曹仁既不是智勇双全的名将；加之他的士兵非常怯懦，又是千里步行，人马疲劳困倦。我和在座诸君，共同占据高峻的城堡；南面通往长江，北面背靠山岭；以逸待劳，作为主方制服客方：这是百战百胜的形势啊。即使他们曹丕亲自前来，也还值不得担忧，何况是曹仁之流呀！”</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">客倍而主人半：作客的进攻者在吃力的程度上要比当主人的防守者大一倍。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">大江：即长江。</span></p>
+<p class="yw">桓因偃旗鼓，外示虚弱，以诱致仁。仁果遣其子泰攻濡须城；分遣将军常雕督诸葛虔、王双等，乘油船别袭中洲<span class="zs-no">〔17〕</span>。中洲者，部曲妻子所在也<span class="zs-no">〔18〕</span>。仁自将万人留橐皋，复为泰等后拒<span class="zs-no">〔19〕</span>。桓部兵将攻取油船，或别击雕等；桓等身自拒泰。〔泰〕烧营而退，遂枭雕<span class="zs-no">〔20〕</span>，生虏双，送武昌。临阵斩溺<span class="zs-no">〔21〕</span>，死者千余。权嘉桓功，封嘉兴侯，迁奋武将军<span class="zs-no">〔22〕</span>，领彭城相<span class="zs-no">〔23〕</span>。</p>
+<p class="fy-inline">朱桓随即命令全军偃旗息鼓，在外面装出虚弱的样子，以引诱曹仁前来。曹仁果然派他的儿子曹泰来进攻濡须的城池；又另外派遣将军常雕指挥诸葛虔、王双等将，乘坐油船前去袭击长江里的中洲。而中洲，是朱桓部下的妻室儿女居住地。曹仁自己带领一万人马留在橐皋，作为曹泰等人后面的防卫。朱桓首先部署兵将前去攻打敌军的油船，有的直接袭击常雕；然后亲自抵御曹泰的进攻。曹泰只得烧掉营寨退兵，结果斩了常雕，生擒王双，把常雕的头颅连同王双一起送往首都武昌报捷。在战斗当中被杀和淹死的敌军，共有一千多人。孙权嘉奖朱桓的功劳，封他为嘉兴侯，升任奋武将军，兼任彭城国相。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">油船：以油浸材料制造的轻便快船。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">部曲：部属；妻子：妻室儿女</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">后拒：后面的防卫。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">枭：砍头。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">斩溺：被杀的和被逼跳水淹死的。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">奋武将军：官名。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">彭城：王国名。治所在今江苏徐州市。当时在曹魏占领之下，这里是有名无实的遥领。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c12">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">12 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">黄武七年，鄱阳太守周鲂谲诱魏大司马曹休<span class="zs-no">〔1〕</span>；休将步骑十万，至皖城以迎鲂。时陆逊为元帅；全琮与桓为左、右督，各督三万人击休。休知见欺，当引军还；自负众盛，（徼）〔邀〕于一战。桓进计曰：“休本以亲戚见任，非智勇名将也。今战必败，败必走；走当由夹石、挂车<span class="zs-no">〔2〕</span>。此两道皆险阨，若以万人柴路；则彼众可尽，而休可生虏。臣请将所部以断之。若蒙天威，得以休自效<span class="zs-no">〔3〕</span>；便可乘胜长驱，进取寿春；割有淮南，以规许、洛<span class="zs-no">〔4〕</span>：此万世一时<span class="zs-no">〔5〕</span>，不可失也！”</p>
+<p class="fy-inline">黄武七年（公元228），鄱阳郡太守周鲂诱骗魏国大司马曹休；曹休亲自带领十万步兵、骑兵，深入到皖县前来迎接假装投降的周鲂。当时孙权委任陆逊为元帅；全琮与朱桓分别担任前线左、右两大军团的总指挥官，各自指挥三万人马攻击曹休。曹休知道自己被欺骗后，本当领兵退回；而他仗恃人多，要想截住吴军打一仗。这时朱桓进献计策说：“曹休本来是由于宗族亲属关系而受到任用，并不是智勇兼备的名将。如今要打，他必然失败，他一失败必然逃跑；逃跑时他应当走夹石、挂车。这两处的道路都险峻狭窄，如果用一万精兵去截断那里的道路，那么对方的人马可以全部歼灭，而曹休则将被生擒活捉。为臣请求带领本部人马前去截击。如果凭借陛下天生的神威，得以用俘虏的曹休来作为自己对国家的报效；就可以乘胜长驱直入，攻克寿春，割占淮南，然后谋取许县、洛阳：这可是千载难逢的机会，不能错过啊！”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">周鲂：传见本书卷六十。谲（jué）：欺骗。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">挂车：地名。在今安徽桐城市西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">以休自效：用（俘虏的）曹休作为自己（对国家）的报效。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">规：谋划（攻取）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">万世一时：一万代才碰上一次的好时机。</span></p>
+<p class="yw">权先与陆逊议，逊以为不可，故计不施行。</p>
+<p class="fy-inline">孙权事先与陆逊商议，陆逊认为不可能攻克寿春并割占淮南，所以只出兵截断夹石而没有实施下一步计划。</p>
+<p class="yw">黄龙元年，拜桓前将军，领青州牧，假节。</p>
+<p class="fy-inline">黄龙元年（公元 229），孙权任命朱桓为前将军，兼青州牧，授予节杖。</p>
+<p class="yw">嘉禾六年，魏庐江主簿吕习请大兵自迎<span class="zs-no">〔6〕</span>，欲开门为应。桓与卫将军全琮，俱以师迎。既至，事露，军当引还。城外有溪水，去城一里所<span class="zs-no">〔7〕</span>；广三十余丈，深者八九尺，浅者半之。诸军勒兵渡去，桓自断后。时庐江太守李膺整严兵骑，欲须诸军半渡<span class="zs-no">〔8〕</span>，因迫击之；及见桓节、盖在后<span class="zs-no">〔9〕</span>，卒不敢出：其见惮如此<span class="zs-no">〔10〕</span>。</p>
+<p class="fy-inline">嘉禾六年（公元 237），魏国庐江郡的主簿吕习请求派大军迎接自己，到时候他会充当内应打开城门投降。朱桓与卫将军全琮都带兵前往。到达后，吕习事情败露，大军应当撤回。城外有一条溪水，距城有一里多路；宽有三十多丈，深处的水有八九尺深，浅处水深约为深处一半。各军指挥人马渡水之时，朱桓亲自断后。这时魏国庐江郡太守李膺已整顿好步兵、骑兵准备出动，就等孙吴各军渡过一半兵马时，乘机发起追击；后来看到朱桓持节站在伞盖下断后，始终不敢出动：朱桓就是受到敌人如此的畏惧。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">自迎：迎接自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">一里所：一里的地方。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">半渡：一半人渡过河。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">盖：伞盖。君主和高级官员的一种仪仗器物。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">见惮：受到畏惧。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c13">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">13 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">是时，全琮为督。权又令偏将军胡综宣传诏命，参与军事。琮以军出无获，议欲部分诸将<span class="zs-no">〔1〕</span>，有所掩袭。桓素气高，耻见部伍<span class="zs-no">〔2〕</span>。乃往见琮，问行意；感激发怒<span class="zs-no">〔3〕</span>，与琮校计<span class="zs-no">〔4〕</span>。琮欲自解，因曰：“上自令胡综为督<span class="zs-no">〔5〕</span>，综意以为宜尔<span class="zs-no">〔6〕</span>。”桓愈恚恨，还，乃使人呼综。综至军门，桓出迎之。顾谓左右曰：“我纵手<span class="zs-no">〔7〕</span>，汝等各自去！”有一人旁出，语综使还。桓出，不见综；知左右所为，因斫杀之。桓佐军进谏<span class="zs-no">〔8〕</span>，刺杀佐军。</p>
+<p class="fy-inline">当时，由全琮担任总指挥。孙权又派了偏将军胡综来传达诏命，参与军事指挥。全琮因为大军出动后没有收获，商议之后想部署指挥众将，前去突袭魏国的城乡。朱桓素来心气高傲，耻于受他们的指挥。于是前去见全琮，追问临时组织突袭的用意；激动发怒，与全琮相互争论。全琮想为自己开解，就说：“陛下亲自命令胡综任总指挥，胡综的意思认为应当这样做。”朱桓更加恼怒，回到大营后就派人去叫胡综。胡综到了军营大门，朱桓出去迎接。回头对左右侍卫说：“我要动手了，你们各自走开！”有一个侍卫赶紧从旁边小门跑出去，告知胡综叫他赶紧躲避。朱桓出了大门，不见胡综，知道是左右侍卫干的，立即把那向胡综报信的人砍死。朱桓手下的佐军上来劝谏，他又把佐军刺杀。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">部分：部署指挥。这是当时习语。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">耻见部伍：耻于受到指挥支配。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">感激：激动。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">校计：争论。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">上：对皇帝的称呼。这里指孙权。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">宜尔：应当这样。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">纵手：动手。指要动手教训胡综。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">佐军：官名。协助处理军务。</span></p>
+<p class="yw">遂托狂发<span class="zs-no">〔9〕</span>，诣建业治病。权惜其功能，故不罪。<span class="pz-no">〔一〕</span>使子异摄领部曲，令医视护，数月复遣还中洲。</p>
+<p class="fy-inline">于是他声称自己疯病发作，丢下军队到建业治病去了。孙权爱惜他的功劳才能，所以没有加罪。下令让他的儿子朱异代为统领部下，又派医生去给他看病护理，几个月后又送他回濡须中洲。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">狂发：疯病发作。</span></p>
+<p class="yw">权自出祖送<span class="zs-no">〔10〕</span>，谓曰：“今寇虏尚存，王途未一<span class="zs-no">〔11〕</span>，孤当与君共定天下；欲令君督五万人专当一面，以图进取：想君疾未复发也？”桓曰：“天授陛下圣姿，当君临四海；猥重任臣，以除奸逆：臣疾当自愈。”<span class="pz-no">〔二〕</span>桓性护前<span class="zs-no">〔12〕</span>，耻为人下。每临敌交战，节度不得自由<span class="zs-no">〔13〕</span>，辄嗔恚愤激<span class="zs-no">〔14〕</span>。然轻财贵义，兼以强识<span class="zs-no">〔15〕</span>。与人一面，数十年不忘；部曲万口，妻子尽识之。爱养吏士，赡护六亲<span class="zs-no">〔16〕</span>；俸禄产业，皆与共分。及桓疾困，举营忧戚。</p>
+<p class="fy-inline">孙权亲自出城为他设酒宴饯别，对他说：“如今敌寇还存在，天下没有统一，朕要与您共同平定全国；想让您指挥五万人马独当一面，以图进取魏境：这样您的病不会复发了吧？”朱桓说：“上天授给陛下圣明的品质，将会君临天下；如果能屈尊授给为臣重任，以铲除奸贼：为臣的病自然就痊愈了。”</p>
+<p class="fy-inline">朱桓的性格是不喜欢别人胜过自己，耻于处在别人之下。每当临阵交战，受到别人的节制而不能由随自己行动，总是要瞪眼睛发怒气激愤不已。但是他又轻财重义，加之记忆力特强。与人见了一面，几十年都不会忘记；部下上万将士，连他们的妻室儿女都全部认识。他爱护将士，赡养他们的亲属；自己的俸禄和产业，都和他们共同分享。到了朱桓病重的时候，全营将士都非常悲愁。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">祖送：设酒宴饯别。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">王途：比喻天下。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">护前：不喜欢别人胜过自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">节度：（受到）节制。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">嗔恚：瞪眼睛发怒。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">强识：记忆力强。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">六亲：六种亲属。说法不一。曹魏王弼的《老子注》认为是父、母、兄、弟、夫、妇。</span></p>
+<p class="yw">年六十二，赤乌元年卒。吏士男女，无不号慕。又家无余财，权赐盐五千斛以周丧事<span class="zs-no">〔17〕</span>。子异嗣。</p>
+<p class="fy-inline">赤乌元年（公元 238），他六十二岁时去世。部下将士及其男女家属，无不哀哭思慕他。他死后家中没有多余的财产，由孙权赏赐食盐五千斛用来办理丧事。他的儿子朱异继承了爵位。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">周：周济，接济。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">孙盛曰：“《书》云：‘臣无作威作福：作威作福，则凶于而家，害于而国。’桓之贼忍，殆虎狼也！人君且犹不可，况将相乎？语曰：得一夫而失一国。纵罪亏刑，失孰大焉！”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《吴录》曰：“桓奉觞曰：‘臣当远去，愿一捋陛下须，无所复恨！’权凭几前席，桓进前捋须曰：‘臣今日真可谓捋虎须也！’权大笑。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c14">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">14 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">异字季文。以父任除郎。<span class="pz-no">〔一〕</span>后拜骑都尉，代桓领兵。</p>
+<p class="fy-inline">朱异，字季文。他最初因父亲是高级官员而担任郎官。后来被任命为骑都尉，代替朱桓统领部下的兵马。</p>
+<p class="yw">赤乌四年，随朱然攻魏樊城；建计破其外围，还拜偏将军。魏庐江太守文钦营住六安，多设屯砦<span class="zs-no">〔1〕</span>，置诸道要<span class="zs-no">〔2〕</span>；以招诱亡叛，为边寇害。异乃身率其手下二千人，掩破钦七屯，斩首数百。迁扬武将军。</p>
+<p class="fy-inline">赤乌四年（公元 241），他随朱然进攻樊城；献计攻破敌军城外的营寨，回来后升任偏将军。魏国的庐江郡太守文钦在六安县设立基地，大量建造营栅，布置在交通要冲；以便招纳引诱吴国的逃亡百姓和叛变士兵，成为边境上的危害。朱异亲自带领手下二千精兵，发起突袭而攻破文钦七处营栅，斩杀敌军几百人。升任扬武将军。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">屯砦：营栅。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">道要：道路的要冲。</span></p>
+<p class="yw">权与论攻战，辞对称意。权谓异从父骠骑将军据曰：“本知季文<span class="zs-no">〔3〕</span>，及见之复过所闻。”</p>
+<p class="fy-inline">孙权曾经与他讨论攻战问题，他的言辞对答很让孙权称心满意。孙权曾对朱异的叔父骠骑将军朱据说：“本来朕就听说季文出色不凡，到了看见他本人才知道比听说的情况还要优秀。”</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">：出色不凡。这是当时习语。</span></p>
+<p class="yw">十三年<span class="zs-no">〔4〕</span>，文钦诈降；密书与异，欲令自迎。异表呈钦书，因陈其伪，不可便迎。权诏曰：“方今北土未一，钦云欲归命<span class="zs-no">〔5〕</span>，宜且迎之。若嫌其有谲者，但当设计，网以罗之，盛重兵以防之耳！”乃遣吕据督二万人，与异并力；至北界，钦果不降。</p>
+<p class="fy-inline">赤乌十三年（公元 250），文钦诈降；秘密写信给朱异，想让他出兵迎接自己。朱异上表呈送文钦的信，同时陈述他的虚假，认为不能立即出兵去迎接他。孙权下诏说：“当今北方还没有统一，文钦说要来献身归附，还是应当权且去迎接他。如果担心他有诡诈，只要设下计谋，撒网包围，出动精锐大军加以防备就行了！”于是孙权派吕据指挥两万兵马，与朱异协同作战；到达北部边境后，文钦果然不投降。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">十三年：赤乌十三年（公元250）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">归命：献身归附。</span></p>
+<p class="yw">建兴元年，迁镇南将军。是岁，魏遣胡遵、诸葛诞等出东兴。异督水军攻浮梁<span class="zs-no">〔6〕</span>，坏之，魏军大破。<span class="pz-no">〔二〕</span>太平二年，假节，为大都督，救寿春围，不解。还军，为孙綝所枉害。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">孙亮建兴元年（公元 253），朱异升任镇南将军。这一年，魏国派遣胡遵、诸葛诞等进攻东兴。朱异负责指挥水军进攻敌人的浮桥，把桥破坏，魏军大败。</p>
+<p class="fy-inline">太平二年（公元 257），朱异被授予节杖，担任全军总指挥，前去解救寿春城的包围，结果未能达到目的。大军回来后，他被执政的孙綝冤枉处死。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">浮梁：浮桥。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《文士传》曰：“张惇子纯与张俨及异，俱童少，往见骠骑将军朱据。据闻三人才名，欲试之，告曰：‘老鄙相闻，饥渴甚矣！夫骠 以迅骤为功，鹰隼以轻疾为妙。其为吾各赋一物，然后乃坐。’俨乃赋犬曰：‘守则有威，出则有获。韩卢、宋鹊，书名竹帛。’纯赋席曰：‘席以冬设，簟为夏施。揖让而坐，君子攸宜。’异赋弩曰：‘南岳之干，钟山之铜。应机命中，获隼高墉。’三人各随其目所见而赋之，皆成而后坐：据大欢悦。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《吴书》曰：“异又随诸葛恪围新城，城既不拔；异等皆言宜速还豫章，袭石头城，不过数日可拔。恪以书晓异，异投书于地曰：‘不用我计，而用（侯）〔傒〕子言！’恪大怒，立夺其兵。遂废还建业。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《吴书》曰：“綝邀异相见，将往，（恐）陆抗止之。异曰：‘子通，家人耳：当何所疑乎！’遂往。綝使力人于坐上取之。异曰：‘我吴国忠臣，有何罪乎？’乃拉杀之。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v56-c15">
+<div class="chunk-head"><a class="chunk-vol" href="#v56-c01" onclick="go('v56-c01');return false;">第56卷 · 吴书11 朱治朱然吕范朱桓传第11</a><span class="chunk-prog">15 / 15</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：朱治、吕范，以旧臣任用；朱然、朱桓，以勇烈著闻；吕据、朱异、施绩，咸有将领之才，克绍堂构<span class="zs-no">〔1〕</span>。若范、桓之越隘<span class="zs-no">〔2〕</span>，得以吉终；至于据、异无此之尤而反罹殃者<span class="zs-no">〔3〕</span>，所遇之时殊也<span class="zs-no">〔4〕</span>！</p>
+<p class="fy-inline">评论说：朱治、吕范，作为孙氏的老部下而受到信任重用；朱然、朱桓，以勇敢刚烈而著名；吕据、朱异、施绩，都有胜任将领的才干，能够继承前辈的事业。像吕范、朱桓那样在生活享受上超越本分，不喜欢别人胜过自己，却能得到善终；至于吕据、朱异没有这样的过失反而遭到祸殃的原因，是当时所处的政治局势不同啊！</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">克：能够；绍：继承；堂构：堂屋的构架</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">越：超越（本分）。指吕范的生活享受超越本分；隘：狭隘</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">无此之尤：没有这样的过失。罹（lí）：遭受。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">殊：不同。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v56';
+var NC = 15;
+var CUR = "home";
+var PREV_HREF = "v55.html";
+var NEXT_HREF = "v57.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

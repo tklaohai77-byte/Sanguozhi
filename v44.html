@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第44卷 蒋琬费祎姜维传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第44卷《蒋琬费祎姜维传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：蒋琬字公琰，零陵湘乡人也。弱冠与外弟泉陵刘敏，俱知名。琬以州书佐随先主入蜀，除广都长。">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v44.html">
+<meta property="og:title" content="《三国志》第44卷 蒋琬费祎姜维传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第44卷《蒋琬费祎姜维传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：蒋琬字公琰，零陵湘乡人也。弱冠与外弟泉陵刘敏，俱知名。琬以州书佐随先主入蜀，除广都长。">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">44卷 · 1/12</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html">第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html" selected>第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v44-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">1 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">蒋琬字公琰，零陵湘乡人也<span class="zs-no">〔1〕</span>。弱冠与外弟泉陵刘敏<span class="zs-no">〔2〕</span>，俱知名。琬以州书佐随先主入蜀，除广都长。</p>
+<p class="fy-inline">蒋琬，字公琰，零陵郡湘乡县人。二十岁左右与表弟泉陵县人刘敏都已著名。蒋琬以荆州政府书佐的身份随先主刘备到益州，担任广都县长。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">湘乡：县名。县治在今湖南湘乡市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">泉陵：县名。县治在今湖南永州市零陵区。</span></p>
+<p class="yw">先主尝因游观，奄至广都<span class="zs-no">〔3〕</span>。见琬众事不理，时又沉醉；先主大怒，将加罪戮。军师将军诸葛亮请曰：“蒋琬，社稷之器<span class="zs-no">〔4〕</span>；非百里之才也<span class="zs-no">〔5〕</span>！其为政以安民为本，不以修饰为先；愿主公重加察之！”先主雅敬亮，乃不加罪，仓猝但免官而已。</p>
+<p class="fy-inline">先主有一次借出外游览的机会突然来到广都县视察，看到蒋琬各项事情都没有处理好，当时又还酒醉醺醺，不禁勃然大怒，要把他治罪处死。军师诸葛亮求情说：“蒋琬，是在中央朝廷担任辅佐的人才，不是在地方当县官的材料啊。他为政以安民为本，不注意表面上的装饰，希望主公再加以考察。”先主素来敬重诸葛亮，所以没有治蒋琬的罪，仓促之中只把他的职务撤了。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">奄：突然。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">社稷之器：指辅佐朝廷的人才。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">百里：指一县的辖境。</span></p>
+<p class="yw">琬见推之后<span class="zs-no">〔6〕</span>，夜梦有一牛头在门前，流血滂沱<span class="zs-no">〔7〕</span>，意甚恶之。呼问占梦赵直<span class="zs-no">〔8〕</span>，直曰：“夫见血者，事分明也；牛角及鼻，‘公’字之象：君位必当至公，大吉之征也。”顷之，为什邡令。</p>
+<p class="fy-inline">蒋琬受到追究之后，晚上梦见门口有一只牛头，还流下一大摊血。醒来后心中很忌讳，就把善于根据梦中情景占卜吉凶的赵直叫来询问，赵直说：“见到血，预示您的事情已经弄清楚了；牛的弯角挨近鼻子，是一个‘公’字的形状：说明今后您的官位要到达三公一级，这是大吉大利的征兆。”没多久，他被任命为什邡县令。先主为汉中王，蒋琬入朝任尚书郎。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">见推：受到追究。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">滂沱：液体流得很多。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">占梦：根据梦中情景占卜吉凶。这里指占梦者。</span></p>
+<p class="yw">先主为汉中王，琬入为尚书郎。</p>
+<p class="fy-inline">蒋琬受到追究之后，晚上梦见门口有一只牛头，还流下一大摊血。醒来后心中很忌讳，就把善于根据梦中情景占卜吉凶的赵直叫来询问，赵直说：“见到血，预示您的事情已经弄清楚了；牛的弯角挨近鼻子，是一个‘公’字的形状：说明今后您的官位要到达三公一级，这是大吉大利的征兆。”没多久，他被任命为什邡县令。先主为汉中王，蒋琬入朝任尚书郎。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">2 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">建兴元年，丞相亮开府，辟琬为东曹掾。举茂才<span class="zs-no">〔1〕</span>，琬固让刘邕、阴化、庞延、廖淳。亮教答曰：“思惟背亲舍德<span class="zs-no">〔2〕</span>，以腆百姓<span class="zs-no">〔3〕</span>；众人既不隐于心<span class="zs-no">〔4〕</span>，实又使远近不解其义；是以君宜显其功举<span class="zs-no">〔5〕</span>，以明此选之清重也<span class="zs-no">〔6〕</span>。”迁为参军。</p>
+<p class="fy-inline">后主建兴元年（公元223），丞相诸葛亮建立自己的办公府署，聘蒋琬为东曹掾。后来诸葛亮以兼任益州牧的身份举荐蒋琬为茂才，蒋琬坚持要让给刘邕、阴化、庞延、廖淳，诸葛亮向他下达指示说：“我本来也想不推举和我关系亲近但是有德的您，以消除闲话，但是这样一来其他被推举者心里恐怕不会安稳，又确实会使远近的人不明白我为什么要这么做，所以您应当接受因功绩而受到的推举，以表明这种人才举荐科目的清高重要。”于是提升蒋琬为丞相府参军。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">茂才：人才选拔的科目之一。西汉叫秀才。东汉避光武帝刘秀名讳，改称茂才。由州长官推举本州人士担任。通常每州每年只推选一人。由于一州的地域范围很大，推举的人数又仅有一人，因此得以被举为茂才，在当时是很高的荣誉。蒋琬的茂才是由兼任益州牧的诸葛亮推举。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">思惟：考虑到；背亲舍德：背离亲近的，舍弃有德的</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">腆百姓：消除人们的闲话。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">众人：指蒋琬推荐的刘邕等人；不隐其心：（他们）不会安心</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">功举：因功绩而受到的推举。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">清重：清高而重要。</span></p>
+<p class="yw">五年<span class="zs-no">〔7〕</span>，亮住汉中，琬与长史张裔统留府事。</p>
+<p class="fy-inline">建兴五年（公元 227），诸葛亮进驻汉中，蒋琬与长史张裔统管丞相留守府的公务。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">五年：建兴五年（公元 227）。</span></p>
+<p class="yw">八年<span class="zs-no">〔8〕</span>，代裔为长史，加抚军将军<span class="zs-no">〔9〕</span>。亮数外出，琬常足食足兵，以相供给。亮每言：“公琰托志忠雅，当与吾共赞王业者也<span class="zs-no">〔10〕</span>。”密表后主曰：“臣若不幸，后事宜以付琬。”</p>
+<p class="fy-inline">建兴八年（公元 230），他取代张裔任长史，加任抚军将军。诸葛亮多次出兵北伐，蒋琬一直供给前方充足的粮食和兵员。诸葛亮每次都称赞他说：“公琰志向忠正，是和我共同辅助王朝大业的人。”又秘密上表给后主说：“为臣若有不幸，后事最好交付蒋琬接替。”</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">八年：建兴八年（公元 230）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">抚军将军：官名。负责军需物资和后备兵员的征调供给。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">赞：辅助。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">3 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">亮卒，以琬为尚书令。俄而加行都护<span class="zs-no">〔1〕</span>，假节，领益州刺史。迁大将军，录尚书事<span class="zs-no">〔2〕</span>，封安阳亭侯。时新丧元帅，远近危悚<span class="zs-no">〔3〕</span>。琬出类拔萃，处群僚之右；既无戚容<span class="zs-no">〔4〕</span>，又无喜色，神守举止<span class="zs-no">〔5〕</span>，有如平日：由是众望渐服。</p>
+<p class="fy-inline">诸葛亮去世，蒋琬任尚书令。不久加任代理中都护，授予节杖，兼益州刺史。接着升任大将军，总管尚书台公务，封安阳侯。当时蜀国刚刚丧失统帅，远近人民都由于面临危险局势而恐惧。蒋琬受到提拔，处于群僚之上；既不忧伤，也不喜悦，神态举止，和平时完全一样：因此众人逐渐服了他。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">行都护：官名。代理中都护职务。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">录尚书事：一种表示处理朝廷政事权力的名号。录的意思是总管。凡享有这一名号的大臣，有权过问尚书台的一切公务，成为朝廷的首席执政官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">危悚：由于面临危险局势而恐惧。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">戚容：悲伤的面容。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">神守：神态。</span></p>
+<p class="yw">延熙元年，诏琬曰：“寇难未弭，曹叡骄凶；辽东三郡苦其暴虐<span class="zs-no">〔6〕</span>，遂相纠结，与之离隔。叡大兴众役，还相攻伐。曩秦之亡<span class="zs-no">〔7〕</span>，胜、广首难<span class="zs-no">〔8〕</span>；今有此变，斯乃天时。君其治严<span class="zs-no">〔9〕</span>，总帅诸军，屯住汉中；须吴举动<span class="zs-no">〔10〕</span>，东西掎角<span class="zs-no">〔11〕</span>，以乘其衅。”又命琬开府。</p>
+<p class="fy-inline">延熙元年（公元238），后主下诏给蒋琬说：“叛贼造成的祸乱还没有消除，曹骄横凶恶；辽东三郡人民对他的暴虐难以忍受，于是相互联合，一起背离了他。而曹叡大规模动员军队，前往进攻。从前秦朝灭亡，就是陈胜、吴广首先发难；而今辽东出现的这场变乱，正是上天要灭亡曹叡的时候。您要下令全军收拾好行装，统率各军进驻汉中；等待吴国的军队出动，然后东西相互呼应，乘曹叡内部出现问题时发起进攻。”又命令蒋琬建立自己的办公机构。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">辽东三郡：指辽东、玄菟、乐浪三郡。这三郡当时被公孙渊占据。不过，东汉末公孙氏又分乐浪郡南部立带方郡，所以公孙渊实际占据四郡。但蜀汉对此变化不了解，仍然说成三郡。详见本书卷八《公孙渊传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">曩：从前。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">胜：即陈胜；广：即吴广（？—前 208）；首难：首先发难</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">治严：（下令全军）收拾行装。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">须：等待。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">掎角：夹击。</span></p>
+<p class="yw">明年，就加为大司马<span class="zs-no">〔12〕</span>。</p>
+<p class="fy-inline">第二年派使者到汉中去举行任命仪式，提升蒋琬为大司马。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">大司马：官名。蜀汉全国军队最高统帅。</span></p>
+<p class="yw">东曹掾杨戏，素性简略<span class="zs-no">〔13〕</span>；琬与言论，时不应答<span class="zs-no">〔14〕</span>。或欲构戏于琬曰<span class="zs-no">〔15〕</span>：“公与戏语而不见应，戏之慢上<span class="zs-no">〔16〕</span>，不亦甚乎！”琬曰：“人心不同，各如其面；面从后言<span class="zs-no">〔17〕</span>，古人之所诫也。戏欲赞吾是耶，则非其本心；欲反吾言<span class="zs-no">〔18〕</span>，则显吾之非；是以默然，是戏之快也<span class="zs-no">〔19〕</span>。”又督农杨敏曾毁琬曰：“作事愦愦<span class="zs-no">〔20〕</span>，诚非及前人<span class="zs-no">〔21〕</span>。”或以白琬，主者请推治敏<span class="zs-no">〔22〕</span>。琬曰：“吾实不如前人，无可推也！”主者重据<span class="zs-no">〔23〕</span>，听不推则乞问其“愦愦”之状。琬曰：“苟其不如，则事不当理<span class="zs-no">〔24〕</span>；事不当理，则愦愦矣！复何问邪？”后敏坐事系狱，众人犹惧其必死；琬心无適莫<span class="zs-no">〔25〕</span>，得免重罪。其好恶存道<span class="zs-no">〔26〕</span>，皆此类也。</p>
+<p class="fy-inline">大司马府的东曹掾杨戏，生性高傲而不讲求礼节；蒋琬平常和他谈论事情，他有时会不回答。有人想在蒋琬面前设计陷害杨戏，说：“大司马您同杨戏谈话而得不到他的回答，杨戏对上司的怠慢，不是太过分了吗！”蒋琬却说：“各人心里的想法不一定相同，就像人的面貌不会相同一样；当面赞同背后又有不同意见，这是古人告诫不能做的事。杨戏要赞同我说我的意见对，则不是他的本心；要想反驳我，又会显示出我的不对；所以他才默然无语，这正是杨戏为人爽快之处啊。”担任督农的杨敏曾诋毁蒋琬说：“做事糊涂，真是不及前任执政大臣。”有人把这话报告蒋琬，督察百官的主办官员请求对杨敏追究治罪。蒋琬说：“我确实也不如前任执政大臣诸葛丞相，没有什么可追究的。”主办官员再次坚持要求，即使不追究治罪，也要查问杨敏有什么证据说蒋琬做事糊涂。蒋琬说：“如果不如前任执政大臣，那么事情就不能恰当治理；事情不能恰当治理，就是糊涂了嘛！还查问什么呢？”后来杨敏因事被关进监狱，众人都担心他必死无疑；然而蒋琬处理这件事时却毫无偏见，杨敏得以免判重刑。蒋琬的喜好和厌恶都不偏离正道，就像这类事例一样。</p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">简略：高傲而不讲求礼节。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">时：有时。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">构：设计陷害。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">慢：怠慢。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">面从后言：当面赞同背后又有非议。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">反：反对。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">快：爽快。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">愦愦：糊涂。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">非及：不及；前人：这里指蜀汉从前的执政官诸葛亮</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">主者：有关公务的主办官员。这里指督察百官的主办官员。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">重据：再次坚持。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">当理：恰当治理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">適莫：偏见。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">好恶：喜好和厌恶；存道：不偏离正道</span></p>
+<p class="yw">琬以为，昔诸葛亮数窥秦川<span class="zs-no">〔27〕</span>，道险运艰，竟不能克；不若乘水东下。乃多作舟船，欲由汉沔袭魏兴、上庸<span class="zs-no">〔28〕</span>。会旧疾连动<span class="zs-no">〔29〕</span>，未时得行<span class="zs-no">〔30〕</span>。而众论咸谓：“如不克捷，还路甚难，非长策也<span class="zs-no">〔31〕</span>。”于是遣尚书令费祎、中监军姜维等喻指<span class="zs-no">〔32〕</span>。</p>
+<p class="fy-inline">蒋琬认为过去诸葛亮多次进攻秦岭以北的平原地带，由于道路险陡运输艰难，始终未能成功；不如顺汉水东下进攻，于是下令大量制造舟船，想由汉水袭击魏国的魏兴、上庸二郡。碰巧他这时旧病接连发作，没能及时出动。而众人都认为：“这样办一旦不能得手，循原路退回非常困难，不是好计策。”于是后主派尚书令费祎、中监军姜维等前去说明意思。</p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">窥：指进攻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">魏兴：郡名。治所在今陕西安康市西北；上庸：郡名</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">动：发作。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">时：及时。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">长策：好计策。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">喻指：说明意思。</span></p>
+<p class="yw">琬承命上疏曰：“芟秽弭难<span class="zs-no">〔33〕</span>，臣职是掌。自臣奉辞汉中<span class="zs-no">〔34〕</span>，已经六年。臣既暗弱，加婴疾疢；规方无成<span class="zs-no">〔35〕</span>，夙夜忧惨。今魏跨带九州<span class="zs-no">〔36〕</span>，根蒂滋蔓，平除未易。若东西并力，首尾掎角；虽未能速得如志，且当分裂蚕食，先摧其支党<span class="zs-no">〔37〕</span>。然吴期二三<span class="zs-no">〔38〕</span>，连不克果<span class="zs-no">〔39〕</span>；俯仰惟艰，实忘寝食。辄与费祎等议<span class="zs-no">〔40〕</span>：以凉州胡塞之要<span class="zs-no">〔41〕</span>，进退有资<span class="zs-no">〔42〕</span>，贼之所惜；且羌胡乃心，思汉如渴；又昔偏军入羌，郭淮破走；算其长短，以为事首<span class="zs-no">〔43〕</span>。宜以姜维为凉州刺史。若维征行，衔持河右<span class="zs-no">〔44〕</span>；臣当帅军，为维镇继。今涪水陆四通，惟急是应；若东、北有虞<span class="zs-no">〔45〕</span>，赴之不难。”</p>
+<p class="fy-inline">蒋琬接受后主的旨意并上了一道奏疏说：“清除污秽平定祸难，是为臣的职责。自为臣奉命进驻汉中，已经有六年，由于我愚昧无能，加上身患疾病；导致规划没有取得成效，日夜忧虑不已。而今魏贼占据了全国十三州当中的九州，势力发展，要彻底清除很不容易。如果我们与吴国东西合力，首尾夹击；虽然未必能很快实现吞灭魏贼的志愿，总还能分割和蚕食其土地，先摧垮其分支部分。然而与吴国约定共同向曹魏发起进攻已有两三次，接连都未能实现预定计划；抬头和低头都在考虑如何克服艰难局面，确实是废寝忘食。为臣自作主张与费祎等人商议，认为凉州少数族聚居的边区军事要点，是进退都有凭借，敌人很看重的地方；而且当地的羌族人心中非常之思念汉朝，如同口渴想喝水一般；从前我们的非主力部队就曾进入羌人居住区，打败敌将郭淮，我们反复比较计算，认为首要的事情还是在进取凉州。应当任命姜维为凉州刺史。如果姜维出征，占领河西地区；为臣应当率领军队，做他的后援。而今涪县水陆交通连接四方，能够应付前方的紧急情况；如果东、北两面有外来威胁，赶往援救不困难。”</p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">芟秽：清除污秽；弭难：平定祸难</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">奉辞：奉命。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">规方：规划。</span></p>
+<p class="zs-inline"><span class="zs-no">〔36〕</span><span class="zs-body">九州：指东汉全国十三州部中的司隶校尉部、兖州、豫州、青州、徐州、冀州、幽州、并州和凉州。</span></p>
+<p class="zs-inline"><span class="zs-no">〔37〕</span><span class="zs-body">支党：分支部分。指曹魏的边远地区。</span></p>
+<p class="zs-inline"><span class="zs-no">〔38〕</span><span class="zs-body">吴期二三：与孙吴约定（共同向曹魏发动进攻）已有两三次。</span></p>
+<p class="zs-inline"><span class="zs-no">〔39〕</span><span class="zs-body">克果：能够实现预定计划。</span></p>
+<p class="zs-inline"><span class="zs-no">〔40〕</span><span class="zs-body">辄：擅自。</span></p>
+<p class="zs-inline"><span class="zs-no">〔41〕</span><span class="zs-body">胡塞：少数族聚居的边区。</span></p>
+<p class="zs-inline"><span class="zs-no">〔42〕</span><span class="zs-body">资：凭借。</span></p>
+<p class="zs-inline"><span class="zs-no">〔43〕</span><span class="zs-body">事首：首要的事情。</span></p>
+<p class="zs-inline"><span class="zs-no">〔44〕</span><span class="zs-body">衔持：咬住和抓住。比喻占据；河右：地区名</span></p>
+<p class="zs-inline"><span class="zs-no">〔45〕</span><span class="zs-body">有虞：有忧虑。指出现外来威胁。</span></p>
+<p class="yw">由是琬遂还住涪。疾转增剧<span class="zs-no">〔46〕</span>，至九年卒<span class="zs-no">〔47〕</span>。谥曰恭。</p>
+<p class="fy-inline">于是他退回来驻扎在涪县。他的疾病日益严重，到延熙九年（公元246）去世。谥为恭侯。</p>
+<p class="zs-inline"><span class="zs-no">〔46〕</span><span class="zs-body">剧：严重。</span></p>
+<p class="zs-inline"><span class="zs-no">〔47〕</span><span class="zs-body">九年：延熙九年（公元246）。蒋琬的祠墓，在今四川绵阳市西郊的西山，现今尚有古雅幽静的祠墓、园林完好留存，是蜀地三国名胜古迹之一。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">4 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">子斌嗣。为绥武将军、汉城护军<span class="zs-no">〔1〕</span>。魏大将（军）钟会至汉城，与斌书曰：“巴蜀贤智文武之士，多矣！至于足下、诸葛思远<span class="zs-no">〔2〕</span>，譬诸草木，吾气类也<span class="zs-no">〔3〕</span>。桑梓之敬<span class="zs-no">〔4〕</span>，古今所敦<span class="zs-no">〔5〕</span>。西到，欲奉瞻尊大君公侯墓<span class="zs-no">〔6〕</span>；当洒扫坟茔，奉祠致敬：愿告其所在。”</p>
+<p class="fy-inline">他的儿子蒋斌继承了爵位，担任绥武将军、汉城护军。魏军大将钟会率军伐蜀时到达汉城，给蒋斌写信说：“巴蜀之地，具有贤德智慧的文武人才，真多啊！至于您和诸葛思远，用草木来作比喻，正是我的植物同类呀。外来者要对当地名流和前辈致意，是古往今来重视的事。到达西面的贵地之后，想前往瞻仰令尊大司马的坟墓；并且要清扫墓地，祭奠致敬：希望您能告诉我坟墓在什么地方。”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">绥武将军：官名。领兵征伐；汉城护军：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">诸葛思远：即诸葛亮的儿子诸葛瞻，瞻字思远。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">气类：同类。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">桑梓之敬：外来者对当地名流和前辈的敬意。《诗经·小弁》有“维桑与梓，必恭敬止”的诗句，桑和梓是先人栽在住宅旁边的树木，后来即以桑梓指代故乡或当地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">敦：重视。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">尊大君：对对方父亲的尊称。</span></p>
+<p class="yw">斌答书曰：“知惟臭味意眷之隆<span class="zs-no">〔7〕</span>，雅托通流<span class="zs-no">〔8〕</span>，未拒来谓也<span class="zs-no">〔9〕</span>。亡考昔遭疾疢，亡于涪县；卜云其吉<span class="zs-no">〔10〕</span>，遂安厝之<span class="zs-no">〔11〕</span>。知君西迈<span class="zs-no">〔12〕</span>，乃欲屈驾修敬坟墓；视予犹父<span class="zs-no">〔13〕</span>，颜子之仁也。闻命感怆<span class="zs-no">〔14〕</span>，以增情思。”</p>
+<p class="fy-inline">蒋斌写信回答说：“知道您想表示同类之间关心眷顾的厚意，承蒙您的雅意将我视为同流，所以我不能拒绝您来信的要求。先父过去染上疾病，不幸在涪县去世；占卜的人说这个地方吉利，所以就安葬在那里。知道您西行来此，竟然想要屈驾前往坟墓致敬；把孔子当作父亲，这是颜渊才有的仁德。得知您的意思既感动又伤心，增加了我思念亡父的情怀。”</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">知惟：知道您想（表示）；臭味：气味</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">雅托通流：承蒙您的雅意将我视为同流。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">未拒来谓：不能拒绝您来信的要求。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">卜云其吉：占卜的人说这个地方吉利。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">安厝：安葬。蒋琬墓现今尚存，在今四川绵阳市西郊西山公园内。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">西迈：西行。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">视予犹父：《论语·先进》记孔子说：“回也视予犹父也。”意思是颜回把自己当作父亲来对待。蒋斌用这个典故称赞钟会像颜回一样懂得尊敬前辈。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">闻命：得知您的意思。</span></p>
+<p class="yw">会得斌书报，嘉叹意义；及至涪，如其书云。后主既降邓艾；斌诣会于涪，待以交友之礼。随会至成都，为乱兵所杀。</p>
+<p class="fy-inline">钟会得到回信，对信中的含意很是嘉许赞叹；到达涪县后，果然如同信中所说去蒋琬墓前做了祭扫。后主投降邓艾之后；蒋斌到涪县去见钟会，钟会用朋友的礼节接待他。他随钟会到达成都，被乱兵杀死。</p>
+<p class="yw">斌弟显，为太子仆。会亦爱其才学，与斌同时死。</p>
+<p class="fy-inline">蒋斌的弟弟蒋显，任太子仆。钟会也很喜欢他的文学。与蒋斌同时去世。</p>
+<p class="yw">刘敏，左护军<span class="zs-no">〔15〕</span>，扬威将军。与镇北大将军王平俱镇汉中。魏遣大将军曹爽袭蜀时，议者或谓“但可守城，不出拒敌，必自引退”。敏以为：“男女布野，农谷栖亩<span class="zs-no">〔16〕</span>；若听敌入，则大事去矣。”遂帅所领与平据兴势；多张旗帜，弥亘百余里<span class="zs-no">〔17〕</span>。会大将军费祎从成都至，魏军即退。敏以功封云亭侯。</p>
+<p class="fy-inline">刘敏，担任左护军、扬武将军，与镇北大将军王平一起镇守汉中。魏朝派大将军曹爽进攻蜀国时，议论的人有的认为“只消据守城堡，不必出外抵御，敌人必定会自行撤退”。刘敏却以为：“我方的百姓男男女女都分布在田野上，地里还有成熟的粮食；如果听任敌人长驱直入，那就大事去矣！”于是他带领本部人马与王平占领兴势；到处树立军旗，遍布绵延一百多里。这时大将军费祎从成都赶来援救，魏军撤退。刘敏因功封云亭侯。</p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">左护军：官名。蜀军的协调人之一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">栖亩：留在田野上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">弥亘：遍布和绵延。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">5 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">费祎字文伟，江夏鄳人也<span class="zs-no">〔1〕</span>。<span class="pz-no">〔一〕</span>少孤，依族父伯仁。伯仁姑，益州牧刘璋之母也。璋遣使迎仁，仁将祎游学入蜀。</p>
+<p class="fy-inline">费祎，字文伟，江夏郡鄳县人。年轻时他死去父亲，依靠一位比自己高一辈的本家费伯仁生活。费伯仁的姑姑，就是益州牧刘璋的母亲。刘璋派使者去接费伯仁，伯仁带着费祎前往益州游学。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">鄳：县名。县治在今河南罗山县西。</span></p>
+<p class="yw">会先主定蜀，祎遂留益土。与汝南许叔龙、南郡董允齐名；时许靖丧子，允与祎欲共会其葬所。允白父和请车<span class="zs-no">〔2〕</span>，和遣开后鹿车给之<span class="zs-no">〔3〕</span>。允有难载之色<span class="zs-no">〔4〕</span>，祎便从前先上。及至丧所，诸葛亮及诸贵人悉集，车乘甚鲜<span class="zs-no">〔5〕</span>；允犹神色未泰<span class="zs-no">〔6〕</span>，而祎晏然自若。持车人还，和问之；知其如此，乃谓允曰：“吾常疑汝于文伟优劣未别也；而今而后，吾意了矣<span class="zs-no">〔7〕</span>。”先主立太子，祎与允俱为舍人。迁庶子。</p>
+<p class="fy-inline">碰上先主刘备平定益州，费祎就留了下来，当时他和客居益州的汝南郡人许叔龙、南郡人董允齐名；许靖的儿子去世，董允和费祎想一同去墓地参加葬礼。董允报告父亲董和请求派车，董和给他派了一辆车身后面敞开的鹿车。董允一看是这种平民百姓常坐的车，脸上就露出不愿乘坐的神色，而费祎却立即进前先上车。到达墓地时，诸葛亮和其他蜀国权贵都到了，他们的车辆都很华丽；董允的神色还不安然，而费祎却举止如常。驾车的人回来后，董和问他；得知这些情况，就对董允说：“我过去总是觉得难以区别您和文伟的优劣高下；从今以后，我心里就清楚了。”先主立太子后，费祎与董允都担任太子舍人。又升任太子中庶子。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">请车：请求派车。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">开后鹿车：车身后面敞开的鹿车。鹿车是一种用人力推拉的独轮小车，流行于汉代，通常是平民百姓使用。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">难载：不愿意乘坐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">鲜：华丽。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">未泰：不安。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">了：清楚。</span></p>
+<p class="yw">后主践位，为黄门侍郎。丞相亮南征还，群僚于数十里逢迎<span class="zs-no">〔8〕</span>，年位多在祎右；而亮特命祎同载，由是众人莫不易观。</p>
+<p class="fy-inline">后主继承帝位，费祎任黄门侍郎。丞相诸葛亮到南中出征回来，百官出城几十里迎接，他们的年资官位大多都在费祎之上；可是诸葛亮却特地要费祎与自己同乘一辆车，从此众人无不对他另眼相看。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">逢迎：迎接。</span></p>
+<p class="yw">亮以初从南归，以祎为昭信校尉使吴<span class="zs-no">〔9〕</span>。孙权性既滑稽<span class="zs-no">〔10〕</span>，嘲啁无方<span class="zs-no">〔11〕</span>；诸葛恪、羊衜等才博果辩<span class="zs-no">〔12〕</span>，论难锋至<span class="zs-no">〔13〕</span>；祎辞顺义笃，据理以答，终不能屈。<span class="pz-no">〔二〕</span>权甚器之，谓祎曰：“君天下淑德，必当股肱蜀朝<span class="zs-no">〔14〕</span>，恐不能数来也<span class="zs-no">〔15〕</span>。”<span class="pz-no">〔三〕</span>还，迁为侍中。亮北住汉中，请祎为参军。以奉使称旨<span class="zs-no">〔16〕</span>，频繁至吴。</p>
+<p class="fy-inline">诸葛亮因为自己刚从南中回还，所以派费祎以昭信校尉的身份出使吴国说明情况。吴主孙权素来能言善辩，开起玩笑来变化多端；而吴国官员诸葛恪、羊衜等人博学多才，也擅长口辩，他们见到费祎时都不断和他进行争论和反驳，言辞就像刀锋一样逼人；费祎的应对措辞和顺但又含义深刻，都依据正正当当的道理作答，吴国君臣始终不能使他理屈词穷。孙权很是器重他，对他说：“您是天下具有美德的人才，今后一定会作为大臣辅佐蜀国朝廷，恐怕不能常来这里啊。”费祎回国后，升任侍中。诸葛亮北上进驻汉中，请求让费祎充当自己府内的参军。因为在使命的完成上很符合后主和诸葛亮的心意，所以频繁派他出使吴国。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">昭信校尉：官名。充当外交使者。现今四川成都市西南的南门大桥，相传是当时费祎出使孙吴登舟东行万里之前，诸葛亮为他送行之处，因此古称万里桥。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">滑稽：能言善辩。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">嘲啁无方：开起玩笑来变化多端。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">羊衜：事见本书卷五十九《孙和传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">论难：争论和反驳；锋至：像刀锋一样逼人</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">股肱：（作为大臣）辅佐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">数：频繁。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">称旨：合意。</span></p>
+<p class="yw">建兴八年，转为中护军，后又为司马。值军师魏延，与长史杨仪相憎恶，每至，并坐争论；延或举刃拟仪<span class="zs-no">〔17〕</span>，仪泣涕横集。祎常入其坐间，谏喻分别<span class="zs-no">〔18〕</span>。终亮之世，各尽延、仪之用者，祎匡救之力也。</p>
+<p class="fy-inline">建兴八年（公元 230），他转任中护军，后又任丞相府司马。碰上这时军师魏延，与丞相府长史杨仪相互憎恶，每一次见面同坐都要发生争执；有时魏延还举剑向杨仪比划，杨仪则泪流满面。这时费祎常常插到两人座位中间，边劝解边把两人分开。诸葛亮去世之前，能够使魏延、杨仪各尽他们所能的原因，就在于费祎的大力匡正和补救。</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">拟：拿着兵器对人比划。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">谏喻：劝解；分别：分开</span></p>
+<p class="yw">亮卒，祎为后军师。顷之，代蒋琬为尚书令。<span class="pz-no">〔四〕</span>琬自汉中还涪，祎迁大将军，录尚书事。</p>
+<p class="fy-inline">诸葛亮去世，费祎任后军师。不久，代替蒋琬为尚书令。蒋琬自汉中回涪县镇守，费祎升任大将军，总管尚书台公务。</p>
+<p class="yw">延熙七年，魏军次于兴势<span class="zs-no">〔19〕</span>；假祎节，率众往御之。光禄大夫来敏至祎许别<span class="zs-no">〔20〕</span>，求共围棋。于时羽檄交驰，人马擐甲<span class="zs-no">〔21〕</span>，严驾已讫<span class="zs-no">〔22〕</span>；祎与敏留意对戏，色无厌倦。敏曰：“向聊观试君耳<span class="zs-no">〔23〕</span>！君信可人<span class="zs-no">〔24〕</span>，必能办贼者也<span class="zs-no">〔25〕</span>。”祎至，敌遂退，封成乡侯。<span class="pz-no">〔五〕</span>琬固让州职，祎复领益州刺史。祎当国功名，略与琬比。<span class="pz-no">〔六〕</span></p>
+<p class="fy-inline">延熙七年（公元 244），魏军进攻汉中到达兴势山停留；朝廷授予费祎节杖，命令他率领大军前往抵御。光禄大夫来敏到费祎的住处送别，请求和他下围棋。当时贴着鸟羽毛的紧急军事文书不断送到或送出，人马都披上甲胄，费祎的侍从也备好车马准备出发；而费祎却与来敏专心对局，并无厌倦的表示。来敏这时说：“刚才只不过是试一试您的反应罢了！您确实是主帅的恰当人选，必定能解决敌人入侵的威胁。”费祎到达汉中，敌军果然撤退，他因功封成乡侯。蒋琬坚决把兼任的益州刺史职务让给费祎，费祎又兼任益州刺史。他承当辅佐国政的重任后建立的功劳和享有的名声，大体上可与蒋琬相比。</p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">次：中途停驻。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">祎许：费祎所在的处所。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">擐：穿上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">严驾：（费祎的侍从）准备好车马等待出发。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">向：刚才。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">信：确实（是）；可人：适当的人选</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">办：处置，解决。</span></p>
+<p class="yw">十一年<span class="zs-no">〔26〕</span>，出住汉中。自琬及祎，虽自身在外；庆赏刑威，皆遥先咨断<span class="zs-no">〔27〕</span>，然后乃行：其推任如此。后十四年夏<span class="zs-no">〔28〕</span>，还成都。成都望气者云<span class="zs-no">〔29〕</span>，都邑无宰相位；故冬复北屯汉寿。</p>
+<p class="fy-inline">延熙十一年（公元 248），他北上进驻汉中。从蒋琬到费祎，他们虽然在外；而后主在成都处理赏罚大事时，都要先派使者到远方去向他们咨询由他们下决断，然后才付诸实行：对他们给予了如此的信任。延熙十四年（公元 251）夏天，费祎回到成都。由于观望云气以测吉凶的人说京城成都没有执政大臣的位置，所以这年冬天费祎又北上驻扎在汉寿县。</p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">十一年：延熙十一年（公元 248）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">咨断：咨询和决定。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">十四年：延熙十四年（公元 251 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">望气者：观望天空中云气以占卜吉凶的人。</span></p>
+<p class="yw">延熙十五年，命祎开府。</p>
+<p class="fy-inline">延熙十五年（公元252），朝廷命令费祎建立自己的办公府署。</p>
+<p class="yw">十六年岁首大会<span class="zs-no">〔30〕</span>，魏降人郭修在坐。祎欢饮沉醉，为修手刃所害<span class="zs-no">〔31〕</span>。谥曰敬侯。</p>
+<p class="fy-inline">延熙十六年（公元 253）新年第一天他举行盛大聚会，魏国来的投降者郭修也在座。费祎开怀畅饮喝得酩酊大醉，被郭修趁机亲手刺杀死亡。朝廷谥他为敬侯。</p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">十六年：延熙十六年（公元 353）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">所害：费祎死于汉寿县，在今四川广元市昭化古镇。现今昭化镇尚有费祎墓遗存。</span></p>
+<p class="yw">子承嗣，为黄门侍郎。承弟恭，尚公主。<span class="pz-no">〔七〕</span>祎长女，配太子璿为妃。</p>
+<p class="fy-inline">儿子费承继承了他的爵位，任黄门侍郎。费承的弟弟费恭，娶蜀国刘氏皇族的公主为妻。费祎的大女儿嫁给太子刘璿为妃。</p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">鄳，音盲。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《祎别传》曰：“孙权每别酌好酒，以饮祎，视其已醉，然后问以国事；并论当世之务，辞难累至。祎辄辞以醉，退而撰次所问；事事条答，无所遗失。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《祎别传》曰：“权乃以手中常所执宝刀，赠之，祎答曰：‘臣以不才，何以堪明命？然刀所以讨不庭、禁暴乱者也；但愿大王勉建功业，同奖汉室；臣虽暗弱，终不负东顾！’”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《祎别传》曰：“于时军国多事，公务繁猥；祎识悟过人，每省读书记，举目暂视，已究其意旨；其速，数倍于人，终亦不忘。常以朝晡听事，其间接纳宾客，饮食嬉戏，加之博弈；每尽人之欢，事亦不废。董允代祎为尚书令，欲学祎之所行；旬日之中，事多愆滞。允乃叹曰：‘人才力相悬，若此甚远，此非吾之所及也！听事终日，犹有不暇尔。’”</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">殷基《通语》曰：“司马懿诛曹爽，祎设《甲乙论》平其是非。甲以为：‘曹爽兄弟，凡品庸人，苟以宗子枝属，得蒙顾命之任；而骄奢僭逸，交非其人，私树朋党，谋以乱国；懿奋诛讨，一朝殄尽：此所以称其任，副士民之望也。’乙以为：‘懿感曹仲付己不一，岂爽与相干？事势不专，以此阴成疵瑕；初无忠告侃尔之训，一朝屠戮，搀其不意：岂大人经国笃本之事乎？若爽信有谋主之心，大逆已构；而发兵之日，更以芳委爽兄弟；懿父子从后闭门举兵，蹙而向芳，必无悉宁：〔宁〕忠臣为君深虑之谓乎？以此推之，爽无大恶明矣！若懿以爽奢僭，废之、刑之可也；灭其尺口，被以不义；绝子丹血食，及何晏子魏之亲甥，亦与同戮：为僭滥不当矣。’”</span></p>
+<p class="pz-item"><span class="pz-no">〔六〕</span><span class="pz-body">《祎别传》曰：“祎雅性谦素，家不积财。儿子皆令布衣素食，出入不从车骑，无异凡人。”</span></p>
+<p class="pz-item"><span class="pz-no">〔七〕</span><span class="pz-body">《祎别传》曰：“恭为尚书郎，显名当世。早卒。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">6 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">姜维字伯约，天水冀人也。少孤，与母居。好郑氏学。<span class="pz-no">〔一〕</span>仕郡上计掾<span class="zs-no">〔1〕</span>；州（郡）〔辟〕为从事。以父冏昔为郡功曹，值羌戎叛乱，身卫郡将<span class="zs-no">〔2〕</span>，没于战场；赐维官中郎，参本郡军事。</p>
+<p class="fy-inline">姜维，字伯约，天水郡冀县人。从小他就死了父亲，与母亲居住。他喜好东汉儒学大师郑玄的学问。最初在本郡政府当上计掾，凉州政府聘他任从事。朝廷考虑到他的父亲姜冏过去担任本郡政府的功曹，碰上羌族人叛乱，姜冏为了保护郡太守，死在战场上；所以赐给姜维中郎的官位，让他当本郡政府的军事参谋。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">上计掾：官名。郡太守府下属。负责向中央政府定期报告人口、垦田等各项统计数字。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">郡将：指郡太守。</span></p>
+<p class="yw">建兴六年，丞相诸葛亮军向祁山。时天水太守适出案行<span class="zs-no">〔3〕</span>，维及功曹梁绪、主簿尹赏、主记梁虔等从行<span class="zs-no">〔4〕</span>。太守闻蜀军垂至，而诸县响应；疑维等皆有异心，于是夜亡保上邽<span class="zs-no">〔5〕</span>。维等觉太守去，追迟；至城门，城门已闭，不纳。维等相率还冀，冀亦不入维。维等乃俱诣诸葛亮。会马谡败于街亭，亮拔将西县千余家及维等还，故维遂与母相失。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">后主建兴六年（公元 228），丞相诸葛亮率大军进攻祁山。当时魏国的天水郡太守正好外出巡视，姜维与功曹梁绪、主簿尹赏、主记梁虔等都跟随着他。太守听说蜀国大军就要杀到，郡内各县纷纷响应；竟然怀疑姜维等人有投靠蜀军的心思，于是连夜逃到上邽县城去保护自己。姜维等人发觉太守跑了之后，前去追他已经迟了；赶到上邽城下，城门紧闭，太守拒不接纳他们。姜维等人只好一起回转天水郡的治所冀县，不料冀县也将他们拒之门外。姜维等人被迫都去见诸葛亮准备投降。碰上马谡在街亭大败，诸葛亮把西县的一千多户人家连同姜维等人带回汉中，所以姜维就和自己的母亲失散了。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">案行：巡视。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">主记：官名。郡太守府下属。主管文书起草。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">亡：逃亡。</span></p>
+<p class="yw">亮辟维为仓曹掾，加奉义将军<span class="zs-no">〔6〕</span>，封当阳亭侯，时年二十七。</p>
+<p class="fy-inline">诸葛亮聘姜维为丞相府的仓曹掾，加任奉义将军，封当阳亭侯，这年他二十七岁。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">奉义将军：官名。领兵征伐。</span></p>
+<p class="yw">亮与留府长史张裔、参军蒋琬书曰：“姜伯约忠勤时事，思虑精密；考其所有，永南、季常诸人不如也<span class="zs-no">〔7〕</span>；其人，凉州上士也！”又曰：“须先教中虎步兵五六千人<span class="zs-no">〔8〕</span>。姜伯约甚敏于军事，既有胆义，深解兵意。此人心存汉室，而才兼于人；毕教军事<span class="zs-no">〔9〕</span>，当遣诣宫，觐见主上。”<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">诸葛亮与成都丞相留守府的长史张裔、参军蒋琬写信说：“姜伯约办理政事忠诚勤勉，思虑周全精密；考察他所具有的才能，李永南、马季常诸人都比不上；这个人，是凉州的上等人才啊。”又说：“等他先教练统帅部直属精锐部队中的步兵五六千人。他擅长军事，具有胆量义气，很懂得用兵之道。此人心中思念汉朝，而才能强过别人一倍；在他完成军事教练任务后，应当派他前往成都，朝见陛下。”</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">永南：即李邵。邵字永南。事见本书卷四十五《杨戏传》；季常：即马良</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">中：中军。直属蜀军统帅部的精锐军队；虎步兵：蜀军中军的精锐步兵</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">毕教军事：完成军事教练任务。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《傅子》曰：“维为人，好立功名，阴养死士，不修布衣之业。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《魏略》曰：“天水太守马遵，将维及诸官属，随雍州刺史郭淮偶自西至洛门案行。会闻亮已到祁山，淮顾遵曰：‘是欲不善！’遂驱东，还上邽。遵念所治冀县界在西偏，又恐吏民乐乱，遂亦随淮去。时维谓遵曰：‘明府当还冀。’遵谓维等曰：‘卿诸人（回）〔叵〕复信，皆贼也！’各自行，维亦无如遵何；而家在冀，遂与郡吏上官子修等，还冀。冀中吏民见维等大喜，便推令见亮。二人不获已，乃共诣亮；亮见，大悦。未及遣迎冀中人，会亮前锋为张郃、费繇等所破，遂将维等却缩。维不得还，遂入蜀。诸军攻冀，皆得维母妻子；亦以维本无去意，故不没其家，但系保官以延之。”此语与本传不同。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">孙盛《杂记》曰：“初，姜维诣亮，与母相失；复得母书，令求当归。维曰：‘良田百顷，不在一亩；但有远志，不在当归也！’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">7 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">后迁中监军、征西将军。十二年<span class="zs-no">〔1〕</span>，亮卒，维还成都。为右监军，辅汉将军<span class="zs-no">〔2〕</span>，统诸军；进封平襄侯。</p>
+<p class="fy-inline">后来姜维升任中监军、征西将军。建兴十二年（公元 234），诸葛亮去世，姜维回到成都，任右监军、辅汉将军，统率下属各军；进封平襄侯。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">十二年：建兴十二年（公元 234）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">右监军：官名。监督蜀汉的部分军队。</span></p>
+<p class="yw">延熙元年，随大将军蒋琬住汉中。琬既迁大司马，以维为司马，数率偏军西入。六年<span class="zs-no">〔3〕</span>，迁镇西大将军，领凉州刺史。</p>
+<p class="fy-inline">延熙元年（公元 238），他随大将军蒋琬进驻汉中。蒋琬升任大司马，聘姜维为大司马府的司马，多次率领非主力部队向西攻入敌境。延熙六年（公元 243），姜维升为镇西大将军，兼凉州刺史。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">六年：延熙六年（公元 243）。</span></p>
+<p class="yw">十年<span class="zs-no">〔4〕</span>，迁卫将军；与大将军费祎共录尚书事。是岁，汶山平康夷反<span class="zs-no">〔5〕</span>，维率众讨定之。又出陇西、南安、金城界，与魏大将（军）郭淮、夏侯霸等战于洮西。胡王治无戴等举部落降，维将还安处之。</p>
+<p class="fy-inline">延熙十年（公元 247），他又升任卫将军，与大将军费祎共同总管尚书台事。这一年，汶山郡平康县的少数族反叛，姜维领兵去讨伐平定。他又北上进入魏国陇西、南安、金城三郡地界，与敌军大将郭淮、夏侯霸等在洮水西岸激战。凉州的少数族首领治无戴等带领部落百姓请求投降，姜维出兵把他们接来后妥善安置。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">十年：延熙十年（公元 247）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">平康：县名。属汶山郡。县治在今四川松潘县西。</span></p>
+<p class="yw">十二年<span class="zs-no">〔6〕</span>，假维节，复出西平，不克而还。</p>
+<p class="fy-inline">延熙十二年（公元 249），朝廷授予姜维节杖，他又出兵进攻西平，没能攻下而退回。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">十二年：延熙十二年（公元 249）。</span></p>
+<p class="yw">维自以练西方风俗<span class="zs-no">〔7〕</span>，兼负其才武；欲诱诸羌胡以为羽翼，谓自陇以西可断而有也<span class="zs-no">〔8〕</span>。每欲兴军大举，费祎常裁制不从<span class="zs-no">〔9〕</span>，与其兵不过万人。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">姜维自以为熟悉凉州的风俗民情，加之又为自己的军事才能而自负；一心想招引凉州的羌族作为自己的助力，认为在陇山以西的大片魏国辖地都可以截断据为己有。他常常想大举出兵进攻，而费祎总是加以制止不同意，给他的兵马不超过一万人。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">练：熟悉。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">谓：认为。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">裁制：限制。</span></p>
+<p class="yw">十六年春<span class="zs-no">〔10〕</span>，祎卒。夏，维率数万人出石营，经董亭，围南安。魏雍州刺史陈泰解围至洛门，维粮尽退还。</p>
+<p class="fy-inline">延熙十六年（公元 253）春天，费祎去世。这年夏天，姜维就率领几万人由石营出兵，经过董亭，围攻南安郡。魏国雍州刺史陈泰赶往洛门解围，姜维粮尽退回。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">十六年：延熙十六年（公元 253）。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《汉晋春秋》曰：“费祎谓维曰：‘吾等不如丞相亦已远矣；丞相犹不能定中夏，况吾等乎？且不如保国治民，敬守社稷，如其功业，以俟能者；无以为希冀侥幸，而决成败于一举：若不如志，悔之无及！’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">8 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">明年，加督中外军事<span class="zs-no">〔1〕</span>。复出陇西，守狄道长李简举城降。进围襄武<span class="zs-no">〔2〕</span>，与魏将徐质交锋；斩首破敌，魏军败退。维乘胜多所降下，拔河（间）〔关〕、狄道、临洮三县民还。</p>
+<p class="fy-inline">第二年，朝廷加授他督中外诸军的名号，有权指挥京城和外地的一切军队。他又出兵进攻陇西郡，魏国代理的狄道县长李简献城投降。又进军包围襄武县，与魏将徐质交锋；斩首破敌，打得魏军大败而逃。姜维乘胜攻克城池接受敌军投降，把河关、狄道、临洮三县的百姓全部迁走带回。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">督中外军事：一种表示军事指挥权力的名号。凡加这一名号者，有权指挥京城和外地的一切军队，是全国军队的总指挥官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">襄武：县名。县治在今甘肃陇西县东南。</span></p>
+<p class="yw">后十八年<span class="zs-no">〔3〕</span>，复与车骑将军夏侯霸等，俱出狄道，大破魏雍州刺史王经于洮西。经众死者数万人。经退保狄道城。维围之。魏征西将军陈泰进兵解围，维却住钟题<span class="zs-no">〔4〕</span>。</p>
+<p class="fy-inline">延熙十八年（公元 255），又与车骑将军夏侯霸等一同出兵狄道县，在洮水西岸大破魏国雍州刺史王经的军队。王经方面死亡达几万人之多。王经逃回狄道城坚守。姜维挥兵围城。魏国征西将军陈泰赶来解围，姜维退到钟题驻扎。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">十八年：延熙十八年（公元255）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">却住：退却驻扎。</span></p>
+<p class="yw">十九年春<span class="zs-no">〔5〕</span>，就迁维为大将军。更整勒戎马，与镇西大将军胡济期会上邽；济失誓不至<span class="zs-no">〔6〕</span>，故维为魏大将邓艾所破于段谷。星散流离，死者甚众，众庶由是怨讟<span class="zs-no">〔7〕</span>；而陇以西亦骚动不宁<span class="zs-no">〔8〕</span>。维谢过引负<span class="zs-no">〔9〕</span>，求自贬削；为后将军，行大将军事。</p>
+<p class="fy-inline">延熙十九年（公元 256）春，朝廷派使者到姜维驻地宣布提升他为大将军。他又整顿部署兵马，与镇西大将军胡济约定时间在上邽会师；而胡济失约不到，所以姜维在段谷被魏国大将邓艾击败。将士四散逃亡，死亡很多，部下因此而有怨恨；而陇山以西这时也骚乱不宁。姜维主动承担责任为自己的过失表示歉意，请求贬削自己的官职；于是降为后将军，代理大将军职务。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">十九年：延熙十九年（公元 256）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">失誓：失约。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">怨讟：怨恨。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">陇：山名。即今甘肃六盘山。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">引负：承担责任。</span></p>
+<p class="yw">二十年<span class="zs-no">〔10〕</span>，魏征东大将军诸葛诞反于淮南，分关中兵东下。维欲乘虚向秦川，复率数万人出骆谷，径至沈岭<span class="zs-no">〔11〕</span>。时长城积谷甚多而守兵乃少<span class="zs-no">〔12〕</span>；闻维方到，众皆惶惧。魏大将军司马望拒之<span class="zs-no">〔13〕</span>，邓艾亦自陇右：皆军于长城。维前住芒水<span class="zs-no">〔14〕</span>，（皆）倚山为营。望、艾傍渭坚围；维数下挑战，望、艾不应。</p>
+<p class="fy-inline">延熙二十年（公元257），魏国征东大将军诸葛诞在淮南造反，魏朝调一部分关中驻军东下平叛。这时姜维想乘虚而进入秦岭以北的平原地带，又带领几万人马由骆谷出秦岭，径直推进到沈岭。当时沈岭北面的长城储存军粮很多而防守军队很少；听说姜维杀到，众人都很惊惶不安。魏国统领大军的将军司马望前来阻击，邓艾也从陇西赶到；两人都在长城驻扎。姜维向前推进到芒水，倚山建立营寨。司马望、邓艾靠着渭水筑起坚固的外围防护墙栅；姜维多次下山挑战，司马望与邓艾都不响应。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">二十年：延熙二十年（公元257）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">沈岭：地名。在今陕西周至县西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">长城：地名。在今陕西周至县西南，沈岭以北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">司马望：字子初。司马懿的侄儿。曹魏时历任要职，官至司徒，封顺阳侯。西晋建立，封义阳王，任大司马，统率全国军队。传见《晋书》卷三十七。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">芒水：河流名。发源于秦岭北麓，向北流到今陕西周至县东北，汇入渭河。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">9 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">景耀元年，维闻诞破败，乃还成都。复拜大将军。</p>
+<p class="fy-inline">景耀元年（公元 258），姜维听说诸葛诞失败，才撤回成都。朝廷又任命他为大将军。</p>
+<p class="yw">初，先主留魏延镇汉中，皆实兵诸围<span class="zs-no">〔1〕</span>，以御外敌；敌若来攻，使不得入。及兴势之役，王平捍拒曹爽，皆承此制。维建议以为：“错守诸围<span class="zs-no">〔2〕</span>，虽合《周易》‘重门’之义<span class="zs-no">〔3〕</span>，然适可御敌，不获大利。不若使闻敌至，诸围皆敛兵聚谷，退就汉、乐二城；使敌不得入平，且重关镇守以捍之。有事之日，令游军并进以伺其虚<span class="zs-no">〔4〕</span>；敌攻关不克，野无散谷，千里悬粮，自然疲乏。引退之日，然后诸城并出，与游军并力搏之：此殄敌之术也。”</p>
+<p class="fy-inline">当初，先主留魏延镇守汉中，魏延的防御策略是派兵充实汉中边境的各个防守营垒以抵御外来的敌人；敌人如果来进攻，务必不让他们进入汉中平原。后来兴势之战，王平抗御曹爽的大军，也是袭用的这一办法。而姜维提出的建议认为：“凭借营垒交错防守，虽然合乎《周易》所说的设置重重大门以防备强盗的道理，然而这个办法只适合抵御敌人于大门之外，却收不到歼灭敌军的大利。不如在听说敌人来到汉中时，把各个营垒的兵力收缩到汉城、乐城这两个最大的防守据点里；所有军粮也集中在这两处，据城固守不让敌军通过这里继续南下进入成都平原，为了保证这一点要加强阳平关、剑门关一线的镇守。实施反击时，先派游动作战的军队一齐向前，观察对方虚弱之处实施袭击；敌人往前进攻各处关隘不能得手，田野中粮食又被我们收集干净，他们通过崎岖狭窄的千里秦岭山路从关中运来粮食，自然是既耗费力量又供应不上。一旦敌人撤退，汉城、乐城的各军就一并杀出，与在外的游动军队并合力量给对方以毁灭性打击：这才是全部消灭敌人有生力量的最佳方法。”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">实兵诸围：派兵充实边境各处营垒。当时习称野外筑有坚固防御屏障的营垒为围。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">错守：交错防守。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">重门：重复设置大门。《周易·系辞》下有“重门击柝，以待暴客”的说法。暴客指强盗。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">游军：在外游动作战的军队。</span></p>
+<p class="yw">于是令督汉中胡济却住汉寿<span class="zs-no">〔5〕</span>，监军王含守乐城，护军蒋斌守汉城；又于西安、建威、武卫、石门、武城、建昌、临远<span class="zs-no">〔6〕</span>，皆立围守。</p>
+<p class="fy-inline">于是，他命令汉中战区各军的指挥官胡济退后在汉寿县驻扎，派监军王含据守乐城，护军蒋斌据守汉城；又在西安、建威、武卫、石门、武城、建昌、临远各地都建立营垒进行防守。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">督汉中：官名。汉中各军的指挥官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">西安、石门、建昌、临远：均为地名。在今甘肃陇南地区和甘南藏族自治州境内；建威：地名；武卫：地名；武城：地名</span></p>
+<p class="yw">五年<span class="zs-no">〔7〕</span>，维率众出（汉）侯和；为邓艾所破，还住沓中。维本羁旅托国，累年攻战，功绩不立；而宦官黄皓等弄权于内，右大将军阎宇与皓协比<span class="zs-no">〔8〕</span>，而皓阴欲废维树宇。维亦疑之，故自危惧，不复还成都。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">景耀五年（公元 263），姜维自己带领军队进攻侯和；被邓艾击败，他退回驻扎在沓中。姜维原本是流亡在外的人，在蜀国栖身，连年攻战，没有建立功绩；而宦官黄皓等人这时在朝廷中专权，右大将军阎宇与黄皓联合，黄皓暗中想废黜姜维扶持阎宇。姜维也怀疑黄皓，心中感到畏惧，从此不再回成都朝见。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">五年：景耀五年（公元 262）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">右大将军：官名。领兵征伐。蜀汉后期专为阎宇设置，专权的黄皓企图以此牵制大将军姜维，并进而以阎宇取代姜维。东汉、魏、吴都没有右大将军。协比（bì）：联合。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《华阳国志》曰：“维恶黄皓恣擅，启后主欲杀之。后主曰：‘皓趋走小臣耳！往董允切齿，吾常恨之，君何足介意！’维见皓枝附叶连，惧于失言，逊辞而出。后主敕皓诣维陈谢；维说皓求沓中种麦，以避内逼耳。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c10">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">10 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">六年<span class="zs-no">〔1〕</span>，维表后主：“闻钟会治兵关中，欲规进取；宜并遣张翼、廖化督诸军，分护阳安关口、阴平桥头，以防未然<span class="zs-no">〔2〕</span>。”皓征信鬼巫<span class="zs-no">〔3〕</span>，谓敌终不自致；启后主寝其事<span class="zs-no">〔4〕</span>，而群臣不知。</p>
+<p class="fy-inline">景耀六年（公元263），姜维向后主上表章说：“听说钟会在关中整训军队，想打主意进攻我国；应该同时派遣张翼、廖化指挥各路军队分别保护阳安关口、阴平桥头，以防患未然。”黄皓迷信他招来的巫师所说的鬼话，认为敌军终究不会送上门来找死，报告后主之后把这件公文压下，结果朝廷群臣都不知道。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">六年：景耀六年（公元 263）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">阳安关口：即古阳平关。在今陕西勉县西；阴平桥头：地名</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">征信：招纳和相信。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">寝其事：把这件公文压下来不宣布。当时习称公文为事。</span></p>
+<p class="yw">及钟会将向骆谷，邓艾将入沓中；然后乃遣右车骑廖化诣沓中为维援<span class="zs-no">〔5〕</span>，左车骑张翼、辅国大将军董厥等诣阳安关口以为诸围外助<span class="zs-no">〔6〕</span>。比至阴平，闻魏将诸葛绪向建威，故住待之。</p>
+<p class="fy-inline">到了钟会将进入骆谷，邓艾将进入沓中；朝廷才赶紧派右车骑将军廖化赶往沓中援助姜维，派左车骑将军张翼、辅国大将军董厥等赶往阳安关口，充当各个防守营垒的外援。廖化刚到阴平，听说魏将诸葛绪率军指向建威，他就停下来等待敌军到达时出击。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">右车骑：官名。即右车骑将军。领兵征伐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">左车骑：官名。即左车骑将军。领兵征伐。</span></p>
+<p class="yw">月余，维为邓艾所摧，还住阴平。钟会攻围汉、乐二城，遣别将进攻关口；蒋舒开城出降，傅佥格斗而死。<span class="pz-no">〔一〕</span>会攻乐城，不能克；闻关口已下<span class="zs-no">〔7〕</span>，长驱而前。翼、厥甫至汉寿，维、化亦舍阴平而退，适与翼、厥合：皆退保剑阁以拒会。</p>
+<p class="fy-inline">过了一个多月，姜维被邓艾击败，退回阴平。这时东面战场上钟会正派兵围攻汉城、乐城，又另外派部将进攻阳安关口；蒋舒开城出来投降，不愿投降的另一位守将傅佥奋勇格斗而战死。钟会进攻乐城，却未能得手；他得知阳安关口已经攻占之后，就率领主力军团长驱直入。张翼、董厥刚刚赶到汉寿县，姜维和廖化也放弃阴平撤退，正好与张、董二人会合：于是一齐退往剑门关坚守以抗拒钟会。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">已下：已经攻克。</span></p>
+<p class="yw">会与维书曰：“公侯以文武之德，怀迈世之略<span class="zs-no">〔8〕</span>；功济巴、汉，声畅华夏<span class="zs-no">〔9〕</span>：远近莫不归名。每惟畴昔<span class="zs-no">〔10〕</span>，尝同大化<span class="zs-no">〔11〕</span>；吴札、郑侨<span class="zs-no">〔12〕</span>，能喻斯好<span class="zs-no">〔13〕</span>。”</p>
+<p class="fy-inline">钟会与姜维写信说：“公侯您兼有文武才能，怀着超群的谋略；功勋拯救了益州，声誉传扬到中原：远近的人无不倾慕您的大名。我常常想起过去，我们曾经同在魏朝做官感受盛大的教化；从前吴国的季札和郑国的子产是挚友，可以用来比喻我们这种友好关系。”</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">迈世：超世；略：谋略</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">声：声名；畅：流传；华夏：中原地区</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">惟：想；畴昔：过去</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">尝同大化：曾经共同感受（魏朝）盛大的教化。指姜维过去也曾在曹魏做官。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">吴札：即季札。春秋时吴国君主诸樊的弟弟。事见《史记》卷三十一《吴太伯世家》；郑侨：即公孙侨（？—前 522）</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">能喻斯好：能够比喻我们这种友好关系。</span></p>
+<p class="yw">维不答书，列营守险。会不能克，粮运悬远，将议还归。而邓艾自阴平由景谷道傍入，遂破诸葛瞻于绵竹；后主请降于艾，艾前据成都。</p>
+<p class="fy-inline">姜维不回复他的来信，排开阵营坚守险关。钟会无法攻克，而从后方运粮来的距离过于遥远，以至于都将要商议撤军回去的事了。然而这时西面的邓艾，却从阴平经由景谷道旁边的一条小路南下进入了益州的腹地，在绵竹县击败诸葛瞻；后主请求投降邓艾，邓艾向前占据成都。</p>
+<p class="yw">维等初闻瞻破，或闻后主欲固守成都，或闻欲东入吴，或闻欲南入建宁；于是引军由广汉、郪道以审虚实。寻被后主敕令，乃投戈放甲，诣会于涪军前；将士咸怒，拔刀砍石。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">姜维等人起初得知诸葛瞻失败的消息时，一会儿听说后主要固守成都，一会儿听说后主要东奔孙吴，一会儿听说后主要南下建宁郡；于是他领兵经由广汉郡、郪县南下接近成都，以弄清楚虚实。不久他就接到后主的投降魏军的指令，他只得放下长戈脱下铠甲，前往涪县的军营去投降钟会；蜀军将士都愤怒万分，拔出刀来砍石头出气。</p>
+<p class="yw">会厚待维等，皆权还其印号、节、盖<span class="zs-no">〔14〕</span>。会与维出则同舆，坐则同席。谓长史杜预曰<span class="zs-no">〔15〕</span>：“以伯约比中土名士：公休、太初不能胜也<span class="zs-no">〔16〕</span>。”<span class="pz-no">〔三〕</span>会既构邓艾<span class="zs-no">〔17〕</span>，艾槛车征<span class="zs-no">〔18〕</span>；因将维等诣成都，自称益州牧以叛；<span class="pz-no">〔四〕</span>欲授维兵五万人，使为前驱。魏将士愤怒，杀会及维，维妻子皆伏诛。<span class="pz-no">〔五〕</span></p>
+<p class="fy-inline">钟会厚待姜维等人，还暂且发还他们的官印、节杖和伞盖。钟会与姜维出外同坐一辆车，入内同坐一张席。钟会对长史杜预说：“拿姜伯约来比中原名士：诸葛公休、夏侯太初都不能超过他。”钟会设计陷害邓艾，邓艾被朝廷用囚车押往京城洛阳；然后钟会带着姜维等人前往成都，自称益州牧举兵造反；他还想配给姜维五万人马，作为前锋向北进攻。魏军将士感到愤怒不平，动手杀死钟会和姜维，姜维的妻室儿女都被处死。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">权：暂且。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">杜预：字元凯。京兆尹杜陵（今陕西西安市东南）人。初仕曹魏。西晋建立，任镇南大将军，出镇荆州，以参与消灭孙吴有功，封当阳县侯。多谋略，当时号称“杜武库”。又擅长经学，著有关于《春秋》、《左传》的学术著作多种。其中的《春秋左氏经传集解》，是《左传》古注流传至今的最早一种，收入《十三经注疏》中。传见《晋书》卷三十四。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">公休：即诸葛诞（？—公元 258）。诞字公休。传见本书卷二十八；太初：即夏侯玄（公元 209—254）</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">构：设计陷害。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">槛车：囚车；征：召回朝廷</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《汉晋春秋》曰：“蒋舒将出降，乃诡谓傅佥曰：‘今贼至不击而闭城自守，非良图也。’佥曰：‘受命保城，惟全为功；今违命出战，若丧师负国，死无益矣！’舒曰：‘子以保城获全为功，我以出战克敌为功：请各行其志！’遂率众出，佥谓其战也；至阴平，以降胡烈，烈乘虚袭城。佥格斗而死，魏人义之。”</span></p>
+<p class="pz-item no-no">《蜀记》曰：“蒋舒为武兴督，在事无称。蜀命人代之，因留舒，助汉中守。舒恨，故开城出降。”</p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">干宝《晋纪》云：“会谓维曰：‘来何迟也？’维正色流涕曰：‘今日见此为速矣！’会甚奇之。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《世语》曰：“时蜀官属，皆天下英俊，无出维右。”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《汉晋春秋》曰：“会阴怀异图，维见而知其心；谓可构成扰乱，以图克复也。乃诡说会曰：‘闻君自淮南以来，算无遗策；晋道克昌，皆君之力。今复定蜀，威德振世；民高其功，主畏其谋，欲以此安归乎？夫韩信不背汉于扰攘，以见疑于既平；大夫种不从范蠡于五湖，卒伏剑而妄死：彼岂暗主、愚臣哉？利害使之然也！今君大功既立，大德已著；何不法陶朱公泛舟绝迹，全功保身？登峨眉之岭，而从赤松游乎？’会曰：‘君言远矣，我不能行；且为今之道，或未尽于此也。’维曰：‘其他，则君智力之所能，无烦于老夫矣。’由是情好欢甚。”</span></p>
+<p class="pz-item no-no">《华阳国志》曰：“维教会诛北来诸将；既死，徐欲杀会；尽坑魏兵，还复蜀祚。密书与后主曰：‘愿陛下忍数日之辱；臣欲使社稷危而复安，日月幽而复明。’”</p>
+<p class="pz-item no-no">孙盛《晋阳秋》曰：“盛以永和初，从安西将军平蜀，见诸故老，及姜维既降之后，密与刘禅表疏：说欲伪服事钟会，因杀之以复蜀土；会事不捷，遂至泯灭；蜀人于今伤之。盛以为：古人云，非所困而困焉，名必辱；非所据而据焉，身必危。既辱且危，死其将至：其姜维之谓乎！邓艾之入江由，士众鲜少。维进不能奋节绵竹之下；退不能总帅五将，拥卫蜀主，思后图之计；而乃反覆于逆顺之间，希违情于难冀之会；以衰弱之国，而屡观兵于三秦；已灭之邦，冀理外之奇举：不亦暗哉！”</p>
+<p class="pz-item no-no">臣松之以为：盛之讥维，又为不当。于时钟会大众既造剑阁，维与诸将列营守险，会不得进，已议还计；全蜀之功，几乎立矣。但邓艾诡道傍入，出于其后；诸葛瞻既败，成都自溃。维若回军救内，则会乘其背；当时之势，焉得两济？而责维不能奋节绵竹，拥卫蜀主，非其理也。会欲尽坑魏将，以举大事，授维重兵，使为前驱。若令魏将皆死，兵事在维手；杀会复蜀，不为难矣。夫功成理外，然后为奇；不可以事有差（牙）〔互〕，而抑谓不然。设使田单之计，邂逅不会，复可谓之愚暗哉？</p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《世语》曰：“维死时，见剖，胆如（斗）〔升〕大。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c11">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">11 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">郤正著论论维曰：“姜伯约据上将之重，处群臣之右；宅舍弊薄<span class="zs-no">〔1〕</span>，资财无余；侧室无妾媵之亵<span class="zs-no">〔2〕</span>，后庭无声乐之娱；衣服取供<span class="zs-no">〔3〕</span>，舆马取备；饮食节制，不奢不约<span class="zs-no">〔4〕</span>；官给费用，随手消尽。察其所以然者，非以激贪厉浊<span class="zs-no">〔5〕</span>，抑情自割也<span class="zs-no">〔6〕</span>；直谓如是为足<span class="zs-no">〔7〕</span>，不在多求。凡人之谈，常誉成毁败，扶高抑下；咸以姜维投厝无所<span class="zs-no">〔8〕</span>，身死宗灭，以是贬削<span class="zs-no">〔9〕</span>，不复料擿<span class="zs-no">〔10〕</span>：异乎《春秋》褒贬之义矣。如姜维之乐学不倦，清素节约，自一时之仪表也！”<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">郤正曾经写了一篇评论来论述姜维说：“姜伯约占据高级将领的重要地位，处于蜀国群臣之上；住宅破旧简陋，财产没有多余；旁边的卧室里没有小妾，后面的庭院里不设乐队；衣服只求够用，车马不准过多；饮食很有节制，不奢侈也不过分俭省；朝廷发给的费用，随手就用完。考察他之所以这样做的原因，并不是想以此来激励贪婪污浊的人使之变得廉洁，因而压抑欲望限制自己；而是他本心就认为这样足够，不需要多追求。凡夫俗子谈论人，常常赞美成功者诋毁失败者，扶持高升者贬低下降者；他们都认为姜维投身不是地方，自身被杀还连累宗族遭到诛灭，因此贬低他，不再去衡量分辨：这就和《春秋》主张的褒贬原则不一致了。像姜维那样好学不倦，清廉节俭的人，自然是一代人的模范啊！”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">弊薄：破旧简陋。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">妾媵：小老婆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">取供：仅求够用。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">约：过于俭朴。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">激贪厉浊：感发贪婪污浊的人（使之变为廉洁）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">自割：限制自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">直谓：只不过认为。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">投厝无所：投身不是地方。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">贬削：贬低。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">料擿：衡量分辨。</span></p>
+<p class="yw">维昔所俱至蜀：梁绪官至大鸿胪，尹赏执金吾<span class="zs-no">〔11〕</span>，梁虔大长秋；皆先蜀亡没。</p>
+<p class="fy-inline">当初和姜维一起到蜀国的人：梁绪官做到大鸿胪，尹赏官做到执金吾，梁虔官做到大长秋；都在蜀国灭亡前去世。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">执金吾：官名。负责皇宫外围警卫，防火防洪，并保卫中央武器库。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">孙盛曰：“异哉郤氏之论也！夫士虽百行，操业万殊；至于忠孝义节，百行之冠冕也。姜维策名魏室，而外奔蜀朝，违君徇利，不可谓忠；捐亲苟免，不可谓孝；害加旧邦，不可谓义；败不死难，不可谓节；且德政未敷而疲民以逞，居御侮之任而致敌丧守，于夫智勇，莫可云也：凡斯六者，维无一焉。实有魏之逋臣，亡国之乱相；而云人之‘仪表’，斯亦惑矣。纵维好书而微自藻洁，岂异夫盗者分财之义，而程郑降阶之善也！”</span></p>
+<p class="pz-item no-no">臣松之以为：郤正此论，取其可称；不谓维始终行事，皆可准则也。所云“一时仪表”，止在好学与俭素耳。本传及《魏略》皆云，维本无叛心，以急逼归蜀。盛相讥贬，惟可责其背母；余既过苦，又非所以难郤正也。</p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v44-c12">
+<div class="chunk-head"><a class="chunk-vol" href="#v44-c01" onclick="go('v44-c01');return false;">第44卷 · 蜀书14 蒋琬费祎姜维传第14</a><span class="chunk-prog">12 / 12</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：蒋琬方整有威重，费祎宽济而博爱；咸承诸葛之成规，因循而不革。是以边境无虞，邦家和一；然犹未尽治小之宜<span class="zs-no">〔1〕</span>，居静之理也。<span class="pz-no">〔一〕</span>姜维粗有文武，志立功名；而玩众黩旅<span class="zs-no">〔2〕</span>，明断不周：终致陨毙。《老子》有云：“治大国者犹烹小鲜<span class="zs-no">〔3〕</span>。”况于区区蕞尔<span class="zs-no">〔4〕</span>，而可屡扰乎哉？<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">评论说：蒋琬方正严肃而威风凛凛，费祎宽厚通达而博爱众人；都能继承诸葛亮的成规，遵循而不改。所以边境无事，国家和睦一致；但是还没有能完全懂得治理小国的合适办法，以及保持安静的道理。姜维粗略具有文武才能，有志建立功名；但是他轻率出兵滥用武力，缺乏对形势的准确判断：终于招致灭亡。《老子》上说：“治理大国就像烧煮小鱼一样不能频繁去搅动。”何况蜀是区区小国，而可以不断搅动吗？</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">未尽：未能完全懂得；治小：治理小国</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">玩众：轻率出动军队；黩旅：滥用武力</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">烹小鲜：烧煮小鱼。这一句出自《老子》第六十章。意思是烧煮小鱼时不能频繁翻动，否则鱼会搅烂不成形状；治大国也不能频繁扰动民众，道理和这一样。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">区区：小。蕞（zuì）尔：小的样子。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之以为：蒋、费为相，克遵画一；未尝徇功妄动，有所亏丧；外却骆谷之师，内保宁缉之实。“治小之宜，居静之理”，何以过于此哉！今讥“未尽”而不著其事，故使览者不知所谓也。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">干宝曰：“姜维为蜀相，国亡主辱弗之死，而死于钟会之乱。惜哉！非死之难，处死之难也。是以古之烈士，见危授命，投节如归；非不爱死也，固知命之不长，而惧不得其所也！”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v44';
+var NC = 12;
+var CUR = "home";
+var PREV_HREF = "v43.html";
+var NEXT_HREF = "v45.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>《三国志》第32卷 先主传 · 原文/裴注/注释/白话翻译（全本在线阅读）</title>
+<meta name="description" content="《三国志》第32卷《先主传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：先主姓刘，讳备，字玄德。涿郡涿县人。汉景帝子中山靖王胜之后也。胜子贞，元（狩）朔年封涿县陆城亭侯；坐酎金失侯，因家焉。先主祖雄，父弘，世仕州郡。雄举孝廉，官至东">
+<link rel="canonical" href="https://<your-username>.github.io/sanguozhi/v32.html">
+<meta property="og:title" content="《三国志》第32卷 先主传 · 原文/裴注/注释/白话翻译（全本在线阅读）">
+<meta property="og:description" content="《三国志》第32卷《先主传》简体全本：陈寿原文、裴松之注、现代注释与白话翻译逐段对照（全书六十五卷免费在线阅读），开卷为：先主姓刘，讳备，字玄德。涿郡涿县人。汉景帝子中山靖王胜之后也。胜子贞，元（狩）朔年封涿县陆城亭侯；坐酎金失侯，因家焉。先主祖雄，父弘，世仕州郡。雄举孝廉，官至东">
+<meta property="og:type" content="book">
+<meta property="og:locale" content="zh_CN">
+<style>
+
+:root {
+  --paper: #faf6ee;
+  --ink: #2b2a26;
+  --red: #8a1f1f;
+  --pz: #5c564a;
+  --zs: #7a7466;
+  --line: #d9d2c2;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  padding-top: 56px;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Source Han Serif SC", "Noto Serif CJK SC", "SimSun", "Songti SC", serif;
+  line-height: 1.95;
+  font-size: 16.5px;
+}
+a { color: var(--red); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* 顶部分页导航 */
+.topbar {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: #2f2b23;
+  color: #eee;
+  display: flex; align-items: center; justify-content: center;
+  gap: 10px; flex-wrap: wrap;
+  padding: 8px 14px;
+  font-size: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+}
+.topbar button {
+  background: var(--red); color: #fff; border: none; border-radius: 4px;
+  padding: 5px 14px; font-size: 14px; cursor: pointer;
+}
+.topbar button:hover { background: #a83232; }
+.topbar button:disabled { background: #6b6255; cursor: default; }
+/* 卷级跳转按钮（上一卷/下一卷）用深色区分，与卷内翻页按钮（红）区分开 */
+.topbar .vol-btn { background: #5c564a; }
+.topbar .vol-btn:hover { background: #6f685a; }
+.topbar .vol-btn:disabled { background: #6b6255; }
+.topbar .vol-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar .pg-grp { display: inline-flex; align-items: center; gap: 6px; }
+.topbar #pageLabel { min-width: 220px; text-align: center; color: #e8e0cf; }
+.topbar select {
+  background: #f5efe2; color: #2b2a26; border: none; border-radius: 4px;
+  padding: 5px 6px; font-size: 13.5px; max-width: 260px;
+}
+.topbar .sep { color: #8f8674; }
+
+/* 分页：默认只显示当前页 */
+.page { display: none; }
+.page.active { display: block; }
+
+main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { max-width: 880px; margin: 0 auto; padding: 0 30px; }
+section.fanyue, section.jianjie, section.fulu { padding-top: 30px; }
+section h2 { font-size: 24px; color: var(--red); border-bottom: 1px solid var(--line); padding-bottom: 8px; letter-spacing: .1em; }
+section.fanyue li { margin: 7px 0; color: #3d3a32; }
+/* 简介分段排版：首行缩进、段间距、两端对齐 */
+.jianjie .jj-body p { text-indent: 2em; margin: 10px 0; text-align: justify; color: #3d3a32; line-height: 1.95; }
+
+.cover {
+  text-align: center;
+  padding: 90px 20px 70px;
+  border-bottom: 3px double var(--red);
+  background: linear-gradient(180deg, #f3ead6 0%, var(--paper) 100%);
+}
+.cover h1 { font-size: 64px; letter-spacing: .35em; margin: 18px 0; color: var(--red); text-indent: .35em; }
+.cover-sub { font-size: 20px; letter-spacing: .6em; color: #6d675a; margin: 0; }
+.cover-authors { font-size: 18px; color: #4a463c; margin: 12px 0 6px; }
+.cover-stats { font-size: 14px; color: #8a8474; margin: 8px auto 0; max-width: 720px; }
+
+.toc { padding-top: 30px; }
+.toc-cols { display: flex; gap: 26px; flex-wrap: wrap; }
+.toc-col { flex: 1 1 240px; }
+.toc-col h3 { font-size: 18px; color: var(--red); margin: 14px 0 8px; }
+.toc-col ul { list-style: none; padding: 0; margin: 0; }
+.toc-col li { margin: 5px 0; font-size: 15px; }
+
+.chunk-page {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 34px 30px 90px;
+}
+.chunk-head {
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--line);
+  padding: 6px 0 12px; margin: 0 0 8px;
+}
+.chunk-vol { font-size: 20px; color: var(--red); letter-spacing: .1em; text-decoration: none; }
+.chunk-vol:hover { text-decoration: underline; }
+.chunk-prog { font-size: 13px; color: #8a8474; background: #f2ecdd; padding: 3px 10px; border-radius: 3px; }
+/* 卷内页码跳转条 */
+.chunk-pager { display: inline-flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+.chunk-pager a {
+  min-width: 22px; text-align: center; padding: 2px 5px;
+  font-size: 12.5px; color: #7a7466; background: #f2ecdd;
+  border-radius: 3px; text-decoration: none; cursor: pointer;
+}
+.chunk-pager a:hover { background: #e9dfc8; }
+.chunk-pager a.active { background: var(--red); color: #fff; }
+.chunk-pager .pager-dots { color: #8a8474; padding: 0 2px; }
+.chunk-actions { margin-left: auto; display: inline-flex; gap: 8px; }
+.chunk-actions button { background: #f2ecdd; color: var(--red); border: 1px solid var(--line); border-radius: 4px; padding: 3px 12px; font-size: 13px; cursor: pointer; font-family: inherit; }
+.chunk-actions button:hover { background: #e9dfc8; }
+
+.chunk { margin-bottom: 26px; }
+/* 可折叠块 */
+.fold-body { padding-left: 6px; }
+.fold-bar {
+  display: flex; align-items: center; gap: 6px;
+  background: transparent; border: none; border-bottom: 1px dashed var(--line);
+  padding: 4px 0; margin: 14px 0 4px;
+  font-family: inherit; font-size: 14px; color: var(--red); cursor: pointer;
+  letter-spacing: .2em;
+}
+.fold-bar:hover { color: #a83232; }
+.fold-mark { display: inline-block; transition: transform .15s; font-size: 12px; }
+.fold.closed .fold-mark { transform: rotate(-90deg); }
+.fold.closed .fold-body { display: none; }
+/* 逐段白话翻译：浅色底块 + 深驼色竖线 + “译”字徽标，与原文明显区分 */
+.fy-inline {
+  color: #57503f;
+  background: #f4edda;
+  font-size: 14.5px;
+  line-height: 1.85;
+  margin: 6px 0 16px 18px;
+  padding: 8px 14px 8px 34px;
+  border-left: 3px solid #b3955e;
+  border-radius: 0 8px 8px 0;
+  text-align: justify;
+  position: relative;
+}
+.fy-inline::before {
+  content: "译";
+  position: absolute;
+  left: 9px; top: 9px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  background: var(--red);
+  border-radius: 3px;
+  padding: 0 5px;
+  letter-spacing: 0;
+}
+/* 仅原文模式：隐藏裴注、注释、白话翻译 */
+body.mode-yw .pz-block,
+body.mode-yw .fy,
+body.mode-yw .fy-inline,
+body.mode-yw .zs-inline { display: none !important; }
+p.yw { margin: 14px 0; text-align: justify; letter-spacing: .02em; }
+/* 原文内注释编号〔N〕：朱红小标（上标） */
+p.yw .zs-no { color: #b03a2e; font-weight: 600; font-size: .78em; vertical-align: super; letter-spacing: 0; }
+/* 原文内裴注编号〔一〕：暗红小标，弱于注释编号 */
+p.yw .pz-no { color: #8a6a45; font-size: .85em; vertical-align: super; letter-spacing: 0; }
+/* 注释条目：悬挂缩进对齐 + 编号高亮 + 行距优化 */
+.zs-item {
+  color: var(--zs);
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 7px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.zs-item .zs-no { color: #b03a2e; font-weight: 600; margin-right: .35em; }
+.zs-item.no-no { text-indent: 0; }
+/* 段后内联注释：紧跟对应原文段，浅底+细竖线，编号朱红 */
+.zs-inline {
+  color: var(--zs);
+  background: #f2efe4;
+  font-size: 13.5px;
+  line-height: 1.75;
+  margin: 4px 0 12px 18px;
+  padding: 5px 12px 5px 14px;
+  border-left: 2px solid #c9b98c;
+  border-radius: 0 6px 6px 0;
+  text-align: justify;
+}
+.zs-inline .zs-no { color: #b03a2e; font-weight: 600; margin-right: .3em; }
+/* 无编号词条与编号注释保持相同左起点（继承 .zs-inline 的外边距/内边距） */
+/* 裴注条目：悬挂缩进对齐 + 编号高亮 */
+.pz-item {
+  color: var(--pz);
+  font-size: 15px;
+  line-height: 1.85;
+  margin: 8px 0;
+  padding-left: 2.4em;
+  text-indent: -2.4em;
+  text-align: justify;
+}
+.pz-item .pz-no { color: #8a6a45; font-weight: 600; margin-right: .35em; }
+.pz-item.no-no { text-indent: 0; }
+
+.fy { margin-top: 26px; background: #f2ecdd; border-radius: 6px; padding: 18px 22px; }
+.fy-title { font-size: 19px; color: var(--red); margin: 0 0 10px; letter-spacing: .2em; }
+.fy-item { margin: 10px 0; text-align: justify; }
+
+.fulu-item { margin-bottom: 22px; }
+.fulu-item h3 { font-size: 18px; color: var(--red); }
+.fulu-item p { text-align: justify; color: #3d3a32; }
+
+footer { text-align: center; color: #8a8474; font-size: 13px; padding: 40px 28px 60px; }
+
+/* 关注作者区块（首页/附录） */
+.qr-follow { max-width: 880px; margin: 0 auto; padding: 34px 30px 10px; text-align: center; }
+.qr-follow h2 { display: inline-block; }
+.qr-intro { color: #57503f; font-size: 15px; max-width: 660px; margin: 0 auto; text-align: center; }
+.qr-cards { display: flex; justify-content: center; align-items: flex-start; gap: 34px; flex-wrap: wrap; margin-top: 18px; }
+.qr-card { margin: 0; text-align: center; }
+.qr-card img { width: 390px; max-width: 100%; border-radius: 12px; box-shadow: 0 3px 16px rgba(0,0,0,.16); display: block; }
+.qr-card figcaption { margin-top: 10px; color: var(--red); letter-spacing: .1em; font-size: 15px; }
+/* 每页版权行 */
+.page-credit {
+  text-align: center; color: #a29b8a; font-size: 12px;
+  margin: 4px 0 30px; letter-spacing: .02em;
+}
+/* 封面版权行 */
+.cover-credit {
+  font-size: 13px; color: #8a8474; margin: 14px auto 0; max-width: 640px;
+  letter-spacing: .03em;
+}
+/* 二维码放大层 */
+.qr-overlay {
+  display: none; position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 999;
+  align-items: center; justify-content: center;
+}
+.qr-overlay.open { display: flex; }
+.qr-overlay img {
+  max-width: min(92vw, 660px); max-height: 90vh; background: #fff; padding: 14px;
+  border-radius: 12px; cursor: zoom-out; box-shadow: 0 6px 30px rgba(0,0,0,.4);
+}
+
+@media print {
+  body { padding-top: 0; }
+  .topbar { display: none; }
+  .page { display: block !important; }
+  body { font-size: 12pt; }
+  .chunk { page-break-before: always; }
+}
+
+/* 移动端适配：手机竖屏与小平板 */
+@media (max-width: 760px) {
+  body { padding-top: 104px; }
+  .topbar { padding: 6px 6px; gap: 4px; font-size: 12px; flex-wrap: wrap; row-gap: 3px; }
+  .topbar button { padding: 4px 7px; font-size: 12px; }
+  .topbar #pageLabel { min-width: 0; font-size: 11.5px; }
+  /* 手机上隐藏：卷下拉（用上下卷按钮代替）、首页、附录、分隔符，避免顶栏换行 */
+  .topbar select, .topbar #homeBtn, .topbar #appendixBtn, .topbar .sep { display: none; }
+  /* 两行布局：行1=卷导航+仅原文(上一卷/下一卷/仅原文)，行2=页导航(上一页/label/下一页) */
+  .topbar .vol-grp, .topbar .pg-grp { gap: 4px; justify-content: center; }
+  /* 正文留白收窄 */
+  .chunk-page { padding: 20px 14px 70px; }
+  main, nav.toc, section.fanyue, section.jianjie, section.fulu, footer { padding: 0 14px; }
+  /* 页头精简 */
+  .chunk-head { gap: 8px; margin-bottom: 4px; }
+  .chunk-vol { font-size: 16.5px; letter-spacing: .04em; }
+  .chunk-prog { font-size: 11.5px; padding: 2px 8px; }
+  .chunk-actions { margin-left: auto; gap: 6px; }
+  .chunk-actions button { padding: 3px 10px; font-size: 12.5px; }
+  /* 页码条：单行横向滑动，避免堆叠多行 */
+  .chunk-pager { flex-wrap: nowrap; overflow-x: auto; max-width: 100%;
+    padding-bottom: 5px; -webkit-overflow-scrolling: touch; }
+  .chunk-pager a { min-width: 26px; padding: 3px 7px; font-size: 12.5px; }
+  /* 字号：手机阅读更舒适 */
+  body { font-size: 17px; }
+  p.yw { font-size: 17px; margin: 12px 0; }
+  .fy-inline { margin-left: 6px; font-size: 15.5px; line-height: 1.8;
+    padding: 8px 10px 8px 30px; }
+  .fy-inline::before { left: 8px; top: 8px; }
+  .zs-inline { margin-left: 6px; font-size: 14px; line-height: 1.7;
+    padding: 5px 10px 5px 12px; }
+  .pz-item { font-size: 15px; }
+  /* 封面与首页 */
+  .cover { padding: 56px 14px 44px; }
+  .cover h1 { font-size: 46px; letter-spacing: .3em; }
+  .cover-sub { font-size: 17px; letter-spacing: .4em; }
+  .cover-authors { font-size: 15.5px; }
+  .cover-stats { font-size: 12.5px; }
+  .cover-credit { font-size: 11.5px; margin-top: 10px; }
+  section h2 { font-size: 20px; }
+  .toc-cols { gap: 14px; }
+  .page-credit { font-size: 11px; margin: 2px 0 22px; }
+  .qr-follow .qr-card img { width: 100%; max-width: 320px; }
+  .qr-intro { font-size: 14px; }
+  .chunk { margin-bottom: 18px; }
+}
+
+</style>
+</head>
+<body>
+
+<nav class="topbar">
+  <button id="homeBtn" onclick="window.location.href='index.html'">首页</button>
+  <span class="sep">|</span>
+  <span class="vol-grp">
+    <button id="prevVolBtn" class="vol-btn" onclick="navVol(-1)">‹ 上一卷</button>
+    <button id="nextVolBtn" class="vol-btn" onclick="navVol(1)">下一卷 ›</button>
+    <button id="modeBtn" onclick="toggleMode()">仅原文</button>
+  </span>
+  <span class="pg-grp">
+    <button id="prevBtn" onclick="navPage(-1)">‹ 上一页</button>
+    <span id="pageLabel">32卷 · 1/17</span>
+    <button id="nextBtn" onclick="navPage(1)">下一页 ›</button>
+  </span>
+  <select id="volSel" onchange="goSel(this.value)">
+<option value="index.html">首页</option>
+<option value="v01.html">第1卷 魏书1 武帝纪第1</option>
+<option value="v02.html">第2卷 魏书2 文帝纪第2</option>
+<option value="v03.html">第3卷 魏书3 明帝纪第3</option>
+<option value="v04.html">第4卷 魏书4 三少帝纪第4</option>
+<option value="v05.html">第5卷 魏书5 后妃传第5</option>
+<option value="v06.html">第6卷 魏书6 董二袁刘传第6</option>
+<option value="v07.html">第7卷 魏书7 吕布张邈臧洪传第7</option>
+<option value="v08.html">第8卷 魏书8 二公孙陶四张传第8</option>
+<option value="v09.html">第9卷 魏书9 诸夏侯曹传第9</option>
+<option value="v10.html">第10卷 魏书10 荀彧荀攸贾诩传第10</option>
+<option value="v11.html">第11卷 魏书11 袁张凉国田王邴管传第11</option>
+<option value="v12.html">第12卷 魏书12 崔毛徐何邢鲍司马传第12</option>
+<option value="v13.html">第13卷 魏书13 钟繇华歆王朗传第13</option>
+<option value="v14.html">第14卷 魏书14 程郭董刘蒋刘传第14</option>
+<option value="v15.html">第15卷 魏书15 刘司马梁张温贾传第15</option>
+<option value="v16.html">第16卷 魏书16 任苏杜郑仓传第16</option>
+<option value="v17.html">第17卷 魏书17 张乐于张徐传第17</option>
+<option value="v18.html">第18卷 魏书18 二李臧文吕许典二庞阎传第18</option>
+<option value="v19.html">第19卷 魏书19 任城陈萧王传第19</option>
+<option value="v20.html">第20卷 魏书20 武文世王公传第20</option>
+<option value="v21.html">第21卷 魏书21 王卫二刘傅传第21</option>
+<option value="v22.html">第22卷 魏书22 桓二陈徐卫卢传第22</option>
+<option value="v23.html">第23卷 魏书23 和常杨杜赵裴传第23</option>
+<option value="v24.html">第24卷 魏书24 韩崔高孙王传第24</option>
+<option value="v25.html">第25卷 魏书25 辛毗杨阜高堂隆传第25</option>
+<option value="v26.html">第26卷 魏书26 满田牵郭传第26</option>
+<option value="v27.html">第27卷 魏书27 徐胡二王传第27</option>
+<option value="v28.html">第28卷 魏书28 王毌丘诸葛邓钟传第28</option>
+<option value="v29.html">第29卷 魏书29 方伎传第29</option>
+<option value="v30.html">第30卷 魏书30 乌丸鲜卑东夷传第30</option>
+<option value="v31.html">第31卷 蜀书1 刘二牧传第1</option>
+<option value="v32.html" selected>第32卷 蜀书2 先主传第2</option>
+<option value="v33.html">第33卷 蜀书3 后主传第3</option>
+<option value="v34.html">第34卷 蜀书4 二主妃子传第4</option>
+<option value="v35.html">第35卷 蜀书5 诸葛亮传第5</option>
+<option value="v36.html">第36卷 蜀书6 关张马黄赵传第6</option>
+<option value="v37.html">第37卷 蜀书7 庞统法正传第7</option>
+<option value="v38.html">第38卷 蜀书8 许麋孙简伊秦传第8</option>
+<option value="v39.html">第39卷 蜀书9 董刘马陈董吕传第9</option>
+<option value="v40.html">第40卷 蜀书10 刘彭廖李刘魏杨传第10</option>
+<option value="v41.html">第41卷 蜀书11 霍王向张杨费传第11</option>
+<option value="v42.html">第42卷 蜀书12 杜周杜许孟来尹李谯郤传第12</option>
+<option value="v43.html">第43卷 蜀书13 黄李吕马王张传第13</option>
+<option value="v44.html">第44卷 蜀书14 蒋琬费祎姜维传第14</option>
+<option value="v45.html">第45卷 蜀书15 邓张宗杨传第15</option>
+<option value="v46.html">第46卷 吴书1 孙破虏讨逆传第1</option>
+<option value="v47.html">第47卷 吴书2 吴主传第2</option>
+<option value="v48.html">第48卷 吴书3 三嗣主传第3</option>
+<option value="v49.html">第49卷 吴书4 刘繇太史慈士燮传第4</option>
+<option value="v50.html">第50卷 吴书5 妃嫔传第5</option>
+<option value="v51.html">第51卷 吴书6 宗室传第6</option>
+<option value="v52.html">第52卷 吴书7 张顾诸葛步传第7</option>
+<option value="v53.html">第53卷 吴书8 张严程阚薛传第8</option>
+<option value="v54.html">第54卷 吴书9 周瑜鲁肃吕蒙传第9</option>
+<option value="v55.html">第55卷 吴书10 程黄韩蒋周陈董甘凌徐潘丁传第10</option>
+<option value="v56.html">第56卷 吴书11 朱治朱然吕范朱桓传第11</option>
+<option value="v57.html">第57卷 吴书12 虞陆张骆陆吾朱传第12</option>
+<option value="v58.html">第58卷 吴书13 陆逊传第13</option>
+<option value="v59.html">第59卷 吴书14 吴主五子传第14</option>
+<option value="v60.html">第60卷 吴书15 贺全吕周钟离传第15</option>
+<option value="v61.html">第61卷 吴书16 潘濬陆凯传第16</option>
+<option value="v62.html">第62卷 吴书17 是仪胡综传第17</option>
+<option value="v63.html">第63卷 吴书18 吴范刘惇赵达传第18</option>
+<option value="v64.html">第64卷 吴书19 诸葛滕二孙濮阳传第19</option>
+<option value="v65.html">第65卷 吴书20 王楼贺韦华传第20</option>
+<option value="appendix.html">附录</option>
+  </select>
+  <button id="appendixBtn" onclick="window.location.href='appendix.html'">附录</button>
+</nav>
+
+<div class="pages">
+<section class="page chunk" id="page-v32-c01">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">1 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主姓刘<span class="zs-no">〔1〕</span>，讳备，字玄德。涿郡涿县人。汉景帝子中山靖王胜之后也<span class="zs-no">〔2〕</span>。胜子贞，元（狩六）〔朔二〕年封涿县陆城亭侯<span class="zs-no">〔3〕</span>；坐酎金失侯<span class="zs-no">〔4〕</span>，因家焉。<span class="pz-no">〔一〕</span>先主祖雄，父弘，世仕州郡。雄举孝廉，官至东郡范令<span class="zs-no">〔5〕</span>。</p>
+<p class="fy-inline">先主姓刘，名备，字玄德，涿郡涿县人。他是汉景帝儿子中山靖王刘胜的后代。刘胜的儿子刘贞，在汉武帝元朔二年（前127）封为涿县的陆城亭侯，因为在缴纳一种用来资助天子祭祀的贡金时不合规定，结果被削除爵位，从此就在涿县安家定居。先主的祖父刘雄，父亲刘弘，世代出任州郡政府官职。刘雄被本郡举荐为孝廉，官做到东郡范县县令。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">先主：指蜀汉的前一个皇帝刘备。《三国志》写于西晋，而西晋直接承继曹魏，所以陈寿不能不把曹魏作为三国中的正统。具体做法就是称曹魏的君主为“某帝”，其编年大事记录为“纪”；蜀、吴的君主则称为“某主”，其编年大事记录为“传”。刘备的表字“玄德”，其准确含义是潜在的德行。三国时期的前后，人们的名和字之中，爱用“玄”、“德”二字，这是儒、道二家融合渗透过程的一种文化折射现象。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">胜：即刘胜（？—前 113）。汉景帝小妾所生。当中山王四十三年，奢侈荒淫，有儿子一百二十余人。传见《汉书》卷五十三。1968 年河北满城县发现了刘胜和他妻子窦绾的墓葬，规模宏伟，出土了包括金缕玉衣在内的各类珍贵随葬品二千八百多件，是考古重大收获之一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">封涿县陆城亭侯：清代学者潘眉的《三国志考证》认为：西汉没有乡侯、亭侯的封爵，这里的“陆城亭侯”应当是“陆成侯”，陆成为西汉中山国的属县。现今不少学者赞同他的说法。但是，潘说是有问题的。首先，西汉也有乡侯、亭侯，这在《续汉百官志》五的《本注》中有明确记载。班固《汉书》卷十五《王子侯表》中，在表的最下格标出了封邑所属的郡和县。凡标县名者，封地即比县小，且在该县境内，就是乡侯或亭侯。表中列出的县，有临原、茌平、鄗、襄贲、寿光、涿县等。封地在涿县境内的乡、亭侯有六人，其中就包括陆城亭侯刘贞。其次，说“陆城亭”就是“陆成”，不仅在文献上没有根据，而且果真这样改动，那么由于陆成县属于中山国，刘备的籍贯也应当随之改为中山陆成人，这就和《三国志》中有关刘备籍贯属于涿郡的种种记载相矛盾而无法解释。总之，此处的记载无误。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">坐酎金：由于酎金不合规定。汉代制度，正月初一日酿酒，到八月酿成，称为酎酒。皇帝在八月用新酿制的酎酒祭祀宗庙，宗室诸侯要按规定出贡金以资助祭祀，叫做酎金；失侯：削去侯爵</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">范：县名。县治在今梁山县西北。</span></p>
+<p class="yw">先主少孤，与母贩履织席为业。舍东南角篱上，有桑树生高五丈余，遥望见童童如小车盖<span class="zs-no">〔6〕</span>。往来者皆怪此树非凡，或谓“当出贵人”。<span class="pz-no">〔二〕</span>先主少时，与宗中诸小儿于树下戏。言：“吾必当乘此羽葆盖车<span class="zs-no">〔7〕</span>。”叔父子敬谓曰：“汝勿妄语，灭吾门也！”</p>
+<p class="fy-inline">先主从小死去父亲，与母亲一起以卖鞋织席为生。他家东南角篱笆边上有一株五丈多高的桑树，远远望去这株大桑树枝叶茂密就像一柄车盖，过往的人都认为它长得很不寻常，有的还说这是要出贵人的征兆。先主小时候，与本家的小孩子们常在树下做游戏，他对同伴们说：“我将来一定要坐用鸟羽毛装饰车盖的漂亮车子，车盖就像这桑树一般高大！”他的叔父刘子敬听到之后赶忙阻止他说：“你这个娃儿不准乱说，你想让我们刘家满门抄斩吗！”</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">童童：茂密荫蔽的样子。刘备的故里，相传在今河北涿州市东南 7 公里的楼桑村。尚有楼桑庙等遗迹留存。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">羽葆盖：皇帝礼仪专车上用鸟羽毛装饰的车盖。</span></p>
+<p class="yw">年十五，母使行学<span class="zs-no">〔8〕</span>；与同宗刘德然、辽西公孙瓒，俱事故九江太守同郡卢植。德然父元起常资给先主，与德然等<span class="zs-no">〔9〕</span>。元起妻曰：“各自一家，何能常尔邪<span class="zs-no">〔10〕</span>！”〔元〕起曰：“吾宗中有此儿，非常人也。”而瓒深与先主相友；瓒年长，先主以兄事之。</p>
+<p class="fy-inline">先主十五岁时，母亲让他出外求学，他与本家刘德然、辽西郡人公孙瓒，都到卸任的九江郡太守涿郡人卢植门下拜师学习。刘德然的父亲刘元起常常资助先主的生活费用，把他与自己的儿子刘德然同等对待。刘元起的妻子对丈夫埋怨说：“各是各的家，怎能经常这样资助别人的娃儿啊！”刘元起回答说：“你哪里了解我们刘家的这个娃儿呀，这可是个非同一般的人。”公孙瓒也与先主结为好朋友。公孙瓒年长，先主把他当作自己的哥哥。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">行学：游学。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">等：等同。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">常尔：经常这样。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《典略》曰：“备，本临邑侯枝属也。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《汉晋春秋》曰：“涿人李定云：‘此家必出贵人。’”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c02">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">2 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主不甚乐读书；喜狗马、音乐、美衣服。身长七尺五寸<span class="zs-no">〔1〕</span>，垂手下膝，顾自见其耳。少语言，善下人<span class="zs-no">〔2〕</span>，喜怒不形于色。好交结豪侠，年少争附之。</p>
+<p class="fy-inline">先主早年不很喜欢读书，却喜欢玩狗骑马，听音乐，穿华丽衣服。他身高七尺五寸，手垂下来可以超过膝盖，眼睛可以看到自己的大耳朵。他平常少言寡语，善于尊重别人，喜怒都不露于形色。他最爱交结英雄豪杰行侠仗义的朋友，年轻人都争着追随他。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">七尺五寸：根据 20 世纪 90 年代所能见到的大量考古实物资料，三国时期的每尺长度，相当于现今 24 厘米。所以当时的七尺五寸，相当于现今1.8米左右。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">善下人：善于尊重别人。</span></p>
+<p class="yw">中山大商张世平、苏双等赀累千金<span class="zs-no">〔3〕</span>，贩马周旋于涿郡；见而异之，乃多与之金财。先主由是得用合徒众。灵帝末，黄巾起，州郡各举义兵。先主率其属，从校尉邹靖讨黄巾贼；有功，除安（喜）〔熹〕尉<span class="zs-no">〔4〕</span>。<span class="pz-no">〔一〕</span>督邮以公事到县，先主求谒，不通；直入缚督邮，杖二百；解绶系其颈着马枊<span class="zs-no">〔5〕</span>，<span class="pz-no">〔二〕</span>弃官亡命。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">中山国的大富商张世平、苏双等人，家财万贯，因贩卖马匹而往来于涿郡，见到先生之后很是器重，给了他一大笔金钱，从此先主能够招集大批的支持者。汉灵帝末年，黄巾军起事，各个州郡都开始组织义军镇压黄巾军。先主也带领手下人马随从校尉邹靖讨伐黄巾军有功，被朝廷任命为安熹县县尉。不久郡政府的督邮到县里来出公差，先主去登门拜见，督邮却摆架子拒绝见他。先主带着人径直闯了进去把督邮捆起来，打了两百板子；接着把自己系印的绶带解下来，一头拴在督邮的脖子上，另一头拴在马桩子上，然后抛弃官职逃亡外地。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">赀：财产。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">安熹：县名。县治在今河北定州市东南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">马枊：拴马柱。</span></p>
+<p class="yw">顷之，大将军何进遣都尉毌丘毅，诣丹杨募兵，先主与俱行。至下邳遇贼，力战有功，除为下密丞<span class="zs-no">〔6〕</span>。复去官。</p>
+<p class="fy-inline">没有多久，执政的大将军何进派遣都尉毌丘毅到丹杨郡去招兵，先主与毌丘毅一起前去。走到下邳碰到一帮匪徒，先主奋力作战有功，被朝廷委任为下密县县丞。但是他很快又离职。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">下密：县名。县治在今山东昌邑市东。</span></p>
+<p class="yw">后为高唐尉，迁为令。<span class="pz-no">〔四〕</span>为贼所破，往奔中郎将公孙瓒。瓒表为别部司马，使为青州刺史田楷<span class="zs-no">〔7〕</span>，以拒冀州牧袁绍。数有战功，试守平原令<span class="zs-no">〔8〕</span>。后领平原相；郡民刘平，素轻先主，耻为之下，使客刺之；客不忍刺，语之而去<span class="zs-no">〔9〕</span>。其得人心如此。<span class="pz-no">〔五〕</span></p>
+<p class="fy-inline">后来先主出任高唐县县尉，升为该县的县令。因为被大股匪徒打垮，先主丢弃城池跑去投奔师兄公孙瓒，已经当上中郎将的公孙瓒委任他为别部司马，让他去帮助青州刺史田楷抵御冀州牧袁绍。先主多次立下战功，所以受命暂时代理平原县的县令，后来又兼任平原国相。平原国有个叫刘平的人素来轻视先主，耻于当先主辖区的百姓，秘密派遣刺客去暗杀先主。刺客却不忍心下手，竟然把情况告诉先主后离去。先主就像这样深得人心。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">为：帮助。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">试守：暂时代理。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">语之：告诉刘备。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《典略》曰：“平原刘子平，知备有武勇。时张纯反叛，青州被诏：遣从事将兵讨纯。过平原，子平荐备于从事，遂与相随。遇贼于野，备中创，佯死；贼去后，故人以车载之，得免。后以军功，为中山安（喜）〔熹〕尉。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">枊，五葬反。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《典略》曰：“其后州郡被诏书：其有军功为长吏者，当沙汰之。备疑在遣中。督邮至县，当遣备。备素知之，闻督邮在传舍，备欲求见督邮；督邮称疾，不肯见备。备恨之，因还治，将吏卒更诣传舍；突入门，言：‘我被府君密教，收督邮！’遂就床缚之，将出到界。自解其绶，以系督邮颈；缚之著树，鞭杖百余下，欲杀之。督邮求哀，乃释去之。”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《英雄记》云：“灵帝末年，备尝在京师。后与曹公俱还沛国，募召合众。会灵帝崩，天下大乱，备亦起军，从讨董卓。”</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《魏书》曰：“刘平结客刺备，备不知，而待客甚厚；客以状语之而去。是时人民饥馑，屯聚抄暴。备外御寇难，内丰财施；士之下者，必与同席而坐，同簋而食，无所简择。众多归焉。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c03">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">3 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">袁绍攻公孙瓒，先主与田楷东屯齐。曹公征徐州，徐州牧陶谦遣使告急于田楷；楷与先主俱救之。时先主自有兵千余人及幽州乌丸杂胡骑，又略得饥民数千人。既到，谦以丹杨兵四千，益先主<span class="zs-no">〔1〕</span>；先主遂去楷，归谦。</p>
+<p class="fy-inline">袁绍进攻公孙瓒，先主与田楷转移到东面的齐国驻扎。曹操东征徐州，徐州牧陶谦派人向田楷告急求救，田楷与先主一齐前去。当时，先主有一千多汉族士兵，以及一些幽州的乌丸等少数族骑兵，另外又抢来几千饥民，组成队伍。到达徐州后，陶谦马上给先主补充了四千丹杨兵，先主便离开田楷投奔了陶谦。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">益：补充。</span></p>
+<p class="yw">谦表先主为豫州刺史，屯小沛<span class="zs-no">〔2〕</span>。谦病笃，谓别驾麋竺曰<span class="zs-no">〔3〕</span>：“非刘备，不能安此州也！”谦死，竺率州人迎先主。先主未敢当，下邳陈登谓先主曰：“今汉室陵迟，海内倾覆；立功立事，在于今日！（彼）〔鄙〕州殷富<span class="zs-no">〔4〕</span>，户口百万；欲屈使君，抚临州事。”先主曰：“袁公路近在寿春<span class="zs-no">〔5〕</span>；此君四世五公<span class="zs-no">〔6〕</span>，海内所归；君可以州与之。”登曰：“公路骄豪，非治乱之主！今欲为使君合步骑十万：上可以匡主济民，成五霸之业<span class="zs-no">〔7〕</span>；下可以割地守境，书功于竹帛。若使君不见听许，登亦未敢听使君也！”北海相孔融谓先主曰：“袁公路岂忧国忘家者邪？冢中枯骨<span class="zs-no">〔8〕</span>，何足介意！今日之事，百姓与能<span class="zs-no">〔9〕</span>；天与不取，悔不可追！”先主遂领徐州。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">陶谦向朝廷上表举荐先主为豫州刺史，驻扎在沛县。不久陶谦病重，临终前对别驾从事麋竺说：“除了刘备，别人都不能安定这徐州。”陶谦死，麋竺就率领本州人士去迎接先主，先主谦让不愿承受。下邳郡人陈登对先主说：“如今汉朝衰败，天下动荡，建功立业，眼下正是时候。我们徐州殷实富庶，拥有上百万人口，我们想委屈您前去担任州行政长官。”先主回答道：“袁术就在徐州附近的寿春，这位的家族中四代人出了五个当三公的，他受到天下人的仰慕，您可以把徐州交给他啊。”陈登说：“这袁术骄傲放纵，不是能够平定祸乱的主事人。现今我们要为您召集十万步兵和骑兵，建立头等的功勋可以扶助天子拯救百姓，完成春秋五霸那样的伟业，次一等的功业也能守卫安定一方，在史册上留下美名。如果您不答应我们的请求，我也不会听从您的意见！”北海国的国相孔融对先主说：“袁术哪里是忧国忘家的人！至于他家那些当过三公的先辈，不过是坟墓中的一堆枯骨而已，何必放在心上。现今的事势，老百姓拥护的是有能力的人。上天送与您您却不要，将来后悔也追不回了。”先主听从劝告兼任了徐州牧。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">小沛：指沛县。县治在今江苏沛县。当时属沛国，故称小沛。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">糜竺：传见本书卷三十八。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">鄙州：指徐州。陈登是徐州人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">袁公路：袁术字公路。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">四世五公：四代人出了五个当三公的人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">五霸：春秋时先后称霸的五个诸侯。即齐桓公、晋文公、楚庄王、吴王阖闾、越王勾践。一说指齐桓公、晋文公、宋襄公、秦穆公、楚庄王。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">冢中枯骨：坟墓里的骷髅。指袁术显赫的先辈。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">百姓与能：老百姓拥护的是有能力的人。这一句出自《周易·系辞》下。</span></p>
+<p class="yw">袁术来攻先主，先主拒之于盱眙、淮阴<span class="zs-no">〔10〕</span>。曹公表先主为镇东将军，封宜城亭侯。是岁，建安元年也。</p>
+<p class="fy-inline">陶谦向朝廷上表举荐先主为豫州刺史，驻扎在沛县。不久陶谦病重，临终前对别驾从事麋竺说：“除了刘备，别人都不能安定这徐州。”陶谦死，麋竺就率领本州人士去迎接先主，先主谦让不愿承受。下邳郡人陈登对先主说：“如今汉朝衰败，天下动荡，建功立业，眼下正是时候。我们徐州殷实富庶，拥有上百万人口，我们想委屈您前去担任州行政长官。”先主回答道：“袁术就在徐州附近的寿春，这位的家族中四代人出了五个当三公的，他受到天下人的仰慕，您可以把徐州交给他啊。”陈登说：“这袁术骄傲放纵，不是能够平定祸乱的主事人。现今我们要为您召集十万步兵和骑兵，建立头等的功勋可以扶助天子拯救百姓，完成春秋五霸那样的伟业，次一等的功业也能守卫安定一方，在史册上留下美名。如果您不答应我们的请求，我也不会听从您的意见！”北海国的国相孔融对先主说：“袁术哪里是忧国忘家的人！至于他家那些当过三公的先辈，不过是坟墓中的一堆枯骨而已，何必放在心上。现今的事势，老百姓拥护的是有能力的人。上天送与您您却不要，将来后悔也追不回了。”先主听从劝告兼任了徐州牧。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">盱眙：县名。县治在今江苏盱眙县东北；淮阴：县名</span></p>
+<p class="yw">先主与术相持经月，吕布乘虚袭下邳；下邳守将曹豹反，间迎布<span class="zs-no">〔11〕</span>，布虏先主妻子。先主转军海西。<span class="pz-no">〔二〕</span>杨奉、韩暹寇徐、扬间，先主邀击，尽斩之<span class="zs-no">〔12〕</span>。</p>
+<p class="fy-inline">袁术果然来进攻，先主在盱眙、淮阴一线抗御。曹操上表朝廷推荐先主为镇东将军，封宜城亭侯，这一年是汉献帝建安元年（公元196）。先主与袁术相持了一个多月，吕布乘虚偷袭了先主的治所下邳县。下邳城的守将曹豹反叛，趁机迎接吕布。吕布俘虏了先主的妻子儿女，先主被迫转移到海西县。杨奉、韩暹侵掠徐州、扬州的交界地区，先主率军截击，把他们斩首。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">间：乘机。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">尽斩之：据本书卷六《董卓传》裴注引《英雄记》、《后汉书》卷七十二《董卓传》，当时刘备只杀了杨奉；韩暹是被他人杀死的，而且时间在后。此处史文疑有误。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《献帝春秋》曰：“陈登等遣使诣袁绍曰：‘天降灾沴，祸臻鄙州；州将殂殒，生民无主。恐惧奸雄一旦承隙，以贻盟主日昃之忧；辄共奉故平原相刘备府君，以为宗主，永使百姓知有依归。方今寇难纵横，不遑释甲。谨遣下吏，奔告于执事。’绍答曰：‘刘玄德，弘雅有信义；今徐州乐戴之，诚副所望也。’”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《英雄记》曰：“备留张飞，守下邳；引兵，与袁术战于淮阴石亭，更有胜负。陶谦故将曹豹，在下邳，张飞欲杀之。豹众坚营自守，使人招吕布。布取下邳，张飞败走。备闻之，引兵还；比至下邳，兵溃。收散卒东取广陵，与袁术战，又败。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c04">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">4 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主求和于吕布，布还其妻子。（先主遣关羽守下邳。）</p>
+<p class="fy-inline">袁术果然来进攻，先主在盱眙、淮阴一线抗御。曹操上表朝廷推荐先主为镇东将军，封宜城亭侯，这一年是汉献帝建安元年（公元196）。先主与袁术相持了一个多月，吕布乘虚偷袭了先主的治所下邳县。下邳城的守将曹豹反叛，趁机迎接吕布。吕布俘虏了先主的妻子儿女，先主被迫转移到海西县。杨奉、韩暹侵掠徐州、扬州的交界地区，先主率军截击，把他们斩首。</p>
+<p class="yw">先主还小沛，<span class="pz-no">〔一〕</span>复合兵得万余人。吕布恶之，自出兵攻先主。先主败走归曹公<span class="zs-no">〔1〕</span>，曹公厚遇之<span class="zs-no">〔2〕</span>，以为豫州牧。将至沛收散卒，给其军粮；益与兵，使东击布。布遣高顺攻之<span class="zs-no">〔3〕</span>；曹公遣夏侯惇往，不能救；为顺所败，复虏先主妻子送布。曹公自出东征，<span class="pz-no">〔二〕</span>助先主围布于下邳。生擒布，先主复得妻子。从曹公还许，表先主为左将军；礼之愈重，出则同舆，坐则同席。</p>
+<p class="fy-inline">先主向吕布求和，吕布还给他妻子儿女。先主回到沛县，又招集了一万多人马。吕布对此又不满意了，亲自出兵进攻先主，先主失败而前去投奔曹操，曹操对他厚加优待，委任他为豫州牧。先主准备回沛县收集散兵，曹操供给他军粮，还拨给他军队让他去进攻东边的吕布。吕布派骁将高顺反击，先主失利，曹操急令夏侯惇前去救援，也被高顺打败，高顺还俘虏先主的妻子儿女送交吕布。曹操亲自率军东征，帮助先主在下邳包围吕布，将其生擒处死。先主又得到自己的妻子儿女，随从曹操回到许县。曹操上表推荐先主为左将军，给予更隆重的礼遇，出外同乘一辆车，进屋同坐一张席。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">曹公：指曹操。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">厚遇：优待。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">高顺：事见本书卷七《吕布传》裴注引《英雄记》。</span></p>
+<p class="yw">袁术欲经徐州北就袁绍，曹公遣先主督朱灵、路招要击术<span class="zs-no">〔4〕</span>。未至，术病死。</p>
+<p class="fy-inline">袁术准备经过徐州前往投奔袁绍，曹操派先主带领朱灵、路招二将前去截击袁术。先主还未赶到，袁术已经病死。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">朱灵：传附本书卷十七《徐晃传》。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《英雄记》曰：“备军在广陵，饥饿困踧；吏士大小，自相啖食，穷饿侵逼；欲还小沛，遂使吏请降布。布令备还州，并势击术。具刺史车马、童仆，发遣备妻子、部曲家属于泗水上，祖道相乐。”</span></p>
+<p class="pz-item no-no">《魏书》曰：“诸将谓布曰：‘备数反覆难养，宜早图之！’布不听。以状语备，备心不安，而求自托；使人说布，求屯小沛，布乃遣之。”</p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《英雄记》曰：“建安三年春，布使人赍金，欲诣河内买马，为备兵所抄。布由是遣中郎将高顺、北地太守张辽等，攻备。九月，遂破沛城，备单身走，获其妻息。十月，曹公自征布；备于梁国界中，与曹公相遇，遂随公俱东征。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c05">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">5 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主未出时，献帝舅车骑将军董承，<span class="pz-no">〔一〕</span>辞受帝衣带中密诏<span class="zs-no">〔1〕</span>，当诛曹公。先主未发。是时，曹公从容谓先主曰<span class="zs-no">〔2〕</span>：“今天下英雄，唯使君与操耳！本初之徒<span class="zs-no">〔3〕</span>，不足数也<span class="zs-no">〔4〕</span>。”先主方食，失匕箸<span class="zs-no">〔5〕</span>。<span class="pz-no">〔二〕</span>遂与承及长水校尉种辑、将军吴子兰、王子服等同谋。会见使<span class="zs-no">〔6〕</span>，未发。</p>
+<p class="fy-inline">先主在离开许都之前，汉献帝的老丈人车骑将军董承声称得到献帝从衣带中传出的密诏，要诛杀曹操。先主参与其事但还没有采取行动。这时曹操有一次空闲时对先主说：“当今天下的英雄，只有您和我曹操了。袁绍之流，值不得一提啊！”先主正在吃东西，听了一惊，把手中的匙子和筷子都掉了。于是先主抓紧时间与董承、长水校尉种辑、将军吴子兰、王子服等人密谋。碰巧这时先主被曹操派出去截击袁术，行动未能付诸实现。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">辞：声称。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">从容：空闲的时候。这是当时的习语。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">本初：袁绍字本初。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">不足数：值不得一提。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">失匕箸：（吓）掉了匙子和筷子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">会见使：碰上被派遣（去截击袁术）。</span></p>
+<p class="yw">事觉，承等皆伏诛；<span class="pz-no">〔三〕</span>先主据下邳，灵等还。先主乃杀徐州刺史车胄，留关羽守下邳，而身还小沛。<span class="pz-no">〔四〕</span></p>
+<p class="fy-inline">先主走后这件事被曹操察觉，董承等人都被诛杀，先主便领兵据守下邳。</p>
+<p class="yw">东海昌霸反，郡县多叛曹公为先主<span class="zs-no">〔7〕</span>。众数万人，遣孙乾与袁绍连和<span class="zs-no">〔8〕</span>。曹公遣刘岱、王忠击之，不克。</p>
+<p class="fy-inline">朱灵等人带兵回去后，先主就杀死徐州刺史车胄，留下关羽镇守下邳，而自己回到沛县驻扎，从此与曹操决裂。东海人昌霸造反，附近有不少郡县背叛曹操支持先主，人数总共有数万人。先主派孙乾去和袁绍结成联盟，曹操派刘岱、王忠去进攻先主，未能取胜。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">为：支持。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">孙乾：传见本书卷三十八。</span></p>
+<p class="yw">五年<span class="zs-no">〔9〕</span>，曹公东征先主，先主败绩。<span class="pz-no">〔五〕</span>曹公尽收其众，虏先主妻子；并擒关羽以归。先主走青州。</p>
+<p class="fy-inline">建安五年（公元 200），曹操亲自东征，把先主击败。曹操俘虏了他的全部人马，包括他的妻子儿女，还把关羽生擒后带回去。先主狼狈逃往青州。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">五年：建安五年（公元 200）。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之按：董承，汉灵帝母董太后之侄，于献帝为丈人；盖古无丈人之名，故谓之“舅”也。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《华阳国志》云：“于时，正当雷震，备因谓操曰：‘圣人云“迅雷风烈必变”，良有以也；一震之威，乃可至于此也！’”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《献帝起居注》曰：“承等与备谋，未发，而备出。承谓服曰：‘郭多有数百兵，坏李傕数万人；但足下与我同不耳？昔吕不韦之门，须子楚而后高；今吾与子由是也。’服曰：‘惶惧，不敢当；且兵又少。’承曰：‘举事讫，得曹公成兵，顾不足邪？’服曰：‘今京师岂有所任乎？’承曰：‘长水校尉种辑、议郎吴硕，是我腹心办事者。’遂定计。”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">胡冲《吴历》曰：“曹公数遣亲近，密觇诸将有宾客酒食者，辄因事害之。备时闭门，将人种芜菁。曹公使人窥门，既去；备谓张飞、关羽曰：‘吾岂种菜者乎？曹公必有疑意，不可复留！’其夜开后栅，与飞等轻骑俱去；所得赐遗衣服，悉封留之。乃往小沛收合兵众。”臣松之按：魏武帝遣先主统诸将，要击袁术；郭嘉等并谏，魏武不从。其事显然，非因种菜遁逃而去。如胡冲所云，何乖僻之甚乎！</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">《魏书》曰：“是时，公方有急于官渡；乃分留诸将屯官渡，自勒精兵征备。备初谓公与大敌连，不得东；而候骑猝至，言‘曹公自来’；备大惊。然犹未信，自将数十骑出望公军，见麾旌，便弃众而走。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c06">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">6 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">青州刺史袁谭，先主故茂才也<span class="zs-no">〔1〕</span>；将步骑迎先主，先主随谭到平原。谭驰使白绍，绍遣将道路奉迎；身去邺二百里<span class="zs-no">〔2〕</span>，与先主相见。<span class="pz-no">〔一〕</span>驻月余日<span class="zs-no">〔3〕</span>，所失亡士卒稍稍来集<span class="zs-no">〔4〕</span>。</p>
+<p class="fy-inline">青州刺史袁谭是袁绍的长子，从前曾被先主举荐为茂才，带领军队前来迎接。先主随袁谭来到平原县，袁谭派遣使者骑马驰往冀州的邺县去报告袁绍。袁绍立即指令下属将领前去迎接先主来邺县，自己又出城二百里，赶去和先主相见。在邺县居住一个多月之后，逃散的士兵逐渐回来投奔先主。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">故茂才：过去举荐的茂才。茂才是人才选拔的科目名称。西汉叫秀才。东汉避光武帝刘秀的名讳，改称茂才。是常设科目。由州刺史或州牧提名，举荐到中央。袁谭是袁绍长子，籍贯为豫州汝南郡汝阳县，刘备任豫州牧时曾举荐他为茂才。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">身去邺：亲自从邺县出城。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">月余日：一个多月。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">稍稍：逐渐。</span></p>
+<p class="yw">曹公与袁绍相拒于官渡，汝南黄巾刘辟等，叛曹公应绍。绍遣先主将兵与辟等略许下<span class="zs-no">〔5〕</span>。关羽亡，归先主。曹公遣曹仁将兵击先主。先主还绍军，阴欲离绍，乃说绍南连荆州牧刘表。</p>
+<p class="fy-inline">曹操与袁绍在官渡相持，汝南郡的黄巾军首领刘辟等人背叛曹操响应袁绍。袁绍派先主领兵与刘辟等人一起去袭击曹操的后方许县一带。这时，关羽从曹军逃跑回到先主身边。曹操派曹仁带兵去进攻先主，先主返回袁绍大营，暗中想离开袁绍，就劝说袁绍去联络荆州牧刘表。袁绍派先主率领本部人马再次前往汝南郡活动，先主到达后与当地武装首领龚都等人联合，手下发展到几千人。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">许下：许县一带。</span></p>
+<p class="yw">绍遣先主将本兵复至汝南；与贼龚都等合，众数千人。曹公遣蔡杨击之，为先主所杀。曹公既破绍，自南击先主。</p>
+<p class="fy-inline">曹公派部将蔡杨去攻击先主，反而被先主杀死。曹操在官渡击败袁绍之后，亲自向南去扫荡先主。</p>
+<p class="yw">先主遣麋竺、孙乾，与刘表相闻<span class="zs-no">〔6〕</span>。表自郊迎<span class="zs-no">〔7〕</span>，以上宾礼待之；益其兵，使屯新野。荆州豪杰归先主者日益多，表疑其心；阴御之，<span class="pz-no">〔二〕</span>使拒夏侯惇、于禁等于博望<span class="zs-no">〔8〕</span>。久之，先主设伏兵，一旦自烧屯伪遁<span class="zs-no">〔9〕</span>；惇等追之，为伏兵所破。</p>
+<p class="fy-inline">先主赶忙派麋竺、孙乾去和刘表联络准备前去投奔。刘表亲自出城去迎接他，以上宾的礼节接待。又给先主补充兵力，让他驻扎在新野。这时荆州的豪杰前来归附先主的日益增多，刘表怀疑先主别有用心，暗中对他进行防备。不久刘表让先主到博望县抵御曹操的部将夏侯惇、于禁。双方相持很长时间后，先主设置伏兵，一下子烧掉军营伪装逃跑；夏侯惇等领兵追击，被先主的伏兵杀得大败。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">相闻：联络。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">郊迎：出城迎接。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">博望：县名。县治在今河南方城县西南博望镇。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">一旦：一下子。这是当时习语；屯：军营</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏书》曰：“备归绍，绍父子倾心敬重。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《九州春秋》曰：“备住荆州数年。尝于表坐，起至厕；见髀里肉生，慨然流涕。还坐，表怪问备。备曰：‘（吾）〔平〕常身不离鞍，髀肉皆消；今不复骑，髀里肉生。日月若驰，老将至矣！而功业不建，是以悲耳！’”《世语》曰：“备屯樊城，刘表礼焉；惮其为人，不甚信用。曾请备宴会，蒯越、蔡瑁，欲因会取备；备觉之，伪如厕，潜遁出。所乘马名‘的卢’，骑的卢走，坠襄阳城西檀溪水中，溺不得出。备急曰：‘的卢：今日厄矣，可努力！’的卢乃一踊三丈，遂得过；乘桴渡河，中流而追者至，以表意谢之，曰：‘何去之速乎！’”孙盛曰：“此不然之言。备时羁旅，客主势殊，若有此变，岂敢晏然终表之世而无衅故乎？此皆世俗妄说，非事实也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c07">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">7 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">十二年<span class="zs-no">〔1〕</span>，曹公北征乌丸；先主说表袭许，表不能用。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">建安十二年（公元 207），曹操向北方出兵去征讨塞外的乌丸族人，先主劝刘表趁这个时机去袭击许县，刘表不采纳他的计策。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">十二年：建安十二年（公元 207）。</span></p>
+<p class="yw">（曹公南征表）〔及曹公南征〕，会表卒，<span class="pz-no">〔二〕</span>子琮代立<span class="zs-no">〔2〕</span>，遣使请降。先主屯樊，不知曹公猝至；至宛乃闻之，遂将其众去。</p>
+<p class="fy-inline">到了第二年曹操南下荆州征伐刘表时，碰巧这时刘表病死，由儿子刘琮继承权位，刘琮派人向曹操投降。此刻先主驻扎在樊城，不知道曹军猛然到来，直到曹军前锋杀至宛县后才得知消息，赶紧率领下属向南撤退。</p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">琮：即刘琮。事见本书卷六《刘表传》。</span></p>
+<p class="yw">过襄阳，诸葛亮说先主攻琮，荆州可有。先主曰：“吾不忍也。”<span class="pz-no">〔三〕</span>乃驻马呼琮；琮惧，不能起；琮左右及荆州人多归先主。<span class="pz-no">〔四〕</span>比到当阳，众十余万，辎重数千辆，日行十余里；别遣关羽乘船数百艘，使会江陵。</p>
+<p class="fy-inline">经过襄阳时，诸葛亮劝先主趁机进攻刘琮，可以夺得荆州。先主却说：“我不忍心啊。”停下马来招呼刘琮，刘琮吓得站不起身来。刘琮的左右下属以及荆州人有很多来归依先主，等到走拢当阳县，队伍已有十多万人，载运物资的车子几千辆，一天只能走十多里路。先主只好另外派遣关羽带领数百艘船只，从汉水驶入长江后到江陵县会合。</p>
+<p class="yw">或谓先主曰：“宜速行保江陵！今虽拥大众，被甲者少<span class="zs-no">〔3〕</span>；若曹公兵至，何以拒之？”先主曰：“夫济大事，必以人为本；今人归吾，吾何忍弃去！”<span class="pz-no">〔五〕</span></p>
+<p class="fy-inline">有人对先主说：“应当赶快南下去占据江陵城。现今我们虽然人多，但是能够穿上铠甲作战的人少，如果曹操率军追上，用什么来抵抗他呢？”先主说：“要成就大事必须以人为根本，现今人们来归附我，我又怎么忍心抛弃他们啊！”</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">被甲者：穿铠甲的兵士。</span></p>
+<p class="yw">曹公以江陵有军实<span class="zs-no">〔4〕</span>，恐先主据之；乃释辎重，轻军到襄阳。闻先主已过，曹公将精骑五千急追之；一日一夜行三百余里，及于当阳之长坂<span class="zs-no">〔5〕</span>。先主弃妻子，与诸葛亮、张飞、赵云等数十骑走<span class="zs-no">〔6〕</span>。曹公大获其人众辎重。</p>
+<p class="fy-inline">曹操考虑到江陵有大批军事物资，害怕先主前去占据，于是下令暂时放下物资和装备，全军轻装迅速赶到襄阳。到达后听说先主已经走过，曹操立即率领五千精锐骑兵飞快追赶，一天一夜急行军三百多里，终于在当阳县的长坂坡把先主一行追上。先主丢下妻子儿女，与诸葛亮、张飞、赵云等几十人骑马逃跑，其余的人马物资大都被曹操俘虏缴获。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">军实：军事物资。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">长坂：地名。在今湖北当阳市东北。现今已建成长坂公园。附近一带尚有很多与当时战事相关的遗迹留存。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">赵云：传见本书卷三十六。</span></p>
+<p class="yw">先主斜趋汉津<span class="zs-no">〔7〕</span>，适与羽船会，得济沔；遇表长子江夏太守琦众万余人<span class="zs-no">〔8〕</span>，与俱到夏口。</p>
+<p class="fy-inline">先主一行向东南方斜着奔往汉水的渡口汉津，正好与关羽的船队会合，得以渡过汉水。又遇上刘表长子刘琦，他当时任江夏郡太守，带了一万多人马，双方一起到达夏口。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">汉津：汉水古津渡名。在今湖北荆门市东南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">琦：即刘琦。事见本书卷六《刘表传》。</span></p>
+<p class="yw">先主遣诸葛亮自结于孙权，<span class="pz-no">〔六〕</span>权遣周瑜、程普等水军数万<span class="zs-no">〔9〕</span>；与先主并力，<span class="pz-no">〔七〕</span>与曹公战于赤壁<span class="zs-no">〔10〕</span>；大破之，焚其舟船。先主与吴军水陆并进，追到南郡。时又疾疫，北军多死，曹公引归。<span class="pz-no">〔八〕</span></p>
+<p class="fy-inline">先主派诸葛亮到孙权那里去主动进行联络，孙权派大将周瑜、程普等带领水军数万人，与先主全力合作，在赤壁迎战曹操，把对方打得大败，焚烧了对方的大量船只。先主与吴军水陆并进，一直追到南郡，当时传染病流行，从北方来的曹军士兵大量死亡，曹操只好带领残余人马撤回。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">周瑜：传见本书卷五十四；程普：传见本书卷五十五</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">赤壁：地名。决定曹操能否向长江以南扩展势力范围的著名古战场。与官渡之战、猇亭之战构成确定三国鼎立版图基本格局的三大战役。具体位置有多种说法，但都认为在今湖北境内的长江之滨。其中，主张赤壁在江北汉阳、黄冈的说法，与《三国志》记载不符，难以令人信服。认为赤壁在江南者有三说，即蒲圻西北、嘉鱼东北和武昌县西。蒲圻赤壁与北岸的乌林相对，同《三国志》的记载吻合。结合当时战况和现存遗迹，当以赤壁在蒲圻为是。蒲圻县已经国家批准，正式更名为赤壁市。赤壁市西北约 40 公里长江南岸之滨的赤壁山，是赤壁古战场所在地，尚有“赤壁”题刻、翼江亭等名胜。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《汉晋春秋》曰：“曹公自柳城还；表谓备曰：‘不用君言，故为失此大会！’备曰：‘今天下分裂，日寻干戈；事会之来，岂有终极乎？若能应之于后者，则此未足为恨也！’”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《英雄记》曰：“表病，上备领荆州刺史。”</span></p>
+<p class="pz-item no-no">《魏书》曰：“表病笃，托国于备，顾谓曰：‘我儿不才，而诸将并零落；我死之后，卿便摄荆州。’备曰：‘诸子自贤，君其忧病！’或劝备宜从表言，备曰：‘此人待我厚；今从其言，人必以我为薄：所不忍也。’”</p>
+<p class="pz-item no-no">臣松之以为：表夫妻素爱琮，舍嫡立庶，情计久定；无缘临终举荆州以授备。此亦不然之言。</p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">孔衍《汉魏春秋》曰：“刘琮乞降，不敢告备，备亦不知。久之乃觉，遣所亲问琮；琮令宋忠，诣备宣旨。是时曹公在宛，备乃大惊骇，谓忠曰：‘卿诸人作事如此，不早相语；今祸至方告我，不亦太剧乎！’引刀向忠曰：‘今断卿头，不足以解忿，亦耻大丈夫临别复杀卿辈！’遣忠去，乃呼部曲议。或劝备劫将琮及荆州吏士，径南到江陵。备答曰：‘刘荆州临亡，托我以孤遗；背信自济，吾所不为，死何面目以见刘荆州乎！’”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《典略》曰：“备过辞表墓，遂涕泣而去。”</span></p>
+<p class="pz-item"><span class="pz-no">〔五〕</span><span class="pz-body">习凿齿曰：“先主虽颠沛险难，而信义愈明；势逼事危，而言不失道。追景升之顾，则情感三军；恋赴义之士，则甘与同败。观其所以结物情者，岂徒投醪抚寒、含蓼问疾而已哉！其终济大业，不亦宜乎！”</span></p>
+<p class="pz-item"><span class="pz-no">〔六〕</span><span class="pz-body">《江表传》曰：“孙权遣鲁肃，吊刘表二子，并令与备相结。肃未至，而曹公已济汉津；肃故进前，与备相遇于当阳。因宣权旨，论天下事势，致殷勤之意，且问备曰：‘豫州今欲何至？’备曰：‘与苍梧太守吴（臣）〔巨〕有旧，欲往投之。’肃曰：‘孙讨虏，聪明仁惠，敬贤礼士；江表英豪，咸归附之；已据有六郡，兵精粮多，足以立事。今为君计：莫若遣腹心，使自结于东，崇连和之好，共济世业。而云欲投吴（臣）〔巨〕，巨是凡人，偏在远郡；行将为人所并，岂足托乎？’备大喜，进住鄂县；即遣诸葛亮，随肃诣孙权，结同盟誓。”</span></p>
+<p class="pz-item"><span class="pz-no">〔七〕</span><span class="pz-body">《江表传》曰：“备从鲁肃计，进住鄂县之樊口。诸葛亮诣吴，未还。备闻曹公军下，恐惧；日遣逻吏于水次，候望权军。吏望见瑜船，驰往白备。备曰：‘何以知之非青、徐军邪？’吏对曰：‘以船知之。’备遣人慰劳之。瑜曰：‘有军任，不可得委署；傥能屈威，诚副其所望。’备谓关羽、张飞曰：‘彼欲致我；我今自结托于东，而不往：非同盟之意也。’乃乘单舸，往见瑜，问曰：‘今拒曹公，深为得计。战卒有几？’瑜曰：‘三万人。’备曰：‘恨少！’瑜曰：‘此自足用，豫州但观瑜破之！’备欲呼鲁肃等共会语，瑜曰：‘受命，不得妄委署；若欲见子敬，可别过之。又孔明已俱来，不过三两日到也。’备虽深愧异瑜，而心未许之能必破北军也；故差池在后，将二千人与羽、飞俱，未肯系瑜：盖为进退之计也。”孙盛曰：“刘备雄才，处必亡之地，告急于吴，而获奔助；无缘复顾望江渚而怀后计。《江表传》之言，当是吴人欲专美之辞。”</span></p>
+<p class="pz-item"><span class="pz-no">〔八〕</span><span class="pz-body">《江表传》曰：“周瑜为南郡太守，分南岸地以给备。备别立营于油江口，改名为‘公安’。刘表吏士见从北军，多叛，来投备。备以瑜所给地少，不足以安民，后从权借荆州数郡。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c08">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">8 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主表琦为荆州刺史；又南征四郡<span class="zs-no">〔1〕</span>：武陵太守金旋、长沙太守韩玄、桂阳太守赵范、零陵太守刘度<span class="zs-no">〔2〕</span>，皆降。<span class="pz-no">〔一〕</span>庐江雷绪率部曲数万口稽颡<span class="zs-no">〔3〕</span>。</p>
+<p class="fy-inline">先主上表朝廷举荐刘琦为荆州刺史，又出兵南下进攻荆州南部的四个郡。结果，武陵郡太守金旋、长沙郡太守韩玄、桂阳郡太守赵范、零陵郡太守刘度全部投降。庐江郡人雷绪也带领几万人马前来叩头归顺。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">四郡：即下文所列的武陵、长沙、桂阳、零陵四郡。都在荆州南部，是赤壁之战后孙刘两家瓜分荆州刘备所得的部分。孙权只得到荆州中部的江夏郡和南郡。北部的南阳郡仍在曹操手中。就面积而言，刘备所得最大；但若从地理的位置来看，则以孙权所得为重要。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">武陵：郡名。治所在今湖南常德市；桂阳：郡名；零陵：郡名</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">稽颡：跪拜。</span></p>
+<p class="yw">琦病死，群下推先主为荆州牧，治公安。权稍畏之，进妹固好<span class="zs-no">〔4〕</span>；先主至京见权<span class="zs-no">〔5〕</span>，绸缪恩纪<span class="zs-no">〔6〕</span>。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">这时刘琦病死，下属们就拥戴先主为荆州牧，治所设在公安。孙权逐渐畏惧先主，把自己的妹妹送给先主为妻以巩固友谊。先主也到京这个地方去见孙权，加深亲戚感情。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">妹：即刘备妻子孙氏。事见本书卷三十七《法正传》、卷三十四《先主吴穆皇后传》裴注引《汉晋春秋》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">京：地名。在今江苏镇江市。后来叫京口。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">绸缪恩纪：加深亲戚情谊。</span></p>
+<p class="yw">权遣使云“欲共取蜀”，或以为“宜报听许，吴终不能越荆有蜀，蜀地可为己有”。荆州主簿殷观进曰<span class="zs-no">〔7〕</span>：“若为吴先驱；进未能克蜀，退为吴所乘，即事去矣。今但可然赞其伐蜀<span class="zs-no">〔8〕</span>；而自说新据诸郡，未可兴动<span class="zs-no">〔9〕</span>：吴必不敢越我而独取蜀。如此进退之计，可以收吴、蜀之利。”</p>
+<p class="fy-inline">先主回来后孙权派使者来联络，说是想与先主共同攻取西面的益州。有人认为应当答复同意，因为吴军终归不能越过我们荆州去占领益州，这样一来益州也就归我们自己所有了。荆州政府的主簿殷观却进言说：“如果这样我们势必充当吴军的前驱，一旦进攻益州未能得手，后退时受到吴军的突袭，事情就完了。而今只消赞同他们自己去征伐益州，而说我们自己刚刚占领荆州各郡，不能兴师动众，吴军必然不敢越过我们荆州去独自攻取益州。像这样打算能够进退自如，可以在吴军和益州两方面收取好处。”</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">殷观：事见本书卷四十五《杨戏传》载杨戏《季汉辅臣赞》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">然赞：赞同。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">兴动：兴师动众。</span></p>
+<p class="yw">先主从之，权果辍计。迁观为别驾从事。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">先主听从了他的主意，孙权果然中止了攻取益州的计划。先主因此提升殷观为别驾从事。</p>
+<p class="yw">十六年<span class="zs-no">〔10〕</span>，益州牧刘璋，遥闻曹公将遣钟繇等向汉中讨张鲁，内怀恐惧。别驾从事蜀郡张松说璋曰：“曹公兵强，无敌于天下；若因张鲁之资以取蜀土<span class="zs-no">〔11〕</span>，谁能御之者乎？”璋曰：“吾固忧之而未有计。”松曰：“刘豫州，使君之宗室，而曹公之深仇也，善用兵；若使之讨鲁，鲁必破；鲁破，则益州强；曹公虽来，无能为也。”</p>
+<p class="fy-inline">建安十六年（公元 211），益州牧刘璋风闻曹操将派钟繇等人到汉中讨伐张鲁，心中很感恐惧。别驾从事蜀郡人张松劝刘璋说：“曹操的兵力强盛天下无敌，如果凭借张鲁的大量军事物资来攻取益州，谁能抵挡他啊！”刘璋说：“我就是在忧虑这件事而想不到办法呢。”张松说：“豫州牧刘备，是您的本家，又是曹操的大仇人，还善于用兵。如果请他来讨伐张鲁，张鲁一定会被他攻破。张鲁一被攻破，则益州的力量大为壮大，曹操即使来了，也不会有什么作为。”</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">十六年：建安十六年（公元 211 ）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">因：凭借；资：财物</span></p>
+<p class="yw">璋然之，遣法正将四千人迎先主，前后赂遗以巨亿计<span class="zs-no">〔12〕</span>。正因陈益州可取之策。<span class="pz-no">〔四〕</span></p>
+<p class="fy-inline">刘璋很以他的话为然，就派法正带四千人去迎接先主，前后赠送先主的东西价值以亿计。法正趁机向先主进献夺取益州的计策。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">赂遗：赠送；巨亿：亿亿，指极大的数目</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《三辅决录注》曰：“金旋字元机。京兆人。历位黄门郎，汉阳太守，征拜议郎，迁中郎将，领武陵太守；为备所攻劫，死。”子祎，事见《魏武本纪》。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《山阳公载记》曰：“备还，谓左右曰：‘孙车骑，长上短下，其难为下：吾不可以再见之！’乃昼夜兼行。”</span></p>
+<p class="pz-item no-no">臣松之按：《魏书》载刘备与孙权语，与《蜀志》述诸葛亮与权语正同。刘备未破魏军之前，尚未与孙权相见，不得有此说。故知《蜀志》为是。</p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《献帝春秋》曰：“孙权欲与备共取蜀，遣使报备曰：‘米贼张鲁，居王巴、汉；为曹操耳目，规图益州。刘璋不武，不能自守；若操得蜀，则荆州危矣。今欲先攻取璋，进讨张鲁；首尾相连，一统吴、楚；虽有十操，无所忧也！’备欲自图蜀，拒答不听，曰：‘益州民富强，土地险阻；刘璋虽弱，足以自守。张鲁虚伪，未必尽忠于操。今暴师于蜀、汉，转运于万里；欲使战克攻取，举不失利；此吴起不能定其规，孙武不能善其事也。曹操虽有无君之心，而有奉主之名；议者见操失利于赤壁，谓其力屈，无复远志也。今操三分天下已有其二；将欲饮马于沧海，观兵于吴会；何肯守此坐须老乎？今同盟无故自相攻伐，借枢于操；使敌承其隙，非长计也。’权不听，遣孙瑜率水军住夏口。备不听军过，谓瑜曰：‘汝欲取蜀，吾当被发入山，不失信于天下也！’使关羽屯江陵，张飞屯秭归，诸葛亮据南郡，备自住孱陵。权知备意，因召瑜还。”</span></p>
+<p class="pz-item"><span class="pz-no">〔四〕</span><span class="pz-body">《吴书》曰：“备前见张松，后得法正；皆厚以恩意接纳，尽其殷勤之欢。因问蜀中阔狭，兵器、府库、人马众寡，及诸要害道里远近；松等具言之，又画地图山川处所，由是尽知益州虚实也。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c09">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">9 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主留诸葛亮、关羽等据荆州；将步卒数万人入益州。至涪，璋自出迎，相见甚欢。张松令法正白先主，及谋臣庞统进说<span class="zs-no">〔1〕</span>：便可于会所袭璋<span class="zs-no">〔2〕</span>。先主曰：“此大事也，不可仓猝！”</p>
+<p class="fy-inline">于是先生留诸葛亮、关羽等守荆州，亲自带领几万步兵向西进入益州。到达涪城后，刘璋亲自出迎，见面后十分高兴。张松让法正报告先主，谋臣庞统也向先主进言，说是可以在会面的地点袭击刘璋。先主说：“这是一件大事，不可草率！”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">庞统：传见本书卷三十七。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">会所：会面的地点。</span></p>
+<p class="yw">璋推先主行大司马，领司隶校尉；先主亦推璋行镇西大将军，领益州牧。璋增先主兵，使击张鲁；又令督白水军<span class="zs-no">〔3〕</span>。先主并军三万余人，车甲器械资货甚盛。</p>
+<p class="fy-inline">刘璋推举先主代理大司马职务，兼任司隶校尉；先主也推举刘璋代理镇西大将军职务，兼任益州牧。刘璋给先主补充人马，让他到北面去进攻张鲁，又让他指挥白水关战区的守军。先主把军队合起来已有三万多人，车辆、铠甲、器械、物资、钱财都很充足。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">白水：关隘名。故址在今四川青川县东北。白水军区是当时刘璋抵御汉中张鲁的前线。</span></p>
+<p class="yw">是岁，璋还成都。先主北到葭萌，未即讨鲁；厚树恩德，以收众心。</p>
+<p class="fy-inline">这一年，刘璋回转成都。先主到达北面的葭萌县后，并没有立即去讨伐张鲁，而是在当地军民中尽量施予恩德，以收取人心。</p>
+<p class="yw">明年，曹公征孙权，权呼先主自救<span class="zs-no">〔4〕</span>。先主遣使告璋曰：“曹公征吴，吴忧危急；孙氏与孤，本为唇齿。又乐进在青泥与关羽相拒<span class="zs-no">〔5〕</span>；今不往救羽，进必大克；转侵州界<span class="zs-no">〔6〕</span>，其忧有甚于鲁。鲁，自守之贼，不足虑也。”乃从璋求万兵及资（宝）〔实〕<span class="zs-no">〔7〕</span>，欲以东行。璋但许兵四千，其余皆给半。<span class="pz-no">〔一〕</span></p>
+<p class="fy-inline">第二年，曹操进攻孙权，孙权请求先主援救自己。先主派遣使者告知刘璋说：“曹操进犯孙吴，吴地危急。孙氏与我唇齿相依，加上曹操又派大将乐进在青泥袭击关羽。现在我不去救关羽，乐进势必大胜，到时候掉头来侵入益州边界，他所造成的威胁就比张鲁要大了。张鲁不过是一个死守自己那一点地盘的敌人，不值得担心。”又向刘璋要一万军队和大批军用物资，以便东下荆州去救关羽。刘璋只同意给四千军队，其余的物资都只发一半。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">自救：救援自己。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">青泥：地名。在今湖北省襄阳市西北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">州界：指益州边界。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">资实：军需品。</span></p>
+<p class="yw">张松书与先主及法正曰：“今大事垂可立，如何释此去乎！”松兄广汉太守肃，惧祸逮己；白璋，发其谋。于是璋收斩松，嫌隙始构矣。<span class="pz-no">〔二〕</span>璋敕关戍诸将：文书勿复关通先主<span class="zs-no">〔8〕</span>。</p>
+<p class="fy-inline">这时张松写信给先主和法正说：“现今大事马上可以成功了，为什么又丢下益州离开呢！”张松的哥哥广汉郡太守张肃，害怕灾祸降在自己身上，就向刘璋报告了张松等人的密谋。刘璋立即把张松逮捕处死，从此与先主产生矛盾。</p>
+<p class="fy-inline">刘璋指令镇守白水关的将领，有关的公务文书不再向先主联络通报。</p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">关戍诸将：镇守白水关的将领；关通：联络通报</span></p>
+<p class="yw">先主大怒，召璋白水军督杨怀，责以无礼，斩之。乃使黄忠、卓膺勒兵向璋<span class="zs-no">〔9〕</span>。先主径至关中<span class="zs-no">〔10〕</span>，质诸将并士卒妻子<span class="zs-no">〔11〕</span>；引兵与忠、膺等进到涪，据其城。璋遣刘z 、冷苞、张任、邓贤〔、吴懿〕等拒先主于涪；<span class="pz-no">〔三〕</span>皆破败，退保绵竹。璋复遣李严督绵竹诸军<span class="zs-no">〔12〕</span>，严率众降先主。先主军益强，分遣诸将平下属县。诸葛亮、张飞、赵云等将兵溯流定白帝、江州、江阳<span class="zs-no">〔13〕</span>，唯关羽留镇荆州。</p>
+<p class="fy-inline">先主大怒，召来刘璋委派的白水关守军指挥官杨怀，责备他无礼，然后推出斩首。于是先主派黄忠、卓膺，部署兵马南下杀向刘璋。先主自己先径直赶到白水关内，把刘璋白水关守军将士的妻室儿女扣为人质，然后带领本部人马和白水关守军，与黄忠、卓膺向南推进到涪县，把城池攻占。刘璋急调刘）、冷苞、张任、邓贤、吴懿等将在涪县以南抗御先主，结果全都战败，众将退守绵竹。刘璋又派李严来指挥绵竹各路军队，不料李严却带了一部分军队去投降。先主的兵力更加强大，分派众将去平定益州下属各县。这时荆州的诸葛亮、张飞、赵云又奉命率军沿长江而上，一路平定了白帝、江州、江阳等地，只留下关羽镇守荆州。</p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">黄忠：传见本书卷三十六；勒兵：指挥士兵</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">关中：白水关内。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">质诸将并士卒妻子：把刘璋白水关守军将士的妻室儿女扣为人质。这批军队当时被刘备接管，并随刘备向南进攻刘璋。刘备怕他们中途叛变，所以有此举动。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">李严：传见本书卷四十。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">溯流：指由长江而上；白帝：城名；江阳：县名</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《魏书》曰：“备因激怒其众曰：‘吾为益州征强敌，师徒勤瘁，不遑宁居；今积帑藏之财，而吝于赏功，望士大夫为出死力战，其可得乎！’”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《益部耆旧杂记》曰：“张肃有威仪，容貌甚伟。松，为人短小，放荡不治节操；然识达精果，有才干；刘璋遣诣曹公，曹公不甚礼；公主簿杨修深器之，白公辟松，公不纳。修以公所撰兵书，示松，松宴饮之间，一（看）〔省〕便暗诵。修以此益异之。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">《益部耆旧杂记》曰：“张任，蜀郡人。家世寒门。少有胆勇，有志节，仕州为从事。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c10">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">10 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主进军围雒；时璋子循守城，被攻且一年。</p>
+<p class="fy-inline">先主向南进军包围雒县，当时由刘璋的儿子刘循守城，在攻击中坚守了将近一年。</p>
+<p class="yw">十九年夏<span class="zs-no">〔1〕</span>，雒城破；<span class="pz-no">〔一〕</span>进围成都，数十日，璋出降。<span class="pz-no">〔二〕</span>蜀中殷盛丰乐，先主置酒大飨士卒；取蜀城中金银分赐将士，还其谷帛。先主复领益州牧：诸葛亮为股肱<span class="zs-no">〔2〕</span>，法正为谋主，关羽、张飞、马超为爪牙<span class="zs-no">〔3〕</span>，许靖、麋竺、简雍为宾友<span class="zs-no">〔4〕</span>。及董和、黄权、李严等<span class="zs-no">〔5〕</span>，本璋之所授用也，吴壹、费观等<span class="zs-no">〔6〕</span>，又璋之婚亲也；彭羕<span class="zs-no">〔7〕</span>，又璋之所排摈也；刘巴者<span class="zs-no">〔8〕</span>，宿昔之所忌恨也：皆处之显任，尽其器能。有志之士，无不竞劝。</p>
+<p class="fy-inline">建安十九年（公元 214）夏天，雒城被攻破，先主挥兵包围成都几十天后，刘璋出城投降。益州富庶安乐，先主大摆酒宴犒劳将士，把成都城中库藏的金银拿来赏赐将士，谷物和布帛则发还给老百姓。先主又再兼任益州牧，以诸葛亮为军政辅佐，法正为首席谋士，关羽、张飞、马超为战将，许靖、麋竺、简雍为宾客朋友。另外，董和、黄权、李严本是刘璋任用的部属，吴壹、费观则是刘璋的姻亲，彭羕曾受刘璋的排斥，刘巴更是先主过去一直仇恨的人，先主全都把他们安置在显要的职位上，让他们充分发挥自己的才能。于是有志之士，无不竞相勉励。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">十九年：建安十九年（公元 214）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">股肱：大腿和胳膊。比喻君主的得力辅佐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">爪牙：比喻领兵作战的武将。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">许靖：传见本书卷三十八；简雍：传见本书卷三十八</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">董和：传见本书卷三十九。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">吴壹、费观：二人事见本书卷四十五《杨戏传》载杨戏《季汉辅臣赞》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">彭羕：传见本书卷四十。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">刘巴：传见本书卷三十九。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《益部耆旧杂记》曰：“刘璋遣张任、刘璝，率精兵拒捍先主于涪；为先主所破，退与璋子循守雒城。任勒兵出于雁桥，战复败；擒任。先主闻任之忠勇，令军降之。任厉声曰：‘老臣终不复事二主矣！’乃杀之。先主叹惜焉。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《傅子》曰：“初，刘备袭蜀，丞相掾赵戬曰：‘刘备其不济乎？拙于用兵，每战则败；奔亡不暇，何以图人？蜀虽小区，险固四塞；独守之国，难猝并也。’征士傅幹曰：‘刘备宽仁有度，能得人死力。诸葛亮，达治知变，正而有谋，而为之相；张飞、关羽勇而有义，皆万人之敌，而为之将：此三人者，皆人杰也。以备之略，三杰佐之。何为不济也！’”《典略》曰：“赵戬，字叔茂，京兆长陵人也。质而好学，言称《诗》、《书》；爱恤于人，不论疏密。辟公府，入为尚书选部郎。董卓欲以所私，并充台阁，戬拒不听。卓怒，召戬欲杀之；观者皆为戬惧，而戬自若。及见卓，引辞正色，陈说是非；卓虽凶戾，屈而谢之。迁平陵令。故将王允被害，莫敢近者，戬弃官收敛之。三辅乱，戬客荆州，刘表以为宾客。曹公平荆州，执戬手曰：‘何相见之晚也！’遂辟为掾。后为五官将司马，相国钟繇长史。年六十余卒。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c11">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">11 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">二十年<span class="zs-no">〔1〕</span>，孙权以先主已得益州，使使报“欲得荆州<span class="zs-no">〔2〕</span>”。先主言：“须得凉州，当以荆州相与。”权忿之，乃遣吕蒙袭夺长沙、零陵、桂阳三郡<span class="zs-no">〔3〕</span>。先主引兵五万下公安，令关羽入益阳<span class="zs-no">〔4〕</span>。</p>
+<p class="fy-inline">建安二十年（公元 215），孙权因为先主已经得到益州，派遣使者通报先主说自己想收回荆州的南郡，先主说：“等我得到凉州，就把荆州给您。”孙权大为气愤，立即派遣吕蒙率军夺取了先主占有的长沙、零陵、桂阳三郡。先主亲自带了五万人马顺长江而下到达公安，又命关羽推进到益阳，准备夺回失地。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十年：建安二十年（公元 215）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">使使：派遣使臣。当时承担这一使命的是诸葛亮的哥哥诸葛瑾，见本书卷四《吴主传》；荆州：这里指当时荆州治所江陵所在的南郡</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">吕蒙：传见本书卷五十四。夺长沙、零陵、桂阳三郡：南郡有关羽率重兵镇守，进攻南面三郡是避实就虚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">益阳：县名。县治在今湖南益阳市。</span></p>
+<p class="yw">是岁，曹公定汉中，张鲁遁走巴西。先主闻之，与权连和：分荆州江夏、长沙、桂阳东属<span class="zs-no">〔5〕</span>；南郡、零陵、武陵西属。引军还江州，遣黄权将兵迎张鲁；张鲁已降曹公。</p>
+<p class="fy-inline">但是这一年曹操出兵平定了汉中，张鲁逃往巴西郡。先主得知消息，决定与孙权和好结盟，于是大体以湘水为界重新分割荆州，江夏、长沙、桂阳三郡归东边的孙权所有，南郡、零陵、武陵三郡归西边的先主所有，然后先主领兵赶回江州。先主派黄权去迎接张鲁，而张鲁已经投降曹操。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">东属：指属于孙权。下句的“西属”指属于刘备。这次争夺的结果，孙权新得到长沙、桂阳二郡，相当于用一个南郡换了两个郡，算是有所补偿。双方在荆州南部，大体是以湘水为分界。</span></p>
+<p class="yw">曹公使夏侯渊、张郃屯汉中，数数犯暴巴界<span class="zs-no">〔6〕</span>。先主令张飞进兵宕渠<span class="zs-no">〔7〕</span>，与郃等战于瓦口<span class="zs-no">〔8〕</span>；破郃等，〔郃〕收兵还南郑<span class="zs-no">〔9〕</span>。先主亦还成都。</p>
+<p class="fy-inline">曹操派大将夏侯渊、张郃镇守汉中，多次侵犯先主占领的巴西郡地界。先主命令张飞进军宕渠，与张郃等人在瓦口激战，击败张郃，张郃等收兵退回汉中的南郑县。先主随即也回到成都。</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">犯暴：侵犯；巴界：这里指与汉中接壤的巴西郡界</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">宕渠：县名。县治在今四川渠县东北。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">瓦口：地名。在今四川渠县东。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">南郑：县名。县治在今陕西汉中市。</span></p>
+<p class="yw">二十三年<span class="zs-no">〔10〕</span>，先主率诸将进兵汉中。分遣将军吴兰、雷铜等入武都；皆为曹公军所没。先主次于阳平关，与渊、郃等相拒。</p>
+<p class="fy-inline">建安二十三年（公元 218），先主率领众将进兵汉中。分派将军吴兰、雷铜等进入武都郡，结果他们都被曹操的军队消灭。先主到达阳平关后在此驻扎，与夏侯渊、张郃等对峙。</p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">二十三年：建安二十三年（公元 218 ）。</span></p>
+<p class="yw">二十四年春<span class="zs-no">〔11〕</span>，自阳平南渡沔水，缘山稍前<span class="zs-no">〔12〕</span>，于定军山（势）作营<span class="zs-no">〔13〕</span>。渊将兵来争其地，先主命黄忠乘高鼓噪攻之。大破渊军，斩渊及曹公所署益州刺史赵颙等。</p>
+<p class="fy-inline">建安二十四年（公元219）春天，先主从阳平关向南渡过汉水，沿着山边逐渐向前推进，并在定军山安营扎寨。夏侯渊出兵来争夺这片地方，先主命令黄忠居高临下击鼓呐喊着发起猛攻，把夏侯渊的队伍打得落花流水，当场斩了夏侯渊和曹操委派的益州刺史赵颐等人。</p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">二十四年：建安二十四年（公元 219）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">稍前：逐渐向前推进。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">定军：山名。在今陕西勉县城南约 5 公里，东西绵延数十公里，主峰约 800 米，是古代争夺汉中这一军事要地的著名古战场。后世曾有大量箭镞、铜铁蒺藜（俗称扎马钉）等古代兵器出土。</span></p>
+<p class="yw">曹公自长安举众南征。先主遥策之曰：“曹公虽来，无能为也；我必有汉川矣<span class="zs-no">〔14〕</span>！”及曹公至，先主敛众拒险，终不交锋；积月不拔，亡者日多。夏，曹公果引军还，先主遂有汉中；遣刘封、孟达、李平等攻申耽于上庸<span class="zs-no">〔15〕</span>。</p>
+<p class="fy-inline">曹操从长安带领全部人马南下汉中救援。先主预先估计说：“曹操即使前来，也不会有所作为，我必定拥有汉中平原了。”等到曹操来到，先主收敛军队扼守险要地点，始终不与对方交锋，曹军进攻一个多月也毫无所获，牺牲的将士却日渐增多。这年夏天，曹操果然引军撤退，先主终于占有汉中。接着先主又派刘封、孟达、李平等将，向东进攻曹操委任的上庸郡太守申耽。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">汉川：汉中平原。即汉中郡。此后曹操决定撤军放弃汉中，是从军事地理角度作出的明智抉择。此后，曹魏凭借秦岭采取战略守势，绵绵秦岭成为三国时期最先形成的两国之间稳定疆域线，在军事地理上具有典型的意义。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">刘封：传见本书卷四十；申耽：事见本书卷四十《刘封传》；上庸：县名</span></p>
+<p class="yw">秋，群下上《先王为汉中王表》于汉帝<span class="zs-no">〔16〕</span>，曰：</p>
+<p class="fy-inline">这年秋天，群臣向汉献帝呈上一封《公推先主为汉中王》的表章，文中说：</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">群下：群臣。</span></p>
+<p class="yw">“平西将军、都亭侯臣马超，左将军领长史、镇军将军臣许靖，营司马臣庞羲，议曹从事、中郎、军议中郎将臣射援，<span class="pz-no">〔一〕</span>军师将军臣诸葛亮，荡寇将军、汉寿亭侯臣关羽，征虏将军、新亭侯臣张飞，征西将军臣黄忠，镇远将军臣赖恭，扬武将军臣法正，兴业将军臣李严等一百二十人上言曰<span class="zs-no">〔17〕</span>：</p>
+<p class="fy-inline">“平西将军、都亭侯臣马超，左将军府长史、镇军将军臣许靖，左将军营司马臣庞羲，议曹从事、中郎、军议中郎将臣射援，军师将军臣诸葛亮，荡寇将军、汉寿亭侯臣关羽，征虏将军、新亭侯臣张飞，征西将军臣黄忠，镇远将军臣赖恭，扬武将军臣法正，兴业将军臣李严等一百二十人向陛下进言说：</p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">平西将军：官名。领兵征伐。平东、平南、平西、平北四将军合称“四平”，地位在“四征”、“四镇”、“四安”之下；营司马：指左将军大营的司马；议曹从事：官名；军议中郎将：官名；军师将军：官名；镇远将军：官名；兴业将军：官名</span></p>
+<p class="yw">昔唐尧至圣，而四凶在朝<span class="zs-no">〔18〕</span>；周成仁贤，而四国作难<span class="zs-no">〔19〕</span>；高后称制，而诸吕窃命<span class="zs-no">〔20〕</span>；孝昭幼冲，而上官逆谋<span class="zs-no">〔21〕</span>：皆凭世宠<span class="zs-no">〔22〕</span>，藉履国权<span class="zs-no">〔23〕</span>，穷凶极乱，社稷几危。非大舜、周公、朱虚、博陆<span class="zs-no">〔24〕</span>，则不能流放擒讨，安危定倾。伏惟陛下诞姿圣德，统理万邦；而遭厄运不造之艰<span class="zs-no">〔25〕</span>。董卓首难<span class="zs-no">〔26〕</span>，荡覆京畿；曹操阶祸<span class="zs-no">〔27〕</span>，窃执天衡<span class="zs-no">〔28〕</span>；皇后太子<span class="zs-no">〔29〕</span>，鸩杀见害；剥乱天下，残毁民物<span class="zs-no">〔30〕</span>。久令陛下蒙尘忧厄，幽处虚邑<span class="zs-no">〔31〕</span>；人神无主，遏绝王命；厌昧皇极<span class="zs-no">〔32〕</span>，欲盗神器。左将军、领司隶校尉、豫、荆、益三州牧宜城亭侯备，受朝爵秩，念在输力<span class="zs-no">〔33〕</span>，以殉国难。睹其机兆<span class="zs-no">〔34〕</span>，赫然愤发；与车骑将军董承同谋诛操，将安国家，克宁旧都。会承机事不密，令操游魂得遂长恶<span class="zs-no">〔35〕</span>，残泯海内。臣等每惧王室大有阎乐之祸<span class="zs-no">〔36〕</span>，小有定安之变<span class="zs-no">〔37〕</span>；<span class="pz-no">〔二〕</span>夙夜惴惴，战栗累息。</p>
+<p class="fy-inline">从前唐尧圣明到了极点而有四个恶人出现在朝廷，周成王仁慈贤德而有四个诸侯国作乱，我朝高祖的吕后代行皇帝职权而有吕氏家族成员窃取王侯的爵位，孝昭皇帝年幼而有上官桀图谋反逆。上列作乱者都凭借前世的恩宠，践踏国家的权力，穷凶极恶，天下都几乎面临崩溃的危险。如果不是遇到大禹、周公、朱虚侯刘章、博陆侯霍光，肯定不可能把他们或者流放或者处死，从而去除危险恢复安定。陛下具有天生的圣德，君临天下，却遭遇到厄运和不幸。董卓首先制造灾难，把京城洛阳全部破坏，而曹操利用祸乱，窃据了王朝大权；皇后和太子，惨遭他们毒死，他们还搅乱天下，残害民众。结果让陛下您长久流亡在外饱受忧患，独自一人悄悄住在虚设的京都许县。人民和神灵都失去君主，天子的命令被完全阻断，曹操还掩盖和抛弃皇家的准则，企图盗取天子的权位。左将军兼司隶校尉、豫州牧、荆州牧、益州牧，并封宜城亭侯的臣刘备，接受朝廷的爵位俸禄，念念不忘贡献力量，随时准备为平定国家的祸乱而献出生命。他当初看到曹操反逆的征兆，就勃然愤怒而采取行动，与车骑将军董承合谋诛杀曹操，以安定国家，恢复旧都。可惜董承做事不够机密，结果让曹操得以苟延残喘继续滋长罪恶，残害天下人民。为臣等常常担忧朝廷会发生大如阎乐逼杀秦二世那样的灾祸，小如王莽废黜皇帝为定安公那样的变故，所以日夜惴惴不安，战战兢兢而连连喘息。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">四凶：四个恶人。指浑沌、穷奇、梼杌（táo wù）、饕餮（tāo tiè）。尧未能处置他们，到舜执政时，才把四凶流放到远方。事见《史记》卷一《五帝本纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">四国：指管叔、蔡叔、霍叔和武庚。前三人是周武王的弟弟，分别封在管、蔡、霍国。武王死，周成王继位，年幼，周公当国执政。三个王叔不服，伙同殷纣王的儿子武庚发动武装反抗，被周公平定。见《史记》卷四《周本纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">高后：即吕后（前 241—前 180）。名雉，字娥姁。汉高祖刘邦的皇后。曾帮助刘邦杀韩信、彭越等异姓诸侯王。其子刘盈继位为帝之后，她掌握实权，杀刘邦小妾戚氏及其子赵王如意。惠帝刘盈死，她临朝称制，成为王朝实际的皇帝。分封吕氏家族成员为王侯，并控制军队，又以亲信审食其为左丞相辅政。临朝称制八年，死后周勃等人消灭诸吕，迎立代王刘恒，即文帝。事详《史记》卷九、《汉书》卷三；称制：代行皇帝的职权；窃命：窃取王侯的爵位</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">孝昭：即西汉昭帝刘弗陵（前 94—前 74）。武帝的小儿子。前 87 至前 74 年在位。重用大将军霍光，实行轻徭薄赋、与民休息的政策。事详《汉书》卷七；上官：指上官桀（？—前 80）</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">世宠：前世的恩宠。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">藉履：践踏。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">朱虚：即朱虚侯刘章（？—前 175）。刘邦的孙子。吕后死，他是参与消灭吕氏势力的主要人物，曾亲手杀死吕产。汉文帝即位，封城阳王。传附《史记》卷五十二《齐悼惠王世家》；博陆：即博陆侯霍光（？—前 68）</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">不造：不幸。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">董卓：传见本书卷六；首难：首先制造灾难</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">阶祸：利用祸乱。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">天衡：王朝大权。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">皇后：指汉献帝皇后伏氏（？—公元 214）。名寿。琅邪郡东武（今山东诸城市）人。其父伏完，曾任辅国将军。伏氏曾与伏完密信，请他除灭曹操，伏完畏惧未行动。完死，事情泄露，伏氏及其所生二子均被杀。传见《后汉书》卷十下。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">民物：民众。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">虚邑：虚设的京城。指许县。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">厌昧：掩盖蒙蔽；皇极：皇家的准则</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">念在输力：念念不忘贡献力量。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">机兆：征兆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">长恶：继续滋长罪恶。</span></p>
+<p class="zs-inline"><span class="zs-no">〔36〕</span><span class="zs-body">阎乐：赵高的女婿。任咸阳令。秦末天下乱，受赵高之命，逼秦二世胡亥自杀。事见《史记》卷六《秦始皇本纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔37〕</span><span class="zs-body">定安：指刘婴（公元 4—？）。西汉平帝刘衎（kàn）的族侄。平帝死，无子。执政的王莽立年仅两岁的刘婴为继承人，自己摄政。公元 9 年，即刘婴被立为继承人三年后，王莽称帝，废刘婴为定安公。事见《汉书》卷九十九《王莽传》。</span></p>
+<p class="yw">昔在《虞书》<span class="zs-no">〔38〕</span>，敦序九族<span class="zs-no">〔39〕</span>；周监二代<span class="zs-no">〔40〕</span>，封建同姓；《诗》著其义<span class="zs-no">〔41〕</span>，历载长久。汉兴之初，割裂疆土<span class="zs-no">〔42〕</span>，尊王子弟；是以卒折诸吕之难<span class="zs-no">〔43〕</span>，而成太宗之基<span class="zs-no">〔44〕</span>。臣等以备肺腑枝叶<span class="zs-no">〔45〕</span>，宗子藩翰<span class="zs-no">〔46〕</span>；心存国家，念在弥乱<span class="zs-no">〔47〕</span>；自操破于汉中，海内英雄望风蚁附；而爵号不显，九锡未加<span class="zs-no">〔48〕</span>：非所以镇卫社稷，光昭万世也。奉辞在外<span class="zs-no">〔49〕</span>，礼命断绝。昔河西太守梁统等值汉中兴<span class="zs-no">〔50〕</span>，限于山河<span class="zs-no">〔51〕</span>；位同权均，不能相率；咸推窦融以为元帅<span class="zs-no">〔52〕</span>，卒立效绩<span class="zs-no">〔53〕</span>，摧破隗嚣<span class="zs-no">〔54〕</span>。今社稷之难，急于陇、蜀<span class="zs-no">〔55〕</span>；操外吞天下，内残群僚；朝廷有萧墙之危<span class="zs-no">〔56〕</span>，而御侮未建<span class="zs-no">〔57〕</span>，可为寒心。</p>
+<p class="fy-inline">记载虞舜事迹的《尚书·皋陶谟》，说是要以宽厚的态度对待同姓宗族；周朝则向夏、商二朝看齐，分封同姓宗族，《诗经·板》一诗说明了这样做的意义，而周王朝因此能历时长久。汉朝建立之初，也分出领土，封子弟为尊贵的亲王，所以最终能挫败吕氏家族的阴谋，从而为孝文皇帝登位奠定基础。为臣等认为臣刘备是皇室宗亲，朝廷的屏障，一心报效国家，念念不忘消除祸乱，自从他在汉中击破曹操，海内英雄纷纷赶来附从。然而他至今还没有显贵的爵位称号，也没有得到九种特殊赏赐物的恩赐，这不是能够捍卫天下、光照后世的办法。为臣等受命在外，而现今与朝廷的交通断绝。从前河西地区的酒泉郡太守梁统等人，碰上光武皇帝中兴汉室，考虑到河西偏远而被山河限隔，彼此地位相同而权力均等，难以进行统率，所以都推举窦融为主帅，最终建立大功，消灭了隗嚣。而今天下面临的凶恶敌人，比当初割据陇西的隗嚣、割据蜀中的公孙述还要厉害；这曹操对外吞并天下，对内残害百官，朝廷时刻面临内乱的危险。而抵御外来欺侮的皇室宗亲力量却还没有形成，真是令人心惊胆战。</p>
+<p class="zs-inline"><span class="zs-no">〔38〕</span><span class="zs-body">《虞书》：指《尚书》中的《皋陶谟》一篇。记虞舜时事，故名。</span></p>
+<p class="zs-inline"><span class="zs-no">〔39〕</span><span class="zs-body">敦序九族：以宽厚的态度对待同姓宗族。这是《尚书·皋陶谟》中的话。所谓九族，指高祖、曾祖、祖、父、自身、子、孙、曾孙、玄孙九代同姓亲族。</span></p>
+<p class="zs-inline"><span class="zs-no">〔40〕</span><span class="zs-body">周监二代：周朝向夏、商二朝看齐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔41〕</span><span class="zs-body">诗著其义：《诗经》诗歌说明了这样做的意义。《诗经·板》的诗句对封建同姓的重要性有形象的说明。</span></p>
+<p class="zs-inline"><span class="zs-no">〔42〕</span><span class="zs-body">割裂：划分。</span></p>
+<p class="zs-inline"><span class="zs-no">〔43〕</span><span class="zs-body">折：挫败。</span></p>
+<p class="zs-inline"><span class="zs-no">〔44〕</span><span class="zs-body">太宗：即汉文帝。太宗是其庙号。</span></p>
+<p class="zs-inline"><span class="zs-no">〔45〕</span><span class="zs-body">肺腑枝叶：比喻同姓宗亲。</span></p>
+<p class="zs-inline"><span class="zs-no">〔46〕</span><span class="zs-body">宗子：皇族子弟。即同姓；藩翰：屏障</span></p>
+<p class="zs-inline"><span class="zs-no">〔47〕</span><span class="zs-body">弥：消除。</span></p>
+<p class="zs-inline"><span class="zs-no">〔48〕</span><span class="zs-body">九锡：天子赏赐建立了大功的诸侯的九种物品。详见本书卷一《武帝纪》建安十八年。</span></p>
+<p class="zs-inline"><span class="zs-no">〔49〕</span><span class="zs-body">奉辞：奉天子命令。这是假托的说法。</span></p>
+<p class="zs-inline"><span class="zs-no">〔50〕</span><span class="zs-body">河西：地区名。当时指今河西走廊与湟水流域；梁统：字仲宁</span></p>
+<p class="zs-inline"><span class="zs-no">〔51〕</span><span class="zs-body">限于山河：被山河限隔阻挡。</span></p>
+<p class="zs-inline"><span class="zs-no">〔52〕</span><span class="zs-body">窦融：字周公，右扶风平陵（今陕西咸阳市西北）人。世代在河西地区任行政官吏。新莽末年，割据河西五郡。公元 32 年，帮助刘秀消灭隗嚣，归顺东汉王朝。后升任大司空，封安丰侯。传见《后汉书》卷二十三。</span></p>
+<p class="zs-inline"><span class="zs-no">〔53〕</span><span class="zs-body">效绩：功绩。</span></p>
+<p class="zs-inline"><span class="zs-no">〔54〕</span><span class="zs-body">隗嚣：字季孟。天水郡成纪（今甘肃秦安县）人。新莽末年，割据陇右的天水、武都、金城等郡，自称西州大将军。建武九年（公元 33），被汉军和窦融军击溃，忧病而死。传见《后汉书》卷十三。</span></p>
+<p class="zs-inline"><span class="zs-no">〔55〕</span><span class="zs-body">陇：指占领陇西的隗嚣；蜀：指割据益州称帝的公孙述</span></p>
+<p class="zs-inline"><span class="zs-no">〔56〕</span><span class="zs-body">萧墙：宫门内的小墙。起屏蔽作用。萧墙之内比喻内部。</span></p>
+<p class="zs-inline"><span class="zs-no">〔57〕</span><span class="zs-body">御侮：抵御外来欺侮（的手段或措施）。指王室宗亲的合力抵抗。</span></p>
+<p class="yw">臣等辄依旧典，封备汉中王，拜大司马，董齐六军<span class="zs-no">〔58〕</span>，纠合同盟，扫灭凶逆；以汉中、巴、蜀、广汉、犍为为国，所署置依汉初诸侯王故典。夫权宜之制，苟利社稷，专之可也；然后功成事立，臣等退伏矫罪<span class="zs-no">〔59〕</span>，虽死无恨！”</p>
+<p class="fy-inline">因此，为臣等自作主张依据过去的典章，封刘备为汉中王，任大司马，他将监督整肃大军，聚集同盟者，以扫除凶恶反逆的曹操。汉中王以汉中、巴、蜀、犍为等郡为封国，王国官员的设置依照汉初封宗室亲王时的规定。权宜的办法，如果对天下有利，那么自作主张采用实行是可以的。以后大功建立大业完成，为臣等再退下来承受假托诏命的罪责，虽死而无憾。”</p>
+<p class="zs-inline"><span class="zs-no">〔58〕</span><span class="zs-body">董齐：监督整肃；六军：古代天子才设置六军</span></p>
+<p class="zs-inline"><span class="zs-no">〔59〕</span><span class="zs-body">矫罪：假托诏命之罪。</span></p>
+<p class="yw">遂于沔阳设坛场<span class="zs-no">〔60〕</span>，陈兵列众，群臣陪位；读奏讫，御王冠于先主。</p>
+<p class="fy-inline">于是在沔阳县修建土坛和广场，布列军队，群臣陪同站在各自的位置；宣读上面这一通表章之后，把汉中王的王冠给先主戴上。</p>
+<p class="zs-inline"><span class="zs-no">〔60〕</span><span class="zs-body">沔阳：县名。在今陕西勉县东。今勉县城东四公里旧州铺，还有刘备称汉中王时的坛场遗址。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《三辅决录注》曰：“援字文雄。扶风人也。其先本姓谢，与北地诸谢同族。始祖谢服为将军出征；天子以‘谢服’非令名，改为‘射’，子孙氏焉。兄坚，字文固。少有美名，辟公府，为黄门侍郎。献帝之初，三辅饥乱；坚去官，与弟援南入蜀依刘璋，璋以坚为长史。刘备代璋，以坚为广汉、蜀郡太守。援亦少有名行，太尉皇甫嵩贤其才而以女妻之。丞相诸葛亮以援为祭酒，迁从事中郎。卒官。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">赵高使阎乐杀二世。王莽废孺子以为定安公。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c12">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">12 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">先主上言汉帝曰：</p>
+<p class="fy-inline">先主随即向汉献帝呈上一封表章，文中说：</p>
+<p class="yw">“臣以具臣之才<span class="zs-no">〔1〕</span>，荷上将之任<span class="zs-no">〔2〕</span>，董督三军<span class="zs-no">〔3〕</span>，奉辞于外；不能扫除寇难，靖匡王室；久使陛下圣教陵迟，六合之内，否而未泰；惟忧反侧，疢如疾首<span class="zs-no">〔4〕</span>。曩者董卓，造为乱阶<span class="zs-no">〔5〕</span>；自是之后，群凶纵横，残剥海内。赖陛下圣德威灵，人神同应；或忠义奋讨，或上天降罚；暴逆并殪<span class="zs-no">〔6〕</span>，以渐冰消。唯独曹操，久未枭除；侵擅国权，恣心极乱。臣昔与车骑将军董承，图谋讨操；机事不密，承见陷害；臣播越失据<span class="zs-no">〔7〕</span>，忠义不果；遂得使操穷凶极逆，主后戮杀，皇子鸩害。虽纠合同盟，念在奋力；懦弱不武<span class="zs-no">〔8〕</span>，历年未效。常恐殒没，孤负国恩<span class="zs-no">〔9〕</span>；寤寐咏叹<span class="zs-no">〔10〕</span>，夕惕若厉<span class="zs-no">〔11〕</span>。</p>
+<p class="fy-inline">“为臣以滥竽充数的低劣才能，承担高级将领的职务，统领三军，奉命在外；我却不能扫清叛逆，扶助王朝，使陛下的神圣教诲长久得不到宣扬，四海之内动乱而不得安宁，心中的忧虑使我辗转反侧，痛苦得就像得了头痛病一般。当初董卓制造祸乱的开端，从此之后，群凶横行，残害天下。凭借陛下的圣德和神威，人民和神灵一同响应，这些凶贼有的遭到忠臣义士的讨伐，有的受到上天降下的惩罚，纷纷死亡，就像冰雪逐渐消融。唯独还有一个曹操，长久未能除掉，他窃据国家权力，随心所欲制造祸乱。当初为臣曾与车骑将军董承图谋诛杀曹操，可惜做事不够机密，董承反被杀害，为臣四处流亡失去根据，使忠义之心未能实现。从此曹贼穷凶极恶，杀害皇后，毒死皇子。为臣虽然招集同盟者，一心贡献力量，但因我为人懦弱而缺乏用武力平定祸乱的能力，所以奋斗多年却没有什么成效。我经常害怕自己突然死去，辜负了国家对我的恩情，日夜感叹不已，常常警告自己要不断努力。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">具臣：在臣僚之中充数。这是自谦的说法。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">上将：高级将领。指左将军的职务。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">三军：《周礼·夏官·司马》说天子设六军，诸侯中大国设三军。这里刘备还以诸侯的身份说话，所以用“三军”一词。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">疢：痛苦；疾首：头痛</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">乱阶：祸乱的开端。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">殪：死。这里指被消灭。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">播越：流亡。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">不武：指缺乏以武力平定祸乱的能力。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">孤：辜负。孤负是同义复合词。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">寤寐：醒了和睡着。意指日夜；咏叹：感叹</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">夕惕：到了晚上还在警告自己（要勤勉奋发）；若厉：好像面临着危险</span></p>
+<p class="yw">今臣群僚以为：‘在昔《虞书》，敦叙九族，庶明励翼<span class="zs-no">〔12〕</span>；<span class="pz-no">〔一〕</span>五帝损益<span class="zs-no">〔13〕</span>，此道不废<span class="zs-no">〔14〕</span>。周监二代，并建诸姬<span class="zs-no">〔15〕</span>，实赖晋、郑夹辅之福<span class="zs-no">〔16〕</span>。高祖龙兴<span class="zs-no">〔17〕</span>，尊王子弟，大启九国<span class="zs-no">〔18〕</span>；卒斩诸吕，以安大宗<span class="zs-no">〔19〕</span>。今操恶直丑正<span class="zs-no">〔20〕</span>，实繁有徒<span class="zs-no">〔21〕</span>；包藏祸心，篡盗已显。既宗室微弱，帝族无位；斟酌古式，依假权宜：上臣大司马、汉中王。’</p>
+<p class="fy-inline">如今为臣的下属们认为：《尚书·皋陶谟》说要以宽厚的态度对待同姓宗族，使同姓宗族都变得贤明，都努力当好辅佐。虞舜之后的夏启、商汤、周武王、本朝高祖、光武皇帝五位君主，虽然在政治上有所改革，但是重视同姓宗亲这一原则始终坚持不废。周朝向夏、商两朝看齐，分封同姓宗亲，而且在后来确实获得了晋、郑两个同姓诸侯国合力辅佐的好处。本朝高祖当上皇帝之后，分封宗室子弟为尊贵的亲王，最早一批就有九个王国。强大的宗室力量终于诛杀了吕氏家族成员，从而使嫡系长房的帝位传承保持稳定。现今曹操厌恶和残害正直的人，确实发展并拥有不少同党，怀着邪恶的念头，企图篡夺帝位的征兆已很明显。既然宗室力量微弱，皇族成员没有权位，所以为臣的下属们才参照古代典章，采取权宜办法，推举为臣为大司马、汉中王。为臣跪着再三思考，自己长期承受国家厚恩，受任治理一方，贡献力量还未取得效果，所得到的已经太多，原本不应当再忝居高位以加重我的罪过。但是，下属们再三逼迫，用大义来要求我。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">庶明厉翼：（使同族的人）都变得贤明并努力当好辅佐。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">五帝：这里指夏启、商汤、周武王、西汉高祖、东汉光武帝这五朝的开国君主；损益：增减</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">此道：指重视同姓宗族的支持作用。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">建：分封。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">夹辅：合力辅佐。西周末年，犬戎攻入镐京杀周幽王。晋文侯、郑武公立幽王过去的太子宜臼为平王，并东迁都城于雒邑，周室复兴。而晋、郑都是与周王室同为姬姓的诸侯国。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">龙兴：指当上皇帝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">九国：指西汉初汉高祖刘邦分封兄弟子侄而形成的九个小王国。即楚、代、齐、荆、淮南、赵、梁、淮阴、燕。另外还有一个吴国，因始封时间最晚，始封国王刘濞又是代国始封国王刘喜的儿子，所以附于代国之下而不在九国之数。详见《汉书》卷十四《诸侯王表》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">大宗：嫡系的长房。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">恶直丑正：厌恶和残害正直的人。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">实繁有徒：确实发展和拥有不少同党。以上两句出自《左传》昭公二十八年。</span></p>
+<p class="yw">臣伏自三省：受国厚恩，荷任一方；陈力未效，所获已过；不宜复忝高位，以重罪谤。群僚见逼，迫臣以义。臣退惟寇贼不枭<span class="zs-no">〔22〕</span>，国难未已，宗庙倾危，社稷将坠，成臣忧责碎首之负<span class="zs-no">〔23〕</span>；若应权通变，以宁靖圣朝，虽赴水火，所不得辞！敢虑常宜<span class="zs-no">〔24〕</span>，以防后悔？辄顺众议，拜受印玺，以崇国威。仰惟爵号，位高宠厚；俯思报效，忧深责重；惊怖累息<span class="zs-no">〔25〕</span>，如临于谷！尽于输诚<span class="zs-no">〔26〕</span>，奖励六师<span class="zs-no">〔27〕</span>，率齐群义<span class="zs-no">〔28〕</span>；应天顺时，扑讨凶逆；以宁社稷，以报万分<span class="zs-no">〔29〕</span>！谨拜章因驿上还所假左将军、宜城亭侯印绶<span class="zs-no">〔30〕</span>。”</p>
+<p class="fy-inline">为臣退下来细想，眼下凶贼未除，国难当头，宗庙倾危，天下将要崩溃，使得我不能不忧思自己应当承担的责任，甚至是粉碎头颅也难以抵偿的罪责。如果顺应权变，能够安定我大汉皇朝，那么即使是赴汤蹈火，为臣也不能推辞，不敢从常规来考虑，以免将来悔恨不已。所以自行决定顺从众人的建议，跪拜接受大司马、汉中王的印玺，从而提高国家的权威。为臣抬起头时，就想到这些爵位称号是朝廷给我的重赏和厚爱；低下头时，更下定决心报效国家。由于忧虑深而责任大，使我惊恐喘息，好像面临深谷一般。为臣将尽力贡献忠诚，勉励全军将士，率领并会同全国的义士，顺应天意和时势，消灭凶恶的逆贼，以便安定天下，报答陛下恩泽的万分之一。谨跪拜呈上表章，并通过驿站的传递上交我过去接受的左将军、宜城亭侯印章和绶带。”</p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">惟：考虑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">忧责碎首之负：忧思自己应承担的这种严重得即使粉碎头颅仍然难以抵偿的罪责。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">敢虑常宜：岂敢从常规来考虑。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">累息：因恐惧而喘息。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">输诚：贡献忠诚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">六师：六军。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">率齐：率领和会同；义：义士</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">万分：万分之一的恩情。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">拜章：跪拜呈上表章。</span></p>
+<p class="yw">于是还治成都。拔魏延为都督<span class="zs-no">〔31〕</span>，镇汉中。<span class="pz-no">〔二〕</span>时关羽攻曹公将曹仁，擒于禁于樊。俄而孙权袭杀羽，取荆州<span class="zs-no">〔32〕</span>。</p>
+<p class="fy-inline">于是先主回成都设立治所。提拔魏延为都督，镇守汉中。当时关羽进攻曹操的大将曹仁，在樊城擒杀于禁。不久孙权袭杀关羽，夺取了荆州。</p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">魏延：传见本书卷四十。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">取荆州：关羽之死，使孙吴完全控制了荆州的主要区域，并将双方的疆域分界，从原来的湘水流域，向西调整到三峡山区。三峡一线从此成为蜀、吴双方的稳定疆域线，直至三国时期结束。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">郑玄注曰：“庶，众也；励，作也；叙，次序也。序九族而亲之，以众明作羽翼之臣也。”</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《典略》曰：“备于是起馆舍，筑亭障；从成都至白水关，四百余区。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c13">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">13 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">二十五年<span class="zs-no">〔1〕</span>，魏文帝称尊号，改年曰“黄初”。或传闻汉帝见害，先主乃发丧制服<span class="zs-no">〔2〕</span>，追谥曰“孝愍皇帝”。</p>
+<p class="fy-inline">建安二十五年（公元220），魏文帝曹丕称帝，改年号为黄初。有人传说汉朝皇帝已被杀害，先主发布讣告，制作丧服，追谥汉朝皇帝为孝愍皇帝。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">二十五年：建安二十五年（公元 220）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">发丧：发布讣告；制服：制作穿的丧服</span></p>
+<p class="yw">是后（在所）〔所在〕并言众瑞<span class="zs-no">〔3〕</span>，日月相属<span class="zs-no">〔4〕</span>。</p>
+<p class="fy-inline">此后益州到处都在报告有祥瑞现象出现，每天每月连续不断。</p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">所在：处处，到处。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">日月：每日每月。</span></p>
+<p class="yw">故议郎、阳泉〔亭〕侯刘豹，青衣侯向举，偏将军张裔、黄权，大司马属殷纯，益州别驾从事赵莋，治中从事杨洪，从事祭酒何宗，议曹从事杜琼，劝学从事张爽、尹默、谯周等上言<span class="zs-no">〔5〕</span>：“臣闻《河图》、《洛书》<span class="zs-no">〔6〕</span>，五经谶、纬<span class="zs-no">〔7〕</span>；孔子所甄<span class="zs-no">〔8〕</span>，验应自远<span class="zs-no">〔9〕</span>。谨案《洛书甄曜度》曰：‘赤三日德昌<span class="zs-no">〔10〕</span>，九世会备<span class="zs-no">〔11〕</span>，合为帝际。’《洛书宝号命》曰：‘天度帝道备称皇，以统握契<span class="zs-no">〔12〕</span>，百成不败。’《洛书录运期》曰：‘九侯七杰争，命民炊骸<span class="zs-no">〔13〕</span>，道路籍籍履人头<span class="zs-no">〔14〕</span>，谁使主者玄且来。’《孝经钩命决录》曰：‘帝三建九会备。’臣父群未亡时<span class="zs-no">〔15〕</span>，言西南数有黄气，直立数丈，见来积年<span class="zs-no">〔16〕</span>；时时有景云祥风<span class="zs-no">〔17〕</span>，从璇玑下来应之<span class="zs-no">〔18〕</span>：此为异瑞。又二十二年中<span class="zs-no">〔19〕</span>，数有气如旗，从西竟东，中天而行；《图》、《书》曰‘必有天子出其方<span class="zs-no">〔20〕</span>’。加是年太白、荧惑、填星<span class="zs-no">〔21〕</span>，常从岁星相追<span class="zs-no">〔22〕</span>。近汉初兴，五星从岁星聚<span class="zs-no">〔23〕</span>；岁星主义<span class="zs-no">〔24〕</span>，汉位在西，义之上方<span class="zs-no">〔25〕</span>：故汉法常以岁星候人主<span class="zs-no">〔26〕</span>，当有圣主起于此州，以致中兴。时许帝尚存<span class="zs-no">〔27〕</span>，故群下不敢漏言<span class="zs-no">〔28〕</span>。顷者荧惑复追岁星<span class="zs-no">〔29〕</span>，现在胃、昴、毕<span class="zs-no">〔30〕</span>；昴、毕为天纲<span class="zs-no">〔31〕</span>，《经》曰‘帝星处之，众邪消亡’。圣讳预睹<span class="zs-no">〔32〕</span>，推揆期验<span class="zs-no">〔33〕</span>；符合数至，若此非一。臣闻圣王先天而天不违<span class="zs-no">〔34〕</span>，后天而奉天时；故应际而生<span class="zs-no">〔35〕</span>，与神合契。愿大王应天顺民，速即洪业<span class="zs-no">〔36〕</span>，以宁海内。”</p>
+<p class="fy-inline">因此，议郎、阳泉亭侯刘豹，青衣侯向举，偏将军张裔，偏将军黄权，大司马府下属殷纯，益州别驾从事赵笮，益州治中从事杨洪，益州从事祭酒何宗，益州议曹从事杜琼，益州劝学从事张爽，益州劝学从事尹默，益州劝学从事谯周等人上书先主说：“为臣等听说《河图》、《洛书》，以及五经的各种谶纬书籍，都是孔子写定的，其中的预言在很早以前就应验了。我们谨查出《洛书·甄曜度》中说：‘赤三日德昌，九世会备，合为帝际。’又《洛书·宝号命》中说：‘天度帝道备称皇，以统握契，百成不败。’又《洛书·录运期》中说：‘九侯七杰争，命民炊骸，道路籍籍履人头，谁使主者玄且来。’又《孝经钩命决录》中说：‘帝三建九会备。’为臣周巨的父亲周群在世时，曾说西南方多次出现黄气，直立有几丈高，出现以来已不止一年，并且时时有祥云清风，从天上的北斗星上一直下来接近它，这是一种极不寻常的祥瑞征兆。另外，建安二十二年（公元 217）间，多次出现一种像旗帜一样的云气，从西向东，在天空中央移动；对于这种云气，《河图》、《洛书》都说是‘必定有天子出现在云气初起的方位’。加之这一年的金星、火星、土星，常常追随木星运行。当初汉朝初起时，木、火、土、金、水五大行星就都聚在木星的轨道上运行；而木星是道义的体现，汉朝的方位在西，是与道义相配的方向，所以汉朝人常常从木星的运行状况来对君主进行预测。上述的云气预示将有圣明君主兴起于益州，使汉室得到中兴。当时许都的皇帝还在，所以群臣不敢把这事说出去。最近火星又开始追随木星，出现在二十八宿的胃、昴、毕这三宿所在的星区；昴、毕二宿是上天的总纲，《星经》上说：‘象征皇帝的星处在昴、毕二宿时，各种邪恶都会消亡。’大王的名字预先已在以上所引的文句中出现，推算时间和效验，多处都能符合，而不止一例。臣等听说圣明帝王行事，有时可能先于天时，但不会违反天道；有时会后于天时，也仍然奉行天道。所以才应运而生，与神灵的意旨相符合。愿大王顺应天意和民心，迅速登上帝位，以安定天下。”</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">偏将军：官名。属低级将军。领兵征伐；大司马属：官名；劝学从事：官名</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">《河图》、《洛书》：传说中上古出现的神秘图形和书籍。相传在伏羲时，有神马从黄河中跃出，背上有图形，伏羲按图画出，成为八卦。又传夏禹治水时，有神龟从洛水中爬出，背上有文字，夏禹按文字写出，成为《洪范》。见《周易·系辞》上、《汉书》卷二十七上《五行志》上。后来的人附会《河图》、《洛书》，制造了大量的谶纬书籍。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">五经谶纬：附会儒家《周易》、《尚书》、《诗经》、《礼》、《春秋》五部经典而制造的吉凶预言式书籍。谶是暗示吉凶的预言。纬是对经的附会性解释。谶纬常附有神秘图形，所以又称为图谶、谶记。大量产生于西汉末年。到东汉时受官方提倡，盛行于世，并叫做内学。关于《河图》、《洛书》、五经谶纬的书目，详见《隋书》卷三十二《经籍志》一、《后汉书》卷八十二上《方术樊英传》李贤注。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">甄：制作。说孔子制作纬书，是一种假托，意在抬高纬书地位。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">验应：效验。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">赤：按五行家的说法，汉朝为火德。火色赤，所以刘邦自称是南方天神赤帝之子。这里的赤暗指汉。下文所引各纬书的文句，都因其中含有“备”、“玄”、“德”等字样，而被视为刘备该当皇帝的证据。其实纬书这种隐晦的文字，既可这样解释，也可那样解释，从而给人以很大的附会余地；三日：三个太阳</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">九世：蜀汉臣僚认为指东汉的九个皇帝。即光武帝刘秀、明帝刘庄、章帝刘坦、和帝刘肇、安帝刘祜、顺帝刘保、桓帝刘志、灵帝刘宏、献帝刘协。东汉共十三帝，另外四帝在位不久即死亡，故不计算在内。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">握契：比喻取得帝位。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">九侯七杰：蜀汉臣僚认为指东汉末年混战割据的群雄；炊骸：以人骨头为燃料做饭</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">籍籍：众多而杂乱的样子；履：踩踏</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">群：指周群。传见本书卷四十二。周群有子周巨，当在上表人之中，或因官位低而未列名。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">见来：出现以来；积年：多年</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">景云：预示喜庆的云气。古代有所谓候气之术，即专门观察云气以预测吉凶。详见《史记》卷二十七《天官书》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">璇玑：星名。北斗七星中位于斗形底部的两颗星。靠斗柄的一颗叫天玑，另一颗叫天璇。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">二十二年：建安二十二年（公元 217）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">《图》、《书》：即《河图》、《洛书》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">是年：这一年；太白：星名；荧惑：星名；填星：星名</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">从：随从；岁星：星名</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">五星：指包括岁星在内的木、火、土、金、水五星。西汉高祖元年（前 206）十月，火、土、金、水四星向岁星即木星靠近，最后会聚在东井。东井是二十八宿中南方朱雀七宿的井宿，有星八颗。五星会聚东井，被认为是刘邦要当皇帝的预兆。事见《汉书》卷二十六《天文志》六。这里蜀汉臣僚援引先例，想证明金、火、土三星朝木星会聚是刘备要当皇帝的预兆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">主义：体现道义。《史记》卷二十七《天官书》认为岁星体现道义，所以“义失者，罚出岁星”。但是《汉书》卷二十六《天文志》六的说法不同，认为岁星主仁，荧惑主礼，太白主义，辰星（水星）主智，填星主信。</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">候：预测。</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">许帝：在许都的汉献帝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">漏言：公开说破。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">顷者：近来。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">胃：星宿名。即二十八宿中西方白虎七宿的胃宿。有星三颗。昴（mǎo）：星宿名。即西方白虎七宿的昴宿。有星七颗。毕：星宿名。即西方白虎七宿的毕宿。有星八颗。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">天纲：上天的总纲。但是《史记》卷二十七《天官书》和《汉书》卷二十六《天文志》六都说昴、毕为天街，即日、月、五星经常运行经过的星区，与此不同。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">圣讳：指刘备的名和字。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">推揆：推求；期验：预期的效验</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">先天：在天时之先行事。这两句出自《周易·乾卦》的《文言》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">应际：应运。</span></p>
+<p class="zs-inline"><span class="zs-no">〔36〕</span><span class="zs-body">洪业：大业。指皇位。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">义之上方：义之上方。指西方。古人以仁、义、礼、智、信与东、西、南、北、中相配，义配西方。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c14">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">14 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">太傅许靖，安汉将军麋竺，军师将军诸葛亮，太常赖恭，光禄勋黄（权）〔柱〕，少府王谋等上言<span class="zs-no">〔1〕</span>：“曹丕篡弑，湮灭汉室，窃据神器；劫迫忠良，酷烈无道；人鬼忿毒<span class="zs-no">〔2〕</span>，咸思刘氏。今上无天子，海内惶惶，靡所式仰<span class="zs-no">〔3〕</span>。群下前后上书者八百余人，咸称述符瑞、图谶明征<span class="zs-no">〔4〕</span>。间黄龙现武阳赤水<span class="zs-no">〔5〕</span>，九日乃去。《孝经援神契》曰‘德至渊泉，则黄龙现’；龙者，君之象也。《易·乾》九五‘飞龙在天’<span class="zs-no">〔6〕</span>，大王当龙升，登帝位也。又前关羽围樊、襄阳，襄阳男子张嘉、王休献玉玺，玺潜汉水，伏于渊泉；晖景烛耀<span class="zs-no">〔7〕</span>，灵光彻天。夫‘汉’者，高祖本所起定天下之国号也；大王袭先帝轨迹，亦兴于汉中也。今天子玉玺神光先现，玺出襄阳，汉水之末<span class="zs-no">〔8〕</span>；明大王承其下流，授与大王以天子之位：瑞命符应，非人力所致。昔周有乌鱼之瑞<span class="zs-no">〔9〕</span>，咸曰休哉；二祖受命<span class="zs-no">〔10〕</span>，《图》、《书》先著<span class="zs-no">〔11〕</span>，以为征验。今上天告祥<span class="zs-no">〔12〕</span>，群儒英俊并进《河》、《洛》、孔子谶记<span class="zs-no">〔13〕</span>，咸悉俱至<span class="zs-no">〔14〕</span>。伏惟大王出自孝景皇帝中山靖王之胄，本枝百世<span class="zs-no">〔15〕</span>，乾祗降祚<span class="zs-no">〔16〕</span>；圣姿硕茂<span class="zs-no">〔17〕</span>，神武在躬；仁覆积德，爱人好士：是以四方归心焉。考省灵《图》，启发谶纬<span class="zs-no">〔18〕</span>；神明之表，名讳昭著；宜即帝位，以纂二祖；绍嗣昭穆<span class="zs-no">〔19〕</span>，天下幸甚！臣等谨与博士许慈、议郎孟光<span class="zs-no">〔20〕</span>，建立礼仪，择令辰，上尊号。”</p>
+<p class="fy-inline">太傅许靖、安汉将军麋竺、军师将军诸葛亮、太常赖恭、光禄勋黄柱、少府王谋等上书先主说：“曹丕杀害天子篡夺皇权，企图灭亡汉朝，窃据帝位，劫持逼迫忠良，残酷暴虐无道。人民和鬼神都愤恨他，无不思念刘氏皇族。而今上无天子，天下人心惶惶，没有效法和瞻仰的对象。群臣前后土书的达到八百多人，都在报告各种符命祥瑞，以及图谶当中的明确征兆。最近又有黄龙出现在成都南边武阳县的赤水河中，停留了九天才离开。《孝经援神契》中说是‘德泽到达深渊和泉水时就有黄龙出现’；龙是君主的象征，《周易·乾卦》第五爻的爻辞有‘龙飞上云天’的句子：这些都说明大王会像龙一样飞升，登上皇帝的位置。还有此前关羽包围樊城、襄阳时，襄阳的两个男子张嘉、王休献上一方玉玺；玉玺原来沉在汉水之中，潜藏在深渊之下，光芒闪耀，直冲云天。而‘汉’这个字，乃是高祖根据自己从汉中兴起平定天下而用来作为国号的；大王承袭先祖的模式，所以也从汉中兴起。而今天子的玉玺已经预先发出神光，这玉玺又出在襄阳，襄阳位于汉水的末段；说明大王在下游承接，而在上游汉中兴起的高祖将要授给大王天子之位。这些祥瑞的征兆和效应，都不是人力所能造成的。从前周朝时出现了红乌鸦和白鱼的祥瑞，人们都赞美说‘好啊’。我朝的高祖、世祖承受天命登上帝位时，在《河图》、《洛书》中也是先有文字点明，作为启示人们的征兆。现在上天早已显示征兆，各位儒者和英才，都在报告《河图》、《洛书》和孔子所著谶纬书中的预兆，这方面的事例全部都来到我们面前。臣等回想大王乃是孝景皇帝儿子中山靖王的后裔，宗族的嫡系和旁支传承无穷，天地赐福；所以大王的外貌高大英伟，具有非凡的军事才能；仁德覆盖苍生，爱惜天下人才：受到四方人民的衷心拥护。考察灵验的《河图》，领悟谶纬的启示，冥冥之中的神灵，已经把大王的名字向世人点明了。应当登上帝位，继承高祖、世祖的事业，接续宗庙的祭祀，这样做天下人民就很幸运了。为臣等谨与博士许慈、议郎孟光一起，制定登基的礼仪，选择吉利的时辰，然后向大王奉上尊崇的皇帝称号。”</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">安汉将军：官名。刘备设置。地位高，但不统率军队，是荣誉性官职。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">忿毒：忿恨。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">靡所式仰：无所效法和瞻仰。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">符瑞：符命祥瑞。符命是预示新统治者出现的征兆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">间：近来；武阳：县名；赤水：河流名</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">飞龙在天：这是《周易·乾卦》第五爻的爻辞。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">晖景：光辉；烛耀：照耀</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">末：末端。指下游。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">乌鱼之瑞：周武王伐殷纣前举行军事演习，试探对方反应，渡黄河时有白鱼跳上船，渡河后有火从空中降下，变成红色的乌鸦。人们认为这是周将取代殷的吉兆。事见《史记》卷四《周本纪》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">二祖：指高祖刘邦、世祖刘秀。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">先著：先已点明。伪造的《河图》有“帝刘季，口角戴胜”，“周亡，赤气起，大耀兴，玄丘制命，帝卯金”之类含有刘邦姓和字的话。伪造的图谶又有“刘秀发兵捕不道，卯金修德为天子”，“刘氏复起，李氏为辅”之类含有刘秀姓名的话。这些都被认为是预示刘邦、刘秀要当皇帝的证据。参见《史记》卷八《高祖本纪》张守节《正义》、《后汉书》卷一上《光武帝纪》上、《宋书》卷二十七《符瑞志》上。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">告祥：显示征兆。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">《河》、《洛》：即《河图》、《洛书》；孔子谶记：即上文提到的五经谶纬</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">咸悉俱：都。这是三个同义词并列，目的是强调。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">本枝百世：嫡系和旁支传承无穷。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">乾祇：天地。祚（zuò）：福。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">圣姿：指刘备的外表；硕茂：高大英伟</span></p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">启发：领悟。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">昭穆：这里指汉代皇室的宗庙。古代天子的宗庙制度，始祖神位居中，以下各代的神位，第一代居左为昭，第二代居右为穆，第三代又居左为昭，第四代又居右为穆。以此类推，秩序不能紊乱。</span></p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">许慈、孟光：二人传见本书卷四十二。</span></p>
+<p class="yw">即皇帝位于成都武担之南<span class="zs-no">〔21〕</span>，<span class="pz-no">〔一〕</span>为文曰：“惟建安二十六年四月丙午<span class="zs-no">〔22〕</span>，皇帝〔臣〕备，敢用玄牡<span class="zs-no">〔23〕</span>，昭告皇天上帝、后土神祇：汉有天下，历数无疆。曩者王莽篡盗<span class="zs-no">〔24〕</span>，光武皇帝震怒致诛，社稷复存。今曹操阻兵安忍<span class="zs-no">〔25〕</span>，戮杀主后；滔天泯夏<span class="zs-no">〔26〕</span>，罔顾天显<span class="zs-no">〔27〕</span>。操子丕，载其凶逆<span class="zs-no">〔28〕</span>，窃居神器。群臣将士以为社稷坠废，备宜修之；嗣武二祖<span class="zs-no">〔29〕</span>，龚行天罚。备惟否德<span class="zs-no">〔30〕</span>，惧忝帝位<span class="zs-no">〔31〕</span>；询于庶民，外及蛮夷君长，佥曰：‘天命不可以不答，祖业不可以久替，四海不可以无主；率土式望<span class="zs-no">〔32〕</span>，在备一人。’备畏天明命，又惧汉阼将湮于地；谨择元日<span class="zs-no">〔33〕</span>，与百僚登坛，受皇帝玺绶；修燔瘗<span class="zs-no">〔34〕</span>，告类于大神<span class="zs-no">〔35〕</span>。惟神〔尚〕飨<span class="zs-no">〔36〕</span>！祚于汉家，永绥四海<span class="zs-no">〔37〕</span>！”<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">于是先主在成都武担山的南面举行仪式登上皇帝位置。即位仪式中宣读的文告说：“建安二十六年（公元 221）四月初六日丙午，皇帝臣刘备斗胆使用黑色公牛作祭品，公开报告皇天上帝和大地之神：汉朝拥有天下，上天所赐给的传承年代永无穷尽。从前王莽篡夺盗取帝位，震怒的光武皇帝给以诛讨，使汉朝天下依然存在。而今曹操依仗武力，安于作出残忍的事情；杀死皇后，罪大恶极，企图灭亡大汉王朝，而不顾上天显示的君臣之道。曹操的儿子曹丕，承袭其父的凶恶反逆行为，竟然窃据了天子的位置。我的群臣和将士都认为现今天下崩溃，刘备应当把它重新建立起来，紧跟高祖、世祖的脚迹，恭敬地执行上天对叛逆者的惩罚。臣下我考虑自己无德无能，害怕会有辱于皇帝的尊位。于是向百姓，甚至外边的少数族首领征询意见，他们都说：‘天命不能不顺从，祖业不能长久让其衰败，四海不能没有君主，全国人民所仰望的，就在你刘备一人啊。’臣下我敬畏上天明确的命令，又害怕汉朝的江山会崩溃在地上，所以谨选择一个好日子，与百官登坛举行仪式，接受皇帝的玉玺和绶带。特此准备妥当禀告天地时使用的木柴、土坑和祭品，举行仪式向伟大的皇天上帝和大地之神报告，希望你们前来享用祭品，赐福于汉朝，永远安定天下！”</p>
+<p class="zs-inline"><span class="zs-no">〔21〕</span><span class="zs-body">武担：小山名。在今四川成都市区城北。还有遗址留存。</span></p>
+<p class="zs-inline"><span class="zs-no">〔22〕</span><span class="zs-body">建安二十六年：公元 221 年。建安年号到二十四年为止。刘备不承认曹魏的年号，所以继续以建安年号记年；丙午：阴历初六日</span></p>
+<p class="zs-inline"><span class="zs-no">〔23〕</span><span class="zs-body">玄牡：黑色的公牛。</span></p>
+<p class="zs-inline"><span class="zs-no">〔24〕</span><span class="zs-body">王莽：字巨君。济南郡东平陵（今山东济南市东）人。新王朝的建立者。公元 8 至 23 年在位。汉元帝皇后的侄儿，早年以外戚进入政界。汉成帝时任大司马，封新都侯。汉平帝时开始执掌朝政。公元 5 年，毒死平帝，自称假皇帝。三年后正式称帝，改国号为新，并实行一系列政治经济变革。法令苛细，更改频繁，赋役沉重。公元 17 年，全国农民大起义爆发。五年后，新王朝灭亡。被攻入长安的绿林军杀死。传见《汉书》卷九十九。</span></p>
+<p class="zs-inline"><span class="zs-no">〔25〕</span><span class="zs-body">阻兵：仗恃武力；安忍：安于做残忍的事情</span></p>
+<p class="zs-inline"><span class="zs-no">〔26〕</span><span class="zs-body">滔天：比喻罪恶巨大，如同洪水漫天；泯夏：（企图）消灭中原王朝</span></p>
+<p class="zs-inline"><span class="zs-no">〔27〕</span><span class="zs-body">罔顾：不顾；天显：上天显示的道理</span></p>
+<p class="zs-inline"><span class="zs-no">〔28〕</span><span class="zs-body">载：继承。</span></p>
+<p class="zs-inline"><span class="zs-no">〔29〕</span><span class="zs-body">嗣武二祖：紧跟高祖刘邦、世祖刘秀的脚迹。指继承其事业。</span></p>
+<p class="zs-inline"><span class="zs-no">〔30〕</span><span class="zs-body">惟：自己思量。否（pǐ）德：无德。</span></p>
+<p class="zs-inline"><span class="zs-no">〔31〕</span><span class="zs-body">忝：有辱于。</span></p>
+<p class="zs-inline"><span class="zs-no">〔32〕</span><span class="zs-body">率土式望：全国仰望。</span></p>
+<p class="zs-inline"><span class="zs-no">〔33〕</span><span class="zs-body">元日：好日子。</span></p>
+<p class="zs-inline"><span class="zs-no">〔34〕</span><span class="zs-body">修：准备。燔（fán）：即燔柴。一种祭告天神的礼仪。把玉器、绢帛、牺牲等祭品放在木柴堆上燃烧，使烟气上升到天际。瘗（yì）：即瘗埋。一种祭告地神的礼仪。把祭品埋入地中。以上两种礼仪常用于新王朝开国皇帝登基，以表示受命于天地。</span></p>
+<p class="zs-inline"><span class="zs-no">〔35〕</span><span class="zs-body">告类：祭告天神的礼仪名称。通常用在新皇帝登基、建立皇太子时。与燔柴礼仪略有区别，这里混合为一。</span></p>
+<p class="zs-inline"><span class="zs-no">〔36〕</span><span class="zs-body">尚飨：祭祀文章的常用结束语。意为希望神灵来享用祭品。</span></p>
+<p class="zs-inline"><span class="zs-no">〔37〕</span><span class="zs-body">绥：安定。《先主传》中，对刘备称王、称帝、治丧等相关文告，均详细著录。相形之下，对于曹魏和孙吴的类似文告，著录却非常简略。陈寿厚待蜀汉的内心，还是故国的情愫在起作用。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">《蜀本纪》曰：“武都有丈夫，化为女子，颜色美好，盖山精也。蜀王娶以为妻，不习水土，疾病欲归国；蜀王留之，无几，物故。蜀王发卒之武都，担土，于成都郭中葬；盖地数亩，高十丈，号曰‘武担’也。”臣松之按：武担，山名，在成都西北。盖以乾位在西北，故就之以即阼。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《魏书》曰：“备闻曹公薨，遣掾韩冉奉书吊，并致赙赠之礼。文帝恶其因丧求好，敕荆州刺史斩冉，绝使命。”《典略》曰：“备遣军谋掾韩冉，赍书吊，并贡锦布。冉称疾，住上庸。上庸致其书，适会受终，有诏报答，以引致之。备得报书，遂称制。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c15">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">15 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">章武元年夏四月，大赦，改年。以诸葛亮为丞相，许靖为司徒，置百官；立宗庙，祫祭高皇帝以下<span class="zs-no">〔1〕</span>。<span class="pz-no">〔一〕</span>五月，立皇后吴氏<span class="zs-no">〔2〕</span>，子禅为皇太子。六月，以子永为鲁王<span class="zs-no">〔3〕</span>，理为梁王<span class="zs-no">〔4〕</span>。车骑将军张飞为其左右所害。</p>
+<p class="fy-inline">先主章武元年（公元 221）夏四月，宣布大赦，改变年号。任命诸葛亮为丞相，许靖为司徒。设置百官，建立宗庙，在宗庙中合祭从汉高祖起的历代祖先。五月，立吴氏为皇后，皇子刘禅为太子。六月，封皇子刘永为鲁王，刘理为梁王。车骑将军张飞被他的侍从杀害。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">祫祭：在宗庙中合祭祖先。曹丕称帝，年号定为“黄初”；孙权称王，年号定为“黄武”，称帝之后又改“黄龙”。魏、吴二国的初定年号均含有一个“黄”字，是要显示王朝的除旧布新，这与汉代流行的“五德终始”理论密切相关。刘备则不然，他要攻取中原兴复汉室，必须凭借武功，年号定为“章武”，即彰显武功之义。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">吴氏：传见本书卷三十四。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">永：即刘永。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">理：即刘理。刘永异母弟。二人传见本书卷三十四。</span></p>
+<p class="yw">初，先主忿孙权之袭关羽，将东征。秋七月，遂帅诸军伐吴。孙权遣书请和，先主盛怒不许。吴将陆议、李异、刘阿等屯巫、秭归；将军吴班、冯习自巫攻破异等<span class="zs-no">〔5〕</span>；军次秭归，武陵五溪蛮夷遣使请兵<span class="zs-no">〔6〕</span>。</p>
+<p class="fy-inline">当初，先主愤恨孙权袭杀关羽，准备东征孙吴。秋七月，亲自率领各路军队出征。孙权写信来求和，先主大为震怒，断然拒绝。吴将陆逊、李异、刘阿等驻扎在巫县、秭归县一带，先主派将军吴班、冯习在巫县攻破李异的部队，向前推进到秭归。这时孙吴辖境内武陵郡的蛮族，他们居住在雄、*、辰、酉、无这五条溪河的沿岸，派使者来请求先主派兵去，他们要归顺先主。</p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">吴班、冯习：二人事见本书卷四十五《杨戏传》载杨戏《季汉辅臣赞》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">五溪：指沅水的五条支流。即雄溪、{溪、辰溪、酉溪、无溪。在今湘西地区。当时是武陵蛮族聚居地。武陵蛮族属于盘弧蛮的一支，东汉时力量强盛，是现今湘西苗、瑶等族先民的一部分。</span></p>
+<p class="yw">二年春正月<span class="zs-no">〔7〕</span>，先主军还秭归；将军吴班、陈式水军屯夷陵，夹江东西岸<span class="zs-no">〔8〕</span>。二月，先主自秭归率诸将进军，缘山截岭，于夷道猇亭<span class="pz-no">〔二〕</span>驻营<span class="zs-no">〔9〕</span>。自佷山<span class="pz-no">〔三〕</span>通武陵<span class="zs-no">〔10〕</span>，遣侍中马良安慰五溪蛮夷<span class="zs-no">〔11〕</span>，咸相率响应。镇北将军黄权督江北诸军，与吴军相拒于夷陵道。</p>
+<p class="fy-inline">章武二年（公元 222）春正月，先主率主力军团回到秭归，派将军吴班、陈式率水军推进并驻扎在夷陵县，军队部署在长江两岸。二月，先主自秭归率诸将向孙吴境内进军，沿着长江边的崎岖山路，跋涉到夷道县的猇亭扎营。又从佷山县打通前往武陵郡的道路，派侍中马良前去安抚蛮族，那里的蛮族人都纷纷响应先主。镇北将军黄权指挥长江以北的各路军队，与吴军在夷陵一线相持。</p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">二年：章武二年（公元 222）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">夹江东西岸：长江过夷陵（今湖北宜昌市东南）后，几乎是从正北流向正南，所以说是东西岸。</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">夷道：县名。在今湖北宜都市。猇（xiāo）亭：地名。在今湖北宜昌市东南猇亭镇。是决定蜀吴二国最终边界线的著名古战场。与官渡之战、赤壁之战构成确定三国鼎立版图基本格局的三大战役。据笔者实地考察，猇亭三面环山，只有西面俯临长江，易守难攻。而且长江从三峡进入江汉平原之后，沿线大多是坡度平缓的泥沙江岸，而猇亭所在的近两公里江岸，却是非常坚硬和陡峻的岩壁，编队的水军船只难以停靠，即使停靠大部队官兵也很难迅速登岸。因此，刘备的从三峡开始一直能够彼此紧密呼应的水军和陆军，在此便被分割，使其岸上的陆军陷入孤立无援的境地。陆逊长期镇守长江一线，对沿岸地形非常熟悉。他之所以从三峡一直退到这里才大举进攻蜀军，是他敢于决断和善于用兵的结果。</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">佷山：县名。县治在今湖北长阳县西南。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">马良：传见本书卷三十九。</span></p>
+<p class="yw">夏六月，黄气现自秭归十余里中，广数十丈。后十余日，陆议大破先主军于猇亭；将军冯习、张南等皆没<span class="zs-no">〔12〕</span>。先主自猇亭还秭归，收合离散兵；遂弃船舫，由步道还鱼复<span class="zs-no">〔13〕</span>。改鱼复县曰“永安”。</p>
+<p class="fy-inline">夏六月，有一股黄气出现在秭归的十多里地界内，宽达几十丈。在这以后十多天，吴将陆逊在猇亭击败先主的大军，将军冯习、张南等阵亡。先主从猇亭退回秭归，收集逃散的士兵，抛弃大小船只，由陆路再退回鱼复县，改鱼复为永安。</p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">张南：事见本书卷四十五《杨戏传》载杨戏《季汉辅臣赞》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">鱼复：县名。县治在今重庆市原奉节县东。</span></p>
+<p class="yw">吴遣将军李异、刘阿等踵蹑先主军<span class="zs-no">〔14〕</span>，屯驻南山<span class="zs-no">〔15〕</span>。秋八月，收兵还巫。司徒许靖卒。</p>
+<p class="fy-inline">孙吴派将军李异、刘阿等跟踪先主军队，一直追到永安附近的南山驻扎，秋八月才撤回巫县。司徒许靖去世。</p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">踵蹑：追随。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">南山：山名。在今四川奉节县东白帝山东南。；南北郊：即南郊、北郊</span></p>
+<p class="yw">冬十月，诏丞相亮营南、北郊于成都<span class="zs-no">〔16〕</span>。孙权闻先主住白帝，甚惧，遣使请和<span class="zs-no">〔17〕</span>。先主许之，遣太中大夫宗玮报命。</p>
+<p class="fy-inline">冬十月，先主下诏让丞相诸葛亮在成都的南、北郊修建祭祀天、地的圆坛、方池。</p>
+<p class="fy-inline">孙权听说先主一直住在白帝城，非常害怕，派遣使者求和。先主同意讲和，派太中大夫宗玮前往孙吴回复对方的要求。</p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">营：营建</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">遣使请和：这是掩饰性说法。实际是刘备先主动求和，见拙文《夷陵之战后蜀吴议和史事考》，载《四川大学学报》1989 年第 4 期。</span></p>
+<p class="yw">十二月，汉嘉太守黄元闻先主疾不豫<span class="zs-no">〔18〕</span>，举兵拒守。</p>
+<p class="fy-inline">十二月，汉嘉郡太守黄元听说先主病重，举兵抗拒朝廷。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">汉嘉：郡名。治所在今四川芦山县；不豫：天子病重的代称</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">臣松之以为：先主虽云出自孝景，而世数悠远，昭穆难明；既绍汉祚，不知以何帝为元祖，以立亲庙。于时英贤作辅，儒生在官，宗庙制度，必有宪章；而载记阙略，良可恨哉！</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">猇，许交反。</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">佷，音恒。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c16">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">16 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">三年春二月<span class="zs-no">〔1〕</span>，丞相亮自成都到永安。三月，黄元进兵攻临邛县<span class="zs-no">〔2〕</span>。遣将军陈曶<span class="pz-no">〔一〕</span>讨元。元军败，顺流下江；为其亲兵所缚，生致成都，斩之。先主病笃，托孤于丞相亮<span class="zs-no">〔3〕</span>；尚书令李严为副。</p>
+<p class="fy-inline">章武三年（公元 213）春二月，丞相诸葛亮自成都到达永安。三月，黄元出兵进攻临邛县。朝廷派将军陈智讨伐黄元。黄元兵败，顺流而下逃跑，被他的亲兵捆了，活着送往成都，将其斩首。</p>
+<p class="fy-inline">先主病重，把儿子刘禅托付给丞相诸葛亮，由尚书令李严充当诸葛亮的副手。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">三年：章武三年（公元 223）。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">临邛：县名。县治在今四川邛崃市。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">托孤：托付儿子。</span></p>
+<p class="yw">夏四月癸巳<span class="zs-no">〔4〕</span>，先主殂于永安宫<span class="zs-no">〔5〕</span>。时年六十三。<span class="pz-no">〔二〕</span></p>
+<p class="fy-inline">夏四月二十四日，先主在永安县的行宫去世，终年六十三岁。</p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">癸巳：据陈垣《二十史朔闰表》，四月己未朔，无癸巳。二十四日为壬午，前一天是辛巳，后一天是癸未。此处史文疑有误。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">殂：死亡。古代天子死叫崩，又叫殂。崩和殂只是字面不同，并无等级差别，所以诸葛亮《出师表》有“先帝创业未半而中道崩殂”的措辞。陈寿《三国志》中，对曹魏皇帝死用“崩”，对孙吴皇帝死用“薨”，对刘备死用“殂”。薨是指诸侯死亡，比崩、殂低一等。陈寿以曹魏为正统，但在死亡的措辞上又优待刘备暗尊蜀汉，具有微妙意味；永安宫：刘备所修的行宫</span></p>
+<p class="yw">亮上言于后主曰：“伏惟大行皇帝迈仁树德<span class="zs-no">〔6〕</span>，覆焘无疆<span class="zs-no">〔7〕</span>；昊天不吊<span class="zs-no">〔8〕</span>，寝疾弥留，今月二十四日奄忽升遐<span class="zs-no">〔9〕</span>。臣妾号啕<span class="zs-no">〔10〕</span>，若丧考妣<span class="zs-no">〔11〕</span>。乃顾遗诏，事惟（大）〔太〕宗<span class="zs-no">〔12〕</span>，动容损益<span class="zs-no">〔13〕</span>：‘百僚发哀<span class="zs-no">〔14〕</span>，满三日除服<span class="zs-no">〔15〕</span>，到葬期复如礼<span class="zs-no">〔16〕</span>；其郡国太守、相、都尉，县令、长，三日便除服。’臣亮亲受敕戒，震畏神灵，不敢有违。臣请宣下奉行<span class="zs-no">〔17〕</span>。”</p>
+<p class="fy-inline">诸葛亮向后主刘禅上奏说：“刚刚去世的先皇帝树立仁德，覆盖着无边大地上的人民；上天真是不仁慈，让他卧病在床直到临终的时刻。本月二十四日他忽然离开人世升天，臣僚们号啕大哭，好像死去了父亲或母亲。考虑到先皇帝临终前留下遗诏，指示丧事要按照太宗孝文皇帝的榜样办理，并做了适当的改革，现将他的指示报告如下：‘百官哭祭，满三天后即脱掉丧服正常办公，到遗体下葬时再按照葬礼内容参加哀悼活动；各地的郡太守、国相、都尉、县令、县长，哭祭满三天后即脱掉丧服正常办公。’为臣亲自接受了先皇帝的指示训戒，畏惧神灵，不敢有所违背。为臣请求您向下面宣布执行先皇帝的上述指示。”</p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">大行：一去不复返。古代用来指刚刚死亡的皇帝。</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">覆焘：覆盖。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">昊天：上天；不吊：不好</span></p>
+<p class="zs-inline"><span class="zs-no">〔9〕</span><span class="zs-body">奄忽：忽然；升遐：升天</span></p>
+<p class="zs-inline"><span class="zs-no">〔10〕</span><span class="zs-body">臣妾：臣僚。</span></p>
+<p class="zs-inline"><span class="zs-no">〔11〕</span><span class="zs-body">考妣：父母。</span></p>
+<p class="zs-inline"><span class="zs-no">〔12〕</span><span class="zs-body">事惟太宗：丧事想按照太宗皇帝的榜样办理。太宗是西汉文帝刘恒的庙号；他临死前下达指示：丧事从简，天下官员百姓只需服丧三天，详见《史记》卷十《孝文本纪》</span></p>
+<p class="zs-inline"><span class="zs-no">〔13〕</span><span class="zs-body">动容损益：动容与损益同义，意为作适当的变革。这里指对古代要为君主服丧三年的礼制加以改动。事实上，在三国对峙战争不断的时期，魏、吴两国和蜀国一样，都对服丧三年的礼制有改动，曹操临死前规定遗体入葬后即结束服丧，孙策死后孙权也只作短暂祭奠，分见本书卷一《武帝纪》、卷四十七《吴主传》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔14〕</span><span class="zs-body">发哀：哭祭。</span></p>
+<p class="zs-inline"><span class="zs-no">〔15〕</span><span class="zs-body">除服：脱掉丧服。指恢复正常活动。</span></p>
+<p class="zs-inline"><span class="zs-no">〔16〕</span><span class="zs-body">复如礼：指再穿一次丧服参加葬礼。</span></p>
+<p class="zs-inline"><span class="zs-no">〔17〕</span><span class="zs-body">宣下：向下面宣告。</span></p>
+<p class="yw">五月，梓宫自永安还成都<span class="zs-no">〔18〕</span>，谥曰昭烈皇帝<span class="zs-no">〔19〕</span>。</p>
+<p class="fy-inline">五月，先主的灵柩从永安运回成都，谥为昭烈皇帝。</p>
+<p class="zs-inline"><span class="zs-no">〔18〕</span><span class="zs-body">梓宫：灵柩。天子的灵柩称梓宫。</span></p>
+<p class="zs-inline"><span class="zs-no">〔19〕</span><span class="zs-body">昭烈：光大汉朝基业的意思。汉魏时皇帝死后享有庙号、谥号。刘备是蜀汉王朝的创立者，谥号定为“昭烈”，却没有庙号。刘备未能享有庙号的原因，应是在他去世之时尚未能完成“兴复汉室”的大业。</span></p>
+<p class="yw">秋八月，葬惠陵<span class="zs-no">〔20〕</span>。<span class="pz-no">〔三〕</span></p>
+<p class="fy-inline">秋八月，先主被安葬在成都的惠陵。</p>
+<p class="zs-inline"><span class="zs-no">〔20〕</span><span class="zs-body">惠陵：在今四川成都市城南武侯祠博物馆内。成都武侯祠，是由刘备惠陵的陵园（包括陵墓和祠庙）演变而来，现今依然有静谧肃穆的陵园和高大墓冢留存。东侧的刘备殿、孔明殿等建筑和蜀汉君臣塑像群，建于明清时期，是非常罕见独特的君臣合祭型神庙建筑。以上惠陵、建筑和塑像群，构成完美的整体，是三国名胜古迹中最先列入国家文物保护单位者，在海内外享有盛名，有“三国文化圣地”的美誉。</span></p>
+</div></div>
+<div class="fold open pz-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">裴注</span></button><div class="fold-body">
+<p class="pz-item"><span class="pz-no">〔一〕</span><span class="pz-body">曶，音笏。</span></p>
+<p class="pz-item"><span class="pz-no">〔二〕</span><span class="pz-body">《诸葛亮集》载先主遗诏敕后主曰：“朕初疾，但下痢耳；后转杂他病，殆不自济。人五十不称夭，年已六十有余，何所复恨！不复自伤，但以卿兄弟为念！射君到，说丞相叹卿‘智量甚大，增修过于所望’；审能如此，吾复何忧！勉之，勉之！勿以恶小而为之，勿以善小而不为；惟贤惟德，能服于人。汝父德薄，勿效之。可读《汉书》、《礼记》，闲暇历观诸子及《六韬》、《商君书》，益人意智。闻丞相为写《申》、《韩》、《管子》、《六韬》一通，已毕，未送；道亡，可自更求闻达。”临终时，呼鲁王与语：“吾亡之后，汝兄弟父事丞相，令卿与丞相共事而已。”</span></p>
+<p class="pz-item"><span class="pz-no">〔三〕</span><span class="pz-body">葛洪《神仙传》曰：“仙人李意其，蜀人也。传世见之，云是汉文帝时人。先主欲伐吴，遣人迎意其。意其到，先主礼敬之。问以吉凶，意其不答而求纸笔；画作兵马、器仗数十纸，已，便一一以手裂坏之；又画作一大人，掘地埋之。便径去，先主大不喜。而自出军征吴，大败，还，忿耻发病死；众人乃知其意：其画作大人而埋之者，即是言先主死意。”</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+<section class="page chunk" id="page-v32-c17">
+<div class="chunk-head"><a class="chunk-vol" href="#v32-c01" onclick="go('v32-c01');return false;">第32卷 · 蜀书2 先主传第2</a><span class="chunk-prog">17 / 17</span><span class="chunk-pager"></span><span class="chunk-actions"><button type="button" onclick="foldPage(true)">收起本页</button><button type="button" onclick="foldPage(false)">展开本页</button></span></div>
+<div class="chunk">
+<div class="fold open yw-block"><button type="button" class="fold-bar" onclick="toggleFold(this)"><span class="fold-mark">▾</span><span class="fold-name">原文</span></button><div class="fold-body">
+<p class="yw">评曰：先主之弘毅宽厚<span class="zs-no">〔1〕</span>，知人待士；盖有高祖之风，英雄之器焉。及其举国托孤于诸葛亮，而心神无贰<span class="zs-no">〔2〕</span>；诚君臣之至公，古今之盛轨也<span class="zs-no">〔3〕</span>！机权干略，不逮魏武<span class="zs-no">〔4〕</span>，是以基宇亦狭<span class="zs-no">〔5〕</span>；然折而不挠，终不为下者，抑揆彼之量必不容己<span class="zs-no">〔6〕</span>；非唯竞利<span class="zs-no">〔7〕</span>，且以避害云尔<span class="zs-no">〔8〕</span>。</p>
+<p class="fy-inline">评论说：先主为人刚强、坚毅、宽厚；在了解和对待人才方面，大概有汉高祖的风范，表现出英雄的气度。他把整个国家和儿子托付给诸葛亮，而内心却毫无另外的念头，确实是君臣之间最大公无私的举动，古往今来的美好典范啊！只是他的机敏、权变、才干和谋略，比不上魏武帝曹操，所以最后占有的疆土也比较狭小。他之所以屡受挫折而不屈不挠，始终不肯向曹操低头的原因，或许是揣测到对方的气量必定容不下自己，所以其目的不单是要竞争利益，而且也是为了躲避伤害啊。</p>
+<p class="zs-inline"><span class="zs-no">〔1〕</span><span class="zs-body">弘毅：刚强而坚毅。曾子有“士不可以不弘毅”的说法，见《论语·泰伯》。</span></p>
+<p class="zs-inline"><span class="zs-no">〔2〕</span><span class="zs-body">无贰：没有二心。没有其他的想法。指对诸葛亮产生怀疑的心思。</span></p>
+<p class="zs-inline"><span class="zs-no">〔3〕</span><span class="zs-body">盛轨：美好的典范。</span></p>
+<p class="zs-inline"><span class="zs-no">〔4〕</span><span class="zs-body">不逮：不及。</span></p>
+<p class="zs-inline"><span class="zs-no">〔5〕</span><span class="zs-body">基宇：疆土。</span></p>
+<p class="zs-inline"><span class="zs-no">〔6〕</span><span class="zs-body">抑：或许是；揆：揣测；量：气量</span></p>
+<p class="zs-inline"><span class="zs-no">〔7〕</span><span class="zs-body">竞利：争夺利益。</span></p>
+<p class="zs-inline"><span class="zs-no">〔8〕</span><span class="zs-body">云尔：句末语气词。表示感叹。</span></p>
+</div></div>
+</div>
+<p class="page-credit">本书由「冷趣三国」运用豆包整理制作，免费分享，供学习交流；欢迎转载，请注明出处；未经许可不得用于商业用途。</p>
+</section>
+</div>
+<div id="qrOverlay" class="qr-overlay" onclick="closeQr()"><img id="qrBig" alt="二维码"></div>
+<script>
+var VOL = 'v32';
+var NC = 17;
+var CUR = "home";
+var PREV_HREF = "v31.html";
+var NEXT_HREF = "v33.html";
+
+function pageIdParts(id) {
+  var m = id.match(/^(v\d{2})-c(\d{2})$/);
+  return m ? { vol: m[1], c: parseInt(m[2], 10) } : null;
+}
+function label(ci) { return "第" + parseInt(VOL.slice(1), 10) + "卷 · " + ci + "/" + NC; }
+function showPage(id, updateHash) {
+  var pages = document.querySelectorAll('.page');
+  for (var k = 0; k < pages.length; k++) pages[k].classList.remove('active');
+  var el = document.getElementById('page-' + id);
+  if (!el) return;
+  el.classList.add('active');
+  CUR = id;
+  var p = pageIdParts(id);
+  var pb = document.getElementById('prevBtn');
+  var nb = document.getElementById('nextBtn');
+  if (pb) pb.disabled = !(p && p.c > 1);
+  if (nb) nb.disabled = !(p && p.c < NC);
+  var labelEl = document.getElementById('pageLabel');
+  if (labelEl && p) labelEl.textContent = label(p.c);
+  var volPrev = document.getElementById('prevVolBtn');
+  var volNext = document.getElementById('nextVolBtn');
+  if (volPrev) volPrev.disabled = false;
+  if (volNext) volNext.disabled = false;
+  renderPager();
+  window.scrollTo(0, 0);
+  if (updateHash && history.replaceState) history.replaceState(null, '', '#' + id);
+}
+function renderPager() {
+  var holder = document.querySelector('.page.active .chunk-pager');
+  var p = pageIdParts(CUR);
+  if (!holder || !p) { if (holder) holder.innerHTML = ''; return; }
+  var n = NC, cur = p.c, items = [], pushDots = false;
+  for (var i = 1; i <= n; i++) {
+    if (i === 1 || i === n || Math.abs(i - cur) <= 2) { items.push(i); pushDots = false; }
+    else if (!pushDots) { items.push(-1); pushDots = true; }
+  }
+  var html = '';
+  for (var k = 0; k < items.length; k++) {
+    var vv = items[k];
+    if (vv === -1) { html += '<span class="pager-dots">…</span>'; continue; }
+    var pid = VOL + '-c' + (vv < 10 ? '0' + vv : '' + vv);
+    html += '<a class="pager-no' + (vv === cur ? ' active' : '') + '" href="#' + pid + '" onclick="go(\'' + pid + '\');return false;">' + vv + '</a>';
+  }
+  holder.innerHTML = html;
+}
+function go(id) { showPage(id, true); }
+function navPage(d) {
+  var p = pageIdParts(CUR);
+  if (!p) return;
+  var nc = p.c + d;
+  var nid = VOL + '-c' + (nc < 10 ? '0' + nc : '' + nc);
+  showPage(nid, true);
+}
+function navVol(d) { window.location.href = d < 0 ? PREV_HREF : NEXT_HREF; }
+function goSel(v) { if (v) window.location.href = v; }
+function toggleFold(btn) {
+  var fold = btn.parentNode;
+  fold.classList.toggle('closed');
+  var mark = btn.querySelector('.fold-mark');
+  if (mark) mark.textContent = fold.classList.contains('closed') ? '\u25B8' : '\u25BE';
+}
+function toggleMode() {
+  var b = document.body;
+  b.classList.toggle('mode-yw');
+  var btn = document.getElementById('modeBtn');
+  if (btn) btn.textContent = b.classList.contains('mode-yw') ? '全文模式' : '仅原文';
+}
+function foldPage(close) {
+  var sec = document.querySelector('.page.active');
+  if (!sec) return;
+  var folds = sec.querySelectorAll('.fold');
+  for (var k = 0; k < folds.length; k++) {
+    if (close) folds[k].classList.add('closed');
+    else folds[k].classList.remove('closed');
+  }
+  var marks = sec.querySelectorAll('.fold .fold-mark');
+  for (var m = 0; m < marks.length; m++) marks[m].textContent = close ? '\u25B8' : '\u25BE';
+}
+document.addEventListener('keydown', function(e) {
+  var tag = document.activeElement ? document.activeElement.tagName : '';
+  if (tag === 'SELECT' || tag === 'INPUT' || tag === 'TEXTAREA') return;
+  if (e.key === 'ArrowLeft') { navPage(-1); e.preventDefault(); }
+  else if (e.key === 'ArrowRight') { navPage(1); e.preventDefault(); }
+});
+(function init() {
+  var h = location.hash.replace('#', '');
+  if (h && pageIdParts(h)) showPage(h, false);
+  else showPage(VOL + '-c01', false);
+})();
+</script>
+
+</body>
+</html>
